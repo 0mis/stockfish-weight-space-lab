@@ -1,0 +1,9 @@
+{
+  "selected": "initiative-plus",
+  "rule": "Choose the highest screening score, breaking ties by candidate order. Confirmation uses a disjoint precommitted set of opening positions. Confirmation is reported even if screening fails.",
+  "screen_scores": {
+    "initiative-plus": 0.4921875,
+    "initiative-minus": 0.4765625
+  },
+  "confirmation_opening_sha256": "4f40937ae0207a2666613c1718bcead9540f4d0a713c258014afa2e9cfa7dfca"
+}

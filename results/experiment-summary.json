@@ -1,0 +1,247 @@
+{
+  "method": "Manually specified direct NNUE parameter edits; no gradients, training, fitted optimizer, engine code changes, or strength limiting.",
+  "control": {
+    "identity": {
+      "candidate": "control",
+      "phase": "control",
+      "pairs": 4,
+      "nodes_per_move": 10000,
+      "candidate_sha256": "1a298aa575a085434d29027978dc36867fe9c5bcea9376654b7a8eba1e52dfc2",
+      "baseline_sha256": "1a298aa575a085434d29027978dc36867fe9c5bcea9376654b7a8eba1e52dfc2",
+      "opening_sha256": "d43318e998de9e47ddc5ebae4abac4ac7941522b4abef19d9df9e2846ca320e2",
+      "engine_sha256": "45bc8e4969147db9c2eb533810637994619bff0eacc81ccfd9854394901bcbd0",
+      "fastchess_sha256": "c6d7e4458a58025983c81bf38c524cb213e6f27559657dcfd72543392a431a71",
+      "experiment_sha256": "4b94ae5f25abd08d4afc3f0fcd1350886f863633f1af32775f3d25c1223d4988",
+      "threads_per_engine": 1,
+      "hash_mb": 32,
+      "concurrency": 2,
+      "control_identical_networks": true
+    },
+    "pgn_sha256": "88c117cd32b50233c6117524f91bdeec7758e2e6db54d33750b1ae54e289a447",
+    "stats": {
+      "games": 8,
+      "wins": 3,
+      "draws": 2,
+      "losses": 3,
+      "terminations": {
+        "normal": 8
+      },
+      "pairs": 4,
+      "score_fraction": 0.5,
+      "score_ci95_pair_bootstrap": [
+        0.5,
+        0.5
+      ],
+      "relative_logistic_elo": 0.0,
+      "relative_elo_ci95_pair_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "pentanomial": [
+        0,
+        0,
+        4,
+        0,
+        0
+      ],
+      "positive_exploratory_signal": false,
+      "interval_method": "Approximate percentile bootstrap, 20000 resamples of opening pairs; small-sample and selection limits apply."
+    },
+    "publication": {
+      "source_pgn_sha256": "a07b4b74234d2b8d22d0a7df46911c68471ebf2032da544b832198655838e774",
+      "removed_headers": [
+        "GameStartTime",
+        "GameEndTime",
+        "GameDuration"
+      ],
+      "line_endings": "LF",
+      "moves_scores_and_results_changed": false
+    }
+  },
+  "screens": [
+    {
+      "identity": {
+        "candidate": "initiative-plus",
+        "phase": "screen",
+        "pairs": 32,
+        "nodes_per_move": 10000,
+        "candidate_sha256": "8572570635c4792f555dc20e9b70af4795a72cbf9d4e9a133aeb040653abc08f",
+        "baseline_sha256": "1a298aa575a085434d29027978dc36867fe9c5bcea9376654b7a8eba1e52dfc2",
+        "opening_sha256": "445a03e36b3d505706f9d27eaf55a850df75f7870406e16c5facdc07bdbb5f21",
+        "engine_sha256": "45bc8e4969147db9c2eb533810637994619bff0eacc81ccfd9854394901bcbd0",
+        "fastchess_sha256": "c6d7e4458a58025983c81bf38c524cb213e6f27559657dcfd72543392a431a71",
+        "experiment_sha256": "4b94ae5f25abd08d4afc3f0fcd1350886f863633f1af32775f3d25c1223d4988",
+        "threads_per_engine": 1,
+        "hash_mb": 32,
+        "concurrency": 2,
+        "control_identical_networks": false
+      },
+      "pgn_sha256": "c6dd775e65de231681956a2237d07432a4b96433757306e9b65caa0d2402dd33",
+      "stats": {
+        "games": 64,
+        "wins": 8,
+        "draws": 47,
+        "losses": 9,
+        "terminations": {
+          "normal": 64
+        },
+        "pairs": 32,
+        "score_fraction": 0.4921875,
+        "score_ci95_pair_bootstrap": [
+          0.421875,
+          0.5625
+        ],
+        "relative_logistic_elo": -5.429122875709548,
+        "relative_elo_ci95_pair_bootstrap": [
+          -54.735183963203085,
+          43.65778777002723
+        ],
+        "pentanomial": [
+          3,
+          2,
+          20,
+          7,
+          0
+        ],
+        "positive_exploratory_signal": false,
+        "interval_method": "Approximate percentile bootstrap, 20000 resamples of opening pairs; small-sample and selection limits apply."
+      },
+      "publication": {
+        "source_pgn_sha256": "b5e488ea1d139d29f0ef8f90797d647f211ed541c2796581d85f2ea98e91ad06",
+        "removed_headers": [
+          "GameStartTime",
+          "GameEndTime",
+          "GameDuration"
+        ],
+        "line_endings": "LF",
+        "moves_scores_and_results_changed": false
+      }
+    },
+    {
+      "identity": {
+        "candidate": "initiative-minus",
+        "phase": "screen",
+        "pairs": 32,
+        "nodes_per_move": 10000,
+        "candidate_sha256": "acb13ebe9539ecc59a93f32e9d629b211b606fa662c77ff12e82bc7dd47cc9e6",
+        "baseline_sha256": "1a298aa575a085434d29027978dc36867fe9c5bcea9376654b7a8eba1e52dfc2",
+        "opening_sha256": "445a03e36b3d505706f9d27eaf55a850df75f7870406e16c5facdc07bdbb5f21",
+        "engine_sha256": "45bc8e4969147db9c2eb533810637994619bff0eacc81ccfd9854394901bcbd0",
+        "fastchess_sha256": "c6d7e4458a58025983c81bf38c524cb213e6f27559657dcfd72543392a431a71",
+        "experiment_sha256": "4b94ae5f25abd08d4afc3f0fcd1350886f863633f1af32775f3d25c1223d4988",
+        "threads_per_engine": 1,
+        "hash_mb": 32,
+        "concurrency": 2,
+        "control_identical_networks": false
+      },
+      "pgn_sha256": "01251d067532c06ea2967d894bc76a6d92d3049624024aafe918c0a3c8b524b1",
+      "stats": {
+        "games": 64,
+        "wins": 8,
+        "draws": 45,
+        "losses": 11,
+        "terminations": {
+          "normal": 64
+        },
+        "pairs": 32,
+        "score_fraction": 0.4765625,
+        "score_ci95_pair_bootstrap": [
+          0.40625,
+          0.546875
+        ],
+        "relative_logistic_elo": -16.297987076023766,
+        "relative_elo_ci95_pair_bootstrap": [
+          -65.92409945839687,
+          32.668018580527814
+        ],
+        "pentanomial": [
+          2,
+          6,
+          17,
+          7,
+          0
+        ],
+        "positive_exploratory_signal": false,
+        "interval_method": "Approximate percentile bootstrap, 20000 resamples of opening pairs; small-sample and selection limits apply."
+      },
+      "publication": {
+        "source_pgn_sha256": "df0f6948ceb9b86f6e1eacc4513b121428a47ae963a57d181709fa98cb9d3e13",
+        "removed_headers": [
+          "GameStartTime",
+          "GameEndTime",
+          "GameDuration"
+        ],
+        "line_endings": "LF",
+        "moves_scores_and_results_changed": false
+      }
+    }
+  ],
+  "selected": "initiative-plus",
+  "confirmation": {
+    "identity": {
+      "candidate": "initiative-plus",
+      "phase": "confirmation",
+      "pairs": 64,
+      "nodes_per_move": 10000,
+      "candidate_sha256": "8572570635c4792f555dc20e9b70af4795a72cbf9d4e9a133aeb040653abc08f",
+      "baseline_sha256": "1a298aa575a085434d29027978dc36867fe9c5bcea9376654b7a8eba1e52dfc2",
+      "opening_sha256": "4f40937ae0207a2666613c1718bcead9540f4d0a713c258014afa2e9cfa7dfca",
+      "engine_sha256": "45bc8e4969147db9c2eb533810637994619bff0eacc81ccfd9854394901bcbd0",
+      "fastchess_sha256": "c6d7e4458a58025983c81bf38c524cb213e6f27559657dcfd72543392a431a71",
+      "experiment_sha256": "4b94ae5f25abd08d4afc3f0fcd1350886f863633f1af32775f3d25c1223d4988",
+      "threads_per_engine": 1,
+      "hash_mb": 32,
+      "concurrency": 2,
+      "control_identical_networks": false
+    },
+    "pgn_sha256": "034586eda3e2069f83ffb6fe6a28f4c9fc332b4f6b0ac004c6025e664524db0b",
+    "stats": {
+      "games": 128,
+      "wins": 28,
+      "draws": 73,
+      "losses": 27,
+      "terminations": {
+        "normal": 128
+      },
+      "pairs": 64,
+      "score_fraction": 0.50390625,
+      "score_ci95_pair_bootstrap": [
+        0.44921875,
+        0.55859375
+      ],
+      "relative_logistic_elo": 2.714395737316835,
+      "relative_elo_ci95_pair_bootstrap": [
+        -35.4085089207073,
+        40.90303759265683
+      ],
+      "pentanomial": [
+        3,
+        15,
+        25,
+        20,
+        1
+      ],
+      "positive_exploratory_signal": false,
+      "interval_method": "Approximate percentile bootstrap, 20000 resamples of opening pairs; small-sample and selection limits apply."
+    },
+    "publication": {
+      "source_pgn_sha256": "d93b9612f74032091aabded6ba2fcc601fa0842da7c5d7de83bcc858654ec57a",
+      "removed_headers": [
+        "GameStartTime",
+        "GameEndTime",
+        "GameDuration"
+      ],
+      "line_endings": "LF",
+      "moves_scores_and_results_changed": false
+    }
+  },
+  "conclusion": "No statistically convincing improvement demonstrated by this initial direct-edit experiment.",
+  "limitations": [
+    "Only two manually chosen output-bias edits were tested, not all possible direct edits.",
+    "The 10000-node search limit is shallow; no absolute or general Elo claim is supported.",
+    "Confirmation uses disjoint positions but the same opening-book source.",
+    "The confidence interval is approximate and the sample is small.",
+    "This is an adaptation to NNUE, not a reproduction of the Qwen experiment."
+  ],
+  "publication_note": "Timestamp headers and machine-specific execution metadata omitted; game moves, scores, results and statistics retained. Public PGN hashes differ from private originals; see publication-manifest.json."
+}

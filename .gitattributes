@@ -1,0 +1,4 @@
+* text=auto eol=lf
+*.nnue -text
+*.zip -text
+*.pgn whitespace=-blank-at-eof

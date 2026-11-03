@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+downloads/
+vendor/
+nets/*.nnue
+results/*/fastchess.log*
+results/*/state.json
+results/*/config.json
+results/**/*.log
+results/*/command.json
+openings/source/
+
+research/*.html
+publication/

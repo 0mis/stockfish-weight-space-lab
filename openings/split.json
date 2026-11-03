@@ -1,0 +1,26 @@
+{
+  "source": {
+    "commit": "a804a97e709f40aa75a00f9d19e84915b7a3a45c",
+    "repository": "https://github.com/official-stockfish/books",
+    "file": "8moves_v3.pgn.zip",
+    "sha256": "7e1e9dd118b4bb97d8a8b5b8a790c86e21f8509d59a27d2883767d94477be02e"
+  },
+  "source_pgn_sha256": "5835239f88cc2c7511b177c32392a69f3ede21819cf0616f80a7f907cd21d17e",
+  "seed": 20261102,
+  "unique_source_positions": 34700,
+  "splits": {
+    "screen": {
+      "positions": 32,
+      "sha256": "445a03e36b3d505706f9d27eaf55a850df75f7870406e16c5facdc07bdbb5f21"
+    },
+    "confirmation": {
+      "positions": 64,
+      "sha256": "4f40937ae0207a2666613c1718bcead9540f4d0a713c258014afa2e9cfa7dfca"
+    },
+    "control": {
+      "positions": 4,
+      "sha256": "d43318e998de9e47ddc5ebae4abac4ac7941522b4abef19d9df9e2846ca320e2"
+    }
+  },
+  "disjoint": true
+}

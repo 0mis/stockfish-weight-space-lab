@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "question": "Can deliberate, gradient-free edits to Stockfish 19 NNUE improve play?",
+  "baseline_sha256": "1a298aa575a085434d29027978dc36867fe9c5bcea9376654b7a8eba1e52dfc2",
+  "hypothesis": "The final affine bias is an interpretable side-to-move intercept. Small, material-tapered changes could improve the treatment of initiative at shallow search. Test both signs because the correct direction is unknown. This is a hypothesis, not a diagnosed defect in Stockfish.",
+  "method": "Manually specified direct NNUE parameter edits; no gradients, training, fitted optimizer, engine code changes, or strength limiting.",
+  "candidates": [
+    {"name": "initiative-plus", "bias_deltas": [0, 0, 32, 64, 96, 128, 128, 128]},
+    {"name": "initiative-minus", "bias_deltas": [0, 0, -32, -64, -96, -128, -128, -128]}
+  ],
+  "protocol": {
+    "seed": 20261102,
+    "screen_pairs_per_candidate": 32,
+    "confirmation_pairs": 64,
+    "screen_nodes_per_move": 10000,
+    "confirmation_nodes_per_move": 10000,
+    "concurrency": 2,
+    "threads_per_engine": 1,
+    "hash_mb_per_engine": 32,
+    "selection_rule": "Choose the highest screening score, breaking ties by candidate order. Confirmation uses a disjoint precommitted set of opening positions. Confirmation is reported even if screening fails.",
+    "interpretation": "Small exploratory experiment. Fixed-node, shallow-search results do not establish a general Elo gain. No improvement claim unless independent confirmation is statistically convincing, and a longer test at realistic time controls would still be required."
+  }
+}

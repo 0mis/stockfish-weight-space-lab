@@ -1,0 +1,20 @@
+{
+  "created_utc": "2026-11-03T00:43:40.007225+00:00",
+  "results": {
+    "original": {
+      "sha256": "1a298aa575a085434d29027978dc36867fe9c5bcea9376654b7a8eba1e52dfc2",
+      "engine_roundtrip_identical": true,
+      "startpos_nnue_internal": -1
+    },
+    "initiative-plus": {
+      "sha256": "8572570635c4792f555dc20e9b70af4795a72cbf9d4e9a133aeb040653abc08f",
+      "engine_roundtrip_identical": true,
+      "startpos_nnue_internal": 3
+    },
+    "initiative-minus": {
+      "sha256": "acb13ebe9539ecc59a93f32e9d629b211b606fa662c77ff12e82bc7dd47cc9e6",
+      "engine_roundtrip_identical": true,
+      "startpos_nnue_internal": -6
+    }
+  }
+}

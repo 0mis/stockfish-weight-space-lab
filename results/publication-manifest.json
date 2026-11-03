@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "games": 264,
+  "pgns": [
+    {
+      "file": "results/control-control/games.pgn",
+      "source_pgn_sha256": "a07b4b74234d2b8d22d0a7df46911c68471ebf2032da544b832198655838e774",
+      "removed_headers": [
+        "GameStartTime",
+        "GameEndTime",
+        "GameDuration"
+      ],
+      "line_endings": "LF",
+      "moves_scores_and_results_changed": false,
+      "published_pgn_sha256": "88c117cd32b50233c6117524f91bdeec7758e2e6db54d33750b1ae54e289a447"
+    },
+    {
+      "file": "results/screen-initiative-plus/games.pgn",
+      "source_pgn_sha256": "b5e488ea1d139d29f0ef8f90797d647f211ed541c2796581d85f2ea98e91ad06",
+      "removed_headers": [
+        "GameStartTime",
+        "GameEndTime",
+        "GameDuration"
+      ],
+      "line_endings": "LF",
+      "moves_scores_and_results_changed": false,
+      "published_pgn_sha256": "c6dd775e65de231681956a2237d07432a4b96433757306e9b65caa0d2402dd33"
+    },
+    {
+      "file": "results/screen-initiative-minus/games.pgn",
+      "source_pgn_sha256": "df0f6948ceb9b86f6e1eacc4513b121428a47ae963a57d181709fa98cb9d3e13",
+      "removed_headers": [
+        "GameStartTime",
+        "GameEndTime",
+        "GameDuration"
+      ],
+      "line_endings": "LF",
+      "moves_scores_and_results_changed": false,
+      "published_pgn_sha256": "01251d067532c06ea2967d894bc76a6d92d3049624024aafe918c0a3c8b524b1"
+    },
+    {
+      "file": "results/confirmation-initiative-plus/games.pgn",
+      "source_pgn_sha256": "d93b9612f74032091aabded6ba2fcc601fa0842da7c5d7de83bcc858654ec57a",
+      "removed_headers": [
+        "GameStartTime",
+        "GameEndTime",
+        "GameDuration"
+      ],
+      "line_endings": "LF",
+      "moves_scores_and_results_changed": false,
+      "published_pgn_sha256": "034586eda3e2069f83ffb6fe6a28f4c9fc332b4f6b0ac004c6025e664524db0b"
+    }
+  ],
+  "omitted": [
+    "absolute local paths",
+    "raw engine/session logs",
+    "per-game wall-clock timestamps",
+    "machine-specific match commands"
+  ],
+  "reproduction": "setup.ps1 recreates the verified upstream engines and the three compatible networks."
+}

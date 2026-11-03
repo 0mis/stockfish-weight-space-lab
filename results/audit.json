@@ -1,0 +1,24 @@
+{
+  "audited_utc": "2026-11-03T01:00:51.939216+00:00",
+  "passed": true,
+  "matches": 4,
+  "games": 264,
+  "checks": [
+    "saved PGN SHA256 hashes",
+    "game counts and completed results",
+    "declared openings and reversed-color pairs",
+    "disjoint opening splits",
+    "recomputed paired statistics",
+    "native network round trips",
+    "current executable/network/protocol hashes",
+    "frozen selection rule"
+  ],
+  "python": "3.11.15 (main, Jul 18 2026, 17:06:27) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.28000-SP0",
+  "chess": "1.11.2",
+  "source_sha256": {
+    "scripts\\nnue.py": "a5bbe1f4a216aa42aee34758dd27741a3728036d0d5d128089114edfa387089e",
+    "scripts\\lab.py": "38822fe52199efdd825b20f5594a47672419b01cb47cfae482529d46261889da",
+    "scripts\\audit.py": "a40f1739e689cf925c484557ca429bd50f6ce2bf3729c00d103ccd52bb54fff1"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "name": "initiative-plus",
+  "parent_sha256": "1a298aa575a085434d29027978dc36867fe9c5bcea9376654b7a8eba1e52dfc2",
+  "sha256": "8572570635c4792f555dc20e9b70af4795a72cbf9d4e9a133aeb040653abc08f",
+  "changed_parameters": 6,
+  "total_parameters": 89957768,
+  "edits": [
+    {
+      "parameter": "stack[2].fc_2.bias[0]",
+      "offset": 98335011,
+      "type": "int32_le",
+      "old": 5146,
+      "new": 5178,
+      "delta": 32
+    },
+    {
+      "parameter": "stack[3].fc_2.bias[0]",
+      "offset": 98370219,
+      "type": "int32_le",
+      "old": -5135,
+      "new": -5071,
+      "delta": 64
+    },
+    {
+      "parameter": "stack[4].fc_2.bias[0]",
+      "offset": 98405427,
+      "type": "int32_le",
+      "old": 3489,
+      "new": 3585,
+      "delta": 96
+    },
+    {
+      "parameter": "stack[5].fc_2.bias[0]",
+      "offset": 98440635,
+      "type": "int32_le",
+      "old": 2989,
+      "new": 3117,
+      "delta": 128
+    },
+    {
+      "parameter": "stack[6].fc_2.bias[0]",
+      "offset": 98475843,
+      "type": "int32_le",
+      "old": 1010,
+      "new": 1138,
+      "delta": 128
+    },
+    {
+      "parameter": "stack[7].fc_2.bias[0]",
+      "offset": 98511051,
+      "type": "int32_le",
+      "old": -475,
+      "new": -347,
+      "delta": 128
+    }
+  ],
+  "hypothesis": "The final affine bias is an interpretable side-to-move intercept. Small, material-tapered changes could improve the treatment of initiative at shallow search. Test both signs because the correct direction is unknown. This is a hypothesis, not a diagnosed defect in Stockfish.",
+  "method": "Manually specified direct NNUE parameter edits; no gradients, training, fitted optimizer, engine code changes, or strength limiting."
+}
