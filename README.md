@@ -27,7 +27,7 @@ The D1 candidate scales FC2 weights and biases by 1.02 with exact integer roundi
 
 A second candidate changes 408 weights and 18 biases in Shawn Xu's `test1757` network. Two independent scalar implementations reproduced all 44 original/edited outputs on 22 fixed diagnostic positions. Its Huber100 loss against archived search scores fell 0.5985% on 101 preselected retired training positions. Native playing strength is pending. [Training diagnostic](results/donor-edit-check.json)
 
-A public Fishtest submission is being prepared. A test link and results will be added after submission. Fishtest uses its own distributed testing conditions and SPRT procedure.
+The public NNUE-only [Fishtest source branch](https://github.com/0mis/Stockfish/tree/nnue-fcbaf7d2197c) selects the edited D1 network on official November 6 source. The [CC0 network release](https://github.com/0mis/Stockfish/releases/tag/experimental-nn-fcbaf7d2197c) includes the exact submission fields. Its patched binary reproduced benchmark signature **2261721** twice and passed start-position perft4 (**197281**). Fishtest account approval and network-registry upload are pending. A public test link will be added after submission. Fishtest uses its own distributed testing conditions and standard SPRT procedure.
 
 The sections below document the original shallow experiment and preserve its reproducible evidence.
 
