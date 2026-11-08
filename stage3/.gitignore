@@ -1,0 +1,9 @@
+downloads/
+toolchains/
+builds/
+results/
+vendor/
+__pycache__/
+tests/__pycache__/
+research/*.log
+confirmation-pools/

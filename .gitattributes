@@ -2,3 +2,4 @@
 *.nnue -text
 *.zip -text
 *.pgn whitespace=-blank-at-eof
+stage3/protocol.json -text

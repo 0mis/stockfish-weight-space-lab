@@ -1,0 +1,78 @@
+{
+  "candidate": {
+    "engine_sha256": "c0092fd059ae81d9fad61f9372e985f5b0d99b934bd8639867590cf988fa4cd9",
+    "label": "d1-fc2-s102-t128",
+    "network_sha256": "fcbaf7d2197cb1261ad64229789c168d2c28e93ee9308c95a41f885c829180c7"
+  },
+  "comparisons": [
+    {
+      "anytime_lower_logistic_elo": -37.593872049458334,
+      "candidate_points": 109.5,
+      "draws": 107,
+      "estimate_boundary": null,
+      "games": 212,
+      "log_e_value": 0.1275477790171422,
+      "log_gain_threshold": 7.783224016336037,
+      "logistic_elo_estimate": 11.476101513745588,
+      "losses": 49,
+      "lower_bound_boundary": null,
+      "maximum_pairs": 8192,
+      "minimum_pairs": 128,
+      "minimum_pairs_reached": false,
+      "one_sided_confidence_percent": 99.95833333333334,
+      "pairs": 106,
+      "reference": "spcc-261025",
+      "reference_points": 102.5,
+      "role": "strongest_rated",
+      "score_fraction": 0.5165094339622641,
+      "statistical_decision": "continue",
+      "wins": 56
+    },
+    {
+      "anytime_lower_logistic_elo": null,
+      "candidate_points": 0.0,
+      "draws": 0,
+      "estimate_boundary": null,
+      "games": 0,
+      "log_e_value": 0.0,
+      "log_gain_threshold": 7.783224016336037,
+      "logistic_elo_estimate": null,
+      "losses": 0,
+      "lower_bound_boundary": "negative_infinity",
+      "maximum_pairs": 8192,
+      "minimum_pairs": 128,
+      "minimum_pairs_reached": false,
+      "one_sided_confidence_percent": 99.95833333333334,
+      "pairs": 0,
+      "reference": "dev-261106",
+      "reference_points": 0.0,
+      "role": "latest_dev",
+      "score_fraction": null,
+      "statistical_decision": "continue",
+      "wins": 0
+    }
+  ],
+  "completion_verified": false,
+  "integrity_audit": "independent_terminal_audit_pending",
+  "interpretation": "Provisional estimates. Statistical gain requires both reference gates and an independent terminal integrity audit before verified-gain wording. A statistical continue decision does not report sampler liveness.",
+  "ledger_prefix": {
+    "event_index": 279,
+    "head_sha256": "7c7bf602ccce1b1658578e98e30c0dc62bbb72e799c3d0a502f1a99e4ffb3e11"
+  },
+  "protocol": {
+    "confidence_interpretation": "Fixed protocol coverage under its assumptions, not a probability of superiority.",
+    "familywise_confidence_percent": 99.0,
+    "fresh_engines_per_pair": true,
+    "hash_mb_per_engine": 64,
+    "method": "pair-betting-mixture-v1",
+    "threads_per_engine": 1,
+    "time_control": "60+0.6",
+    "trial_confidence_percent": 99.91666666666667
+  },
+  "sampler_state": "not_inferred_from_ledger",
+  "schema_version": 1,
+  "scope": "This frozen candidate and references at the declared time control and test hardware only.",
+  "statistical_pass": false,
+  "trial_closed": false,
+  "trial_id": "trial-0003"
+}

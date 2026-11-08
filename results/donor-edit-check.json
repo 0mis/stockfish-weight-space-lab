@@ -1,0 +1,23 @@
+{
+  "status": "training_diagnostic_complete_native_play_pending",
+  "parent_network_sha256": "18cd32e11a9cac7c595bc6ebf1301088da8e1f2c7b31efda88dbc74c71f5d2cf",
+  "edited_network_sha256": "034f47e652a6a0354f9099993535a0405f4933146fc6d0b913583696bfbdacbd",
+  "network_bytes": 138360528,
+  "changed_weights": 408,
+  "changed_biases": 18,
+  "changed_serialized_bytes": 439,
+  "changed_physical_heads": 18,
+  "scalar_probe_positions": 22,
+  "independently_reproduced_raw_outputs": 44,
+  "training_sample_positions": 101,
+  "training_sample_components": 101,
+  "selection": "One position per retired training component, selected by a fixed hash before reading targets or evaluating the candidate.",
+  "metric": "Mean Huber loss with delta 100 against reported root-side-to-move search scores at zero optimism.",
+  "parent_huber_loss_exact": "538874/101",
+  "edited_huber_loss_exact": "535649/101",
+  "percent_loss_reduction": 0.5984701432988045,
+  "positions_closer_farther_tied": [36, 24, 41],
+  "native_games": 0,
+  "scope": "This result measures agreement with archived search scores on a fixed training sample. Playing strength requires head-to-head tests.",
+  "upstream_source": "https://github.com/xu-shawn/Stockfish/commit/d5a2bda7f028430f79e1789d47ae3228defb843b"
+}

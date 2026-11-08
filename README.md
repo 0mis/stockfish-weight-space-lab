@@ -1,6 +1,35 @@
 # Stockfish Weight-Space Lab
 
-An independent, substantially AI-assisted experiment in editing a chess evaluator directly, without training or gradients. Built with Codex and reviewed by five helpers configured as GPT-6 Astra at xhigh.
+An AI-assisted research log of direct NNUE edits and Stockfish experiments. The current agent configuration is GPT-6.1 Sol with max reasoning.
+
+<!-- live-status:start -->
+## Live confirmation progress
+
+Trial `trial-0003` · **provisional, independently unverified** · `60+0.6 / T1 / H64`
+
+| Reference | W / D / L | Points | Games (pairs) | Logistic Elo estimate | Anytime lower Elo bound | Statistical decision | Minimum pairs |
+| --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
+| `spcc-261025` | 56 / 107 / 49 | 109.5–102.5 | 212 (106) | +11.48 | -37.59 | `continue` | 106/128 (pending) |
+| `dev-261106` | 0 / 0 / 0 | 0–0 | 0 (0) | pending | −∞ | `continue` | 0/128 (pending) |
+
+The paired, one-sided anytime lower bounds use **99.958333%** coverage per reference (trial allocation: **99.916667%**; whole research family: **99%**). These are fixed protocol coverage levels under its assumptions, not probabilities that the candidate is stronger.
+
+Each reference needs at least **128 pairs** and log-evidence ≥ **7.78322**. Both gates must pass; an independent terminal integrity audit is still required. Point estimates can rise or fall. Every completed pair in this trial's ledger prefix is retained; interrupted earlier trials are excluded. `continue` is a statistical decision and does not indicate whether the sampler is running.
+
+Trial ledger state: **open**. Both statistical gates passed: **no**. Verified gain: **not established by this progress feed**.
+
+Ledger checkpoint: event `279`, SHA-256 `7c7bf602ccce1b1658578e98e30c0dc62bbb72e799c3d0a502f1a99e4ffb3e11`. [Aggregate JSON](results/live-status.json).
+<!-- live-status:end -->
+
+The current real-clock comparison uses one thread, 64 MiB hash and `60+0.6` for both engines. Its references are Stockfish 261025, the leader on the [SPCC VLTC list](https://www.sp-cc.de/), and the official November 6 development build `7cdd5e89`. The second comparison starts after a positive statistical decision against the first reference. An independent integrity audit is also required before claiming a verified gain.
+
+The D1 candidate scales FC2 weights and biases by 1.02 with exact integer rounding and adds 128 to each final bias. Its source includes [mstembera's transposition-table optimization](https://github.com/official-stockfish/Stockfish/pull/7281). The complete engine is being compared, so a positive result would cover that combination. A comparison using the same executable on both sides is needed to isolate the effect of the NNUE edit.
+
+A second candidate changes 408 weights and 18 biases in Shawn Xu's `test1757` network. Two independent scalar implementations reproduced all 44 original/edited outputs on 22 fixed diagnostic positions. Its Huber100 loss against archived search scores fell 0.5985% on 101 preselected retired training positions. Native playing strength is pending. [Training diagnostic](results/donor-edit-check.json)
+
+A public Fishtest submission is being prepared. A test link and results will be added after submission. Fishtest uses its own distributed testing conditions and SPRT procedure.
+
+The sections below document the original shallow experiment and preserve its reproducible evidence.
 
 **Initial result: no statistically established Elo gain.** Across 264 games, the separate 128-game confirmation finished **28 wins / 73 draws / 27 losses** (50.39%). The approximate relative Elo estimate is **+2.7**, with a **95% paired-bootstrap interval of -35.4 to +40.9** at this shallow search limit.
 

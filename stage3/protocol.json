@@ -1,0 +1,153 @@
+{
+  "version": 3,
+  "authoritative_ledger": "stage2/results/alpha-ledger.jsonl",
+  "purpose": "Test a frozen whole-engine Stockfish candidate (source, search, time management and/or NNUE changes) against the strongest directly verified rated artifact and the separately pinned latest-development incumbent. Authenticated native referee clock forfeits count symmetrically as playing outcomes. Local evidence is scoped to these artifacts, clocks, pools and hardware.",
+  "statistics": {
+    "method": "pair-betting-mixture-v1",
+    "familywise_alpha": 0.01,
+    "trial_alpha_rule": "For trial k starting at 1, spend 0.01 / (k * (k + 1)); divide its alpha equally between the two baseline claims. The infinite sum of trial budgets is 0.01. Spend before seeing any confirmation result; abandoned, failed and invalidated trials never refund alpha.",
+    "null": "Mean candidate opening-pair score <= 0.5, equivalently relative logistic Elo <= 0.",
+    "positive_boundary": "The predeclared positive-direction mixture e-process must reach 1 / allocated_alpha after the minimum pair count.",
+    "bet_fractions": [
+      0.5,
+      0.25,
+      0.125,
+      0.0625,
+      0.03125,
+      0.015625,
+      0.0078125,
+      0.00390625,
+      0.001953125,
+      0.0009765625,
+      0.00048828125,
+      0.000244140625,
+      0.75,
+      0.9
+    ],
+    "mixture_weights": "Equal weights fixed before observations. E_n(m) = mean_f product_over_pairs [1 + f * (pair_score / m - 1)].",
+    "validity": "Finite-sample anytime false-positive control under the conditional-mean null. The declared IID opening draw, fresh-engine and stationary matched-hardware model implies this null when a candidate's true pool mean is <=0.5. This is not an exact Fishtest GSPRT reproduction.",
+    "sampling_warning": "Do not use this IID calculation for unadjusted sampling without replacement. Do not select favorable games, pool screens with confirmation, reclassify a failed trial, reset the ledger, or raise a trial's cap after observing its results.",
+    "stopping": "Inspect only complete reversed-color pairs in chronological schedule order. Check each recorded batch; a crossed boundary stops that comparison. Negative-direction e-value >=100 after the minimum pairs is a resource stop, not an equivalence claim. At the frozen cap, any result without a positive boundary is inconclusive.",
+    "reporting": "Report raw game results and pentanomial counts, selected candidate and every failed/abandoned confirmation, alpha allocation, log e-value, threshold, one-sided anytime lower score/logistic-Elo bound and precise settings. Point logistic Elo and nElo are descriptive and may be biased after selection or optional stopping. nElo = (800/ln(10)) * (mean_pair_score-0.5) / sqrt(2*population_variance_of_pair_score); it is not logistic Elo. Undefined variance is not zero uncertainty.",
+    "global_ledger_policy": "One persistent familywise ledger covers all formal trials. This prospective module migration does not refund spent alpha or authorize separate 0.01 budgets. No prior formal ledger existed at adoption."
+  },
+  "screening": {
+    "time_control": "10+0.1",
+    "max_pairs_per_candidate": 64,
+    "threads_per_engine": 1,
+    "concurrency": 2,
+    "inference": "Exploratory selection only. Speed gains, fixed-node games, screen scores and microbenchmarks cannot establish the completion condition.",
+    "selection": "Select and freeze the candidate, its binary and network hashes, all baseline artifacts, confirmation settings, clean opening pools and IID schedules before reserving the trial. Any later candidate or protocol change needs a new trial and fresh alpha/pools."
+  },
+  "confirmation": {
+    "min_pairs": 128,
+    "max_pairs": 8192,
+    "minimum_clean_pool_positions": 2048,
+    "settings": {
+      "time_control": "60+0.6",
+      "nodes_per_move": null,
+      "depth_limit": null,
+      "threads_per_engine": 1,
+      "hash_mb_per_engine": 64,
+      "concurrency": 2,
+      "ponder": false,
+      "strength_limit": false,
+      "evaluation_adjudication": false,
+      "tablebases": false,
+      "fresh_engines_per_pair": true,
+      "referee_time_margin_ms": 0,
+      "engine_move_overhead_ms": 10
+    },
+    "baseline_roles": [
+      "strongest_rated",
+      "latest_dev"
+    ],
+    "baseline_identity": "Use the actual binaries and networks, not inferred labels. Freeze engine, network and provenance SHA256 for each. The same candidate binary+network must beat both. Do not call SF19 the highest-rated baseline unless refreshed primary evidence actually supports that identification.",
+    "sampling": "Each baseline gets a unique clean pool drawn entirely from the official UHO opening source, disjoint from all screening/tuning positions, other baseline pools and every earlier confirmation pool. No synthetic endgame or diagnostic starters are mixed into primary Elo confirmation. Sample WITH replacement using a frozen seed and schedule. Repeated occurrences are legitimate independent draws, identified by pair_index, and must not be deduplicated by FEN. No candidate development, evaluator diagnostics or speed tuning on the clean pools.",
+    "pair_order": "pair_index is zero-based in the frozen schedule. One occurrence includes exactly two complete games with candidate colors reversed. Alternate or randomize first-game color by a predeclared rule. Reconstruct schedule order before updates even if games finish out of order.",
+    "integrity": "Both sides receive identical real clocks, thread/hash limits and hardware access; pondering and strength limits are off. Preserve every PGN, UCI/referee log, command, identity and failure. Authenticated referee clock forfeits count as normal 0/1 game outcomes under game_result_policy, including candidate time losses. Unknown/startup/ping/crash/illegal/infrastructure failure, missing games or evidence mismatch invalidate the trial without selective retries or alpha refunds. A clean interruption resumes the existing trial and spent allocation.",
+    "completion": "Both baseline comparisons must cross their allocated positive boundaries and pass a separate raw-PGN/provenance/settings audit. Neither passing a screen nor beating an older/unverified baseline suffices. No publication before this evidence and user authorization. A verified gain is scoped to the exact tested time control, opening distribution, artifacts and hardware. Broader claims require additional independent settings."
+  },
+  "resources": {
+    "maximum_normal_active_search_threads": 2,
+    "default_pair_chunk": 8,
+    "target_chunk_wall_seconds": 3600,
+    "priority": "below_normal",
+    "thermal_policy": "Avoid unrelated CPU loads, record matched conditions and monitor thermal throttling before confirmation. Pause safely between completed pairs if the machine becomes unsuitable; do not classify an interrupted process as a played loss or omit completed games.",
+    "longer_tests": "60+0.6 is Fishtest's official long time control. A separate predeclared robustness test at 180+1.8 or matched 4-thread engines may be justified later; changing settings inside a trial is forbidden. The 8192-pair cap can take weeks locally and is not a promise of power for small gains. Runtime estimates must use measured pair durations. No paid, cloud or external Fishtest submission."
+  },
+  "trial_spec_schema": {
+    "protocol_sha256": "stats.digest(full loaded protocol JSON)",
+    "candidate": {
+      "label": "human-readable name",
+      "engine_sha256": "64 lowercase hex",
+      "network_sha256": "64 lowercase hex"
+    },
+    "baselines": [
+      {
+        "id": "unique-lowercase-id",
+        "role": "strongest_rated or latest_dev",
+        "engine_sha256": "64 lowercase hex",
+        "network_sha256": "64 lowercase hex",
+        "provenance_sha256": "64 lowercase hex"
+      }
+    ],
+    "screening_evidence_sha256": "Hash of frozen candidate-selection/screening evidence",
+    "hardware_identity_sha256": "Hash of frozen CPU/OS/topology/resource record",
+    "settings": "Exact copy of confirmation.settings",
+    "min_pairs": 128,
+    "max_pairs": 8192,
+    "screen_opening_ids": [
+      "SHA256 of canonical four-field FEN, including all positions used for tuning/diagnostics"
+    ],
+    "sampling": {
+      "method": "iid_with_replacement",
+      "pools": {
+        "baseline-id": {
+          "opening_ids": [
+            "unique64-hex canonical position hashes"
+          ],
+          "source_sha256": "source/pool artifact SHA256",
+          "seed": "nonnegative integer fixed before outcomes",
+          "schedule_sha256": "stats.digest(stats.sample_schedule(opening_ids, seed, max_pairs))"
+        }
+      }
+    },
+    "game_result_policy_id": "Exact game_result_policy.id",
+    "game_result_policy_sha256": "stats.digest(protocol.game_result_policy)"
+  },
+  "sources": [
+    "https://official-stockfish.github.io/docs/fishtest-wiki/Fishtest-Mathematics.html",
+    "https://official-stockfish.github.io/docs/fishtest-wiki/Creating-my-first-test.html",
+    "https://raw.githubusercontent.com/official-stockfish/fishtest/master/server/fishtest/stats/LLRcalc.py",
+    "https://arxiv.org/abs/2010.09686"
+  ],
+  "game_result_policy": {
+    "id": "fastchess-182-clock-forfeit-v1",
+    "referee_sha256": "c6d7e4458a58025983c81bf38c524cb213e6f27559657dcfd72543392a431a71",
+    "allowed_terminations": [
+      "normal",
+      "time forfeit"
+    ],
+    "clock_forfeits": "Count every authenticated referee TIMEOUT symmetrically as the reported 0/1 result. Preserve late legal PGN plies and derive the pre-forfeit referee position; do not replay or omit losses.",
+    "unknown_failures": "Startup, ping, crash, illegal move, NNUE/protocol/infrastructure errors, unmatched warnings, incomplete games and unsuccessful processes fail closed.",
+    "warning_policy": "Only logger-owned positive-overrun TIMEOUT warnings matched one-to-one to fully audited clock-forfeit games are allowed. No -strict, no -recover, no blanket warning removal.",
+    "log_policy": {
+      "level": "trace",
+      "engine": true,
+      "realtime": false,
+      "pgn_timeleft": true,
+      "strict": false,
+      "recover": false,
+      "startup_ms": 10000,
+      "ucinewgame_ms": 60000,
+      "ping_ms": 60000
+    },
+    "evidence_forms": [
+      "late_legal_move_recorded",
+      "referee_overrun_with_reconstructed_prefix"
+    ],
+    "rule_authority": "Pinned fastchess referee, including its initial base-plus-increment and unconditional timeout LOSE/WIN semantics; no post-hoc human-rule rescoring.",
+    "referee_read_margin_ms": 100
+  }
+}
