@@ -1,0 +1,380 @@
+{
+  "bootstrap_samples": 10000,
+  "bootstrap_seed": 2026110902,
+  "candidate": "test1757-pf-parent18cd",
+  "candidate_identity": {
+    "engine_sha256": "12a8e7bfdd9b1189b4350bd9ebef3501be1e89bd5fa41dcb56921f85ba23869a",
+    "name": "test1757-pf-parent18cd",
+    "network_sha256": "18cd32e11a9cac7c595bc6ebf1301088da8e1f2c7b31efda88dbc74c71f5d2cf"
+  },
+  "candidate_points": 63.5,
+  "chunk_audits": [
+    {
+      "candidate_points": 3.0,
+      "chunk_index": 0,
+      "source_audit_sha256": "67c4d26180da24755e6b3c1b6243d909f5cbaa6e6f6e21e69eba94a75f94ac0a",
+      "source_chunk_summary_sha256": "d73c5536b552a358f9c58001c1088bfc9b2916c15749135321d4f8f2b2693f36",
+      "start": 0,
+      "stop": 4,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 4,
+        "games": 8,
+        "losses": 3,
+        "wins": 1
+      }
+    },
+    {
+      "candidate_points": 4.5,
+      "chunk_index": 1,
+      "source_audit_sha256": "569c89b8265d6e5d1efce601eaba224ecc8f3e423580d34a35377ec56c9b708f",
+      "source_chunk_summary_sha256": "8b872eab75a1eab7ab9ae58791bdce579181b08e66ad904d1ad0f5862bf0ec2f",
+      "start": 4,
+      "stop": 8,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 5,
+        "games": 8,
+        "losses": 1,
+        "wins": 2
+      }
+    },
+    {
+      "candidate_points": 3.0,
+      "chunk_index": 2,
+      "source_audit_sha256": "ea111d41a202bbc0f89e30cb4f31823aa346cd09c236d2c6ab2b8073154dbd23",
+      "source_chunk_summary_sha256": "825e19807a23c26e3ec886094066703d8fc3ee557cdfb7a70412fb15902467ee",
+      "start": 8,
+      "stop": 12,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 4,
+        "games": 8,
+        "losses": 3,
+        "wins": 1
+      }
+    },
+    {
+      "candidate_points": 4.0,
+      "chunk_index": 3,
+      "source_audit_sha256": "898c48a7a21d690e286c9e357262d128a9683131742400afba7a04314c1b1216",
+      "source_chunk_summary_sha256": "e8504a5a2b539272ed00ea026c3985ee9e05ec206acdb0e912cacca85d1220d8",
+      "start": 12,
+      "stop": 16,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 4,
+        "games": 8,
+        "losses": 2,
+        "wins": 2
+      }
+    },
+    {
+      "candidate_points": 4.5,
+      "chunk_index": 4,
+      "source_audit_sha256": "06342d439d8980109f988cf92c3af45b500f160038dcb63bbd2991f533f15242",
+      "source_chunk_summary_sha256": "840eae157a64a0681129bfc8b31d0665756a71e81e5b1bac9c73aa5b688cd78f",
+      "start": 16,
+      "stop": 20,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 3,
+        "games": 8,
+        "losses": 2,
+        "wins": 3
+      }
+    },
+    {
+      "candidate_points": 4.0,
+      "chunk_index": 5,
+      "source_audit_sha256": "cb95169c1b00290cb1b51bc62f6d0f40c5b2b0de32967d0d02ab8f60ae560b94",
+      "source_chunk_summary_sha256": "2310278187f7a8366404778e510dd40b5087c204556881685e61a79703a8f17d",
+      "start": 20,
+      "stop": 24,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 6,
+        "games": 8,
+        "losses": 1,
+        "wins": 1
+      }
+    },
+    {
+      "candidate_points": 4.5,
+      "chunk_index": 6,
+      "source_audit_sha256": "8059f596632540f28175fbe6f7a6b8e122818cbefc6cb2611489d2de6436d4e9",
+      "source_chunk_summary_sha256": "81f949751463af0723c4cf6f4fb2bd104341962965e507425597567a2ce01f6d",
+      "start": 24,
+      "stop": 28,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 3,
+        "games": 8,
+        "losses": 2,
+        "wins": 3
+      }
+    },
+    {
+      "candidate_points": 4.5,
+      "chunk_index": 7,
+      "source_audit_sha256": "4f62e52312a3691ea49fa0ef8da456104e9d0889c876060cd593bb52626a540b",
+      "source_chunk_summary_sha256": "0f9a81d8306a45a05d6fcb6cd867872743eed2346c0a3501e7254ec13c2535c3",
+      "start": 28,
+      "stop": 32,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 3,
+        "games": 8,
+        "losses": 2,
+        "wins": 3
+      }
+    },
+    {
+      "candidate_points": 3.0,
+      "chunk_index": 8,
+      "source_audit_sha256": "64b7a36caf777b0efc89fbe5b1a76491b884f8b694a638d5e32c48e71091e9e0",
+      "source_chunk_summary_sha256": "652afff63efaf282acbb39736375a02de0b6e32c16614cccfd2926a0f3d10f81",
+      "start": 32,
+      "stop": 36,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 6,
+        "games": 8,
+        "losses": 2,
+        "wins": 0
+      }
+    },
+    {
+      "candidate_points": 4.0,
+      "chunk_index": 9,
+      "source_audit_sha256": "dcf78681887033597a1eaa368a6adae2b2b14a3b97702911d7de97269c8a9ec3",
+      "source_chunk_summary_sha256": "f6138100a2cc985a07b21478b7ea76a287a77adc58610a7b9ce85a6539af1082",
+      "start": 36,
+      "stop": 40,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 4,
+        "games": 8,
+        "losses": 2,
+        "wins": 2
+      }
+    },
+    {
+      "candidate_points": 2.5,
+      "chunk_index": 10,
+      "source_audit_sha256": "5c4a1c178df768db3ffae839ee9d0afe0fd2b280632704e76603523ddc4bc67f",
+      "source_chunk_summary_sha256": "46fb60cd991086e409e952fed12583bb654d2844bb1e269d542b30b949437ce8",
+      "start": 40,
+      "stop": 44,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 5,
+        "games": 8,
+        "losses": 3,
+        "wins": 0
+      }
+    },
+    {
+      "candidate_points": 4.0,
+      "chunk_index": 11,
+      "source_audit_sha256": "7cf668f521e4965d204ef947ddcb65b5df0634b5eebc79eb178f84798f1163cc",
+      "source_chunk_summary_sha256": "19a2157ff7fe973d5d0e4fa5ac8ec51766c19b3295b69ff01dce4e3acbf1da2c",
+      "start": 44,
+      "stop": 48,
+      "totals": {
+        "clock_forfeits": 1,
+        "draws": 2,
+        "games": 8,
+        "losses": 3,
+        "wins": 3
+      }
+    },
+    {
+      "candidate_points": 4.0,
+      "chunk_index": 12,
+      "source_audit_sha256": "6c61fd50b36994a72f348fa76a2aa00b2ce9a48b61df750da2684a0f551a07bd",
+      "source_chunk_summary_sha256": "86ae0fb0e479cc141489778de4003d7b5beb85fc618d754b2c47919bad55bd60",
+      "start": 48,
+      "stop": 52,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 2,
+        "games": 8,
+        "losses": 3,
+        "wins": 3
+      }
+    },
+    {
+      "candidate_points": 5.0,
+      "chunk_index": 13,
+      "source_audit_sha256": "bbc06505b2b8a8fe4be2057869f9adaf99b1bb58a9bb73462e47efe6ce3a2ede",
+      "source_chunk_summary_sha256": "ebd30190467e071772f8d062882d438b5f71b89c2454466b06906228dab79b33",
+      "start": 52,
+      "stop": 56,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 4,
+        "games": 8,
+        "losses": 1,
+        "wins": 3
+      }
+    },
+    {
+      "candidate_points": 4.0,
+      "chunk_index": 14,
+      "source_audit_sha256": "32fd65f0e89fa1e96cdb5ec8cae410463707066143547d604aa2cf761df6f125",
+      "source_chunk_summary_sha256": "bb1819a6c1e2c84ceb79d0f33e7cb43503d94e7cd69df378a86bc97a13c80749",
+      "start": 56,
+      "stop": 60,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 4,
+        "games": 8,
+        "losses": 2,
+        "wins": 2
+      }
+    },
+    {
+      "candidate_points": 5.0,
+      "chunk_index": 15,
+      "source_audit_sha256": "a798eda3e4dede457722594db414596eb6d54d12e7c15840f6042d749f30fa2d",
+      "source_chunk_summary_sha256": "264f2b7f20e1cd35630c47ffbdc8afc9f756dc2cea27ddb891dbd2557fbf6f2e",
+      "start": 60,
+      "stop": 64,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 6,
+        "games": 8,
+        "losses": 0,
+        "wins": 2
+      }
+    }
+  ],
+  "descriptive_logistic_elo": -2.7143957373168446,
+  "descriptive_paired_bootstrap_95_percent_interval": [
+    -32.66801858052781,
+    27.198831638044453
+  ],
+  "formal_alpha_reserved": false,
+  "games_file": "test1757-parent-screen/games-utc.pgn",
+  "games_file_sha256": "1acfc5b48a1c20aa43947fbde0ec0ea6c413f8bf76a7265dbe3d8e47c711de5d",
+  "matched_selection_file": "test1757-matched-network-selection.json",
+  "pair_index_file": "test1757-parent-screen/pair-index.json",
+  "pair_index_file_sha256": "7c6a9854c64f6b79d103b25e45fbf993c7e0f4f3b04990abc36783f8f03bea69",
+  "pair_scores": [
+    0.5,
+    0.25,
+    0.25,
+    0.5,
+    0.75,
+    0.25,
+    0.75,
+    0.5,
+    0.5,
+    0.25,
+    0.25,
+    0.5,
+    0.5,
+    0.5,
+    0.75,
+    0.25,
+    0.25,
+    0.75,
+    0.75,
+    0.5,
+    0.25,
+    0.5,
+    0.75,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.75,
+    0.25,
+    0.75,
+    0.5,
+    0.75,
+    0.25,
+    0.5,
+    0.5,
+    0.25,
+    0.25,
+    0.5,
+    0.75,
+    0.5,
+    0.5,
+    0.25,
+    0.25,
+    0.25,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.75,
+    0.5,
+    0.25,
+    0.5,
+    0.75,
+    0.75,
+    0.5,
+    0.75,
+    0.25,
+    0.75,
+    0.25,
+    0.75,
+    0.5,
+    0.5,
+    0.75
+  ],
+  "pairs": 64,
+  "publication_transform": "Only Date/GameStartTime/GameEndTime metadata converted to UTC; all other bytes, moves/results/clock comments preserved.",
+  "reference": "dev-261106",
+  "reference_identity": {
+    "engine_sha256": "b67c37d0d45e3540e311392aeeb699e3a745f16e172bc3fc6f85e0782093842b",
+    "name": "dev-261106",
+    "network_sha256": "d1ee674a62ca754648fb8c2907ff4e92f0c3acff28f59afa0f5bd4e3949538f1"
+  },
+  "reference_points": 64.5,
+  "retained_clock_losses": [
+    {
+      "candidate_color": "Black",
+      "game_result_policy_id": "fastchess-182-clock-forfeit-v1",
+      "included_without_replay": true,
+      "overrun_ms": 10,
+      "pair_index": 45,
+      "result": "1-0",
+      "source_pair_result_sha256": "1e246158c4b5301a94714981b9aa99aac0398dd427b62c47ccd2473767fb6b77",
+      "termination": "time forfeit"
+    }
+  ],
+  "schedule_sha256": "44323a93ebc5a3dc7ffcad11556c7625aeb0930ce6910e999a0c0fa4cfa49ee4",
+  "schema": "test1757-public-parent-screen-result-v1",
+  "settings": {
+    "concurrency": 2,
+    "depth_limit": null,
+    "engine_move_overhead_ms": 10,
+    "evaluation_adjudication": false,
+    "fresh_engines_per_pair": true,
+    "hash_mb_per_engine": 64,
+    "nodes_per_move": null,
+    "ponder": false,
+    "referee_time_margin_ms": 0,
+    "strength_limit": false,
+    "tablebases": false,
+    "threads_per_engine": 1,
+    "time_control": "10+0.1"
+  },
+  "source_final_result_sha256": "ab96b00807bd9fb74db198fd11661cbcafefea9ed81a0d1c058158df5b6c8c47",
+  "source_plan_sha256": "d06d1345ab96236f327726b11eeceb9d4f396e55a10bb20cbca63efa08dedf22",
+  "status": "complete_audited_development_screen",
+  "totals": {
+    "clock_forfeits": 1,
+    "draws": 65,
+    "games": 128,
+    "losses": 32,
+    "wins": 31
+  },
+  "uncertainty_scope": "Descriptive empirical paired bootstrap on exposed development data, not formal evidence.",
+  "verified_gain": false
+}

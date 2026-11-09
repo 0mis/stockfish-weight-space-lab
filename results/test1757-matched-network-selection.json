@@ -1,0 +1,53 @@
+{
+  "comparison_plan": {
+    "file": "test1757-network-comparison-plan.json",
+    "sha256": "823c32225be1d717964dc30a3b65fe13a71645776ce3c157d7e9df66da52343e"
+  },
+  "does_not_establish_manual_edit_harm_or_any_elo_gain": true,
+  "edited_points": 62.0,
+  "edited_totals": {
+    "clock_forfeits": 0,
+    "draws": 60,
+    "games": 128,
+    "losses": 36,
+    "wins": 32
+  },
+  "games_each": 128,
+  "new_confirmation_reserved": false,
+  "parent_points": 63.5,
+  "parent_totals": {
+    "clock_forfeits": 1,
+    "draws": 65,
+    "games": 128,
+    "losses": 32,
+    "wins": 31
+  },
+  "rule": "Higher complete same-schedule points; exact tie favors edited034f.",
+  "same_occurrences_and_executable": true,
+  "schedule_sha256": "44323a93ebc5a3dc7ffcad11556c7625aeb0930ce6910e999a0c0fa4cfa49ee4",
+  "schema": "test1757-public-matched-selection-v1",
+  "selected_engine_sha256": "12a8e7bfdd9b1189b4350bd9ebef3501be1e89bd5fa41dcb56921f85ba23869a",
+  "selected_name": "test1757-pf-parent18cd",
+  "selected_network_sha256": "18cd32e11a9cac7c595bc6ebf1301088da8e1f2c7b31efda88dbc74c71f5d2cf",
+  "selection_margin_points": 1.5,
+  "settings": {
+    "concurrency": 2,
+    "depth_limit": null,
+    "engine_move_overhead_ms": 10,
+    "evaluation_adjudication": false,
+    "fresh_engines_per_pair": true,
+    "hash_mb_per_engine": 64,
+    "nodes_per_move": null,
+    "ponder": false,
+    "referee_time_margin_ms": 0,
+    "strength_limit": false,
+    "tablebases": false,
+    "threads_per_engine": 1,
+    "time_control": "10+0.1"
+  },
+  "source_edited_result_sha256": "a4f0c14da1cd1b6b60f52591f8c1d611b8dd13de868037d0485ab4f5eb896beb",
+  "source_matched_selection_sha256": "c9f266daba58f3d754ee159f734eebb5383c64480078ec41f973f8d9a730f641",
+  "source_parent_result_sha256": "ab96b00807bd9fb74db198fd11661cbcafefea9ed81a0d1c058158df5b6c8c47",
+  "status": "exploratory_selection_only",
+  "verified_gain": false
+}
