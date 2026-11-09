@@ -29,25 +29,25 @@
       "wins": 0
     },
     {
-      "anytime_lower_logistic_elo": -206.82775859334464,
-      "candidate_points": 17.5,
-      "draws": 19,
+      "anytime_lower_logistic_elo": -198.6701689873743,
+      "candidate_points": 18.5,
+      "draws": 21,
       "estimate_boundary": null,
-      "games": 40,
+      "games": 42,
       "log_e_value": -0.3097837058120141,
       "log_gain_threshold": 8.294049640102028,
-      "logistic_elo_estimate": -43.65778777002721,
+      "logistic_elo_estimate": -41.558453547489,
       "losses": 13,
       "lower_bound_boundary": null,
       "maximum_pairs": 8192,
       "minimum_pairs": 128,
       "minimum_pairs_reached": false,
       "one_sided_confidence_percent": 99.97500000000001,
-      "pairs": 20,
+      "pairs": 21,
       "reference": "spcc-261025",
-      "reference_points": 22.5,
+      "reference_points": 23.5,
       "role": "strongest_rated",
-      "score_fraction": 0.4375,
+      "score_fraction": 0.44047619047619047,
       "statistical_decision": "continue",
       "wins": 8
     }
@@ -163,33 +163,33 @@
       "reported_elo": {
         "availability": "current",
         "confidence_interval": [
-          -2.1524285105297123,
-          1.0130760333296585
+          -2.232863034907935,
+          0.9289151821431132
         ],
         "confidence_percent": 95,
-        "estimate": -0.5697943097052641,
+        "estimate": -0.6521804434385119,
         "estimate_scale": "logistic",
         "label": "Fishtest logistic Elo and nominal 95% CI",
         "model": "normalized",
         "model_scope": "SPRT"
       },
       "results": {
-        "candidate_points": 22491.0,
+        "candidate_points": 22549.5,
         "crashes": 0,
-        "draws": 22122,
-        "games": 45056,
-        "losses": 11504,
-        "pairs": 22528,
+        "draws": 22191,
+        "games": 45184,
+        "losses": 11539,
+        "pairs": 22592,
         "pentanomial": [
           62,
-          5284,
-          11896,
-          5238,
-          48
+          5305,
+          11930,
+          5246,
+          49
         ],
-        "reference_points": 22565.0,
+        "reference_points": 22634.5,
         "time_losses": 0,
-        "wins": 11430
+        "wins": 11454
       },
       "sprt": {
         "alpha": 0.05,
@@ -197,7 +197,7 @@
         "elo0": 0.0,
         "elo1": 2.0,
         "elo_model": "normalized",
-        "llr": -1.610102309498589,
+        "llr": -1.7405174573770856,
         "lower_bound": -2.9444389791664403,
         "state": "",
         "upper_bound": 2.9444389791664403
@@ -210,8 +210,8 @@
   "integrity_audit": "independent_terminal_audit_pending",
   "interpretation": "Provisional estimates. Statistical gain requires both reference gates and an independent terminal integrity audit before verified-gain wording. A statistical continue decision does not report sampler liveness.",
   "ledger_prefix": {
-    "event_index": 398,
-    "head_sha256": "2472d907ed4cd5e76f8b9c046c877a7c7be4628bced34d48832cfc165cf550f7"
+    "event_index": 399,
+    "head_sha256": "e6997c283839152240b09195330d95ceadca9e5c9ed2b9a0e663e5ad3f9ab8c0"
   },
   "protocol": {
     "confidence_interpretation": "Fixed protocol coverage under its assumptions, not a probability of superiority.",
