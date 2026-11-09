@@ -34,7 +34,7 @@ Official state: **approved_open**; approved: **yes**; finished: **no**. A stale 
 
 | W / D / L | Points | Games (pairs) | Fishtest logistic Elo | Fishtest nominal 95% CI | Elo availability | SPRT state | LLR |
 | ---: | ---: | ---: | ---: | --- | --- | --- | ---: |
-| 12312 / 23884 / 12380 | 24254–24322 | 48576 (24288) | -0.49 | [-2.01, +1.04] | `current` | `undecided` | -1.598408 |
+| 12320 / 23897 / 12391 | 24268.5–24339.5 | 48608 (24304) | -0.51 | [-2.03, +1.02] | `current` | `undecided` | -1.633838 |
 
 Fishtest's normalized SPRT uses **[0, 2]**, **α = β = 0.05**, and LLR bounds **[−2.944439, +2.944439]**. Fishtest's nominal 95% CI is an SPRT/Brownian approximation, distinct from the local anytime lower bound. Official purges can lower the reported counts; this feed follows those counts. A finished run without an SPRT decision remains stopped/inconclusive. No farm decision automatically establishes an overall verified gain.
 
@@ -75,6 +75,22 @@ Official state: **stopped_without_sprt_decision**; approved: **no**; finished: *
 | 0 / 0 / 0 | 0–0 | 0 (0) | unavailable | unavailable | `no_games` | `undecided` | 0.000000 |
 
 Fishtest's normalized SPRT uses **[0, 2]**, **α = β = 0.05**, and LLR bounds **[−2.944439, +2.944439]**. Fishtest's nominal 95% CI is an SPRT/Brownian approximation, distinct from the local anytime lower bound. Official purges can lower the reported counts; this feed follows those counts. A finished run without an SPRT decision remains stopped/inconclusive. No farm decision automatically establishes an overall verified gain.
+
+### Public Fishtest current-master NNUE-only test
+
+[Official run `6af2455c8e7fb2e78bc1cc30`](https://tests.stockfishchess.org/tests/view/6af2455c8e7fb2e78bc1cc30) · `10+0.1 / T1 / H16` · API **current**
+
+The d5 NNUE edit faces the original 18cd network on the SFNNv20 official-master snapshot at submission. This comparison is separate from local trial-0004, the historical D1 run, the earlier source/network run, and the donor-parent run. Its Elo and SPRT apply only to this comparison. Candidate bench: `2376690`; reference bench: `3464885`. Candidate `64b0b7a2a78e44f1eade4bb441f8819abbfac6d2` uses `nn-d5c257728ba5.nnue`; reference `43e01e07210948e1130dc687c065d7a3742b2793` uses `nn-18cd32e11a9c.nnue`.
+
+Official state: **approved_open**; approved: **yes**; finished: **no**. A stale API label means these are the last validated official aggregates.
+
+| W / D / L | Points | Games (pairs) | Fishtest logistic Elo | Fishtest nominal 95% CI | Elo availability | SPRT state | LLR |
+| ---: | ---: | ---: | ---: | --- | --- | --- | ---: |
+| 35 / 59 / 34 | 64.5–63.5 | 128 (64) | +2.71 | [-25.98, +31.44] | `current` | `undecided` | 0.009972 |
+
+Fishtest's normalized SPRT uses **[0, 2]**, **α = β = 0.05**, and LLR bounds **[−2.944439, +2.944439]**. Fishtest's nominal 95% CI is an SPRT/Brownian approximation, distinct from the local anytime lower bound. Official purges can lower the reported counts; this feed follows those counts. A finished run without an SPRT decision remains stopped/inconclusive. No farm decision automatically establishes an overall verified gain.
+
+Candidate network: `nn-d5c257728ba5.nnue`; reference: `nn-18cd32e11a9c.nnue`. Source revisions: `64b0b7a2a78e44f1eade4bb441f8819abbfac6d2` / `43e01e07210948e1130dc687c065d7a3742b2793`.
 <!-- live-status:end -->
 
 Local trial 4 tests the released build, which combines nine output-bias edits to Shawn Xu’s test1757 network with accumulator prefetch and a search-history change. Both engines use one thread, 64 MiB of hash and 60 seconds per side plus 0.6 seconds per move. The first opponent is Stockfish 261025, the SPCC VLTC leader. If that comparison crosses its positive boundary, the second opponent is the official November 6 development revision `7cdd5e89` fixed before play. A verified gain requires both comparisons and an independent game and provenance audit. [Tested source and author credits](https://github.com/0mis/Stockfish/tree/cecfcfd5480afd16b31740b24387f5779d24c0db) · [SPCC ratings](https://www.sp-cc.de/) · [Official reference](https://github.com/official-stockfish/Stockfish/commit/7cdd5e89a39fe3071b67d91c7bb07d712044bf76)
