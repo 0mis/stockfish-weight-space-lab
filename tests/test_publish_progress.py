@@ -2,6 +2,7 @@
 
 from pathlib import Path
 import copy
+import io
 import json
 import subprocess
 import sys
@@ -115,6 +116,48 @@ class ProgressTests(unittest.TestCase):
         self.assertEqual(combined["comparisons"], self.snapshot["comparisons"])
         self.assertFalse(combined["completion_verified"])
         self.assertFalse(combined["statistical_pass"])
+
+    def test_third_donor_run_preserves_both_prior_runs_and_formal_snapshot(self):
+        old_run = FishtestTests.run_fixture()
+        old_run["elo"] = {"elo": -1.5, "ci": [-3, 1]}
+        source_run = SourceFishtestTests.source_fixture()
+        source_run["elo"] = {"elo": 2.0, "ci": [-2, 6]}
+        old = progress.FishtestObserver(progress.FISHTEST_RUN_ID, fetch=Mock(return_value=old_run), clock=lambda: 0)
+        source = progress.FishtestObserver(progress.SOURCE_FISHTEST_RUN_ID, fetch=Mock(return_value=source_run), clock=lambda: 0)
+        before = progress.build_snapshot(self.root, fishtest=old, source_fishtest=source)
+        donor = progress.FishtestObserver(progress.DONOR_FISHTEST_RUN_ID,
+                                         fetch=Mock(return_value=DonorFishtestTests.donor_fixture()), clock=lambda: 0)
+        combined = progress.build_snapshot(self.root, fishtest=old, source_fishtest=source, donor_fishtest=donor)
+        self.assertEqual({key: combined[key] for key in before}, before)
+        self.assertEqual({key: combined[key] for key in self.snapshot}, self.snapshot)
+        self.assertEqual(set(combined) - set(before), {"donor_fishtest"})
+        rendered = progress.marker_block(combined)
+        prefix, donor_section = rendered.split("### Public Fishtest NNUE edit vs donor parent")
+        self.assertEqual(prefix.rstrip(), progress.marker_block(before).removesuffix(progress.END.decode()).rstrip())
+        for value in ("donor parent", "not an official-Stockfish comparison", "2376690", "3464885",
+                      "nn-d5c257728ba5.nnue", "nn-18cd32e11a9c.nnue", "Elo and its interval are pending"):
+            self.assertIn(value, donor_section)
+        for other_run in (progress.FISHTEST_RUN_ID, progress.SOURCE_FISHTEST_RUN_ID):
+            self.assertNotIn(other_run, donor_section)
+        self.assertNotIn("donor_fishtest", progress.build_snapshot(self.root, fishtest=old, source_fishtest=source))
+        with self.assertRaises(progress.ProgressError):
+            progress.build_snapshot(self.root, donor_fishtest=source)
+        with self.assertRaises(progress.ProgressError):
+            progress.build_snapshot(self.root, fishtest=donor)
+        with self.assertRaises(progress.ProgressError):
+            progress.marker_block({**combined, "donor_fishtest": combined["source_fishtest"]})
+
+    def test_donor_sprt_decision_does_not_alter_local_formal_status(self):
+        run = DonorFishtestTests.donor_fixture(8)
+        run.update(finished=True, approved=True)
+        run["args"]["sprt"].update(state="accepted", llr=3.1)
+        run["elo"] = {"elo": 1.5, "ci": [-1, 4]}
+        donor = progress.FishtestObserver(progress.DONOR_FISHTEST_RUN_ID, fetch=Mock(return_value=run), clock=lambda: 0)
+        snapshot = progress.build_snapshot(self.root, donor_fishtest=donor)
+        self.assertEqual(snapshot["donor_fishtest"]["observation"]["status"], "sprt_accepted")
+        self.assertEqual({key: snapshot[key] for key in self.snapshot}, self.snapshot)
+        self.assertFalse(snapshot["completion_verified"])
+        self.assertFalse(snapshot["statistical_pass"])
 
     def test_missing_data_and_checkpoint_rollback_refuse(self):
         (self.root / progress.TRIAL_DIRECTORY / "reservation.json").unlink()
@@ -354,7 +397,8 @@ class SourceFishtestTests(unittest.TestCase):
 
     def test_pins_and_redirect_target_allowlist(self):
         self.assertEqual(progress.SOURCE_FISHTEST_RUN_ID, "6af16e648e7fb2e78bc1cb09")
-        self.assertEqual(set(progress.FISHTEST_CONFIGS), {progress.FISHTEST_RUN_ID, progress.SOURCE_FISHTEST_RUN_ID})
+        self.assertEqual(set(progress.FISHTEST_CONFIGS), {progress.FISHTEST_RUN_ID, progress.SOURCE_FISHTEST_RUN_ID,
+                                                        progress.DONOR_FISHTEST_RUN_ID})
         self.assertEqual(progress.SOURCE_FISHTEST_ARGS["resolved_new"], "de342a301195b34b7da76374fe3fadf29352de8d")
         self.assertEqual(progress.SOURCE_FISHTEST_ARGS["resolved_base"], "7cdd5e89a39fe3071b67d91c7bb07d712044bf76")
         self.assertEqual(progress.SOURCE_FISHTEST_ARGS["base_nets"], ["nn-d1ee674a62ca.nnue"])
@@ -424,6 +468,145 @@ class SourceFishtestTests(unittest.TestCase):
             self.assertNotIn("private fixture", progress.json_bytes(checked).decode())
             cache["configuration"]["threads"] = True
             self.assertIsNone(restored(run_id, cache)["observation"])
+
+
+class DonorFishtestTests(unittest.TestCase):
+    @staticmethod
+    def donor_fixture(games=0):
+        run = FishtestTests.run_fixture(games)
+        run["_id"] = progress.DONOR_FISHTEST_RUN_ID
+        run["approved"] = games > 0
+        run["args"].update(copy.deepcopy(progress.DONOR_FISHTEST_ARGS))
+        return run
+
+    def test_donor_pins_owner_source_nets_signatures_and_protocol(self):
+        self.assertEqual(progress.DONOR_FISHTEST_RUN_ID, "6af19afb8e7fb2e78bc1cb30")
+        self.assertEqual(progress.DONOR_FISHTEST_ARGS["resolved_new"], "d7155994d192b4e723866360ae9285b42e122790")
+        self.assertEqual(progress.DONOR_FISHTEST_ARGS["resolved_base"], progress.SOURCE_FISHTEST_ARGS["resolved_new"])
+        self.assertEqual(progress.DONOR_FISHTEST_ARGS["new_signature"], "2376690")
+        self.assertEqual(progress.DONOR_FISHTEST_ARGS["base_signature"], "3464885")
+        self.assertEqual(progress.DONOR_FISHTEST_ARGS["username"], "0mis")
+        for key, bad in (("resolved_new", progress.SOURCE_FISHTEST_ARGS["resolved_new"]),
+                         ("resolved_base", progress.SOURCE_FISHTEST_ARGS["resolved_base"]),
+                         ("new_nets", ["nn-18cd32e11a9c.nnue"]), ("base_nets", ["nn-d1ee674a62ca.nnue"]),
+                         ("new_signature", "3230034"), ("base_signature", "1556650"),
+                         ("username", "another-user"), ("username", True), ("threads", True),
+                         ("book_depth", 8), ("num_games", 8), ("new_options", "Hash=64"),
+                         ("new_net", "nn-fcbaf7d2197c.nnue"), ("tests_repo", "https://example.invalid/Stockfish")):
+            changed = self.donor_fixture()
+            changed["args"][key] = bad
+            with self.subTest(key=key), self.assertRaises(progress.ProgressError):
+                progress.farm_observation(changed, progress.DONOR_FISHTEST_RUN_ID)
+        with patch.object(progress.urllib.request, "build_opener") as http:
+            for endpoint, run_id in (("submit", progress.DONOR_FISHTEST_RUN_ID), ("get_run", "0" * 24)):
+                with self.assertRaises(progress.ProgressError):
+                    progress.fetch_fishtest_json(endpoint, run_id)
+            http.assert_not_called()
+
+    def test_real_zero_shape_has_no_estimate_and_no_elo_fetch(self):
+        for approved, finished, expected in ((False, False, "pending_approval"), (True, False, "approved_open"),
+                                              (True, True, "stopped_without_sprt_decision")):
+            run = self.donor_fixture()
+            run.update(approved=approved, finished=finished)
+            fetch = Mock(return_value=run)
+            farm = progress.FishtestObserver(progress.DONOR_FISHTEST_RUN_ID, fetch=fetch, clock=lambda: 0).observe()
+            observation = farm["observation"]
+            self.assertEqual(observation["status"], expected)
+            self.assertEqual(observation["results"]["games"], 0)
+            self.assertEqual(observation["reported_elo"], progress.null_farm_elo("no_games"))
+            self.assertEqual(farm["comparison_scope"], "donor_parent_only")
+            self.assertIn("Elo and its interval are pending", "\n".join(progress.farm_marker(farm)))
+            fetch.assert_called_once_with("get_run", progress.DONOR_FISHTEST_RUN_ID)
+            encoded = progress.json_bytes(farm).decode()
+            for private in ("C:\\", "private fixture", "worker_info", '"tasks"', '"info"'):
+                self.assertNotIn(private, encoded)
+
+    def test_foreign_or_mismatched_prefix_cannot_supply_donor_elo(self):
+        run = self.donor_fixture(8)
+        for other in (FishtestTests.run_fixture(), SourceFishtestTests.source_fixture(), self.donor_fixture(2)):
+            fetch = Mock(side_effect=[run, {**other, "elo": {"elo": 99, "ci": [90, 100]}}])
+            farm = progress.FishtestObserver(progress.DONOR_FISHTEST_RUN_ID, fetch=fetch, clock=lambda: 0).observe()
+            self.assertEqual(farm["availability"], "current")
+            self.assertEqual(farm["observation"]["results"]["games"], 8)
+            self.assertIsNone(farm["observation"]["reported_elo"]["estimate"])
+        bad = self.donor_fixture(8)
+        bad["results"]["wins"] = -1
+        farm = progress.FishtestObserver(progress.DONOR_FISHTEST_RUN_ID, fetch=Mock(return_value=bad), clock=lambda: 0).observe()
+        self.assertIsNone(farm["observation"])
+
+    def test_three_caches_are_isolated_throttled_and_restore_only_own_results(self):
+        runs = {progress.FISHTEST_RUN_ID: FishtestTests.run_fixture(),
+                progress.SOURCE_FISHTEST_RUN_ID: SourceFishtestTests.source_fixture(),
+                progress.DONOR_FISHTEST_RUN_ID: self.donor_fixture(8)}
+        estimates = dict(zip(runs, (-3.0, 7.0, 1.5)))
+        now = 0
+        def fetch(endpoint, run_id):
+            return {**copy.deepcopy(runs[run_id]), "elo": {"elo": estimates[run_id], "ci": [-5, 10]}}
+        calls = Mock(side_effect=fetch)
+        observers = {key: progress.FishtestObserver(key, fetch=calls, clock=lambda: now) for key in runs}
+        saved = {}
+        for when, key in zip((0, 30, 45), runs):
+            now = when
+            saved[key] = observers[key].observe()
+        self.assertEqual(calls.call_count, 6)
+        now = 59
+        for key in runs:
+            self.assertEqual(observers[key].observe(), saved[key])
+        self.assertEqual(calls.call_count, 6)
+        now = 60
+        observers[progress.FISHTEST_RUN_ID].observe()
+        self.assertEqual(calls.call_count, 8)
+        self.assertEqual(observers[progress.SOURCE_FISHTEST_RUN_ID].observe(), saved[progress.SOURCE_FISHTEST_RUN_ID])
+        self.assertEqual(observers[progress.DONOR_FISHTEST_RUN_ID].observe(), saved[progress.DONOR_FISHTEST_RUN_ID])
+        for key, own in saved.items():
+            for foreign_key, foreign in saved.items():
+                restored = progress.FishtestObserver(key, foreign, fetch=Mock(side_effect=OSError), clock=lambda: 0).observe()
+                if foreign_key != key:
+                    self.assertIsNone(restored["observation"])
+                else:
+                    self.assertEqual(restored["observation"]["reported_elo"]["estimate"], estimates[key])
+        cache = copy.deepcopy(saved[progress.DONOR_FISHTEST_RUN_ID])
+        cache["observation"]["private_path"] = "C:\\private\\fixture"
+        restored = progress.FishtestObserver(progress.DONOR_FISHTEST_RUN_ID, cache,
+                                             fetch=Mock(side_effect=OSError), clock=lambda: 0).observe()
+        self.assertNotIn("private_path", progress.json_bytes(restored).decode())
+        cache["configuration"]["username"] = "another-user"
+        rejected = progress.FishtestObserver(progress.DONOR_FISHTEST_RUN_ID, cache,
+                                             fetch=Mock(side_effect=OSError), clock=lambda: 0).observe()
+        self.assertIsNone(rejected["observation"])
+
+    def test_donor_purge_to_zero_clears_prior_estimate(self):
+        now = 0
+        current = self.donor_fixture(8)
+        def fetch(endpoint, run_id):
+            return {**copy.deepcopy(current), "elo": {"elo": 2.0, "ci": [-1, 5]}}
+        calls = Mock(side_effect=fetch)
+        observer = progress.FishtestObserver(progress.DONOR_FISHTEST_RUN_ID, fetch=calls, clock=lambda: now)
+        self.assertEqual(observer.observe()["observation"]["reported_elo"]["estimate"], 2.0)
+        now = 60
+        current = self.donor_fixture(0)
+        self.assertEqual(observer.observe()["observation"]["reported_elo"], progress.null_farm_elo("no_games"))
+        self.assertEqual(calls.call_count, 3)
+
+    def test_donor_cli_is_explicit_and_reuses_only_its_saved_slot(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            prior = {"donor_fishtest": {"run_id": progress.DONOR_FISHTEST_RUN_ID}}
+            stdout = io.TextIOWrapper(io.BytesIO(), encoding="utf-8")
+            observer = object()
+            with patch.object(progress, "previous_snapshot", return_value=prior), \
+                    patch.object(progress, "FishtestObserver", return_value=observer) as constructor, \
+                    patch.object(progress, "build_snapshot", return_value={"fixture": True}) as build, \
+                    patch.object(progress, "sys", SimpleNamespace(stdout=stdout)), \
+                    patch.object(progress, "git") as git:
+                code = progress.main(["--publication-repo", str(root), "--stdout", "--donor-fishtest-run-id", progress.DONOR_FISHTEST_RUN_ID])
+                self.assertEqual(code, 0)
+                constructor.assert_called_once_with(progress.DONOR_FISHTEST_RUN_ID, prior["donor_fishtest"])
+                self.assertIs(build.call_args.kwargs["donor_fishtest"], observer)
+                self.assertIsNone(build.call_args.kwargs["fishtest"])
+                self.assertIsNone(build.call_args.kwargs["source_fishtest"])
+                git.assert_not_called()
+                self.assertEqual(json.loads(stdout.buffer.getvalue()), {"fixture": True})
 
 
 if __name__ == "__main__":
