@@ -1,0 +1,98 @@
+{
+  "schema": "test1757-public-history-floor-screen-plan-v1",
+  "screen_plan_frozen_utc": "2026-11-09T07:14:47.850434+00:00",
+  "plan_sha256": "8258c9b83c180fa992688e04ce5ee231d56906026ea49f3e06dd3f1965d5aa35",
+  "question": "Does the published lower bound on the best-move history bonus improve the selected test1757 prefetch engine with its original network at real short clocks?",
+  "scope": "Prospective local development screen on retired openings.",
+  "candidate": {
+    "name": "test1757 history floor with prefetch",
+    "source_commit": "d19047cc44fae773a590be3b0b9f08fdd75acdc7",
+    "source_tree": "6c3cd141dcc3cac20b84469b729fbbd1141c0d60",
+    "source_url": "https://github.com/0mis/Stockfish/commit/d19047cc44fae773a590be3b0b9f08fdd75acdc7",
+    "windows_bmi2_executable_sha256": "ae1d4772a71529085b26d7460e76fcf65dbe09782e55ea67ecef2e4f033c5ba5",
+    "executable_bytes": 142322184,
+    "accepted_ci": {
+      "run_url": "https://github.com/0mis/Stockfish/actions/runs/42579129686",
+      "artifact_id": 13656641851,
+      "archive_sha256": "4bc2d828a1f94f8e9e96f2b985d5470fbb98048ba0af6db86ed5c992156e80cc",
+      "driver_commit": "0b36bc418a68c8e280dcc8db08fc3e2226d61ab2",
+      "bench_nodes": 3230034,
+      "start_position_perft4_nodes": 197281
+    }
+  },
+  "baseline": {
+    "name": "test1757 prefetch",
+    "source_commit": "7a17b53bcaf93f54a23ad65f309c413585500c82",
+    "source_tree": "8e3164caf60d281cb4b1d00a699364e04b354451",
+    "source_url": "https://github.com/0mis/Stockfish/commit/7a17b53bcaf93f54a23ad65f309c413585500c82",
+    "windows_bmi2_executable_sha256": "12a8e7bfdd9b1189b4350bd9ebef3501be1e89bd5fa41dcb56921f85ba23869a",
+    "executable_bytes": 142322823,
+    "accepted_ci": {
+      "run_url": "https://github.com/0mis/Stockfish/actions/runs/42543250921",
+      "artifact_id": 13642730885,
+      "archive_sha256": "7539c83ab50befc6f7e71bf55f35c248809d2c1cb6fa4109fa9c19d44e69d205",
+      "driver_commit": "49672d7b3c2b0cb544f4bf7cc70515249fe047e3"
+    }
+  },
+  "shared_network": {
+    "filename": "nn-18cd32e11a9c.nnue",
+    "sha256": "18cd32e11a9cac7c595bc6ebf1301088da8e1f2c7b31efda88dbc74c71f5d2cf"
+  },
+  "referee": {
+    "name": "fastchess",
+    "sha256": "c6d7e4458a58025983c81bf38c524cb213e6f27559657dcfd72543392a431a71"
+  },
+  "sampling": {
+    "pool": "retired development",
+    "pool_positions": 512,
+    "pool_sha256": "3c8f7bca49ff33fbc5219936efed9a0d5eccf12c7618722de05d178becf45666",
+    "both_colors_each_draw": true,
+    "fixed_all_pairs_before_selection": true,
+    "games": 128,
+    "method": "iid_with_replacement",
+    "pairs": 64,
+    "schedule_sha256": "2e9ec5b566cad68da9db134353a784c88e2013efc7f7bd49c06d94e5715990ee",
+    "seed": 2026110904,
+    "unique_draws": 62
+  },
+  "settings": {
+    "concurrency": 2,
+    "depth_limit": null,
+    "engine_move_overhead_ms": 10,
+    "evaluation_adjudication": false,
+    "fresh_engines_per_pair": true,
+    "hash_mb_per_engine": 64,
+    "nodes_per_move": null,
+    "ponder": false,
+    "referee_time_margin_ms": 0,
+    "strength_limit": false,
+    "tablebases": false,
+    "threads_per_engine": 1,
+    "time_control": "10+0.1"
+  },
+  "selection": "After 64 audited color-reversed pairs, select the history-floor source for further testing only if it scores strictly more than 64 points in 128 games. A tie or lower score retains prefetch.",
+  "validity": "Retain all complete pairs, clock forfeits and failures. Require all 64 pairs and an independent raw audit. The schedule and game count are fixed in advance.",
+  "credits": {
+    "base": "Stockfish developers and contributors",
+    "license": "GPL-3.0-or-later",
+    "history_floor": {
+      "credit": "locutus2 (Fishtest sg)",
+      "revision": "86f24bc9f68d603932934b4e5ae6d9e79f110a0a",
+      "source_url": "https://github.com/locutus2/Stockfish/commit/86f24bc9f68d603932934b4e5ae6d9e79f110a0a"
+    },
+    "prefetch": {
+      "credit": "SanityEclipse000 (MxTriX77)",
+      "revision": "5b559f0b7e37822d04dffe9e559d8a716705ccf5",
+      "source_url": "https://github.com/official-stockfish/Stockfish/pull/7294"
+    },
+    "test1757": {
+      "credit": "xu-shawn",
+      "revision": "d5a2bda7f028430f79e1789d47ae3228defb843b"
+    }
+  },
+  "upstream_context": {
+    "note": "The upstream search tests used the D1 network. This comparison uses the original test1757 network on both sides.",
+    "earlier_short_clock_test": "https://tests.stockfishchess.org/tests/view/6ae9fa1b20cd2dc3f03d1a29",
+    "exact_revision_long_clock_test": "https://tests.stockfishchess.org/tests/view/6af082a362f6cb91130d20a6"
+  }
+}
