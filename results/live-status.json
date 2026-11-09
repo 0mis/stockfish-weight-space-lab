@@ -29,27 +29,27 @@
       "wins": 0
     },
     {
-      "anytime_lower_logistic_elo": -80.37177846865106,
-      "candidate_points": 53.5,
+      "anytime_lower_logistic_elo": -79.02556960173196,
+      "candidate_points": 54.5,
       "draws": 51,
       "estimate_boundary": null,
-      "games": 106,
+      "games": 108,
       "log_e_value": -0.1300721934357596,
       "log_gain_threshold": 8.294049640102028,
-      "logistic_elo_estimate": 3.2777914461086537,
-      "losses": 27,
+      "logistic_elo_estimate": 3.217088102165598,
+      "losses": 28,
       "lower_bound_boundary": null,
       "maximum_pairs": 8192,
       "minimum_pairs": 128,
       "minimum_pairs_reached": false,
       "one_sided_confidence_percent": 99.97500000000001,
-      "pairs": 53,
+      "pairs": 54,
       "reference": "spcc-261025",
-      "reference_points": 52.5,
+      "reference_points": 53.5,
       "role": "strongest_rated",
-      "score_fraction": 0.5047169811320755,
+      "score_fraction": 0.5046296296296297,
       "statistical_decision": "continue",
-      "wins": 28
+      "wins": 29
     }
   ],
   "completion_verified": false,
@@ -292,8 +292,8 @@
   "integrity_audit": "independent_terminal_audit_pending",
   "interpretation": "Provisional estimates. Statistical gain requires both reference gates and an independent terminal integrity audit before verified-gain wording. A statistical continue decision does not report sampler liveness.",
   "ledger_prefix": {
-    "event_index": 431,
-    "head_sha256": "7f72fc62d816d84c705f9f369196086021126da5fc12914f51e93d59e676c1f3"
+    "event_index": 432,
+    "head_sha256": "90d3db9a2cd0b0943381a20071439512777644e2c437a48c2c0226245dc20cb5"
   },
   "protocol": {
     "confidence_interpretation": "Fixed protocol coverage under its assumptions, not a probability of superiority.",
