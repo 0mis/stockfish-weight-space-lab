@@ -136,8 +136,10 @@ def result_key(observation: dict) -> tuple:
 
 
 def null_farm_elo(availability: str) -> dict:
+    # Normalized hypotheses do not change the API estimate/interval's Elo scale.
     return {"availability": availability, "model": "normalized", "model_scope": "SPRT",
-            "estimate": None, "confidence_interval": None, "label": "Fishtest-reported Elo and CI"}
+            "estimate_scale": "logistic", "confidence_percent": 95,
+            "estimate": None, "confidence_interval": None, "label": "Fishtest logistic Elo and nominal 95% CI"}
 
 
 def reported_farm_elo(estimate: object, interval: object) -> dict:
@@ -365,12 +367,13 @@ def farm_marker(farm: dict) -> list[str]:
     lines += ["", f"Official state: **{observation['status']}**; approved: **{'yes' if observation['approved'] else 'no'}**; "
               f"finished: **{'yes' if observation['finished'] else 'no'}**. "
               "A stale API label means these are the last validated official aggregates.", "",
-              "| W / D / L | Points | Games (pairs) | Fishtest-reported Elo | Fishtest-reported CI | Elo availability | SPRT state | LLR |",
+              "| W / D / L | Points | Games (pairs) | Fishtest logistic Elo | Fishtest nominal 95% CI | Elo availability | SPRT state | LLR |",
               "| ---: | ---: | ---: | ---: | --- | --- | --- | ---: |",
               f"| {results['wins']} / {results['draws']} / {results['losses']} | "
               f"{results['candidate_points']:g}–{results['reference_points']:g} | {results['games']} ({results['pairs']}) | "
               f"{estimate} | {interval} | `{elo['availability']}` | `{sprt['state'] or 'undecided'}` | {sprt['llr']:.6f} |", "",
               "Fishtest's normalized SPRT uses **[0, 2]**, **α = β = 0.05**, and LLR bounds **[−2.944439, +2.944439]**. "
+              "Fishtest's nominal 95% CI is an SPRT/Brownian approximation, distinct from the local anytime lower bound. "
               "Official purges can lower the reported counts; this feed follows those counts. "
               "A finished run without an SPRT decision remains stopped/inconclusive. "
               "No farm decision automatically establishes an overall verified gain.", "",

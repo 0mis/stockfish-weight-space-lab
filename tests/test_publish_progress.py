@@ -178,9 +178,23 @@ class FishtestTests(unittest.TestCase):
         self.assertEqual(observation["status"], "pending_approval")
         self.assertEqual(observation["results"]["games"], 0)
         self.assertEqual(observation["reported_elo"]["availability"], "no_games")
+        self.assertEqual(observation["reported_elo"]["estimate_scale"], "logistic")
+        self.assertEqual(observation["reported_elo"]["confidence_percent"], 95)
         self.assertIsNone(observation["reported_elo"]["estimate"])
         self.assertIsNone(observation["reported_elo"]["confidence_interval"])
         self.fetch.assert_called_once_with("get_run", progress.FISHTEST_RUN_ID)
+
+    def test_logistic_estimate_and_nominal_interval_have_distinct_sprt_labels(self):
+        farm = self.observer.observe()
+        elo = farm["observation"]["reported_elo"]
+        self.assertEqual((elo["estimate_scale"], elo["confidence_percent"]), ("logistic", 95))
+        self.assertEqual((elo["model"], elo["model_scope"]), ("normalized", "SPRT"))
+        self.assertEqual(elo["label"], "Fishtest logistic Elo and nominal 95% CI")
+        rendered = "\n".join(progress.farm_marker(farm))
+        self.assertIn("Fishtest logistic Elo", rendered)
+        self.assertIn("Fishtest nominal 95% CI", rendered)
+        self.assertIn("SPRT/Brownian approximation, distinct from the local anytime lower bound", rendered)
+        self.assertIn("normalized SPRT", rendered)
 
     def test_farm_throttle_and_clock_changes_leave_identical_output(self):
         first = self.observer.observe()
@@ -277,10 +291,18 @@ class FishtestTests(unittest.TestCase):
         previous = self.observer.observe()
         previous["observation"]["private_path"] = "C:\\private\\fixture"
         previous["observation"]["reported_elo"]["label"] = "private fixture label"
+        # Older saved feeds lack the explicit estimate-scale/coverage metadata.
+        previous["observation"]["reported_elo"].pop("estimate_scale")
+        previous["observation"]["reported_elo"].pop("confidence_percent")
         restored = progress.FishtestObserver(progress.FISHTEST_RUN_ID, previous,
                                             fetch=Mock(side_effect=OSError), clock=lambda: 0).observe()
         self.assertEqual(restored["availability"], "stale")
         self.assertEqual(restored["observation"]["results"]["games"], 8)
+        elo = restored["observation"]["reported_elo"]
+        self.assertEqual((elo["estimate_scale"], elo["confidence_percent"]), ("logistic", 95))
+        self.assertEqual((elo["model"], elo["model_scope"]), ("normalized", "SPRT"))
+        self.assertEqual(elo["label"], "Fishtest logistic Elo and nominal 95% CI")
+        self.assertEqual(elo["availability"], "stale")
         self.assertNotIn("private", progress.json_bytes(restored).decode())
         previous["observation"]["results"]["wins"] = -1
         invalid = progress.FishtestObserver(progress.FISHTEST_RUN_ID, previous,
