@@ -1,0 +1,68 @@
+{
+  "api_url": "https://tests.stockfishchess.org/api/get_run/6af19afb8e7fb2e78bc1cb30",
+  "approved": false,
+  "base_commit": "de342a301195b34b7da76374fe3fadf29352de8d",
+  "base_nnue": [
+    "nn-18cd32e11a9c.nnue"
+  ],
+  "browser_receipt": "The test was submitted to the queue. Please wait for approval.",
+  "candidate_nnue": [
+    "nn-d5c257728ba5.nnue"
+  ],
+  "current_status_url": "https://tests.stockfishchess.org/tests/view/6af19afb8e7fb2e78bc1cb30",
+  "download": "https://github.com/0mis/Stockfish/releases/download/experimental-nn-d5c257728ba5/nn-d5c257728ba5.nnue",
+  "finished": false,
+  "local_result": {
+    "draws": 64,
+    "edit_points": 66,
+    "games": 128,
+    "losses": 30,
+    "parent_points": 62,
+    "url": "https://github.com/0mis/stockfish-weight-space-lab/blob/01b73b4b7d109e876542b58e32da3d2e599a74dd/results/test1757-readout-ridge-screen-result.json",
+    "wins": 34
+  },
+  "network_release": "https://github.com/0mis/Stockfish/releases/tag/experimental-nn-d5c257728ba5",
+  "official_network_repository_url": "https://tests.stockfishchess.org/api/nn/nn-d5c257728ba5.nnue",
+  "options": [
+    "Hash=16",
+    "Hash=16"
+  ],
+  "registration_state": "pending_run_approval",
+  "results": {
+    "crashes": 0,
+    "draws": 0,
+    "losses": 0,
+    "pentanomial": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "time_losses": 0,
+    "wins": 0
+  },
+  "run_id": "6af19afb8e7fb2e78bc1cb30",
+  "scope": "A registered weight-only Fishtest. Both engines use identical test1757 prefetch source, apart from the default network filename. This comparison measures the edit against the donor parent.",
+  "signatures": [
+    "3464885",
+    "2376690"
+  ],
+  "source_commit": "d7155994d192b4e723866360ae9285b42e122790",
+  "sprt": {
+    "alpha": 0.05,
+    "beta": 0.05,
+    "elo0": 0.0,
+    "elo1": 2.0,
+    "elo_model": "normalized",
+    "llr": 0,
+    "state": ""
+  },
+  "submitted_screenshot": "https://github.com/0mis/Stockfish/releases/download/experimental-nn-d5c257728ba5/FISHTEST-SUBMITTED.jpg",
+  "tc": "10+0.1",
+  "threads": 1,
+  "url": "https://tests.stockfishchess.org/tests/view/6af19afb8e7fb2e78bc1cb30",
+  "utc": "2026-11-09T10:06:33.995098+00:00",
+  "verified_gain": false,
+  "warning": "Base is the public test1757 donor branch and is not an ancestor of official master."
+}
