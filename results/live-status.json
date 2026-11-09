@@ -1,32 +1,32 @@
 {
   "candidate": {
-    "engine_sha256": "c0092fd059ae81d9fad61f9372e985f5b0d99b934bd8639867590cf988fa4cd9",
-    "label": "d1-fc2-s102-t128",
-    "network_sha256": "fcbaf7d2197cb1261ad64229789c168d2c28e93ee9308c95a41f885c829180c7"
+    "engine_sha256": "ae1d4772a71529085b26d7460e76fcf65dbe09782e55ea67ecef2e4f033c5ba5",
+    "label": "test1757-history-d5c257",
+    "network_sha256": "d5c257728ba53cb9808543ce2800080c860f1c878896cd1b17f75ed4b20aafee"
   },
   "comparisons": [
     {
-      "anytime_lower_logistic_elo": -34.00619769647081,
-      "candidate_points": 203.5,
-      "draws": 189,
+      "anytime_lower_logistic_elo": null,
+      "candidate_points": 0.0,
+      "draws": 0,
       "estimate_boundary": null,
-      "games": 408,
-      "log_e_value": -0.3105729012276508,
-      "log_gain_threshold": 7.783224016336037,
-      "logistic_elo_estimate": -0.8515595128487103,
-      "losses": 110,
-      "lower_bound_boundary": null,
+      "games": 0,
+      "log_e_value": 0.0,
+      "log_gain_threshold": 8.294049640102028,
+      "logistic_elo_estimate": null,
+      "losses": 0,
+      "lower_bound_boundary": "negative_infinity",
       "maximum_pairs": 8192,
       "minimum_pairs": 128,
-      "minimum_pairs_reached": true,
-      "one_sided_confidence_percent": 99.95833333333334,
-      "pairs": 204,
-      "reference": "spcc-261025",
-      "reference_points": 204.5,
-      "role": "strongest_rated",
-      "score_fraction": 0.4987745098039216,
+      "minimum_pairs_reached": false,
+      "one_sided_confidence_percent": 99.97500000000001,
+      "pairs": 0,
+      "reference": "dev-261106",
+      "reference_points": 0.0,
+      "role": "latest_dev",
+      "score_fraction": null,
       "statistical_decision": "continue",
-      "wins": 109
+      "wins": 0
     },
     {
       "anytime_lower_logistic_elo": null,
@@ -35,18 +35,18 @@
       "estimate_boundary": null,
       "games": 0,
       "log_e_value": 0.0,
-      "log_gain_threshold": 7.783224016336037,
+      "log_gain_threshold": 8.294049640102028,
       "logistic_elo_estimate": null,
       "losses": 0,
       "lower_bound_boundary": "negative_infinity",
       "maximum_pairs": 8192,
       "minimum_pairs": 128,
       "minimum_pairs_reached": false,
-      "one_sided_confidence_percent": 99.95833333333334,
+      "one_sided_confidence_percent": 99.97500000000001,
       "pairs": 0,
-      "reference": "dev-261106",
+      "reference": "spcc-261025",
       "reference_points": 0.0,
-      "role": "latest_dev",
+      "role": "strongest_rated",
       "score_fraction": null,
       "statistical_decision": "continue",
       "wins": 0
@@ -221,7 +221,7 @@
     "method": "pair-betting-mixture-v1",
     "threads_per_engine": 1,
     "time_control": "60+0.6",
-    "trial_confidence_percent": 99.91666666666667
+    "trial_confidence_percent": 99.95
   },
   "sampler_state": "not_inferred_from_ledger",
   "schema_version": 1,
@@ -306,5 +306,5 @@
   },
   "statistical_pass": false,
   "trial_closed": false,
-  "trial_id": "trial-0003"
+  "trial_id": "trial-0004"
 }

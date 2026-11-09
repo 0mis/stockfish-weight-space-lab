@@ -7,16 +7,16 @@ This lab edits NNUE parameters and measures their effects in paired Stockfish ga
 <!-- live-status:start -->
 ## Live confirmation progress
 
-Trial `trial-0003` · **provisional, independently unverified** · `60+0.6 / T1 / H64`
+Trial `trial-0004` · **provisional, independently unverified** · `60+0.6 / T1 / H64`
 
 | Reference | W / D / L | Points | Games (pairs) | Logistic Elo estimate | Anytime lower Elo bound | Statistical decision | Minimum pairs |
 | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `spcc-261025` | 109 / 189 / 110 | 203.5–204.5 | 408 (204) | -0.85 | -34.01 | `continue` | 204/128 (reached) |
 | `dev-261106` | 0 / 0 / 0 | 0–0 | 0 (0) | pending | −∞ | `continue` | 0/128 (pending) |
+| `spcc-261025` | 0 / 0 / 0 | 0–0 | 0 (0) | pending | −∞ | `continue` | 0/128 (pending) |
 
-The paired, one-sided anytime lower bounds use **99.958333%** coverage per reference (trial allocation: **99.916667%**; whole research family: **99%**). These are fixed protocol coverage levels under its assumptions, not probabilities that the candidate is stronger.
+The paired, one-sided anytime lower bounds use **99.975000%** coverage per reference (trial allocation: **99.950000%**; whole research family: **99%**). These are fixed protocol coverage levels under its assumptions, not probabilities that the candidate is stronger.
 
-Each reference needs at least **128 pairs** and log-evidence ≥ **7.78322**. Both gates must pass; an independent terminal integrity audit is still required. Point estimates can rise or fall. Every completed pair in this trial's ledger prefix is retained; interrupted earlier trials are excluded. `continue` is a statistical decision and does not indicate whether the sampler is running.
+Each reference needs at least **128 pairs** and log-evidence ≥ **8.29405**. Both gates must pass; an independent terminal integrity audit is still required. Point estimates can rise or fall. Every completed pair in this trial's ledger prefix is retained; interrupted earlier trials are excluded. `continue` is a statistical decision and does not indicate whether the sampler is running.
 
 Trial ledger state: **open**. Both statistical gates passed: **no**. Verified gain: **not established by this progress feed**.
 
