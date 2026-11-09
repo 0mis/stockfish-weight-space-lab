@@ -45,6 +45,8 @@ A second candidate changes 408 weights and 18 biases in Shawn Xu's `test1757` ne
 
 The validated `test1757` candidate has started a fixed **64-pair development screen** against the pinned November 6 reference at `10+0.1 / T1 / H64`. The earlier confirmation trial is paused at 134 pairs while this exclusive local screen runs. These games guide candidate selection and cannot establish a gain. [Screen plan](results/test1757-screen-plan.json).
 
+A matched follow-up with the unedited `18cd` network is also predeclared: the same executable, opponent and 64-pair opening schedule, after the edited arm finishes and exits. Complete-screen points guide selection; an exact tie favors the manual edit. [Comparison plan](results/test1757-network-comparison-plan.json).
+
 The public NNUE-only [Fishtest STC test](https://tests.stockfishchess.org/tests/view/6af10a258e7fb2e78bc1ca5c) has been submitted against pinned official November 6 source. It uses `10+0.1`, one thread, 16 MiB hash and the standard normalized SPRT bounds `[0, 2]`. The [source branch](https://github.com/0mis/Stockfish/tree/nnue-fcbaf7d2197c) changes the default network filename. The [CC0 network release](https://github.com/0mis/Stockfish/releases/tag/experimental-nn-fcbaf7d2197c) includes submission metadata. Its patched binary reproduced benchmark signature **2261721** twice and passed start-position perft4 (**197281**). The Fishtest page reports queue approval and live results.
 
 The sections below document the original shallow experiment and preserve its reproducible evidence.

@@ -1,0 +1,41 @@
+{
+  "edited_network_sha256": "034f47e652a6a0354f9099993535a0405f4933146fc6d0b913583696bfbdacbd",
+  "formal_alpha_reserved": false,
+  "fresh_formal_confirmation_still_required": true,
+  "games_per_network": 128,
+  "no_early_score_based_stopping_reseeding_replay_or_extension": true,
+  "pairs_per_network": 64,
+  "parent_games_started_at_predeclaration": false,
+  "parent_launch_requires_edited_arm_complete_and_exited": true,
+  "parent_local_hash_and_bench_perft_qualification_required": true,
+  "parent_network_sha256": "18cd32e11a9cac7c595bc6ebf1301088da8e1f2c7b31efda88dbc74c71f5d2cf",
+  "private_parent_plan_sha256": "d06d1345ab96236f327726b11eeceb9d4f396e55a10bb20cbca63efa08dedf22",
+  "purpose": "Exploratory network selection only. This does not establish an Elo gain.",
+  "reference": {
+    "engine_sha256": "b67c37d0d45e3540e311392aeeb699e3a745f16e172bc3fc6f85e0782093842b",
+    "name": "dev-261106",
+    "network_sha256": "d1ee674a62ca754648fb8c2907ff4e92f0c3acff28f59afa0f5bd4e3949538f1"
+  },
+  "same_executable_sha256": "12a8e7bfdd9b1189b4350bd9ebef3501be1e89bd5fa41dcb56921f85ba23869a",
+  "same_opening_id_schedule_sha256": "44323a93ebc5a3dc7ffcad11556c7625aeb0930ce6910e999a0c0fa4cfa49ee4",
+  "schema": "test1757-matched-network-comparison-plan/v1",
+  "seed": 2026110901,
+  "selection_rule": "Compare complete same-schedule screen points; an exact tie favors edited034f. Neither incomplete nor invalid arms qualify for selection.",
+  "settings": {
+    "concurrency": 2,
+    "depth_limit": null,
+    "engine_move_overhead_ms": 10,
+    "evaluation_adjudication": false,
+    "fresh_engines_per_pair": true,
+    "hash_mb_per_engine": 64,
+    "nodes_per_move": null,
+    "ponder": false,
+    "referee_time_margin_ms": 0,
+    "strength_limit": false,
+    "tablebases": false,
+    "threads_per_engine": 1,
+    "time_control": "10+0.1"
+  },
+  "unique_scheduled_starters": 63,
+  "verified_elo_gain": false
+}
