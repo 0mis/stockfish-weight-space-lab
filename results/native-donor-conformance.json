@@ -1,0 +1,93 @@
+{
+  "all_capture_exits_clean": true,
+  "artifact_zip_sha256": "7539c83ab50befc6f7e71bf55f35c248809d2c1cb6fa4109fa9c19d44e69d205",
+  "buckets_per_table": 92,
+  "capture_records_verified": 19,
+  "checks": {
+    "donor": {
+      "bench_repetitions": 2,
+      "bench_signature": 3464885,
+      "buckets_per_table": 92,
+      "complete_bucket_tables": 22,
+      "exact_native_scalar_values": 22,
+      "perft4_nodes": 197281
+    },
+    "edited": {
+      "bench_repetitions": 2,
+      "bench_signature": 2854625,
+      "buckets_per_table": 92,
+      "complete_bucket_tables": 22,
+      "exact_native_scalar_values": 22,
+      "perft4_nodes": 197281
+    }
+  },
+  "complete_bucket_tables_verified": 44,
+  "diagnostic_positions": 22,
+  "driver_commit": "49672d7b3c2b0cb544f4bf7cc70515249fe047e3",
+  "engine_sha256_reported_by_ci": "12a8e7bfdd9b1189b4350bd9ebef3501be1e89bd5fa41dcb56921f85ba23869a",
+  "exact_values_verified": 44,
+  "github_actions_run": "https://github.com/0mis/Stockfish/actions/runs/42543250921",
+  "limitations": [
+    "Executable retained inside verified ZIP; not extracted or read by this audit.",
+    "Engine/network byte hashes and unchanged-before/after checks are authenticated remote-driver evidence, not local rehashes.",
+    "Five runtime driver files are archived; reviewed descriptive README is retained in draft-v3 but absent from archive."
+  ],
+  "local_execution_qualified": false,
+  "mismatches": 0,
+  "networks": {
+    "donor": {
+      "bytes": 138360528,
+      "filename": "nn-18cd32e11a9c.nnue",
+      "sha256": "18cd32e11a9cac7c595bc6ebf1301088da8e1f2c7b31efda88dbc74c71f5d2cf"
+    },
+    "edited": {
+      "bytes": 138360528,
+      "filename": "nn-034f47e652a6.nnue",
+      "sha256": "034f47e652a6a0354f9099993535a0405f4933146fc6d0b913583696bfbdacbd"
+    }
+  },
+  "original_probes_sha256": "78b9f002c61796cc4fcad7bab2026e581221fea568d625a3073caa618d97b3b1",
+  "original_request_sha256": "4aa21bdcc8dddd3403c0363a0b4c5a44da6748ce3f754ff0918fc0eb40fea25b",
+  "passive_verifier_sha256": "86c5a42c9c13bcc5ca9f36c5f8d6b5ff9eedae7fe7fe068f8a036b35b3701cae",
+  "private_passive_receipt_sha256": "c62eb0ac2be1be5b37a0a1d0fbac8c33d08dca2b360bfb1db4dec08f2f50136f",
+  "raw_synthetic_evidence": {
+    "results/native-test1757/donor-eval.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "results/native-test1757/donor-eval.stdout.txt": {
+      "bytes": 71682,
+      "sha256": "a988c9215202a7759fd4ec2398b2196d1e28a6b7e86be26f3b458e90ce360f82"
+    },
+    "results/native-test1757/donor-eval.uci": {
+      "bytes": 1907,
+      "sha256": "8eb57877cf91f46d6e4f7ee5555bed572e99de6c4f2400f5c3cbb596872a70ce"
+    },
+    "results/native-test1757/edited-eval.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "results/native-test1757/edited-eval.stdout.txt": {
+      "bytes": 71685,
+      "sha256": "ed8c73e7dbef8c2814bd949dfd5bf1fb139832a3fc4144af1c48ea6310f09686"
+    },
+    "results/native-test1757/edited-eval.uci": {
+      "bytes": 1907,
+      "sha256": "373a2e58bac66246dae65169e6479ce3d992d5063749ca82868b16252e3f8029"
+    },
+    "results/native-test1757/probes.json": {
+      "bytes": 4783,
+      "sha256": "60237d711345475e7aeb846888faee49efc1ec4c9f4a3f17a1781332389e8349"
+    }
+  },
+  "runtime_driver_files_verified": 5,
+  "schema": "test1757-native-conformance/v1",
+  "scope": "Native integer and format conformance on 22 fixed diagnostic positions. Bench signatures are search node counts, not Elo or throughput improvements.",
+  "source_commit": "7a17b53bcaf93f54a23ad65f309c413585500c82",
+  "source_files_verified": 119,
+  "source_tree": "8e3164caf60d281cb4b1d00a699364e04b354451",
+  "source_url": "https://github.com/0mis/Stockfish/tree/7a17b53bcaf93f54a23ad65f309c413585500c82",
+  "status": "native_scalar_implementation_conformance_verified",
+  "strength_test_completed_for_this_candidate": false,
+  "verified_elo_gain": false
+}
