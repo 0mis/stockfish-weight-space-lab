@@ -1,0 +1,108 @@
+{
+  "schema": "test1757-public-head-calibration-diagnostics-v1",
+  "question": "Do paired opening families support increasing or decreasing the output bias of physical head 82?",
+  "original_network_sha256": "18cd32e11a9cac7c595bc6ebf1301088da8e1f2c7b31efda88dbc74c71f5d2cf",
+  "engine_sha256": "12a8e7bfdd9b1189b4350bd9ebef3501be1e89bd5fa41dcb56921f85ba23869a",
+  "engine_source_url": "https://github.com/0mis/Stockfish/commit/7a17b53bcaf93f54a23ad65f309c413585500c82",
+  "prior_layout_result": {
+    "sha256": "af3396472576ddedde96a371bc4c58ec5aad685b0617e7656bf7d6e4c364b456",
+    "url": "https://github.com/0mis/stockfish-weight-space-lab/blob/0d7e86c8804c7d16e7e54013654dc4b73fda3c8a/results/test1757-channel-layout.json"
+  },
+  "shared_sample": {
+    "retired_game_training_positions": 453,
+    "target_head": 82,
+    "target_positions": 227,
+    "control_head": 87,
+    "control_positions": 226
+  },
+  "metric": "Residual is the deeper search score minus the original static evaluation, in centipawns from the side to move. Each paired family contributes one target median and one target-minus-control difference.",
+  "stable_label": "Both searches must return exact centipawn scores and the same legal best move. Each score must be within 250 centipawns of zero and the scores within 20 centipawns of each other.",
+  "prospective_rule": {
+    "target_parameter": "signed int32 FC2 output bias",
+    "possible_delta_integer_units": [
+      -512,
+      512
+    ],
+    "minimum_paired_families": 15,
+    "minimum_stable_positions_per_head_in_paired_families": 50,
+    "minimum_absolute_median_contrast_and_target_residual_cp": 6,
+    "require_same_nonzero_sign": true,
+    "minimum_fraction_of_families_agreeing_with_contrast_sign": "2/3"
+  },
+  "studies": [
+    {
+      "search": "node_budget",
+      "search_limits": {
+        "budgets_nodes": [
+          16384,
+          65536
+        ]
+      },
+      "stable_positions": 13,
+      "stable_by_head": {
+        "target": 6,
+        "control": 7
+      },
+      "paired_opening_families": 3,
+      "stable_positions_in_paired_families": {
+        "target": 3,
+        "control": 3
+      },
+      "median_family_target_minus_control_cp": -40,
+      "median_target_family_residual_cp": 11,
+      "families_agreeing_with_median_contrast_sign": 2,
+      "first_exclusion_counts": {
+        "bestmove_disagreement": 7,
+        "budget_score_difference": 5,
+        "deep_bounded_score": 59,
+        "score_out_of_range": 2,
+        "shallow_bounded_score": 367
+      },
+      "decision": "abstain at fitting",
+      "holdout_search_labels_opened": false,
+      "plan_sha256": "83f554d89173705d991bf90905308d8f1eb2999c00ff4948e9ba5948f7dd077b",
+      "result_sha256": "7fdd72bb29b5073a20c50776b505c4335d435e0b1fee8f342be2365e36b47b91",
+      "source_url": "https://github.com/0mis/Stockfish/tree/bd3524c5f03d0bfdcf3e3d0c2fd6569836a1bd0e/research/head_calibration",
+      "run_url": "https://github.com/0mis/Stockfish/actions/runs/42571622867"
+    },
+    {
+      "search": "completed_depth",
+      "search_limits": {
+        "depths": [
+          9,
+          13
+        ]
+      },
+      "stable_positions": 141,
+      "stable_by_head": {
+        "target": 68,
+        "control": 73
+      },
+      "paired_opening_families": 24,
+      "stable_positions_in_paired_families": {
+        "target": 43,
+        "control": 55
+      },
+      "median_family_target_minus_control_cp": -14.5,
+      "median_target_family_residual_cp": 21.5,
+      "families_agreeing_with_median_contrast_sign": 13,
+      "first_exclusion_counts": {
+        "bestmove_disagreement": 171,
+        "depth_score_difference": 125,
+        "score_out_of_range": 16
+      },
+      "decision": "abstain at fitting",
+      "holdout_search_labels_opened": false,
+      "plan_sha256": "9a72beed16b54724c17ffb7dd062541782e9f94f166607760c3c8bf1ad565ac0",
+      "result_sha256": "500996d5f29e9be59b9387723f6c688dea9ea308213820c5c4f86d787c6c3e3a",
+      "source_url": "https://github.com/0mis/Stockfish/tree/e0d20001c9d90c7e8c18bef054d53deb4c00ec2c/research/head_calibration",
+      "run_url": "https://github.com/0mis/Stockfish/actions/runs/42572580462"
+    }
+  ],
+  "outcome": {
+    "edits_selected": 0,
+    "candidate_networks_generated": 0,
+    "new_strength_games": 0,
+    "interpretation": "Both diagnostics stopped before holdout search. Their scores describe agreement between the original network and its own deeper search. Playing strength was unmeasured."
+  }
+}
