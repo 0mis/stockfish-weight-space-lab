@@ -1,6 +1,6 @@
 # Stockfish Weight-Space Lab
 
-An AI-assisted research log of direct NNUE edits and Stockfish experiments. The current agent configuration is GPT-6.1 Sol with max reasoning.
+An AI-assisted research log of direct NNUE edits and Stockfish experiments. Current helper agents use GPT-6 Astra with max reasoning.
 
 <!-- live-status:start -->
 ## Live confirmation progress
@@ -46,6 +46,8 @@ A second candidate changes 408 weights and 18 biases in Shawn Xu's `test1757` ne
 The edited `test1757` candidate completed its fixed 64-pair development screen against the pinned November 6 reference at `10+0.1 / T1 / H64`: **32 wins, 60 draws, 36 losses (62–66)**. Its descriptive logistic Elo estimate is **−10.9**, with an approximate paired-bootstrap interval of **−46.4 to +21.7** on this reused development distribution. This establishes no gain. The separate frozen confirmation resumed from its existing checkpoint after both development screens finished. [Complete result and UTC game evidence](results/test1757-edited-screen-result.json) · [Screen plan](results/test1757-screen-plan.json).
 
 The matched `test1757` follow-up is complete: both networks used the same executable, pinned November 6 opponent and 64-pair schedule at `10+0.1 / T1 / H64`, with 128 games each. Unmodified `18cd` scored **31 wins, 65 draws, 32 losses (63.5–64.5)**; edited `034f` scored **32 wins, 60 draws, 36 losses (62–66)**. The predeclared complete-screen rule selects unmodified `18cd` for further evaluation by **1.5 points**. The parent arm's authenticated Black clock loss at pair index 45 (10 ms overrun) is retained. These exploratory results establish neither an Elo gain nor harm from the manual edit. The frozen confirmation has resumed from its unchanged 134-pair checkpoint. [Complete parent result and UTC game evidence](results/test1757-parent-screen-result.json) · [Matched selection](results/test1757-matched-network-selection.json) · [Comparison plan](results/test1757-network-comparison-plan.json).
+
+A Windows x86-64 BMI2 benchmark compared the prefetch build (A) with an alternative accumulator (B) using the original `test1757` network `18cd`. B took less time in **3 of 8** blocks. Its median block speedup (`A/B − 1`) was **−4.25%**. The selection rule required **at least +1%** and **at least 7 of 8** blocks favoring B, so the lab retained the prefetch build with `18cd`. Each run searched 3,464,885 nodes. This benchmark measured execution time only. [Ordered times, block sums and source builds](results/test1757-accumulator-timing.json).
 
 The public NNUE-only [Fishtest STC test](https://tests.stockfishchess.org/tests/view/6af10a258e7fb2e78bc1ca5c) has been submitted against pinned official November 6 source. It uses `10+0.1`, one thread, 16 MiB hash and the standard normalized SPRT bounds `[0, 2]`. The [source branch](https://github.com/0mis/Stockfish/tree/nnue-fcbaf7d2197c) changes the default network filename. The [CC0 network release](https://github.com/0mis/Stockfish/releases/tag/experimental-nn-fcbaf7d2197c) includes submission metadata. Its patched binary reproduced benchmark signature **2261721** twice and passed start-position perft4 (**197281**). The Fishtest page reports queue approval and live results.
 

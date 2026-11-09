@@ -1,0 +1,388 @@
+{
+  "schema": "test1757-public-accumulator-timing-v1",
+  "review_date_utc": "2026-11-09",
+  "scope": "Local implementation selection using a fixed-depth benchmark with identical node counts on both builds.",
+  "arms": {
+    "A": {
+      "description": "test1757 with accumulator prefetch",
+      "engine_sha256": "12a8e7bfdd9b1189b4350bd9ebef3501be1e89bd5fa41dcb56921f85ba23869a",
+      "source_commit": "7a17b53bcaf93f54a23ad65f309c413585500c82",
+      "source_url": "https://github.com/0mis/Stockfish/commit/7a17b53bcaf93f54a23ad65f309c413585500c82",
+      "windows_ci_url": "https://github.com/0mis/Stockfish/actions/runs/42543250921",
+      "upstream_change_url": "https://github.com/official-stockfish/Stockfish/pull/7294"
+    },
+    "B": {
+      "description": "test1757 with the alternative accumulator update",
+      "engine_sha256": "53ea9ca30c28d84efd742d3363f7f01c5f3b38c2eb07f8681f28fcf36f47bb57",
+      "source_commit": "7a2c542da605b587558f55460901e215584fd5ec",
+      "source_url": "https://github.com/0mis/Stockfish/commit/7a2c542da605b587558f55460901e215584fd5ec",
+      "windows_ci_url": "https://github.com/0mis/Stockfish/actions/runs/42557918214",
+      "upstream_change_url": "https://github.com/official-stockfish/Stockfish/pull/7263"
+    }
+  },
+  "shared_network": {
+    "file": "nn-18cd32e11a9c.nnue",
+    "sha256": "18cd32e11a9cac7c595bc6ebf1301088da8e1f2c7b31efda88dbc74c71f5d2cf"
+  },
+  "benchmark": {
+    "platform": "Windows x86-64 BMI2",
+    "command": "bench 16 1 13 default depth",
+    "workload": "One fresh process per run, one thread, 16 MiB hash, fixed depth 13, the same logical CPU and BelowNormal priority.",
+    "elapsed_time": "Engine-reported total search elapsed time in milliseconds.",
+    "nodes_per_run": 3464885,
+    "positions_per_run": 51,
+    "warmup_runs": 4,
+    "measured_runs": 32,
+    "measured_blocks": 8,
+    "warmup_runs_in_statistic": false,
+    "block_order": "Each measured block has two runs per arm. ABBA and BAAB alternate, beginning with ABBA.",
+    "metric": "For each block, divide the sum of A times by the sum of B times and subtract one. A positive value favors B. The median is the mean of the middle two of the eight sorted block values.",
+    "qualification": {
+      "bench_signatures_by_arm": {
+        "A": [
+          3464885,
+          3464885
+        ],
+        "B": [
+          3464885,
+          3464885
+        ]
+      },
+      "start_position_perft4_nodes_by_arm": {
+        "A": 197281,
+        "B": 197281
+      }
+    }
+  },
+  "runs": [
+    {
+      "ordinal": 0,
+      "phase": "warmup",
+      "block": null,
+      "arm": "A",
+      "elapsed_ms": 8852
+    },
+    {
+      "ordinal": 1,
+      "phase": "warmup",
+      "block": null,
+      "arm": "B",
+      "elapsed_ms": 9635
+    },
+    {
+      "ordinal": 2,
+      "phase": "warmup",
+      "block": null,
+      "arm": "B",
+      "elapsed_ms": 11271
+    },
+    {
+      "ordinal": 3,
+      "phase": "warmup",
+      "block": null,
+      "arm": "A",
+      "elapsed_ms": 8978
+    },
+    {
+      "ordinal": 4,
+      "phase": "measured",
+      "block": 0,
+      "arm": "A",
+      "elapsed_ms": 8669
+    },
+    {
+      "ordinal": 5,
+      "phase": "measured",
+      "block": 0,
+      "arm": "B",
+      "elapsed_ms": 10413
+    },
+    {
+      "ordinal": 6,
+      "phase": "measured",
+      "block": 0,
+      "arm": "B",
+      "elapsed_ms": 9044
+    },
+    {
+      "ordinal": 7,
+      "phase": "measured",
+      "block": 0,
+      "arm": "A",
+      "elapsed_ms": 9301
+    },
+    {
+      "ordinal": 8,
+      "phase": "measured",
+      "block": 1,
+      "arm": "B",
+      "elapsed_ms": 11578
+    },
+    {
+      "ordinal": 9,
+      "phase": "measured",
+      "block": 1,
+      "arm": "A",
+      "elapsed_ms": 8907
+    },
+    {
+      "ordinal": 10,
+      "phase": "measured",
+      "block": 1,
+      "arm": "A",
+      "elapsed_ms": 9160
+    },
+    {
+      "ordinal": 11,
+      "phase": "measured",
+      "block": 1,
+      "arm": "B",
+      "elapsed_ms": 10452
+    },
+    {
+      "ordinal": 12,
+      "phase": "measured",
+      "block": 2,
+      "arm": "A",
+      "elapsed_ms": 9341
+    },
+    {
+      "ordinal": 13,
+      "phase": "measured",
+      "block": 2,
+      "arm": "B",
+      "elapsed_ms": 10084
+    },
+    {
+      "ordinal": 14,
+      "phase": "measured",
+      "block": 2,
+      "arm": "B",
+      "elapsed_ms": 11949
+    },
+    {
+      "ordinal": 15,
+      "phase": "measured",
+      "block": 2,
+      "arm": "A",
+      "elapsed_ms": 8854
+    },
+    {
+      "ordinal": 16,
+      "phase": "measured",
+      "block": 3,
+      "arm": "B",
+      "elapsed_ms": 8860
+    },
+    {
+      "ordinal": 17,
+      "phase": "measured",
+      "block": 3,
+      "arm": "A",
+      "elapsed_ms": 10203
+    },
+    {
+      "ordinal": 18,
+      "phase": "measured",
+      "block": 3,
+      "arm": "A",
+      "elapsed_ms": 8725
+    },
+    {
+      "ordinal": 19,
+      "phase": "measured",
+      "block": 3,
+      "arm": "B",
+      "elapsed_ms": 8650
+    },
+    {
+      "ordinal": 20,
+      "phase": "measured",
+      "block": 4,
+      "arm": "A",
+      "elapsed_ms": 10350
+    },
+    {
+      "ordinal": 21,
+      "phase": "measured",
+      "block": 4,
+      "arm": "B",
+      "elapsed_ms": 9186
+    },
+    {
+      "ordinal": 22,
+      "phase": "measured",
+      "block": 4,
+      "arm": "B",
+      "elapsed_ms": 8971
+    },
+    {
+      "ordinal": 23,
+      "phase": "measured",
+      "block": 4,
+      "arm": "A",
+      "elapsed_ms": 10664
+    },
+    {
+      "ordinal": 24,
+      "phase": "measured",
+      "block": 5,
+      "arm": "B",
+      "elapsed_ms": 8861
+    },
+    {
+      "ordinal": 25,
+      "phase": "measured",
+      "block": 5,
+      "arm": "A",
+      "elapsed_ms": 9004
+    },
+    {
+      "ordinal": 26,
+      "phase": "measured",
+      "block": 5,
+      "arm": "A",
+      "elapsed_ms": 10373
+    },
+    {
+      "ordinal": 27,
+      "phase": "measured",
+      "block": 5,
+      "arm": "B",
+      "elapsed_ms": 9269
+    },
+    {
+      "ordinal": 28,
+      "phase": "measured",
+      "block": 6,
+      "arm": "A",
+      "elapsed_ms": 8901
+    },
+    {
+      "ordinal": 29,
+      "phase": "measured",
+      "block": 6,
+      "arm": "B",
+      "elapsed_ms": 10266
+    },
+    {
+      "ordinal": 30,
+      "phase": "measured",
+      "block": 6,
+      "arm": "B",
+      "elapsed_ms": 8835
+    },
+    {
+      "ordinal": 31,
+      "phase": "measured",
+      "block": 6,
+      "arm": "A",
+      "elapsed_ms": 8797
+    },
+    {
+      "ordinal": 32,
+      "phase": "measured",
+      "block": 7,
+      "arm": "B",
+      "elapsed_ms": 9983
+    },
+    {
+      "ordinal": 33,
+      "phase": "measured",
+      "block": 7,
+      "arm": "A",
+      "elapsed_ms": 9931
+    },
+    {
+      "ordinal": 34,
+      "phase": "measured",
+      "block": 7,
+      "arm": "A",
+      "elapsed_ms": 8770
+    },
+    {
+      "ordinal": 35,
+      "phase": "measured",
+      "block": 7,
+      "arm": "B",
+      "elapsed_ms": 8937
+    }
+  ],
+  "blocks": [
+    {
+      "block": 0,
+      "A_elapsed_ms_sum": 17970,
+      "B_elapsed_ms_sum": 19457,
+      "B_faster": false
+    },
+    {
+      "block": 1,
+      "A_elapsed_ms_sum": 18067,
+      "B_elapsed_ms_sum": 22030,
+      "B_faster": false
+    },
+    {
+      "block": 2,
+      "A_elapsed_ms_sum": 18195,
+      "B_elapsed_ms_sum": 22033,
+      "B_faster": false
+    },
+    {
+      "block": 3,
+      "A_elapsed_ms_sum": 18928,
+      "B_elapsed_ms_sum": 17510,
+      "B_faster": true
+    },
+    {
+      "block": 4,
+      "A_elapsed_ms_sum": 21014,
+      "B_elapsed_ms_sum": 18157,
+      "B_faster": true
+    },
+    {
+      "block": 5,
+      "A_elapsed_ms_sum": 19377,
+      "B_elapsed_ms_sum": 18130,
+      "B_faster": true
+    },
+    {
+      "block": 6,
+      "A_elapsed_ms_sum": 17698,
+      "B_elapsed_ms_sum": 19101,
+      "B_faster": false
+    },
+    {
+      "block": 7,
+      "A_elapsed_ms_sum": 18701,
+      "B_elapsed_ms_sum": 18920,
+      "B_faster": false
+    }
+  ],
+  "selection": {
+    "rule": "Select B only if all qualification checks pass, the median block speedup is at least 1%, and B takes less time in at least 7 of 8 blocks.",
+    "minimum_median_A_over_B_minus_one": 0.01,
+    "minimum_B_favoring_blocks": 7,
+    "B_favoring_blocks": 3,
+    "median_A_over_B_minus_one": -0.04251335230005225,
+    "median_exact_fraction": [
+      -30727879,
+      722781840
+    ],
+    "performance_gate_passed": false,
+    "selected_arm": "A",
+    "measured_playing_strength": false
+  },
+  "independent_review": {
+    "files_verified_including_completion_record": 300,
+    "native_process_exits_verified": 42,
+    "all_exit_codes_zero": true
+  },
+  "earlier_matched_network_screens": {
+    "design": "Each network faced the same reference over the same schedule with the prefetch executable.",
+    "games_per_network": 128,
+    "original_18cd_points": 63.5,
+    "edited_034f_points": 62.0,
+    "original_18cd_lead_points": 1.5,
+    "selection_url": "https://github.com/0mis/stockfish-weight-space-lab/blob/6831500a4c6b22d64109a38bb0dc5bbf5b6f8fe0/results/test1757-matched-network-selection.json"
+  }
+}
