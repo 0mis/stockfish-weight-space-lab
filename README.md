@@ -9,7 +9,7 @@ Trial `trial-0003` · **provisional, independently unverified** · `60+0.6 / T1 
 
 | Reference | W / D / L | Points | Games (pairs) | Logistic Elo estimate | Anytime lower Elo bound | Statistical decision | Minimum pairs |
 | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `spcc-261025` | 84 / 142 / 82 | 155–153 | 308 (154) | +2.26 | -36.13 | `continue` | 154/128 (reached) |
+| `spcc-261025` | 84 / 143 / 83 | 155.5–154.5 | 310 (155) | +1.12 | -37.25 | `continue` | 155/128 (reached) |
 | `dev-261106` | 0 / 0 / 0 | 0–0 | 0 (0) | pending | −∞ | `continue` | 0/128 (pending) |
 
 The paired, one-sided anytime lower bounds use **99.958333%** coverage per reference (trial allocation: **99.916667%**; whole research family: **99%**). These are fixed protocol coverage levels under its assumptions, not probabilities that the candidate is stronger.
@@ -18,7 +18,7 @@ Each reference needs at least **128 pairs** and log-evidence ≥ **7.78322**. Bo
 
 Trial ledger state: **open**. Both statistical gates passed: **no**. Verified gain: **not established by this progress feed**.
 
-Ledger checkpoint: event `327`, SHA-256 `b7c057a0c2286b3cf76d99e76f2d317f40e10514781253586cd33bdcf0cabbb8`. [Aggregate JSON](results/live-status.json).
+Ledger checkpoint: event `328`, SHA-256 `ad14cfb1a1bbc071026869e5f0d68b4332d5be0c739f5796a39cea1b65584694`. [Aggregate JSON](results/live-status.json).
 
 ### Public Fishtest NNUE-only test
 
@@ -30,7 +30,7 @@ Official state: **approved_open**; approved: **yes**; finished: **no**. A stale 
 
 | W / D / L | Points | Games (pairs) | Fishtest logistic Elo | Fishtest nominal 95% CI | Elo availability | SPRT state | LLR |
 | ---: | ---: | ---: | ---: | --- | --- | --- | ---: |
-| 3261 / 6432 / 3331 | 6477–6547 | 13024 (6512) | -1.87 | [-4.80, +1.06] | `current` | `undecided` | -1.036490 |
+| 3270 / 6448 / 3338 | 6494–6562 | 13056 (6528) | -1.81 | [-4.74, +1.12] | `current` | `undecided` | -1.013534 |
 
 Fishtest's normalized SPRT uses **[0, 2]**, **α = β = 0.05**, and LLR bounds **[−2.944439, +2.944439]**. Fishtest's nominal 95% CI is an SPRT/Brownian approximation, distinct from the local anytime lower bound. Official purges can lower the reported counts; this feed follows those counts. A finished run without an SPRT decision remains stopped/inconclusive. No farm decision automatically establishes an overall verified gain.
 
