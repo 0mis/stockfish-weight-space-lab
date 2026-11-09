@@ -1,0 +1,65 @@
+{
+  "actions": [
+    {
+      "action": "stop_run",
+      "message": "User stop",
+      "run_id": "6af16e648e7fb2e78bc1cb09",
+      "time": 1794208400.616431,
+      "username": "Dubslow"
+    },
+    {
+      "action": "modify_run",
+      "message": "modify: priority changed from 0 to -2",
+      "run_id": "6af16e648e7fb2e78bc1cb09",
+      "time": 1794208314.648669,
+      "username": "Dubslow"
+    },
+    {
+      "action": "new_run",
+      "message": "SPRT<0.00,2.00> TC:10+0.1 Book:UHO_Lichess_4852_v1.epd Threads:1 Hash:16/16",
+      "run_id": "6af16e648e7fb2e78bc1cb09",
+      "time": 1794207332.310793,
+      "username": "0mis"
+    }
+  ],
+  "actions_url": "https://tests.stockfishchess.org/actions?run_id=6af16e648e7fb2e78bc1cb09",
+  "approved": false,
+  "configuration": {
+    "adjudication": true,
+    "auto_purge": false,
+    "base_nets": [
+      "nn-d1ee674a62ca.nnue"
+    ],
+    "base_options": "Hash=16",
+    "base_signature": "1556650",
+    "book": "UHO_Lichess_4852_v1.epd",
+    "book_depth": "8",
+    "new_nets": [
+      "nn-18cd32e11a9c.nnue"
+    ],
+    "new_options": "Hash=16",
+    "new_signature": "3464885",
+    "new_tc": "10+0.1",
+    "num_games": 800000,
+    "priority": 0,
+    "resolved_base": "7cdd5e89a39fe3071b67d91c7bb07d712044bf76",
+    "resolved_new": "de342a301195b34b7da76374fe3fadf29352de8d",
+    "tc": "10+0.1",
+    "tests_repo": "https://github.com/0mis/Stockfish",
+    "threads": 1,
+    "throughput": 100,
+    "username": "0mis"
+  },
+  "elo_estimate": null,
+  "finished": true,
+  "games": 0,
+  "run_id": "6af16e648e7fb2e78bc1cb09",
+  "same_tree_locally_tested_commit": "7a17b53bcaf93f54a23ad65f309c413585500c82",
+  "schema": "test1757-public-source-fishtest-result-v1",
+  "source_commit": "de342a301195b34b7da76374fe3fadf29352de8d",
+  "source_tree": "8e3164caf60d281cb4b1d00a699364e04b354451",
+  "sprt_state": "",
+  "status": "stopped_without_sprt_decision",
+  "url": "https://tests.stockfishchess.org/tests/view/6af16e648e7fb2e78bc1cb09",
+  "verified_gain": false
+}
