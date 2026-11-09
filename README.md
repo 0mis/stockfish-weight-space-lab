@@ -24,7 +24,7 @@ Ledger checkpoint: event `377`, SHA-256 `a2581890c4ab16024b2b6a93652aff070759256
 
 ### Public Fishtest NNUE-only test
 
-[Official run `6af10a258e7fb2e78bc1ca5c`](https://tests.stockfishchess.org/tests/view/6af10a258e7fb2e78bc1ca5c) · `10+0.1 / T1 / H16` · API **stale**
+[Official run `6af10a258e7fb2e78bc1ca5c`](https://tests.stockfishchess.org/tests/view/6af10a258e7fb2e78bc1ca5c) · `10+0.1 / T1 / H16` · API **current**
 
 This is a separate NNUE-only experiment. Its executable, clocks, normalized SPRT and results remain separate from local trial-0003's paired e-process.
 
@@ -32,7 +32,7 @@ Official state: **approved_open**; approved: **yes**; finished: **no**. A stale 
 
 | W / D / L | Points | Games (pairs) | Fishtest logistic Elo | Fishtest nominal 95% CI | Elo availability | SPRT state | LLR |
 | ---: | ---: | ---: | ---: | --- | --- | --- | ---: |
-| 9248 / 17868 / 9364 | 18182–18298 | 36480 (18240) | -1.10 | [-2.86, +0.65] | `stale` | `undecided` | -1.960644 |
+| 9333 / 18018 / 9449 | 18342–18458 | 36800 (18400) | -1.09 | [-2.84, +0.65] | `current` | `undecided` | -1.965908 |
 
 Fishtest's normalized SPRT uses **[0, 2]**, **α = β = 0.05**, and LLR bounds **[−2.944439, +2.944439]**. Fishtest's nominal 95% CI is an SPRT/Brownian approximation, distinct from the local anytime lower bound. Official purges can lower the reported counts; this feed follows those counts. A finished run without an SPRT decision remains stopped/inconclusive. No farm decision automatically establishes an overall verified gain.
 
@@ -40,7 +40,7 @@ Candidate network: `nn-fcbaf7d2197c.nnue`; reference: `nn-d1ee674a62ca.nnue`. So
 
 ### Public Fishtest test1757 source and network test
 
-[Official run `6af16e648e7fb2e78bc1cb09`](https://tests.stockfishchess.org/tests/view/6af16e648e7fb2e78bc1cb09) · `10+0.1 / T1 / H16` · API **stale**
+[Official run `6af16e648e7fb2e78bc1cb09`](https://tests.stockfishchess.org/tests/view/6af16e648e7fb2e78bc1cb09) · `10+0.1 / T1 / H16` · API **current**
 
 The test1757 prefetch source and original 18cd network face official Stockfish with the D1 network. The Elo estimate below applies only to this run.
 
@@ -58,7 +58,7 @@ Fishtest's normalized SPRT uses **[0, 2]**, **α = β = 0.05**, and LLR bounds *
 
 ### Public Fishtest NNUE edit vs donor parent
 
-[Fishtest run `6af19afb8e7fb2e78bc1cb30`](https://tests.stockfishchess.org/tests/view/6af19afb8e7fb2e78bc1cb30) · `10+0.1 / T1 / H16` · API **stale**
+[Fishtest run `6af19afb8e7fb2e78bc1cb30`](https://tests.stockfishchess.org/tests/view/6af19afb8e7fb2e78bc1cb30) · `10+0.1 / T1 / H16` · API **current**
 
 The nine-bias d5 NNUE edit faces its test1757 donor parent with the original 18cd network. Both sides use the same prefetch source except the default network filename. This estimates only the NNUE edit relative to its donor parent; it is not an official-Stockfish comparison. Its results remain separate from both earlier farm runs and local trial-0003.
 

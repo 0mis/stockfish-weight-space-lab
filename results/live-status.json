@@ -54,7 +54,7 @@
   ],
   "completion_verified": false,
   "donor_fishtest": {
-    "availability": "stale",
+    "availability": "current",
     "comparison_scope": "donor_parent_only",
     "configuration": {
       "adjudication": true,
@@ -134,7 +134,7 @@
     "url": "https://tests.stockfishchess.org/tests/view/6af19afb8e7fb2e78bc1cb30"
   },
   "fishtest": {
-    "availability": "stale",
+    "availability": "current",
     "configuration": {
       "base_nets": [
         "nn-d1ee674a62ca.nnue"
@@ -161,35 +161,35 @@
       "finished": false,
       "maximum_games": 800000,
       "reported_elo": {
-        "availability": "stale",
+        "availability": "current",
         "confidence_interval": [
-          -2.859242267935467,
-          0.6526364759098621
+          -2.841960018683898,
+          0.6547812701828948
         ],
         "confidence_percent": 95,
-        "estimate": -1.1034451417200384,
+        "estimate": -1.0937453193833764,
         "estimate_scale": "logistic",
         "label": "Fishtest logistic Elo and nominal 95% CI",
         "model": "normalized",
         "model_scope": "SPRT"
       },
       "results": {
-        "candidate_points": 18182.0,
+        "candidate_points": 18342.0,
         "crashes": 0,
-        "draws": 17868,
-        "games": 36480,
-        "losses": 9364,
-        "pairs": 18240,
+        "draws": 18018,
+        "games": 36800,
+        "losses": 9449,
+        "pairs": 18400,
         "pentanomial": [
           54,
-          4284,
-          9660,
-          4208,
-          34
+          4322,
+          9745,
+          4244,
+          35
         ],
-        "reference_points": 18298.0,
+        "reference_points": 18458.0,
         "time_losses": 0,
-        "wins": 9248
+        "wins": 9333
       },
       "sprt": {
         "alpha": 0.05,
@@ -197,7 +197,7 @@
         "elo0": 0.0,
         "elo1": 2.0,
         "elo_model": "normalized",
-        "llr": -1.9606444576585256,
+        "llr": -1.9659082179099348,
         "lower_bound": -2.9444389791664403,
         "state": "",
         "upper_bound": 2.9444389791664403
@@ -227,7 +227,7 @@
   "schema_version": 1,
   "scope": "This frozen candidate and references at the declared time control and test hardware only.",
   "source_fishtest": {
-    "availability": "stale",
+    "availability": "current",
     "configuration": {
       "adjudication": true,
       "auto_purge": false,
