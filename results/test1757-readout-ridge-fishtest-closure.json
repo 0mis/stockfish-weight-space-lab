@@ -1,0 +1,22 @@
+{
+  "approved": false,
+  "candidate_nnue_sha256": "d5c257728ba53cb9808543ce2800080c860f1c878896cd1b17f75ed4b20aafee",
+  "draws": 0,
+  "elo_estimate": null,
+  "failed": false,
+  "finished": true,
+  "games": 0,
+  "losses": 0,
+  "observed_utc": "2026-11-09T14:26:08.045594+00:00",
+  "official_action_response_sha256": "8f25448297cfd96c72bebab30706947a2e3b99bb60878d226cb74da310178b91",
+  "official_run_response_sha256": "a8dde758c34c9dabb31a0e4d83597fc369030796877335cb5e8a5dec5de9a251",
+  "reference": "test1757 donor with prefetch and unchanged 18cd network",
+  "run_id": "6af19afb8e7fb2e78bc1cb30",
+  "run_url": "https://tests.stockfishchess.org/tests/view/6af19afb8e7fb2e78bc1cb30",
+  "schema": "public-fishtest-closure/1",
+  "sprt_decision": null,
+  "stop_action_message": "User stop",
+  "stop_utc": "2026-11-09T14:03:06.787083+00:00",
+  "verified_elo_gain": false,
+  "wins": 0
+}
