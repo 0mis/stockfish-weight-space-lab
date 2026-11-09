@@ -1,0 +1,123 @@
+{
+  "candidate": {
+    "engine_sha256": "ae1d4772a71529085b26d7460e76fcf65dbe09782e55ea67ecef2e4f033c5ba5",
+    "name": "Selected test1757 history-floor and nine-bias NNUE composite",
+    "network_sha256": "d5c257728ba53cb9808543ce2800080c860f1c878896cd1b17f75ed4b20aafee",
+    "source_commit": "d19047cc44fae773a590be3b0b9f08fdd75acdc7",
+    "source_url": "https://github.com/0mis/Stockfish/tree/d19047cc44fae773a590be3b0b9f08fdd75acdc7"
+  },
+  "candidate_network_recipe": {
+    "file": "../nets/test1757-readout-ridge.json",
+    "fit_driver_commit": "08abd7bd1c3fa9a504a0fa8556a6bef6633933cc",
+    "sha256": "4ce6d12f6f79eb7462569e771e86ce1e27ee715d2801605f295dc1dcc0a804d3"
+  },
+  "formal_alpha_reserved": false,
+  "independent_mixed_ci": {
+    "artifact_id": 13664178998,
+    "artifact_zip_sha256": "95fdec23bb6013b7be4f25ace5a88b26bd7c1b50227073516f0cee31bcb7499d",
+    "driver_commit": "f0b5202f77574d9365c5bcb61bd4409009141800",
+    "independent_raw_review_sha256": "e5e5d251fc914b7839d03b82a5b856795e10b0edd022f08ffeb6fd4c6b2a5d83",
+    "native_search_signatures": [
+      "40a3d997d2cd31391c58ba8745bd578f8a08550d869d78e44b01059785da38fc",
+      "40a3d997d2cd31391c58ba8745bd578f8a08550d869d78e44b01059785da38fc"
+    ],
+    "perft4_nodes": 197281,
+    "repeated_bench_nodes": [
+      4125162,
+      4125162
+    ],
+    "run_id": 42599013415,
+    "run_url": "https://github.com/0mis/Stockfish/actions/runs/42599013415"
+  },
+  "launched_utc": "2026-11-09T10:24:26.326436Z",
+  "nomination_rule": "Strictly more than 128 points in all 256 complete independently audited games; ties do not nominate.",
+  "official_opponent": {
+    "engine_sha256": "b67c37d0d45e3540e311392aeeb699e3a745f16e172bc3fc6f85e0782093842b",
+    "name": "Official Stockfish November 6 development",
+    "network_sha256": "d1ee674a62ca754648fb8c2907ff4e92f0c3acff28f59afa0f5bd4e3949538f1",
+    "source_commit": "7cdd5e89a39fe3071b67d91c7bb07d712044bf76",
+    "source_url": "https://github.com/official-stockfish/Stockfish/tree/7cdd5e89a39fe3071b67d91c7bb07d712044bf76"
+  },
+  "official_release": {
+    "asset_digest": "sha256:37c5fff649e820e3bcb5ac3450a1363cf0d75045da0dd15559873f76e53055d1",
+    "asset_id": 717703279,
+    "asset_url": "https://github.com/official-stockfish/Stockfish/releases/download/stockfish-dev-20261106-7cdd5e89/stockfish-windows-x86-64-universal.zip",
+    "tag": "stockfish-dev-20261106-7cdd5e89"
+  },
+  "partial_game_results_reported": false,
+  "published_plan": {
+    "file": "test1757-selected-vs-official-plan.json",
+    "sha256": "9033ac013f7e4a25dcbe27ab0878cc9834e484a3ac3477257448eb5562d8ba42"
+  },
+  "same_host_qualification": {
+    "arms": {
+      "baseline": {
+        "bench_nodes": 1556650,
+        "perft4_nodes": 197281,
+        "repeated_signatures": [
+          "5734e8bd58c5597965651f93f77233890fbd3a9102c1783f84735c06d80e9400",
+          "5734e8bd58c5597965651f93f77233890fbd3a9102c1783f84735c06d80e9400"
+        ]
+      },
+      "candidate": {
+        "bench_nodes": 4125162,
+        "perft4_nodes": 197281,
+        "repeated_signatures": [
+          "40a3d997d2cd31391c58ba8745bd578f8a08550d869d78e44b01059785da38fc",
+          "40a3d997d2cd31391c58ba8745bd578f8a08550d869d78e44b01059785da38fc"
+        ]
+      }
+    },
+    "canonical_bench": {
+      "depth": 13,
+      "hash_mb": 16,
+      "positions": 51,
+      "threads": 1
+    },
+    "source_input_conformance": {
+      "buckets_per_row": 92,
+      "identical": true,
+      "network_sha256": "d5c257728ba53cb9808543ce2800080c860f1c878896cd1b17f75ed4b20aafee",
+      "raw_vectors_sha256": "0848d042eea5c2cf4fbae787be81d2962019a5493e7f74900250ab5c632b3f93",
+      "reference_engine_sha256": "12a8e7bfdd9b1189b4350bd9ebef3501be1e89bd5fa41dcb56921f85ba23869a",
+      "rows": 16
+    },
+    "source_receipt_sha256": "008d08d91efb6d2f9eb31bc14b9b07b31494e17d64f30362e8ee8188ecebe106"
+  },
+  "sampling": {
+    "both_colors": true,
+    "games": 256,
+    "overlap_with_component_schedules": 0,
+    "overlap_with_prior_formal_pool_starts": 0,
+    "pairs": 128,
+    "pool_roots": 336,
+    "pool_sha256": "759bcc928b96a204ba187331021f912b927715aef5c3524066bdd2187d3fec86",
+    "sample_with_replacement": true,
+    "schedule_opening_id_list_sha256": "83fbd853bcf4297691a22158b6389616bcbedbb71616c11a5e6034632b9cc9bc",
+    "seed": 2026110911,
+    "unique_draws": 110
+  },
+  "schema": "public-selected-vs-official-launch-v1",
+  "settings": {
+    "concurrency": 2,
+    "depth_limit": null,
+    "engine_move_overhead_ms": 10,
+    "evaluation_adjudication": false,
+    "fresh_engines_per_pair": true,
+    "hash_mb_per_engine": 64,
+    "nodes_per_move": null,
+    "ponder": false,
+    "referee_time_margin_ms": 0,
+    "strength_limit": false,
+    "tablebases": false,
+    "threads_per_engine": 1,
+    "time_control": "10+0.1"
+  },
+  "source_input_manifest_sha256": "01248d38e2c6613bcf78fda77633fff96326b3d5108ce2e7ce9d5abb969547f0",
+  "source_manifest_sha256": "ae56aa115a25817cba21f73eedb53cd95262405f07682713455c0294bb8a3faf",
+  "source_plan_sha256": "2129e3ac5c92491c55b3d50e8b21fffe1b2c77ad4696a8ea01ba0551378cabc6",
+  "source_prelaunch_sha256": "d4b98442c0f34de8a2ea2ac4259d8103efd727a52b30ea728ac7fc71fdfc69a4",
+  "source_selection_sha256": "2c9843f543cc26014bc6c7e0f110fa76ecba9cc7f3680fd975aa267ad1fabaa3",
+  "status": "launched_independent_final_pending",
+  "verified_gain": false
+}
