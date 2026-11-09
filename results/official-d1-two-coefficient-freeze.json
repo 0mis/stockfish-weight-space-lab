@@ -1,0 +1,57 @@
+{
+  "byte_replay_sha256": "6a7a52c34d4bcd26a0bcefac9887e37c8a3974c71c536fedee37b13e0669f830",
+  "engine": {
+    "commit": "7cdd5e89a39fe3071b67d91c7bb07d712044bf76",
+    "executable_sha256": "b67c37d0d45e3540e311392aeeb699e3a745f16e172bc3fc6f85e0782093842b",
+    "source_tree": "7086bc94bdb39564b678ec4812ecde485de58fb5",
+    "url": "https://github.com/official-stockfish/Stockfish/commit/7cdd5e89a39fe3071b67d91c7bb07d712044bf76"
+  },
+  "frozen_candidate": {
+    "all_other_bytes_equal": true,
+    "bytes": 136247652,
+    "edits": [
+      {
+        "after": 18,
+        "before": 14,
+        "delta": 4,
+        "head": 31,
+        "lane": 3,
+        "offset": 136247527
+      },
+      {
+        "after": 16,
+        "before": 12,
+        "delta": 4,
+        "head": 27,
+        "lane": 23,
+        "offset": 136106715
+      }
+    ],
+    "inverse_sha256": "d1ee674a62ca754648fb8c2907ff4e92f0c3acff28f59afa0f5bd4e3949538f1",
+    "sha256": "80124404107a47a02f0c22903b21d60ec2718a868677e1fb526e5f55bf425292"
+  },
+  "frozen_data_file_sha256": "3039611d8e45aa38eb18b4bf2befa7c0861161c60da18e7eaf338727f2e19b18",
+  "labels": "../research/lichess-multipv/train.json",
+  "method": "Component-equal supervised sparse readout calibration on fixed Lichess training labels. Each accepted edit changes one signed FC2 weight. Original and edited raw and static scores were compared with the same official executable.",
+  "original_d1": {
+    "bytes": 136247652,
+    "sha256": "d1ee674a62ca754648fb8c2907ff4e92f0c3acff28f59afa0f5bd4e3949538f1",
+    "url": "https://tests.stockfishchess.org/api/nn/nn-d1ee674a62ca.nnue"
+  },
+  "schema": "public-official-d1-sparse-readout-freeze-v1",
+  "scope": "A separate sparse weight fit on the official November 6 Stockfish engine and its original D1 NNUE.",
+  "source_plan": "https://github.com/0mis/Stockfish/blob/856af5b39b8e63c7da6389e185daa986983b4084/research/official_d1/plan.json",
+  "strength_games": 0,
+  "subsequent_screen_plan_sha256": "5a9460c850a8f80bec6e9581c83c948c05e10cb6edfad8c3c78d7e5d49358bba",
+  "train_audit_sha256": "627d4731330c728e401dd351a1fe1a21dfaee5277cedd4a8346d940d4ed65387",
+  "training": {
+    "held_pairs": 35,
+    "pairs_with_two_ordinary_scores": 293,
+    "root_count": 328,
+    "same_head_pairs": 282,
+    "sha256": "aca000f226d2fdeff0a45461d8fd5af28623b7b8de9ba3c698382b81173ca7d8",
+    "verified_ordinary_child_scores_per_network": 586
+  },
+  "training_run": "https://github.com/0mis/Stockfish/actions/runs/42608176797",
+  "verified_elo_gain": false
+}
