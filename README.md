@@ -32,7 +32,7 @@ Official state: **approved_open**; approved: **yes**; finished: **no**. A stale 
 
 | W / D / L | Points | Games (pairs) | Fishtest logistic Elo | Fishtest nominal 95% CI | Elo availability | SPRT state | LLR |
 | ---: | ---: | ---: | ---: | --- | --- | --- | ---: |
-| 8266 / 15886 / 8328 | 16209–16271 | 32480 (16240) | -0.66 | [-2.53, +1.20] | `current` | `undecided` | -1.261169 |
+| 8299 / 15922 / 8355 | 16260–16316 | 32576 (16288) | -0.60 | [-2.46, +1.26] | `current` | `undecided` | -1.192841 |
 
 Fishtest's normalized SPRT uses **[0, 2]**, **α = β = 0.05**, and LLR bounds **[−2.944439, +2.944439]**. Fishtest's nominal 95% CI is an SPRT/Brownian approximation, distinct from the local anytime lower bound. Official purges can lower the reported counts; this feed follows those counts. A finished run without an SPRT decision remains stopped/inconclusive. No farm decision automatically establishes an overall verified gain.
 
@@ -46,7 +46,7 @@ The test1757 prefetch source and original 18cd network face official Stockfish w
 
 The submitted source `de342a301195b34b7da76374fe3fadf29352de8d` shares tree `8e3164caf60d281cb4b1d00a699364e04b354451` with the tested commit `7a17b53bcaf93f54a23ad65f309c413585500c82`. It uses `nn-18cd32e11a9c.nnue` (bench `3464885`). The base is `7cdd5e89a39fe3071b67d91c7bb07d712044bf76` with `nn-d1ee674a62ca.nnue` (bench `1556650`).
 
-Zero games have been reported. Elo and its interval are pending.
+This run finished with zero games. No Elo estimate, confidence interval, or SPRT decision is available.
 
 Official state: **stopped_without_sprt_decision**; approved: **no**; finished: **yes**. A stale API label means these are the last validated official aggregates.
 
@@ -64,7 +64,7 @@ The nine-bias d5 NNUE edit faces its test1757 donor parent with the original 18c
 
 Candidate `d7155994d192b4e723866360ae9285b42e122790` uses `nn-d5c257728ba5.nnue` (bench `2376690`). Donor parent `de342a301195b34b7da76374fe3fadf29352de8d` uses `nn-18cd32e11a9c.nnue` (bench `3464885`).
 
-Zero games have been reported. Elo and its interval are pending.
+This run finished with zero games. No Elo estimate, confidence interval, or SPRT decision is available.
 
 Official state: **stopped_without_sprt_decision**; approved: **no**; finished: **yes**. A stale API label means these are the last validated official aggregates.
 
