@@ -75,7 +75,7 @@
     },
     "experiment": "Public NNUE-only test; independent of local trial-0003.",
     "observation": {
-      "approved": false,
+      "approved": true,
       "deleted": false,
       "failed": false,
       "finished": false,
@@ -119,7 +119,7 @@
         "state": "",
         "upper_bound": 2.9444389791664403
       },
-      "status": "pending_approval"
+      "status": "approved_open"
     },
     "run_id": "6af10a258e7fb2e78bc1ca5c",
     "url": "https://tests.stockfishchess.org/tests/view/6af10a258e7fb2e78bc1ca5c"

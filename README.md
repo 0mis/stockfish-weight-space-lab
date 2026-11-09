@@ -26,7 +26,7 @@ Ledger checkpoint: event `307`, SHA-256 `c409e9e9b996385cd36bd3cf62ca889d4327513
 
 This is a separate NNUE-only experiment. Its executable, clocks, normalized SPRT and results remain separate from local trial-0003's paired e-process.
 
-Official state: **pending_approval**; approved: **no**; finished: **no**. A stale API label means these are the last validated official aggregates.
+Official state: **approved_open**; approved: **yes**; finished: **no**. A stale API label means these are the last validated official aggregates.
 
 | W / D / L | Points | Games (pairs) | Fishtest logistic Elo | Fishtest nominal 95% CI | Elo availability | SPRT state | LLR |
 | ---: | ---: | ---: | ---: | --- | --- | --- | ---: |
