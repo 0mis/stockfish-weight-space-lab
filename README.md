@@ -32,7 +32,7 @@ Official state: **approved_open**; approved: **yes**; finished: **no**. A stale 
 
 | W / D / L | Points | Games (pairs) | Fishtest logistic Elo | Fishtest nominal 95% CI | Elo availability | SPRT state | LLR |
 | ---: | ---: | ---: | ---: | --- | --- | --- | ---: |
-| 7454 / 14436 / 7550 | 14672–14768 | 29440 (14720) | -1.13 | [-3.10, +0.83] | `current` | `undecided` | -1.604950 |
+| 7475 / 14461 / 7568 | 14705.5–14798.5 | 29504 (14752) | -1.10 | [-3.06, +0.87] | `current` | `undecided` | -1.570700 |
 
 Fishtest's normalized SPRT uses **[0, 2]**, **α = β = 0.05**, and LLR bounds **[−2.944439, +2.944439]**. Fishtest's nominal 95% CI is an SPRT/Brownian approximation, distinct from the local anytime lower bound. Official purges can lower the reported counts; this feed follows those counts. A finished run without an SPRT decision remains stopped/inconclusive. No farm decision automatically establishes an overall verified gain.
 
@@ -66,7 +66,7 @@ Candidate `d7155994d192b4e723866360ae9285b42e122790` uses `nn-d5c257728ba5.nnue`
 
 Zero games have been reported. Elo and its interval are pending.
 
-Official state: **pending_approval**; approved: **no**; finished: **no**. A stale API label means these are the last validated official aggregates.
+Official state: **stopped_without_sprt_decision**; approved: **no**; finished: **yes**. A stale API label means these are the last validated official aggregates.
 
 | W / D / L | Points | Games (pairs) | Fishtest logistic Elo | Fishtest nominal 95% CI | Elo availability | SPRT state | LLR |
 | ---: | ---: | ---: | ---: | --- | --- | --- | ---: |

@@ -85,7 +85,7 @@
       "approved": false,
       "deleted": false,
       "failed": false,
-      "finished": false,
+      "finished": true,
       "maximum_games": 800000,
       "reported_elo": {
         "availability": "no_games",
@@ -126,7 +126,7 @@
         "state": "",
         "upper_bound": 2.9444389791664403
       },
-      "status": "pending_approval"
+      "status": "stopped_without_sprt_decision"
     },
     "reference_label": "test1757 donor parent with original 18cd NNUE",
     "run_id": "6af19afb8e7fb2e78bc1cb30",
@@ -163,33 +163,33 @@
       "reported_elo": {
         "availability": "current",
         "confidence_interval": [
-          -3.0961316050387513,
-          0.8302782347890485
+          -3.0569501512337083,
+          0.8666514118757169
         ],
         "confidence_percent": 95,
-        "estimate": -1.1328957602900211,
+        "estimate": -1.0951188089677244,
         "estimate_scale": "logistic",
         "label": "Fishtest logistic Elo and nominal 95% CI",
         "model": "normalized",
         "model_scope": "SPRT"
       },
       "results": {
-        "candidate_points": 14672.0,
+        "candidate_points": 14705.5,
         "crashes": 0,
-        "draws": 14436,
-        "games": 29440,
-        "losses": 7550,
-        "pairs": 14720,
+        "draws": 14461,
+        "games": 29504,
+        "losses": 7568,
+        "pairs": 14752,
         "pentanomial": [
-          45,
-          3484,
-          7744,
-          3416,
+          46,
+          3490,
+          7758,
+          3427,
           31
         ],
-        "reference_points": 14768.0,
+        "reference_points": 14798.5,
         "time_losses": 0,
-        "wins": 7454
+        "wins": 7475
       },
       "sprt": {
         "alpha": 0.05,
@@ -197,7 +197,7 @@
         "elo0": 0.0,
         "elo1": 2.0,
         "elo_model": "normalized",
-        "llr": -1.6049498394878159,
+        "llr": -1.5706999597167175,
         "lower_bound": -2.9444389791664403,
         "state": "",
         "upper_bound": 2.9444389791664403
