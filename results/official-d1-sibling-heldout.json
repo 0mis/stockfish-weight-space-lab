@@ -1,0 +1,136 @@
+{
+  "accepted_audit_sha256": "6165a04ea5495ff9797dad8e5f5ce0267b1c5ebbf105097af08eea133b310df5",
+  "all_biases_and_other_bytes_unchanged": true,
+  "candidate_bytes": 136247652,
+  "candidate_heldout_loss_cp_squared": {
+    "denominator": 1380,
+    "numerator": 617437
+  },
+  "candidate_minus_original_cp_squared": {
+    "denominator": 184,
+    "numerator": 477
+  },
+  "candidate_rank_errors": {
+    "component_equal_strict_reversal_fraction": {
+      "denominator": 2760,
+      "numerator": 697
+    },
+    "rank1_preferred": 45,
+    "strict_reversals": 17,
+    "ties": 0
+  },
+  "candidate_sha256": "80124404107a47a02f0c22903b21d60ec2718a868677e1fb526e5f55bf425292",
+  "changed_bytes": 2,
+  "credits": {
+    "base_and_network": "Stockfish developers and original D1 network contributors",
+    "lab": "0mis/stockfish-weight-space-lab",
+    "network_license": "CC0",
+    "source_license": "GPL-3.0-or-later"
+  },
+  "edits": [
+    {
+      "after": 18,
+      "before": 14,
+      "delta": 4,
+      "head": 31,
+      "serialized_lane": 3
+    },
+    {
+      "after": 16,
+      "before": 12,
+      "delta": 4,
+      "head": 27,
+      "serialized_lane": 23
+    }
+  ],
+  "engine_sha256": "b67c37d0d45e3540e311392aeeb699e3a745f16e172bc3fc6f85e0782093842b",
+  "excluded_child_counts": {
+    "in_check": 6
+  },
+  "fixed_validation_input_sha256": "f542d111aa1c850c00da08beb6d45a8fa5b0447a6aa9df93d06350ee4ba5cd24",
+  "heldout_candidate_loss_direction": "worse",
+  "heldout_run_url": "https://github.com/0mis/Stockfish/actions/runs/42616537507",
+  "independent_acceptance_sha256": "d86a8c7422d0992cc2ec4e5a9b63c47c4994e88ab8fcb6d88e021d16b2a27db6",
+  "limitations": [
+    "Published Lichess search labels retain source engine-version and score-bound limitations.",
+    "The fixed connected-component validation split is a proxy dataset, not an Elo estimate or an unselected chess population.",
+    "Bench node counts and perft are functional signatures, not speed or strength comparisons.",
+    "The earlier failed job was repaired only for benchmark Chess960 parsing; frozen weights and validation decisions did not change."
+  ],
+  "matched_components": 46,
+  "matched_cross_head_pairs": 3,
+  "matched_roots": 62,
+  "matched_touching_changed_heads": 51,
+  "matched_unchanged_heads": 11,
+  "measured_children": 130,
+  "method": "Supervised sparse FC2 calibration; model chosen on training only and unchanged after heldout access.",
+  "no_performance_gate": true,
+  "original_heldout_loss_cp_squared": {
+    "denominator": 2760,
+    "numerator": 1227719
+  },
+  "original_rank_errors": {
+    "component_equal_strict_reversal_fraction": {
+      "denominator": 2760,
+      "numerator": 697
+    },
+    "rank1_preferred": 45,
+    "strict_reversals": 17,
+    "ties": 0
+  },
+  "overlapping_parent_exclusions": {
+    "in_check_child_rank_1": 3,
+    "in_check_child_rank_2": 3
+  },
+  "parent_sha256": "d1ee674a62ca754648fb8c2907ff4e92f0c3acff28f59afa0f5bd4e3949538f1",
+  "qualification": {
+    "candidate": {
+      "bench_nodes": 1444529,
+      "bench_positions": 51,
+      "bench_repetitions": 2,
+      "mode_aware_vector_signature_sha256": "18a94bafa85ad22d9fb57736140916137e16089a336efc44cfd37810cd3933a0",
+      "mode_aware_vector_signatures": [
+        "18a94bafa85ad22d9fb57736140916137e16089a336efc44cfd37810cd3933a0",
+        "18a94bafa85ad22d9fb57736140916137e16089a336efc44cfd37810cd3933a0"
+      ],
+      "native_validate_search_signature_sha256": "b150c66a5a8d2728eaa4c4d36c44df0359d0f9693bbb151c7185e3e4458c5e59",
+      "native_validate_search_signatures": [
+        "b150c66a5a8d2728eaa4c4d36c44df0359d0f9693bbb151c7185e3e4458c5e59",
+        "b150c66a5a8d2728eaa4c4d36c44df0359d0f9693bbb151c7185e3e4458c5e59"
+      ],
+      "network_sha256": "80124404107a47a02f0c22903b21d60ec2718a868677e1fb526e5f55bf425292",
+      "perft4_nodes": 197281,
+      "structural_qualification_passed": true
+    },
+    "original": {
+      "bench_nodes": 1556650,
+      "bench_positions": 51,
+      "bench_repetitions": 2,
+      "mode_aware_vector_signature_sha256": "2451acec3d41560ec628ae3e6122f75a6b028c3e1dce818ef90bf346e3804506",
+      "mode_aware_vector_signatures": [
+        "2451acec3d41560ec628ae3e6122f75a6b028c3e1dce818ef90bf346e3804506",
+        "2451acec3d41560ec628ae3e6122f75a6b028c3e1dce818ef90bf346e3804506"
+      ],
+      "native_validate_search_signature_sha256": "5734e8bd58c5597965651f93f77233890fbd3a9102c1783f84735c06d80e9400",
+      "native_validate_search_signatures": [
+        "5734e8bd58c5597965651f93f77233890fbd3a9102c1783f84735c06d80e9400",
+        "5734e8bd58c5597965651f93f77233890fbd3a9102c1783f84735c06d80e9400"
+      ],
+      "network_sha256": "d1ee674a62ca754648fb8c2907ff4e92f0c3acff28f59afa0f5bd4e3949538f1",
+      "perft4_nodes": 197281,
+      "structural_qualification_passed": true
+    }
+  },
+  "root_denominator": 68,
+  "schema": "official-d1-public-sparse-fc2-heldout-result/1",
+  "scope": "Fixed validation proxy and functional checks; no verified playing-strength gain.",
+  "source_commit": "7cdd5e89a39fe3071b67d91c7bb07d712044bf76",
+  "source_tree": "7086bc94bdb39564b678ec4812ecde485de58fb5",
+  "status": "heldout_and_functional_qualification_complete",
+  "training_freeze_sha256": "f28919bd755fda5f5908cc1f2a42c478db1d81447fb5b50edf7583d2ac689e52",
+  "training_run_url": "https://github.com/0mis/Stockfish/actions/runs/42608176797",
+  "unavailable_roots": 6,
+  "validation_driver_commit": "388011558e440fc93f4aacbbaf4aef41d387578c",
+  "verified_gain": false,
+  "winner_decided": false
+}
