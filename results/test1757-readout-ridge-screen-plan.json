@@ -1,0 +1,76 @@
+{
+  "baseline_network": {
+    "filename": "nn-18cd32e11a9c.nnue",
+    "sha256": "18cd32e11a9cac7c595bc6ebf1301088da8e1f2c7b31efda88dbc74c71f5d2cf",
+    "upstream_url": "https://data.stockfishchess.org/nn/nn-18cd32e11a9c.nnue"
+  },
+  "credits": {
+    "base": "Stockfish developers and contributors",
+    "engine_and_lab_license": "GPL-3.0-or-later",
+    "lab": "0mis/stockfish-weight-space-lab; AI-assisted experiment and reproduction code",
+    "lab_source_url": "https://github.com/0mis/stockfish-weight-space-lab",
+    "network": "Shawn Xu (xu-shawn), test1757; the original network remains credited to its upstream author.",
+    "network_source_url": "https://github.com/xu-shawn/Stockfish/tree/d5a2bda7f028430f79e1789d47ae3228defb843b",
+    "prefetch": "SanityEclipse000 (MxTriX77), official-stockfish/Stockfish PR 7294",
+    "upstream_network_license": "CC0"
+  },
+  "fit": {
+    "driver_commit": "08abd7bd1c3fa9a504a0fa8556a6bef6633933cc",
+    "driver_url": "https://github.com/0mis/Stockfish/tree/08abd7bd1c3fa9a504a0fa8556a6bef6633933cc/research/readout_ridge",
+    "game_candidate": "The sole structurally qualified nonidentity NNUE from the frozen regularized readout fit. Bind its hash/bench and verify it locally before any game.",
+    "holdout_opening_families": 15,
+    "method": "Supervised calibration against stable depth-9/depth-13 search labels; family-equal ridge fitting of signed int32 FC2 biases; one jointly frozen vector of 92 physical-head deltas.",
+    "optimization_opening_families": 48,
+    "plan_sha256": "0e1e9ea256663bd6e204258f149d1916d9e119786c7cdb8eb524484bfc5f9a03",
+    "plan_url": "https://github.com/0mis/Stockfish/blob/08abd7bd1c3fa9a504a0fa8556a6bef6633933cc/research/readout_ridge/plan.json",
+    "prior_exposure": "Earlier diagnostics viewed optimization labels for two heads. Fitting uses only the optimization partition. Holdout diagnostics do not select or tune the fixed candidate.",
+    "required_before_games": "A separate independently audited receipt must bind the sole nonidentity candidate SHA-256, inverse patch, repeatable native bench, perft4 and local qualification. An identity or structurally invalid result does not start this screen.",
+    "run_url": "https://github.com/0mis/Stockfish/actions/runs/42583426891"
+  },
+  "formal_alpha_reserved": false,
+  "question": "Does the one frozen regularized NNUE readout calibration outperform its original network at short real clocks?",
+  "sampling": {
+    "both_colors_each_draw": true,
+    "excluded_calibration_families": 63,
+    "fixed_all_pairs_before_selection": true,
+    "future_confirmation_reuse": false,
+    "games": 128,
+    "method": "iid_with_replacement",
+    "pairs": 64,
+    "pool": "Retired development positions excluding all 63 public calibration families and eligible corpus aliases.",
+    "pool_positions": 449,
+    "pool_sha256": "9303c2d3088395f640a68716d3160159b28762e391b0c9f84d3e3f75ba45c7c2",
+    "protected_confirmation_pool_start_id_overlap": 0,
+    "schedule_opening_id_list_sha256": "c829e3a06dd0006a0da6ccce5a82006535224532a96b097ab31204992e705334",
+    "seed": 2026110910,
+    "unique_draws": 59
+  },
+  "schema": "test1757-public-readout-ridge-screen-plan-v1",
+  "scope": "Prospective experimental development screen; no verified Elo gain.",
+  "screen_plan_frozen_utc": "2026-11-09T07:56:55.342247+00:00",
+  "selection": "Play the structurally qualified fixed candidate irrespective of the proxy error sign. Select it for further testing only if it scores strictly more than 64 points in all 128 complete audited games against original 18cd. A tie or lower score retains the parent.",
+  "settings": {
+    "concurrency": 2,
+    "depth_limit": null,
+    "engine_move_overhead_ms": 10,
+    "evaluation_adjudication": false,
+    "fresh_engines_per_pair": true,
+    "hash_mb_per_engine": 64,
+    "nodes_per_move": null,
+    "ponder": false,
+    "referee_time_margin_ms": 0,
+    "strength_limit": false,
+    "tablebases": false,
+    "threads_per_engine": 1,
+    "time_control": "10+0.1"
+  },
+  "shared_engine": {
+    "name": "test1757 prefetch",
+    "sha256": "12a8e7bfdd9b1189b4350bd9ebef3501be1e89bd5fa41dcb56921f85ba23869a",
+    "source_commit": "7a17b53bcaf93f54a23ad65f309c413585500c82",
+    "source_url": "https://github.com/0mis/Stockfish/tree/7a17b53bcaf93f54a23ad65f309c413585500c82"
+  },
+  "source_screen_plan_sha256": "d36352bc61e795ecf5523be82b881e7b5518ffec4e77fdc1ea374217569a3464",
+  "validity": "Require all 64 reversed-color pairs and an independent raw audit. Retain authentic clock forfeits and failures. No outcome-based replay, seed change, extension or selective omission.",
+  "verified_gain": false
+}
