@@ -1,0 +1,62 @@
+{
+  "candidate_executable_sha256": {
+    "history": "ae1d4772a71529085b26d7460e76fcf65dbe09782e55ea67ecef2e4f033c5ba5",
+    "prefetch": "12a8e7bfdd9b1189b4350bd9ebef3501be1e89bd5fa41dcb56921f85ba23869a"
+  },
+  "candidate_nnue_sha256": {
+    "nine_bias_edit": "d5c257728ba53cb9808543ce2800080c860f1c878896cd1b17f75ed4b20aafee",
+    "original": "18cd32e11a9cac7c595bc6ebf1301088da8e1f2c7b31efda88dbc74c71f5d2cf"
+  },
+  "frozen_plan_sha256": "2129e3ac5c92491c55b3d50e8b21fffe1b2c77ad4696a8ea01ba0551378cabc6",
+  "frozen_rule_sha256": "4029bfe417c4bfc0f674c0e6408979a0c9bc4e403b140d28882f66c407c70ecc",
+  "input_freeze_utc": "2026-11-09T08:53:43.178369Z",
+  "opponent": {
+    "engine_sha256": "b67c37d0d45e3540e311392aeeb699e3a745f16e172bc3fc6f85e0782093842b",
+    "name": "Official Stockfish November 6 development build",
+    "nnue_sha256": "d1ee674a62ca754648fb8c2907ff4e92f0c3acff28f59afa0f5bd4e3949538f1",
+    "source": "7cdd5e89a39fe3071b67d91c7bb07d712044bf76",
+    "source_url": "https://github.com/official-stockfish/Stockfish/commit/7cdd5e89a39fe3071b67d91c7bb07d712044bf76"
+  },
+  "qualification_rule": "Select the combined engine for longer testing only if it scores more than 128 points in all 256 audited games against the pinned official release.",
+  "registration_timing": "The search-component outcome was known when this rule was set. The rule was fixed before the first ridge game. The pool, full schedule and remaining inputs were recorded when three ridge pair results existed. The planner read none of those outcomes.",
+  "sampling": {
+    "both_colors": true,
+    "games": 256,
+    "overlap_with_component_schedules": 0,
+    "overlap_with_prior_formal_pool_starts": 0,
+    "pairs": 128,
+    "pool_roots": 336,
+    "pool_sha256": "759bcc928b96a204ba187331021f912b927715aef5c3524066bdd2187d3fec86",
+    "sample_with_replacement": true,
+    "schedule_opening_id_list_sha256": "83fbd853bcf4297691a22158b6389616bcbedbb71616c11a5e6034632b9cc9bc",
+    "seed": 2026110911,
+    "unique_draws": 110
+  },
+  "schema": "public-test1757-selected-vs-official-plan-v1",
+  "selection": {
+    "combination": "Compare one selected combination. If neither component qualifies, skip this comparison.",
+    "history_games": 128,
+    "history_result_url": "https://github.com/0mis/stockfish-weight-space-lab/blob/739e76327fb6dae96b399ee46e27873dfdb9858b/results/test1757-history-floor-screen-result.json",
+    "known_history_points": 68,
+    "nnue": "Use the nine-bias edit if it scores more than 64 points in its 128-game match with original 18cd. Otherwise use original 18cd.",
+    "nnue_result_pending_at_registration": true,
+    "source": "Use the history-bonus build if it scores more than 64 points in its 128-game match with the prefetch parent. Otherwise use the prefetch build."
+  },
+  "selection_rule_utc": "2026-11-09T08:48:28.388932Z",
+  "settings": {
+    "concurrency": 2,
+    "depth_limit": null,
+    "engine_move_overhead_ms": 10,
+    "evaluation_adjudication": false,
+    "fresh_engines_per_pair": true,
+    "hash_mb_per_engine": 64,
+    "nodes_per_move": null,
+    "ponder": false,
+    "referee_time_margin_ms": 0,
+    "strength_limit": false,
+    "tablebases": false,
+    "threads_per_engine": 1,
+    "time_control": "10+0.1"
+  },
+  "verified_gain": false
+}
