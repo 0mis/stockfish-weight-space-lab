@@ -1,0 +1,53 @@
+{
+  "counts": {
+    "black_roots": 196,
+    "both_children_board_eligible_for_static": 355,
+    "roots": 396,
+    "train_components": 164,
+    "train_roots": 328,
+    "validation_components": 48,
+    "validation_roots": 68,
+    "white_roots": 200
+  },
+  "files": {
+    "README.md": {
+      "bytes": 3627,
+      "sha256": "31ccc2a314dc142a710afc142c389ac7d6996e0af1b090afe543c8406958970b"
+    },
+    "train.json": {
+      "bytes": 781403,
+      "sha256": "aca000f226d2fdeff0a45461d8fd5af28623b7b8de9ba3c698382b81173ca7d8"
+    },
+    "validation.json": {
+      "bytes": 162650,
+      "sha256": "f542d111aa1c850c00da08beb6d45a8fa5b0447a6aa9df93d06350ee4ba5cd24"
+    }
+  },
+  "includes_only_selected_standardized_pairs_and_public_provenance": true,
+  "license": "CC0-1.0",
+  "native_prediction_measurements_performed": false,
+  "projection": "ordered-first-move-pairs-v1",
+  "prospective_split": {
+    "component_key": "Minimum alias SHA256 in the component.",
+    "frozen_before_prediction_inputs": true,
+    "grouping": "Connected components share any root, child or reported-PV FEN alias across eligible records.",
+    "hash_input_ascii": "lichess-multipv-readout-v1/component|<component_key>",
+    "partition_seed_adapted": false,
+    "validation_rule": "int(SHA256(hash_input_ascii),16) modulo5 equals0; all others train."
+  },
+  "schema": "lichess-multipv-hosted-inputs-v1",
+  "source": {
+    "compressed_prefix_bytes": 4194304,
+    "compressed_prefix_offset": 0,
+    "compressed_prefix_sha256": "5e0660280702b190722bad48932050c9eb62fe8b1d10282f1539d13c34d86ad0",
+    "download_url": "https://database.lichess.org/lichess_db_eval.jsonl.zst",
+    "export_source": "https://github.com/lichess-org/database/blob/736ceece567045e49cd699e859a3534adf7d41d5/src/main/scala/Evals.scala#L87-L101",
+    "http_etag": "\"6ae7758f-53d15af85\"",
+    "http_last_modified": "Sun, 01 Nov 2026 17:23:27 GMT",
+    "information_url": "https://database.lichess.org/#evals",
+    "license": "CC0-1.0",
+    "release_page_updated": "2026-11-03",
+    "white_score_storage_source": "https://github.com/lichess-org/lila/blob/9ef2d110229b0eed2c1d66695896821dca1ca522/modules/evalCache/src/main/BSONHandlers.scala#L16-L21"
+  },
+  "split_alias_intersection": 0
+}
