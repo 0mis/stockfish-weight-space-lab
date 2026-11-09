@@ -163,33 +163,33 @@
       "reported_elo": {
         "availability": "current",
         "confidence_interval": [
-          -2.8320922153064854,
-          0.48452362133347715
+          -2.9226144175149855,
+          0.38475040372505753
         ],
         "confidence_percent": 95,
-        "estimate": -1.175290381965478,
+        "estimate": -1.2720845797895826,
         "estimate_scale": "logistic",
         "label": "Fishtest logistic Elo and nominal 95% CI",
         "model": "normalized",
         "model_scope": "SPRT"
       },
       "results": {
-        "candidate_points": 20569.5,
+        "candidate_points": 20802.0,
         "crashes": 0,
-        "draws": 20251,
-        "games": 41280,
-        "losses": 10585,
-        "pairs": 20640,
+        "draws": 20490,
+        "games": 41760,
+        "losses": 10713,
+        "pairs": 20880,
         "pentanomial": [
           59,
-          4877,
-          10892,
-          4770,
-          42
+          4940,
+          11022,
+          4816,
+          43
         ],
-        "reference_points": 20710.5,
+        "reference_points": 20958.0,
         "time_losses": 0,
-        "wins": 10444
+        "wins": 10557
       },
       "sprt": {
         "alpha": 0.05,
@@ -197,7 +197,7 @@
         "elo0": 0.0,
         "elo1": 2.0,
         "elo_model": "normalized",
-        "llr": -2.3288863746566353,
+        "llr": -2.5121807793833444,
         "lower_bound": -2.9444389791664403,
         "state": "",
         "upper_bound": 2.9444389791664403
@@ -210,8 +210,8 @@
   "integrity_audit": "independent_terminal_audit_pending",
   "interpretation": "Provisional estimates. Statistical gain requires both reference gates and an independent terminal integrity audit before verified-gain wording. A statistical continue decision does not report sampler liveness.",
   "ledger_prefix": {
-    "event_index": 377,
-    "head_sha256": "a2581890c4ab16024b2b6a93652aff070759256854480f7fa4d2521968e2f048"
+    "event_index": 378,
+    "head_sha256": "e5fafb66fa82781829c5163f37edecb17054e47d2d8ed24fb0ca9aceaca086e5"
   },
   "protocol": {
     "confidence_interpretation": "Fixed protocol coverage under its assumptions, not a probability of superiority.",

@@ -20,7 +20,7 @@ Each reference needs at least **128 pairs** and log-evidence ≥ **7.78322**. Bo
 
 Trial ledger state: **open**. Both statistical gates passed: **no**. Verified gain: **not established by this progress feed**.
 
-Ledger checkpoint: event `377`, SHA-256 `a2581890c4ab16024b2b6a93652aff070759256854480f7fa4d2521968e2f048`. [Aggregate JSON](results/live-status.json).
+Ledger checkpoint: event `378`, SHA-256 `e5fafb66fa82781829c5163f37edecb17054e47d2d8ed24fb0ca9aceaca086e5`. [Aggregate JSON](results/live-status.json).
 
 ### Public Fishtest NNUE-only test
 
@@ -32,7 +32,7 @@ Official state: **approved_open**; approved: **yes**; finished: **no**. A stale 
 
 | W / D / L | Points | Games (pairs) | Fishtest logistic Elo | Fishtest nominal 95% CI | Elo availability | SPRT state | LLR |
 | ---: | ---: | ---: | ---: | --- | --- | --- | ---: |
-| 10444 / 20251 / 10585 | 20569.5–20710.5 | 41280 (20640) | -1.18 | [-2.83, +0.48] | `current` | `undecided` | -2.328886 |
+| 10557 / 20490 / 10713 | 20802–20958 | 41760 (20880) | -1.27 | [-2.92, +0.38] | `current` | `undecided` | -2.512181 |
 
 Fishtest's normalized SPRT uses **[0, 2]**, **α = β = 0.05**, and LLR bounds **[−2.944439, +2.944439]**. Fishtest's nominal 95% CI is an SPRT/Brownian approximation, distinct from the local anytime lower bound. Official purges can lower the reported counts; this feed follows those counts. A finished run without an SPRT decision remains stopped/inconclusive. No farm decision automatically establishes an overall verified gain.
 
