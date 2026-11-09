@@ -9,7 +9,7 @@ Trial `trial-0003` · **provisional, independently unverified** · `60+0.6 / T1 
 
 | Reference | W / D / L | Points | Games (pairs) | Logistic Elo estimate | Anytime lower Elo bound | Statistical decision | Minimum pairs |
 | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `spcc-261025` | 74 / 127 / 71 | 137.5–134.5 | 272 (136) | +3.83 | -37.49 | `continue` | 136/128 (reached) |
+| `spcc-261025` | 74 / 128 / 72 | 138–136 | 274 (137) | +2.54 | -38.74 | `continue` | 137/128 (reached) |
 | `dev-261106` | 0 / 0 / 0 | 0–0 | 0 (0) | pending | −∞ | `continue` | 0/128 (pending) |
 
 The paired, one-sided anytime lower bounds use **99.958333%** coverage per reference (trial allocation: **99.916667%**; whole research family: **99%**). These are fixed protocol coverage levels under its assumptions, not probabilities that the candidate is stronger.
@@ -18,7 +18,7 @@ Each reference needs at least **128 pairs** and log-evidence ≥ **7.78322**. Bo
 
 Trial ledger state: **open**. Both statistical gates passed: **no**. Verified gain: **not established by this progress feed**.
 
-Ledger checkpoint: event `309`, SHA-256 `d288a75da0578382ceac7b292849e68826e2afc56c3999da45a3e55c93729c4d`. [Aggregate JSON](results/live-status.json).
+Ledger checkpoint: event `310`, SHA-256 `b7a1c375e999061f5919d91a60f0de04a9a77d5ffadd3cc3c8a83ae0ea54afc2`. [Aggregate JSON](results/live-status.json).
 
 ### Public Fishtest NNUE-only test
 
