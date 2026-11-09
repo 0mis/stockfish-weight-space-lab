@@ -134,7 +134,7 @@
     "url": "https://tests.stockfishchess.org/tests/view/6af19afb8e7fb2e78bc1cb30"
   },
   "fishtest": {
-    "availability": "stale",
+    "availability": "current",
     "configuration": {
       "base_nets": [
         "nn-d1ee674a62ca.nnue"
@@ -161,35 +161,35 @@
       "finished": false,
       "maximum_games": 800000,
       "reported_elo": {
-        "availability": "stale",
+        "availability": "current",
         "confidence_interval": [
-          -3.5092824481284723,
-          0.7394518002622487
+          -3.4796498249996994,
+          0.7548962509316421
         ],
         "confidence_percent": 95,
-        "estimate": -1.3848644823890284,
+        "estimate": -1.3623271324302872,
         "estimate_scale": "logistic",
         "label": "Fishtest logistic Elo and nominal 95% CI",
         "model": "normalized",
         "model_scope": "SPRT"
       },
       "results": {
-        "candidate_points": 12494.0,
+        "candidate_points": 12574.5,
         "crashes": 0,
-        "draws": 12328,
-        "games": 25088,
-        "losses": 6430,
-        "pairs": 12544,
+        "draws": 12417,
+        "games": 25248,
+        "losses": 6465,
+        "pairs": 12624,
         "pentanomial": [
           41,
-          2961,
-          6628,
-          2885,
+          2979,
+          6671,
+          2904,
           29
         ],
-        "reference_points": 12594.0,
+        "reference_points": 12673.5,
         "time_losses": 0,
-        "wins": 6330
+        "wins": 6366
       },
       "sprt": {
         "alpha": 0.05,
@@ -197,7 +197,7 @@
         "elo0": 0.0,
         "elo1": 2.0,
         "elo_model": "normalized",
-        "llr": -1.5806481631842868,
+        "llr": -1.5718412456007957,
         "lower_bound": -2.9444389791664403,
         "state": "",
         "upper_bound": 2.9444389791664403
