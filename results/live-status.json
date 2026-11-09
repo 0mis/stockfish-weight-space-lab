@@ -53,6 +53,75 @@
     }
   ],
   "completion_verified": false,
+  "fishtest": {
+    "availability": "current",
+    "configuration": {
+      "base_nets": [
+        "nn-d1ee674a62ca.nnue"
+      ],
+      "base_options": "Hash=16",
+      "base_signature": "1556650",
+      "new_nets": [
+        "nn-fcbaf7d2197c.nnue"
+      ],
+      "new_options": "Hash=16",
+      "new_signature": "2261721",
+      "new_tc": "10+0.1",
+      "resolved_base": "7cdd5e89a39fe3071b67d91c7bb07d712044bf76",
+      "resolved_new": "9579e56ec2926265abe40ca20ba069d6463a66b6",
+      "tc": "10+0.1",
+      "tests_repo": "https://github.com/0mis/Stockfish",
+      "threads": 1
+    },
+    "experiment": "Public NNUE-only test; independent of local trial-0003.",
+    "observation": {
+      "approved": false,
+      "deleted": false,
+      "failed": false,
+      "finished": false,
+      "maximum_games": 800000,
+      "reported_elo": {
+        "availability": "no_games",
+        "confidence_interval": null,
+        "estimate": null,
+        "label": "Fishtest-reported Elo and CI",
+        "model": "normalized",
+        "model_scope": "SPRT"
+      },
+      "results": {
+        "candidate_points": 0.0,
+        "crashes": 0,
+        "draws": 0,
+        "games": 0,
+        "losses": 0,
+        "pairs": 0,
+        "pentanomial": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "reference_points": 0.0,
+        "time_losses": 0,
+        "wins": 0
+      },
+      "sprt": {
+        "alpha": 0.05,
+        "beta": 0.05,
+        "elo0": 0.0,
+        "elo1": 2.0,
+        "elo_model": "normalized",
+        "llr": 0.0,
+        "lower_bound": -2.9444389791664403,
+        "state": "",
+        "upper_bound": 2.9444389791664403
+      },
+      "status": "pending_approval"
+    },
+    "run_id": "6af10a258e7fb2e78bc1ca5c",
+    "url": "https://tests.stockfishchess.org/tests/view/6af10a258e7fb2e78bc1ca5c"
+  },
   "integrity_audit": "independent_terminal_audit_pending",
   "interpretation": "Provisional estimates. Statistical gain requires both reference gates and an independent terminal integrity audit before verified-gain wording. A statistical continue decision does not report sampler liveness.",
   "ledger_prefix": {

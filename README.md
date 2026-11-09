@@ -19,6 +19,22 @@ Each reference needs at least **128 pairs** and log-evidence ≥ **7.78322**. Bo
 Trial ledger state: **open**. Both statistical gates passed: **no**. Verified gain: **not established by this progress feed**.
 
 Ledger checkpoint: event `287`, SHA-256 `203908e0c2d6df6a682e5cd9ff26631366d9ca4c61ced80e08ec8b5e16dc6230`. [Aggregate JSON](results/live-status.json).
+
+### Public Fishtest NNUE-only test
+
+[Official run `6af10a258e7fb2e78bc1ca5c`](https://tests.stockfishchess.org/tests/view/6af10a258e7fb2e78bc1ca5c) · `10+0.1 / T1 / H16` · API **current**
+
+This is a separate NNUE-only experiment. Its executable, clocks, normalized SPRT and results remain separate from local trial-0003's paired e-process.
+
+Official state: **pending_approval**; approved: **no**; finished: **no**. A stale API label means these are the last validated official aggregates.
+
+| W / D / L | Points | Games (pairs) | Fishtest-reported Elo | Fishtest-reported CI | Elo availability | SPRT state | LLR |
+| ---: | ---: | ---: | ---: | --- | --- | --- | ---: |
+| 0 / 0 / 0 | 0–0 | 0 (0) | unavailable | unavailable | `no_games` | `undecided` | 0.000000 |
+
+Fishtest's normalized SPRT uses **[0, 2]**, **α = β = 0.05**, and LLR bounds **[−2.944439, +2.944439]**. Official purges can lower the reported counts; this feed follows those counts. A finished run without an SPRT decision remains stopped/inconclusive. No farm decision automatically establishes an overall verified gain.
+
+Candidate network: `nn-fcbaf7d2197c.nnue`; reference: `nn-d1ee674a62ca.nnue`. Source revisions: `9579e56ec2926265abe40ca20ba069d6463a66b6` / `7cdd5e89a39fe3071b67d91c7bb07d712044bf76`.
 <!-- live-status:end -->
 
 The current real-clock comparison uses one thread, 64 MiB hash and `60+0.6` for both engines. Its references are Stockfish 261025, the leader on the [SPCC VLTC list](https://www.sp-cc.de/), and the official November 6 development build `7cdd5e89`. The second comparison starts after a positive statistical decision against the first reference. An independent integrity audit is also required before claiming a verified gain.
