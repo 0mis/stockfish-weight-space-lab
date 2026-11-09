@@ -70,6 +70,40 @@ class ProgressTests(unittest.TestCase):
         self.assertEqual(combined["fishtest"]["availability"], "unavailable")
         self.assertIn("separate NNUE-only experiment", progress.marker_block(combined))
 
+    def test_two_farms_keep_their_own_slots_and_pending_markers(self):
+        old = FishtestTests.run_fixture(8)
+        old["elo"] = {"elo": -1.5, "ci": [-3, 1]}
+        new = SourceFishtestTests.source_fixture(0)
+        new["approved"] = False
+        d1 = progress.FishtestObserver(progress.FISHTEST_RUN_ID, fetch=Mock(return_value=old), clock=lambda: 0)
+        source_fetch = Mock(return_value=new)
+        source = progress.FishtestObserver(progress.SOURCE_FISHTEST_RUN_ID, fetch=source_fetch, clock=lambda: 0)
+        combined = progress.build_snapshot(self.root, fishtest=d1, source_fishtest=source)
+        self.assertEqual({k: combined[k] for k in self.snapshot}, self.snapshot)
+        self.assertEqual(combined["fishtest"], progress.build_snapshot(self.root, fishtest=d1)["fishtest"])
+        self.assertNotIn("source_fishtest", progress.build_snapshot(self.root, fishtest=d1))
+        self.assertNotIn("fishtest", progress.build_snapshot(self.root, source_fishtest=source))
+        self.assertEqual(combined["fishtest"]["observation"]["reported_elo"]["estimate"], -1.5)
+        pending = combined["source_fishtest"]["observation"]
+        self.assertEqual(pending["status"], "pending_approval")
+        self.assertEqual(pending["results"]["games"], 0)
+        self.assertEqual(pending["reported_elo"], progress.null_farm_elo("no_games"))
+        source_fetch.assert_called_once_with("get_run", progress.SOURCE_FISHTEST_RUN_ID)
+        d1_section, source_section = progress.marker_block(combined).split("### Public Fishtest test1757 source and network test")
+        self.assertIn(progress.FISHTEST_RUN_ID, d1_section)
+        self.assertNotIn(progress.SOURCE_FISHTEST_RUN_ID, d1_section)
+        for value in (progress.SOURCE_FISHTEST_RUN_ID, "pending_approval", "Elo and its interval are pending",
+                      "nn-18cd32e11a9c.nnue", "3464885", "1556650", progress.SOURCE_TREE, progress.SOURCE_TESTED_COMMIT):
+            self.assertIn(value, source_section)
+        self.assertNotIn(progress.FISHTEST_RUN_ID, source_section)
+        self.assertNotIn("nn-fcbaf7d2197c.nnue", source_section)
+        with self.assertRaises(progress.ProgressError):
+            progress.build_snapshot(self.root, fishtest=source)
+        with self.assertRaises(progress.ProgressError):
+            progress.build_snapshot(self.root, source_fishtest=d1)
+        with self.assertRaises(progress.ProgressError):
+            progress.marker_block({**combined, "source_fishtest": combined["fishtest"]})
+
     def test_farm_sprt_acceptance_never_sets_overall_verified_gain(self):
         run = FishtestTests.run_fixture()
         run["finished"] = True
@@ -308,6 +342,88 @@ class FishtestTests(unittest.TestCase):
         invalid = progress.FishtestObserver(progress.FISHTEST_RUN_ID, previous,
                                            fetch=Mock(side_effect=OSError), clock=lambda: 0).observe()
         self.assertEqual(invalid["availability"], "unavailable")
+
+
+class SourceFishtestTests(unittest.TestCase):
+    @staticmethod
+    def source_fixture(games=8):
+        run = FishtestTests.run_fixture(games)
+        run["_id"] = progress.SOURCE_FISHTEST_RUN_ID
+        run["args"].update(copy.deepcopy(progress.SOURCE_FISHTEST_ARGS))
+        return run
+
+    def test_pins_and_redirect_target_allowlist(self):
+        self.assertEqual(progress.SOURCE_FISHTEST_RUN_ID, "6af16e648e7fb2e78bc1cb09")
+        self.assertEqual(set(progress.FISHTEST_CONFIGS), {progress.FISHTEST_RUN_ID, progress.SOURCE_FISHTEST_RUN_ID})
+        self.assertEqual(progress.SOURCE_FISHTEST_ARGS["resolved_new"], "de342a301195b34b7da76374fe3fadf29352de8d")
+        self.assertEqual(progress.SOURCE_FISHTEST_ARGS["resolved_base"], "7cdd5e89a39fe3071b67d91c7bb07d712044bf76")
+        self.assertEqual(progress.SOURCE_FISHTEST_ARGS["base_nets"], ["nn-d1ee674a62ca.nnue"])
+        self.assertEqual(progress.farm_observation(self.source_fixture())["results"]["games"], 8)
+        for key, bad in (("resolved_new", progress.FISHTEST_ARGS["resolved_new"]), ("new_nets", progress.FISHTEST_ARGS["new_nets"]),
+                         ("new_signature", "2261721"), ("base_nets", []), ("book", "different.epd"),
+                         ("book_depth", 8), ("auto_purge", 0), ("adjudication", 1), ("num_games", 8),
+                         ("new_net", "nn-fcbaf7d2197c.nnue"), ("threads", True)):
+            with self.subTest(key=key):
+                run = self.source_fixture()
+                run["args"][key] = bad
+                with self.assertRaises(progress.ProgressError):
+                    progress.farm_observation(run, progress.SOURCE_FISHTEST_RUN_ID)
+        with patch.object(progress.urllib.request, "build_opener") as http:
+            for endpoint, run_id in (("get_run", "0" * 24), ("get_elo?redirect=1", progress.SOURCE_FISHTEST_RUN_ID)):
+                with self.assertRaises(progress.ProgressError):
+                    progress.fetch_fishtest_json(endpoint, run_id)
+            http.assert_not_called()
+
+    def test_other_run_or_result_prefix_never_supplies_source_elo(self):
+        source_id = progress.SOURCE_FISHTEST_RUN_ID
+        source = self.source_fixture()
+        old = FishtestTests.run_fixture()
+        elo = {"elo": 17.0, "ci": [10, 20]}
+        for wrong in (old, self.source_fixture(2)):
+            fetch = Mock(side_effect=[source, {**wrong, "elo": elo}])
+            view = progress.FishtestObserver(source_id, fetch=fetch, clock=lambda: 0).observe()
+            self.assertEqual(view["availability"], "current")
+            self.assertEqual(view["observation"]["reported_elo"], progress.null_farm_elo("unavailable"))
+        for requested, returned in ((source_id, old), (progress.FISHTEST_RUN_ID, source)):
+            view = progress.FishtestObserver(requested, fetch=Mock(return_value=returned), clock=lambda: 0).observe()
+            self.assertIsNone(view["observation"])
+            self.assertEqual(view["availability"], "unavailable")
+
+    def test_cache_validation_and_per_run_throttling(self):
+        runs = {progress.FISHTEST_RUN_ID: FishtestTests.run_fixture(),
+                progress.SOURCE_FISHTEST_RUN_ID: self.source_fixture()}
+        expected = {progress.FISHTEST_RUN_ID: -3.0, progress.SOURCE_FISHTEST_RUN_ID: 7.0}
+        def fetch(endpoint, run_id):
+            return {**runs[run_id], "elo": {"elo": expected[run_id], "ci": [-5, 10]}}
+        calls = Mock(side_effect=fetch)
+        now = 0
+        observers = {k: progress.FishtestObserver(k, fetch=calls, clock=lambda: now) for k in runs}
+        old = observers[progress.FISHTEST_RUN_ID].observe()
+        now = 30
+        source = observers[progress.SOURCE_FISHTEST_RUN_ID].observe()
+        self.assertEqual(calls.call_count, 4)
+        now = 60
+        observers[progress.FISHTEST_RUN_ID].observe()
+        self.assertEqual(observers[progress.SOURCE_FISHTEST_RUN_ID].observe(), source)
+        self.assertEqual(calls.call_count, 6)
+        now = 90
+        calls.side_effect = OSError("fixture outage")
+        stale = observers[progress.SOURCE_FISHTEST_RUN_ID].observe()
+        self.assertEqual(stale["availability"], "stale")
+        self.assertEqual(stale["observation"]["reported_elo"]["estimate"], 7.0)
+        self.assertEqual(observers[progress.FISHTEST_RUN_ID].observe()["availability"], "current")
+        def restored(run_id, prior):
+            return progress.FishtestObserver(run_id, prior, fetch=Mock(side_effect=OSError), clock=lambda: 0).observe()
+        for run_id, own, other in ((progress.FISHTEST_RUN_ID, old, source), (progress.SOURCE_FISHTEST_RUN_ID, source, old)):
+            self.assertIsNone(restored(run_id, other)["observation"])
+            cache = copy.deepcopy(own)
+            cache["private"] = "private fixture"
+            cache["observation"]["private"] = "private fixture"
+            checked = restored(run_id, cache)
+            self.assertEqual(checked["observation"]["reported_elo"]["estimate"], expected[run_id])
+            self.assertNotIn("private fixture", progress.json_bytes(checked).decode())
+            cache["configuration"]["threads"] = True
+            self.assertIsNone(restored(run_id, cache)["observation"])
 
 
 if __name__ == "__main__":

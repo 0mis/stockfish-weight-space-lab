@@ -2,8 +2,8 @@
 
 The research worktree is read only.  The publication worktree receives just a
 JSON snapshot and a bounded README block.  Git network access requires --publish;
---fishtest-run-id enables only public Fishtest GETs.  Local watch polls every
-30 seconds, farm polls at most every 60 seconds, and reversals are published too.
+Each optional farm flag enables only public Fishtest GETs for its pinned run.
+Local watch polls every 30 seconds and each enabled farm run every 60 seconds.
 Statistical success always remains pending independent terminal integrity audit.
 """
 
@@ -39,6 +39,7 @@ START = b"<!-- live-status:start -->"
 END = b"<!-- live-status:end -->"
 BLOCK = re.compile(re.escape(START) + rb".*?" + re.escape(END), re.DOTALL)
 FISHTEST_RUN_ID = "6af10a258e7fb2e78bc1ca5c"
+SOURCE_FISHTEST_RUN_ID = "6af16e648e7fb2e78bc1cb09"
 FISHTEST_ORIGIN = "https://tests.stockfishchess.org"
 FISHTEST_ARGS = {
     "tests_repo": "https://github.com/0mis/Stockfish",
@@ -49,6 +50,16 @@ FISHTEST_ARGS = {
     "tc": "10+0.1", "new_tc": "10+0.1", "threads": 1,
     "new_options": "Hash=16", "base_options": "Hash=16",
 }
+SOURCE_FISHTEST_ARGS = {
+    **copy.deepcopy(FISHTEST_ARGS),
+    "resolved_new": "de342a301195b34b7da76374fe3fadf29352de8d",
+    "new_nets": ["nn-18cd32e11a9c.nnue"], "new_signature": "3464885",
+    "book": "UHO_Lichess_4852_v1.epd", "book_depth": "8",
+    "adjudication": True, "auto_purge": False, "num_games": 800000,
+}
+FISHTEST_CONFIGS = {FISHTEST_RUN_ID: FISHTEST_ARGS, SOURCE_FISHTEST_RUN_ID: SOURCE_FISHTEST_ARGS}
+SOURCE_TREE = "8e3164caf60d281cb4b1d00a699364e04b354451"
+SOURCE_TESTED_COMMIT = "7a17b53bcaf93f54a23ad65f309c413585500c82"
 FISHTEST_SPRT = {"elo_model": "normalized", "elo0": 0.0, "elo1": 2.0,
                  "alpha": 0.05, "beta": 0.05,
                  "lower_bound": -math.log(19), "upper_bound": math.log(19)}
@@ -93,12 +104,15 @@ def farm_results(results: dict) -> dict:
             **{key: count(results[key]) for key in ("crashes", "time_losses") if key in results}}
 
 
-def farm_observation(run: dict) -> dict:
+def farm_observation(run: dict, expected_run_id: str | None = None) -> dict:
+    run_id = run["_id"]
+    if run_id not in FISHTEST_CONFIGS or expected_run_id is not None and run_id != expected_run_id:
+        raise ProgressError("Fishtest returned an unexpected run identity.")
+    expected_args = FISHTEST_CONFIGS[run_id]
     args = run["args"]
-    if (run["_id"] != FISHTEST_RUN_ID
-            or any(type(args[key]) is not type(value) or args[key] != value for key, value in FISHTEST_ARGS.items())):
+    if any(type(args.get(key)) is not type(value) or args[key] != value for key, value in expected_args.items()):
         raise ProgressError("Fishtest run identity or pinned configuration differs.")
-    for key, expected in (("new_net", FISHTEST_ARGS["new_nets"][0]), ("base_net", FISHTEST_ARGS["base_nets"][0])):
+    for key, expected in (("new_net", expected_args["new_nets"][0]), ("base_net", expected_args["base_nets"][0])):
         if key in args and args[key] != expected:
             raise ProgressError("Fishtest network identity differs.")
     sprt = args["sprt"]
@@ -152,8 +166,8 @@ def reported_farm_elo(estimate: object, interval: object) -> dict:
 
 
 def fetch_fishtest_json(endpoint: str, run_id: str) -> dict:
-    if endpoint not in ("get_run", "get_elo") or run_id != FISHTEST_RUN_ID:
-        raise ProgressError("Only the reviewed public Fishtest endpoints and run are supported.")
+    if endpoint not in ("get_run", "get_elo") or run_id not in FISHTEST_CONFIGS:
+        raise ProgressError("Only the reviewed public Fishtest endpoints and runs are supported.")
     class NoRedirect(urllib.request.HTTPRedirectHandler):
         def redirect_request(self, req, fp, code, msg, headers, newurl):
             raise ProgressError("A public Fishtest endpoint redirected unexpectedly.")
@@ -173,21 +187,26 @@ class FishtestObserver:
     """Only whitelisted aggregates survive; polling clocks never enter output."""
 
     def __init__(self, run_id: str, previous: dict | None = None, *, fetch=None, clock=None):
-        if run_id != FISHTEST_RUN_ID:
-            raise ProgressError("Only the reviewed submitted Fishtest run is supported.")
+        if run_id not in FISHTEST_CONFIGS:
+            raise ProgressError("Only the reviewed submitted Fishtest runs are supported.")
+        configuration = FISHTEST_CONFIGS[run_id]
         self.run_id, self.fetch, self.clock = run_id, fetch or fetch_fishtest_json, clock or time.monotonic
         self.next_poll = 0.0
         self.view = {"run_id": run_id, "url": f"{FISHTEST_ORIGIN}/tests/view/{run_id}",
                      "experiment": "Public NNUE-only test; independent of local trial-0003.",
-                     "configuration": copy.deepcopy(FISHTEST_ARGS), "availability": "unavailable", "observation": None}
+                     "configuration": copy.deepcopy(configuration), "availability": "unavailable", "observation": None}
+        if run_id == SOURCE_FISHTEST_RUN_ID:
+            self.view.update(experiment="Public test1757 prefetch source with the original 18cd network.",
+                             source_tree=SOURCE_TREE, same_tree_tested_commit=SOURCE_TESTED_COMMIT)
         # Revalidate and project prior public aggregates instead of copying an
         # arbitrary prior object, which could contain unrelated user fields.
         try:
-            if previous and previous["run_id"] == run_id and previous["configuration"] == FISHTEST_ARGS:
+            if previous and previous["run_id"] == run_id and previous["configuration"] == configuration:
                 prior = previous["observation"]
                 observation = farm_observation({"_id": run_id,
-                    "args": {**FISHTEST_ARGS, "num_games": prior["maximum_games"], "sprt": prior["sprt"]},
-                    "results": prior["results"], **{key: prior[key] for key in ("approved", "finished", "failed", "deleted")}})
+                    "args": {**previous["configuration"], "num_games": prior["maximum_games"], "sprt": prior["sprt"]},
+                    "results": prior["results"], **{key: prior[key] for key in ("approved", "finished", "failed", "deleted")}},
+                    run_id)
                 observation["reported_elo"] = self.previous_elo(prior, observation)
                 self.view.update(availability="stale", observation=observation)
         except (ProgressError, KeyError, TypeError, ValueError, OverflowError):
@@ -212,7 +231,7 @@ class FishtestObserver:
         self.next_poll = now + 60
         previous = self.view["observation"]
         try:
-            observation = farm_observation(self.fetch("get_run", self.run_id))
+            observation = farm_observation(self.fetch("get_run", self.run_id), self.run_id)
         except (ProgressError, OSError, KeyError, TypeError, ValueError, OverflowError):
             self.view["availability"] = "stale" if previous else "unavailable"
             if previous and previous["reported_elo"]["availability"] == "current":
@@ -222,7 +241,7 @@ class FishtestObserver:
         if observation["results"]["games"]:
             try:
                 response = self.fetch("get_elo", self.run_id)
-                elo_observation = farm_observation(response)
+                elo_observation = farm_observation(response, self.run_id)
                 if result_key(elo_observation) != result_key(observation):
                     raise ProgressError("The two Fishtest endpoints observed different result prefixes.")
                 observation["reported_elo"] = reported_farm_elo(response["elo"]["elo"], response["elo"]["ci"])
@@ -256,7 +275,8 @@ def previous_snapshot(publication_repo: Path) -> dict | None:
     return value
 
 
-def build_snapshot(research_repo: Path, previous: dict | None = None, *, fishtest: FishtestObserver | None = None) -> dict:
+def build_snapshot(research_repo: Path, previous: dict | None = None, *, fishtest: FishtestObserver | None = None,
+                   source_fishtest: FishtestObserver | None = None) -> dict:
     stats = load_stats(research_repo)
     ledger = stats.AlphaLedger(stats.AUTHORITATIVE_LEDGER)
     # One validated prefix backs every number.  Public methods reread a live
@@ -341,8 +361,13 @@ def build_snapshot(research_repo: Path, previous: dict | None = None, *, fishtes
         "interpretation": "Provisional estimates. Statistical gain requires both reference gates and an independent terminal integrity audit before verified-gain wording. A statistical continue decision does not report sampler liveness.",
         "scope": "This frozen candidate and references at the declared time control and test hardware only.",
     }
-    if fishtest is not None:
-        snapshot["fishtest"] = fishtest.observe()
+    for key, observer, run_id in (("fishtest", fishtest, FISHTEST_RUN_ID),
+                                  ("source_fishtest", source_fishtest, SOURCE_FISHTEST_RUN_ID)):
+        if observer is not None:
+            view = observer.observe()
+            if view["run_id"] != run_id or view["configuration"] != FISHTEST_CONFIGS[run_id]:
+                raise ProgressError("Fishtest observation does not belong to this public snapshot field.")
+            snapshot[key] = view
     return snapshot
 
 
@@ -354,14 +379,32 @@ def elo_text(value: float | None, boundary: str | None) -> str:
     return "pending" if value is None else f"{value:+.2f}"
 
 
-def farm_marker(farm: dict) -> list[str]:
-    lines = ["", "### Public Fishtest NNUE-only test", "",
-             f"[Official run `{farm['run_id']}`]({farm['url']}) · `10+0.1 / T1 / H16` · API **{farm['availability']}**", "",
-             "This is a separate NNUE-only experiment. Its executable, clocks, normalized SPRT and results remain separate from local trial-0003's paired e-process."]
+def farm_marker(farm: dict, expected_run_id: str | None = None) -> list[str]:
+    run_id = farm["run_id"]
+    if run_id not in FISHTEST_CONFIGS or expected_run_id is not None and run_id != expected_run_id:
+        raise ProgressError("Fishtest section received an unexpected run identity.")
+    config = FISHTEST_CONFIGS[run_id]
+    if farm["configuration"] != config:
+        raise ProgressError("Fishtest section received an unexpected configuration.")
+    source = run_id == SOURCE_FISHTEST_RUN_ID
+    title = "Public Fishtest test1757 source and network test" if source else "Public Fishtest NNUE-only test"
+    description = ("The test1757 prefetch source and original 18cd network face official Stockfish with the D1 network. "
+                   "The Elo estimate below applies only to this run." if source else
+                   "This is a separate NNUE-only experiment. Its executable, clocks, normalized SPRT and results remain separate from local trial-0003's paired e-process.")
+    url = f"{FISHTEST_ORIGIN}/tests/view/{run_id}"
+    lines = ["", f"### {title}", "",
+             f"[Official run `{run_id}`]({url}) · `10+0.1 / T1 / H16` · API **{farm['availability']}**", "", description]
+    if source:
+        lines += ["", f"The submitted source `{config['resolved_new']}` shares tree `{SOURCE_TREE}` "
+                  f"with the tested commit `{SOURCE_TESTED_COMMIT}`. It uses `{config['new_nets'][0]}` "
+                  f"(bench `{config['new_signature']}`). The base is `{config['resolved_base']}` with "
+                  f"`{config['base_nets'][0]}` (bench `{config['base_signature']}`)."]
     observation = farm["observation"]
     if observation is None:
         return lines + ["", "Official aggregate status and Elo are unavailable; no result is inferred."]
     results, elo, sprt = observation["results"], observation["reported_elo"], observation["sprt"]
+    if source and results["games"] == 0:
+        lines += ["", "Zero games have been reported. Elo and its interval are pending."]
     estimate = "unavailable" if elo["estimate"] is None else f"{elo['estimate']:+.2f}"
     interval = "unavailable" if elo["confidence_interval"] is None else "[" + ", ".join(f"{value:+.2f}" for value in elo["confidence_interval"]) + "]"
     lines += ["", f"Official state: **{observation['status']}**; approved: **{'yes' if observation['approved'] else 'no'}**; "
@@ -376,9 +419,10 @@ def farm_marker(farm: dict) -> list[str]:
               "Fishtest's nominal 95% CI is an SPRT/Brownian approximation, distinct from the local anytime lower bound. "
               "Official purges can lower the reported counts; this feed follows those counts. "
               "A finished run without an SPRT decision remains stopped/inconclusive. "
-              "No farm decision automatically establishes an overall verified gain.", "",
-              f"Candidate network: `{FISHTEST_ARGS['new_nets'][0]}`; reference: `{FISHTEST_ARGS['base_nets'][0]}`. "
-              f"Source revisions: `{FISHTEST_ARGS['resolved_new']}` / `{FISHTEST_ARGS['resolved_base']}`."]
+              "No farm decision automatically establishes an overall verified gain."]
+    if not source:
+        lines += ["", f"Candidate network: `{config['new_nets'][0]}`; reference: `{config['base_nets'][0]}`. "
+                  f"Source revisions: `{config['resolved_new']}` / `{config['resolved_base']}`."]
     return lines
 
 
@@ -410,7 +454,9 @@ def marker_block(snapshot: dict) -> str:
               f"Ledger checkpoint: event `{snapshot['ledger_prefix']['event_index']}`, "
               f"SHA-256 `{snapshot['ledger_prefix']['head_sha256']}`. [Aggregate JSON](results/live-status.json)."]
     if "fishtest" in snapshot:
-        lines += farm_marker(snapshot["fishtest"])
+        lines += farm_marker(snapshot["fishtest"], FISHTEST_RUN_ID)
+    if "source_fishtest" in snapshot:
+        lines += farm_marker(snapshot["source_fishtest"], SOURCE_FISHTEST_RUN_ID)
     lines.append(END.decode())
     return "\n".join(lines)
 
@@ -615,6 +661,8 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--publication-repo", type=Path, required=True)
     parser.add_argument("--stdout", action="store_true", help="Print aggregate JSON only; no file writes or Git publication. An enabled farm still uses public GETs.")
     parser.add_argument("--fishtest-run-id", choices=(FISHTEST_RUN_ID,), help="Include the reviewed public NNUE-only run via unauthenticated official GETs.")
+    parser.add_argument("--source-fishtest-run-id", choices=(SOURCE_FISHTEST_RUN_ID,),
+                        help="Include the reviewed public test1757 source run via unauthenticated official GETs.")
     parser.add_argument("--publish", action="store_true", help="Commit just the two generated outputs and push normally.")
     parser.add_argument("--watch", action="store_true", help="Repeat every 30 seconds, including reversals and unchanged checks.")
     args = parser.parse_args(argv)
@@ -626,18 +674,22 @@ def main(argv: list[str] | None = None) -> int:
             raise ProgressError("Use a separate publication worktree; the research branch stays read only.")
         if not args.stdout and Path(git(publication_repo, "rev-parse", "--show-toplevel")).resolve() != publication_repo:
             raise ProgressError("The publication path must be the worktree root.")
-        fishtest = (FishtestObserver(args.fishtest_run_id, (previous_snapshot(publication_repo) or {}).get("fishtest"))
-                    if args.fishtest_run_id else None)
+        previous = (previous_snapshot(publication_repo) or {}) if args.fishtest_run_id or args.source_fishtest_run_id else {}
+        fishtest = FishtestObserver(args.fishtest_run_id, previous.get("fishtest")) if args.fishtest_run_id else None
+        source_fishtest = (FishtestObserver(args.source_fishtest_run_id, previous.get("source_fishtest"))
+                           if args.source_fishtest_run_id else None)
         while True:
             try:
                 if args.stdout:
-                    snapshot = build_snapshot(research_repo, previous_snapshot(publication_repo), fishtest=fishtest)
+                    snapshot = build_snapshot(research_repo, previous_snapshot(publication_repo),
+                                              fishtest=fishtest, source_fishtest=source_fishtest)
                     sys.stdout.buffer.write(json_bytes(snapshot))
                     return 0
                 # Serialize snapshot+render as well as publishing, so an older
                 # sampler cannot overwrite a newer snapshot between processes.
                 with exclusive_lock(git_path(publication_repo, "live-progress-render.lock")):
-                    snapshot = build_snapshot(research_repo, previous_snapshot(publication_repo), fishtest=fishtest)
+                    snapshot = build_snapshot(research_repo, previous_snapshot(publication_repo),
+                                              fishtest=fishtest, source_fishtest=source_fishtest)
                     expected = render_files(publication_repo, snapshot)
                     message = publish(research_repo, publication_repo, expected) if args.publish else "Rendered aggregate progress locally."
                 print(message, flush=True)
