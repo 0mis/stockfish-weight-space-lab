@@ -430,8 +430,11 @@ def farm_marker(farm: dict, expected_run_id: str | None = None) -> list[str]:
     if observation is None:
         return lines + ["", "Official aggregate status and Elo are unavailable; no result is inferred."]
     results, elo, sprt = observation["results"], observation["reported_elo"], observation["sprt"]
-    if (source or donor) and results["games"] == 0:
-        lines += ["", "Zero games have been reported. Elo and its interval are pending."]
+    if results["games"] == 0:
+        zero_games = ("This run finished with zero games. No Elo estimate, confidence interval, or SPRT decision is available."
+                      if observation["finished"] else
+                      "Zero games have been reported. Elo and its interval are pending.")
+        lines += ["", zero_games]
     estimate = "unavailable" if elo["estimate"] is None else f"{elo['estimate']:+.2f}"
     interval = "unavailable" if elo["confidence_interval"] is None else "[" + ", ".join(f"{value:+.2f}" for value in elo["confidence_interval"]) + "]"
     lines += ["", f"Official state: **{observation['status']}**; approved: **{'yes' if observation['approved'] else 'no'}**; "

@@ -515,8 +515,36 @@ class DonorFishtestTests(unittest.TestCase):
             self.assertEqual(observation["results"]["games"], 0)
             self.assertEqual(observation["reported_elo"], progress.null_farm_elo("no_games"))
             self.assertEqual(farm["comparison_scope"], "donor_parent_only")
-            self.assertIn("Elo and its interval are pending", "\n".join(progress.farm_marker(farm)))
+            rendered = "\n".join(progress.farm_marker(farm))
+            if finished:
+                self.assertIn("No Elo estimate, confidence interval, or SPRT decision is available", rendered)
+                self.assertNotIn("Elo and its interval are pending", rendered)
+            else:
+                self.assertIn("Elo and its interval are pending", rendered)
             fetch.assert_called_once_with("get_run", progress.DONOR_FISHTEST_RUN_ID)
+
+    def test_all_three_zero_game_feeds_distinguish_open_and_finished_without_an_estimate(self):
+        fixtures = (FishtestTests.run_fixture, SourceFishtestTests.source_fixture, self.donor_fixture)
+        for fixture in fixtures:
+            for finished in (False, True):
+                with self.subTest(fixture=fixture.__name__, finished=finished):
+                    run = fixture(0)
+                    run.update(approved=False, finished=finished)
+                    fetch = Mock(return_value=run)
+                    farm = progress.FishtestObserver(run["_id"], fetch=fetch, clock=lambda: 0).observe()
+                    observation = farm["observation"]
+                    self.assertEqual(observation["reported_elo"], progress.null_farm_elo("no_games"))
+                    self.assertEqual(observation["sprt"]["state"], "")
+                    self.assertEqual(observation["status"], "stopped_without_sprt_decision" if finished else "pending_approval")
+                    rendered = "\n".join(progress.farm_marker(farm))
+                    if finished:
+                        self.assertIn("This run finished with zero games.", rendered)
+                        self.assertIn("No Elo estimate, confidence interval, or SPRT decision is available.", rendered)
+                        self.assertNotIn("Elo and its interval are pending", rendered)
+                    else:
+                        self.assertIn("Zero games have been reported. Elo and its interval are pending.", rendered)
+                        self.assertNotIn("This run finished with zero games.", rendered)
+                    fetch.assert_called_once_with("get_run", run["_id"])
             encoded = progress.json_bytes(farm).decode()
             for private in ("C:\\", "private fixture", "worker_info", '"tasks"', '"info"'):
                 self.assertNotIn(private, encoded)
