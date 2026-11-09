@@ -4,3 +4,4 @@
 *.pgn whitespace=-blank-at-eof
 stage3/protocol.json -text whitespace=cr-at-eol
 results/native-test1757/** -text whitespace=cr-at-eol
+results/test1757-edited-screen/** -text whitespace=cr-at-eol

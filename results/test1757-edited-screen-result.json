@@ -1,0 +1,180 @@
+{
+  "bootstrap_samples": 10000,
+  "bootstrap_seed": 2026110902,
+  "candidate": "test1757-pf-fc2-034f",
+  "candidate_points": 62.0,
+  "descriptive_logistic_elo": -10.86089841744591,
+  "descriptive_paired_bootstrap_95_percent_interval": [
+    -46.41800937932699,
+    21.74306492903707
+  ],
+  "formal_alpha_reserved": false,
+  "games_file": "test1757-edited-screen/games-utc.pgn",
+  "games_file_sha256": "8bd56ec5f58ef65881ed5ae2d7ef6683683893c34c10b94b3bb0f2d5fc83dde9",
+  "pair_scores": [
+    0.75,
+    0.5,
+    0.75,
+    0.5,
+    0.25,
+    0.5,
+    0.5,
+    0.5,
+    0.25,
+    0.25,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.75,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.75,
+    0.25,
+    0.75,
+    0.5,
+    0.5,
+    0.25,
+    0.5,
+    0.25,
+    0.5,
+    0.5,
+    0.25,
+    0.5,
+    0.5,
+    0.5,
+    0.75,
+    0.5,
+    0.25,
+    0.5,
+    0.75,
+    0.5,
+    0.5,
+    0.5,
+    0.25,
+    0.5,
+    0.25,
+    0.5,
+    0.75,
+    0.0,
+    0.75,
+    0.5,
+    0.75,
+    0.25,
+    0.75,
+    0.0,
+    0.25,
+    0.75,
+    0.25,
+    0.25,
+    0.5,
+    0.25,
+    1.0,
+    0.5,
+    0.75
+  ],
+  "pairs": 64,
+  "parent_comparison_pending": true,
+  "parent_comparison_status_at_publication": "started",
+  "plan_sha256": "45036f136dbc78a522cc4fbc432507e821f281e0642dfc440134d700438143bd",
+  "proofs": [
+    {
+      "chunk": 0,
+      "sha256": "75dad2c7d937ec045d1c207e92598b9862a8f7359ea5479779a7afff0c4a5ee9"
+    },
+    {
+      "chunk": 1,
+      "sha256": "dc4b38d5891e372a31f012d5015f8577c401516e9dbfcb7d94d7870d80a47f76"
+    },
+    {
+      "chunk": 2,
+      "sha256": "c36758310108a56358fde4a20e007999c2816ff3e6599ede63891a4f10e637e5"
+    },
+    {
+      "chunk": 3,
+      "sha256": "f501070965d5e46c2b1a8853f3c65ab68105ad7a8480579dbe0d399811b104fe"
+    },
+    {
+      "chunk": 4,
+      "sha256": "5b862af4b2dbaface5bdf3bfb74795206a7ad0b4a78b4201ab3ba12b7ec0e712"
+    },
+    {
+      "chunk": 5,
+      "sha256": "b9ddb62e58bcaaf0ac537388ddbbfc5ed7196f7b962f3e8f51c6237c5ca551e9"
+    },
+    {
+      "chunk": 6,
+      "sha256": "0945e5181754a72618fadbe0056585517611ba6e21ed8b968f5c9780faade907"
+    },
+    {
+      "chunk": 7,
+      "sha256": "59630853151c82be8b05153f76b51a61fca1f584c662d8d3d3a149eff6e5e1a8"
+    },
+    {
+      "chunk": 8,
+      "sha256": "8383694ff43a5ef2b65cea1d924d0674749f96664f0e35c402fd4f8d0c67694d"
+    },
+    {
+      "chunk": 9,
+      "sha256": "922a364c15739f82c4fac3673f335e072a30db3b2f1d7b77c074d228c3066949"
+    },
+    {
+      "chunk": 10,
+      "sha256": "eb07f0b6a2b32ad56ce848a4dc29c96e5efa4e40bc28f6d061593f229d36e32f"
+    },
+    {
+      "chunk": 11,
+      "sha256": "e52ce9dc2fbf30644da00425e5b8ed19e13059dd4c1d41298ab97ccfe6e2f8ca"
+    },
+    {
+      "chunk": 12,
+      "sha256": "458a7325538e3a8596a059e1cff7d41f7257f1e6e556f0f49ab91f5bfed02024"
+    },
+    {
+      "chunk": 13,
+      "sha256": "63a8b37c8b96ab856fe2213b5c84581a24bcfde6a114c708ae46a0dae9abae22"
+    },
+    {
+      "chunk": 14,
+      "sha256": "397ba13dc5ccc54d587e9c014b63043edf51af46b2ccee01ed9679c773f3535c"
+    },
+    {
+      "chunk": 15,
+      "sha256": "f650236f4c016f491e4f6ec0b6ff246a6f3940475e9bbd9788ad3829ac92a78c"
+    }
+  ],
+  "publication_transform": "Only Date/GameStartTime/GameEndTime metadata converted to UTC; moves, results and clock comments retained.",
+  "reference": "dev-261106",
+  "reference_points": 66.0,
+  "schedule_sha256": "44323a93ebc5a3dc7ffcad11556c7625aeb0930ce6910e999a0c0fa4cfa49ee4",
+  "settings": {
+    "concurrency": 2,
+    "depth_limit": null,
+    "engine_move_overhead_ms": 10,
+    "evaluation_adjudication": false,
+    "fresh_engines_per_pair": true,
+    "hash_mb_per_engine": 64,
+    "nodes_per_move": null,
+    "ponder": false,
+    "referee_time_margin_ms": 0,
+    "strength_limit": false,
+    "tablebases": false,
+    "threads_per_engine": 1,
+    "time_control": "10+0.1"
+  },
+  "status": "complete_audited_development_screen",
+  "totals": {
+    "clock_forfeits": 0,
+    "draws": 60,
+    "games": 128,
+    "losses": 36,
+    "wins": 32
+  },
+  "uncertainty_scope": "Descriptive empirical paired-bootstrap interval on a reused development distribution; not the formal anytime bound or completion evidence.",
+  "utc": "2026-11-09T02:56:27.308109+00:00",
+  "verified_gain": false
+}
