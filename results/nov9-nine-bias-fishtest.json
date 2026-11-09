@@ -1,0 +1,54 @@
+{
+  "at_submission": "Queued for moderator approval with zero games",
+  "base_network": {
+    "bench": 3464885,
+    "name": "nn-18cd32e11a9c.nnue",
+    "sha256": "18cd32e11a9cac7c595bc6ebf1301088da8e1f2c7b31efda88dbc74c71f5d2cf"
+  },
+  "candidate_branch": "test1757-nine-bias-net-only-43e01",
+  "candidate_network": {
+    "bench": 2376690,
+    "name": "nn-d5c257728ba5.nnue",
+    "sha256": "d5c257728ba53cb9808543ce2800080c860f1c878896cd1b17f75ed4b20aafee"
+  },
+  "candidate_tree": "5d3cd81e42c128a0e94a3960ea08980aa0a73296",
+  "configuration": {
+    "alpha": 0.05,
+    "beta": 0.05,
+    "book": "UHO_Lichess_4852_v1.epd",
+    "hash_mib_each": 16,
+    "normalized_elo_bounds": [
+      0.0,
+      2.0
+    ],
+    "threads_each": 1,
+    "time_control_each": "10+0.1"
+  },
+  "latest_observation": {
+    "approved": false,
+    "draws": 0,
+    "finished": false,
+    "llr": 0,
+    "losses": 0,
+    "sprt_state": "",
+    "wins": 0
+  },
+  "moderator_guidance_url": "https://github.com/official-stockfish/Stockfish/discussions/7298#discussioncomment-19501738",
+  "observed_at_utc": "2026-11-09T22:15:31.426347+00:00",
+  "patch": "Single default filename change in src/evaluate.h",
+  "purpose": "Measure the nine output-bias edits on official November 9 Stockfish with the same search on both sides. The earlier released composite and its local confirmation have a separate source identity.",
+  "qualification": {
+    "artifact_id": 13715421521,
+    "artifact_sha256": "7533e105b6451bfc3881573aa96268fcaa4a9dc1e4435b4e0780b22fccdf23fe",
+    "fresh_default_benches_per_side": 2,
+    "run": "https://github.com/0mis/Stockfish/actions/runs/42708239066",
+    "startpos_perft4_each": 197281
+  },
+  "resolved_base": "43e01e07210948e1130dc687c065d7a3742b2793",
+  "resolved_candidate": "64b0b7a2a78e44f1eade4bb441f8819abbfac6d2",
+  "run_id": "6af2455c8e7fb2e78bc1cc30",
+  "schema": "public-network-only-fishtest-registration/1",
+  "server_start_time_utc": "2026-11-09 22:12:44.880170+00:00",
+  "submitted_by": "0mis",
+  "url": "https://tests.stockfishchess.org/tests/view/6af2455c8e7fb2e78bc1cc30"
+}
