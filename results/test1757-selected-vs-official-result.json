@@ -1,0 +1,717 @@
+{
+  "candidate": {
+    "engine_sha256": "ae1d4772a71529085b26d7460e76fcf65dbe09782e55ea67ecef2e4f033c5ba5",
+    "name": "Selected test1757 history-floor and nine-bias NNUE composite",
+    "network_sha256": "d5c257728ba53cb9808543ce2800080c860f1c878896cd1b17f75ed4b20aafee",
+    "source_commit": "d19047cc44fae773a590be3b0b9f08fdd75acdc7",
+    "source_url": "https://github.com/0mis/Stockfish/tree/d19047cc44fae773a590be3b0b9f08fdd75acdc7"
+  },
+  "candidate_network_recipe": {
+    "file": "../nets/test1757-readout-ridge.json",
+    "fit_driver_commit": "08abd7bd1c3fa9a504a0fa8556a6bef6633933cc",
+    "sha256": "4ce6d12f6f79eb7462569e771e86ce1e27ee715d2801605f295dc1dcc0a804d3"
+  },
+  "candidate_points": 131.0,
+  "chunk_audits": [
+    {
+      "chunk_index": 0,
+      "source_audit_sha256": "7fd155b2f7ab7b35c2507f4a4d9a469c78af2be73be55e4a1ba67ed0f3897c4a",
+      "source_summary_sha256": "cab9047aa7869cfbc679f81d0524814e5cd1e22cc8a649a398506357f8562c80",
+      "start": 0,
+      "stop": 4,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 7,
+        "games": 8,
+        "losses": 0,
+        "wins": 1
+      }
+    },
+    {
+      "chunk_index": 1,
+      "source_audit_sha256": "5283a9a581ba4dd717a1fc700160232f849f2adb0d82cff8b9cad1e0fb82ca5f",
+      "source_summary_sha256": "d2b3e2d17ff12201e2dbd7b433b848f3a6030eb7d2f34c0076fe3048949fe8a3",
+      "start": 4,
+      "stop": 8,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 4,
+        "games": 8,
+        "losses": 2,
+        "wins": 2
+      }
+    },
+    {
+      "chunk_index": 2,
+      "source_audit_sha256": "9efe1a2059ad3b9525856e891b32020fdeb6eb9681ea25f7ff4abc23ab88d3d9",
+      "source_summary_sha256": "2b83671d92e0d011eacc967132f9806e23fe51f2e025eff1a943e8890b6db40f",
+      "start": 8,
+      "stop": 12,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 5,
+        "games": 8,
+        "losses": 1,
+        "wins": 2
+      }
+    },
+    {
+      "chunk_index": 3,
+      "source_audit_sha256": "df0abdabc8c316dec59e0d75793e5d95d620562826d9323c6221f55092a55ea1",
+      "source_summary_sha256": "71e228c52ec90bcc6041b18ffcd7028fa34ff1b96c9fe6051c684855775eed84",
+      "start": 12,
+      "stop": 16,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 3,
+        "games": 8,
+        "losses": 0,
+        "wins": 5
+      }
+    },
+    {
+      "chunk_index": 4,
+      "source_audit_sha256": "6fb52a4d6294b4231e8a9497e589c36f4665963e42d9277f64e320146d64b9c9",
+      "source_summary_sha256": "fbb690a74cb47c53c12a20dd4a319971bd19668e7020b4fadd56fb38c3af9cf0",
+      "start": 16,
+      "stop": 20,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 3,
+        "games": 8,
+        "losses": 2,
+        "wins": 3
+      }
+    },
+    {
+      "chunk_index": 5,
+      "source_audit_sha256": "5785c6153a30eef9829a987f623417d0ddf93d9e60431db664eb963a23eaf918",
+      "source_summary_sha256": "f9041bec7850d8274e41045f8fe6684cb91776ee2a32b826ad96c4ad5d275b5c",
+      "start": 20,
+      "stop": 24,
+      "totals": {
+        "clock_forfeits": 1,
+        "draws": 3,
+        "games": 8,
+        "losses": 4,
+        "wins": 1
+      }
+    },
+    {
+      "chunk_index": 6,
+      "source_audit_sha256": "dc7643891dbacae04b2eec38981762760c98557f50a3365c01dd9cd7952695cb",
+      "source_summary_sha256": "44cf38d9ba948b070be02fdac125140492ec85cfc127ea965cdde08e936d1bfa",
+      "start": 24,
+      "stop": 28,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 1,
+        "games": 8,
+        "losses": 3,
+        "wins": 4
+      }
+    },
+    {
+      "chunk_index": 7,
+      "source_audit_sha256": "4fff09b6eff5217039afff7dc84045e8338417173e930166d1650022bfee54ea",
+      "source_summary_sha256": "9cee35c2c50697987ed392210529b675a29ddb1053cf391eae32778c09b1de12",
+      "start": 28,
+      "stop": 32,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 3,
+        "games": 8,
+        "losses": 2,
+        "wins": 3
+      }
+    },
+    {
+      "chunk_index": 8,
+      "source_audit_sha256": "4afa9c2982f2db09cde3df09241095a8e497c9e43a70707a537695bcc2b82bf9",
+      "source_summary_sha256": "d3b4d31eb7c5a10d5ece4b8774745bdbb94ddbe6a22bd29ea959d6d401fff66e",
+      "start": 32,
+      "stop": 36,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 2,
+        "games": 8,
+        "losses": 3,
+        "wins": 3
+      }
+    },
+    {
+      "chunk_index": 9,
+      "source_audit_sha256": "4f51ea8c1fbf56fdb7dc2ea271e80a5348ebb5cf72af4131be2a2f5cbd97a10d",
+      "source_summary_sha256": "cdfab16a4d0d446c332e976bcd689799b62527d1571504768494f6eb2ab79488",
+      "start": 36,
+      "stop": 40,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 6,
+        "games": 8,
+        "losses": 1,
+        "wins": 1
+      }
+    },
+    {
+      "chunk_index": 10,
+      "source_audit_sha256": "103d6c789d60c6038084dc6407de18b2988354d2a3381a085c6e0243e37a044d",
+      "source_summary_sha256": "27062af19178cd7346dadb92174851b5200753b952b1265ff1bcf118bf396408",
+      "start": 40,
+      "stop": 44,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 2,
+        "games": 8,
+        "losses": 3,
+        "wins": 3
+      }
+    },
+    {
+      "chunk_index": 11,
+      "source_audit_sha256": "eb9e7785078903f9f3bace989bd5183d66533bef8bb7744ef791d86bc1e856af",
+      "source_summary_sha256": "d34b98ec08ce0c578aa3121b28c8e07f30184558f4f054d7f308f6ef1259a366",
+      "start": 44,
+      "stop": 48,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 5,
+        "games": 8,
+        "losses": 1,
+        "wins": 2
+      }
+    },
+    {
+      "chunk_index": 12,
+      "source_audit_sha256": "a9feb46d5dfad14dc25cc9da25ca28480f65754a0ecb946e84196d2097b80606",
+      "source_summary_sha256": "09cf8d8557bfafc8ca4bc4ed3f94b6405ff30eb769fe6cb38572fdcca70b84bd",
+      "start": 48,
+      "stop": 52,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 5,
+        "games": 8,
+        "losses": 2,
+        "wins": 1
+      }
+    },
+    {
+      "chunk_index": 13,
+      "source_audit_sha256": "bf41b7f3e297a9bb1fb3ec655578fd18829703f8d20c17537afaf536fda8eca4",
+      "source_summary_sha256": "0ad7302d4926141e13e5643fc79d25a1b87ebaee327312f5a7810d6483512273",
+      "start": 52,
+      "stop": 56,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 4,
+        "games": 8,
+        "losses": 2,
+        "wins": 2
+      }
+    },
+    {
+      "chunk_index": 14,
+      "source_audit_sha256": "22e5744f18526cb228e6bf1872fbc7e21a9de2cff4ab703c216602e4c2a4a5c8",
+      "source_summary_sha256": "f448fa37081094b5a2a8e0a8d66a5e7af03c1cd620feeb80a4430c3a23c002d8",
+      "start": 56,
+      "stop": 60,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 3,
+        "games": 8,
+        "losses": 4,
+        "wins": 1
+      }
+    },
+    {
+      "chunk_index": 15,
+      "source_audit_sha256": "bfdee67d7efdf0d0acb434b7ea96bcce1171d80a702b3ab6aaa2b11c13a3afb1",
+      "source_summary_sha256": "e046a0343983b7e1d4c7506083d5d5cee1839e5f5d42ff1f5fc7f52ef7a152fa",
+      "start": 60,
+      "stop": 64,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 2,
+        "games": 8,
+        "losses": 2,
+        "wins": 4
+      }
+    },
+    {
+      "chunk_index": 16,
+      "source_audit_sha256": "9920a0386f35b17ad965af93a3be325d852862b9c2557a3b5e15ad9f628dcf5c",
+      "source_summary_sha256": "653d55689ec4c40f5c4f7c0f7e15dbf3e9eb505c4f460c062496299856ac5673",
+      "start": 64,
+      "stop": 68,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 3,
+        "games": 8,
+        "losses": 3,
+        "wins": 2
+      }
+    },
+    {
+      "chunk_index": 17,
+      "source_audit_sha256": "5f9b1912f0e4c26b607f496b6640a93d5860035840fe753b3a598d9ab2b3e011",
+      "source_summary_sha256": "11432589d212406c3ca07c1e17e7c12d35b3ed3ea4b41371cdef4cb9b0e55fd2",
+      "start": 68,
+      "stop": 72,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 2,
+        "games": 8,
+        "losses": 3,
+        "wins": 3
+      }
+    },
+    {
+      "chunk_index": 18,
+      "source_audit_sha256": "adc41d0eeaecc89b255379eb08f8263216ac3abaf5f4b31f5708912bca46c00d",
+      "source_summary_sha256": "8ef936e3f83032bded87ddd9ea55bba0b469dfd00bd8e2dc7fbf94130800a59f",
+      "start": 72,
+      "stop": 76,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 3,
+        "games": 8,
+        "losses": 2,
+        "wins": 3
+      }
+    },
+    {
+      "chunk_index": 19,
+      "source_audit_sha256": "dbc2a82a89bdafa60343067220963971f61b72893a8d9f5770996d11b39d7289",
+      "source_summary_sha256": "a14c51d021a109856195b1e0faa68be4f98d568532b1905585093ee5686660b1",
+      "start": 76,
+      "stop": 80,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 6,
+        "games": 8,
+        "losses": 1,
+        "wins": 1
+      }
+    },
+    {
+      "chunk_index": 20,
+      "source_audit_sha256": "a1bbc86b99b7711867f501a5aea7017beb3c0c5132ffa93b0a856a9057c28ac3",
+      "source_summary_sha256": "ffd678c323c2e55e72c80b4e17e1d715f45f5958d9fc05cfb0a441ab8e1efcdc",
+      "start": 80,
+      "stop": 84,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 6,
+        "games": 8,
+        "losses": 2,
+        "wins": 0
+      }
+    },
+    {
+      "chunk_index": 21,
+      "source_audit_sha256": "a9deb0427b68e3e0180b9f91a0f25ba5e483d4aeb0515c6fc32ea3173bb6d24c",
+      "source_summary_sha256": "425a6fcb6a9ed39b9091d82ce4cba9ca3f4105e7fdba0d0d57a8fdca47d41983",
+      "start": 84,
+      "stop": 88,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 4,
+        "games": 8,
+        "losses": 2,
+        "wins": 2
+      }
+    },
+    {
+      "chunk_index": 22,
+      "source_audit_sha256": "df4abcfa0b4c43b4a56936b8aa6358080f206653e727037a57f4a6562dbda14f",
+      "source_summary_sha256": "1dc58921854886bdf77b7804cfb4713f279a6a8f6dce9e750ea9c1462727d1ba",
+      "start": 88,
+      "stop": 92,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 5,
+        "games": 8,
+        "losses": 1,
+        "wins": 2
+      }
+    },
+    {
+      "chunk_index": 23,
+      "source_audit_sha256": "e24777270f7e2725ea53d36244f753ec2b0e640945e9388838ba43409b65797d",
+      "source_summary_sha256": "5438743a0875383b80f0bbe38cf752ae579a0109305353cdbecb5d726af4e783",
+      "start": 92,
+      "stop": 96,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 4,
+        "games": 8,
+        "losses": 2,
+        "wins": 2
+      }
+    },
+    {
+      "chunk_index": 24,
+      "source_audit_sha256": "9df1cc4c1598f6b2b6cdc08473d3bf820367b2055a16fdd2e464fe96f4d584f6",
+      "source_summary_sha256": "46d0c65c2827f10b5c1525694f5aec6f49b3fb11cc26355275be63d18ea394b7",
+      "start": 96,
+      "stop": 100,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 5,
+        "games": 8,
+        "losses": 2,
+        "wins": 1
+      }
+    },
+    {
+      "chunk_index": 25,
+      "source_audit_sha256": "bc4ae98c626be4b0788daaece8829a61d1f91e0cabd46ef413b06fffbec8435e",
+      "source_summary_sha256": "68fc570784e227ca29962c748d9f828ff9280405b9792ced1ce495f1d1cd2bbc",
+      "start": 100,
+      "stop": 104,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 1,
+        "games": 8,
+        "losses": 3,
+        "wins": 4
+      }
+    },
+    {
+      "chunk_index": 26,
+      "source_audit_sha256": "fc017ce698b381d8ba5b3bbd637d54e2f2738bab454bc1eb6150aca007d830d0",
+      "source_summary_sha256": "5ee58779837d6ea0ce9049cec5e42465e9b0e0515f55216b84376d1ec54b4855",
+      "start": 104,
+      "stop": 108,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 1,
+        "games": 8,
+        "losses": 3,
+        "wins": 4
+      }
+    },
+    {
+      "chunk_index": 27,
+      "source_audit_sha256": "b25ca2dc1ae903d00365d3fa73401cd10961970516a0924be1c80b0e9b0d62c1",
+      "source_summary_sha256": "0aafc777cd6208819176ff13aa4846c272c1019973748a3aa90dbce0d9be2777",
+      "start": 108,
+      "stop": 112,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 5,
+        "games": 8,
+        "losses": 1,
+        "wins": 2
+      }
+    },
+    {
+      "chunk_index": 28,
+      "source_audit_sha256": "13497de8d671f537e9455bb308e42d17dd52a7f6559bccc87b93113b20dc5791",
+      "source_summary_sha256": "e49b794c63e3154c4857fe59f0c3f6edc9af26bd8dfcddda7eb0b0188077a629",
+      "start": 112,
+      "stop": 116,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 4,
+        "games": 8,
+        "losses": 2,
+        "wins": 2
+      }
+    },
+    {
+      "chunk_index": 29,
+      "source_audit_sha256": "6c3ee8ffff2edf642d5ce1d282bc7129e38caba93fab30f50ab34dcb89c5fad1",
+      "source_summary_sha256": "8544ddf8b7224762dd3a78c64c619699bc5960dcfa6d790de6753713acef8e28",
+      "start": 116,
+      "stop": 120,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 3,
+        "games": 8,
+        "losses": 2,
+        "wins": 3
+      }
+    },
+    {
+      "chunk_index": 30,
+      "source_audit_sha256": "f762873cf7960ce0da821926d4bd5ed00d1db98194c51a6ed97f3d1aff36cb89",
+      "source_summary_sha256": "d763138c508e18dbd4dae91b9d27da16aceb1417d315e8f94a40fc58fdcb1a41",
+      "start": 120,
+      "stop": 124,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 5,
+        "games": 8,
+        "losses": 2,
+        "wins": 1
+      }
+    },
+    {
+      "chunk_index": 31,
+      "source_audit_sha256": "0adb8808e70e3c0ff64b87e9ac9373bf3866df6dc82746434a995ae5855b0117",
+      "source_summary_sha256": "14b62cd88f5db88b12616c8965b1defbac664af9bfd5e72c7d4c8d64ab33f4b5",
+      "start": 124,
+      "stop": 128,
+      "totals": {
+        "clock_forfeits": 0,
+        "draws": 5,
+        "games": 8,
+        "losses": 2,
+        "wins": 1
+      }
+    }
+  ],
+  "credits": {
+    "history_floor": {
+      "author": "Stefan Geschwentner (locutus2 / Fishtest sg)",
+      "source_revision": "86f24bc9f68d603932934b4e5ae6d9e79f110a0a",
+      "source_url": "https://github.com/locutus2/Stockfish/commit/86f24bc9f68d603932934b4e5ae6d9e79f110a0a"
+    },
+    "official_engine_and_D1": "Stockfish developers, network authors and contributors",
+    "prefetch": {
+      "author": "SanityEclipse000 (MxTriX77)",
+      "source_revision": "5b559f0b7e37822d04dffe9e559d8a716705ccf5",
+      "source_url": "https://github.com/official-stockfish/Stockfish/pull/7294"
+    },
+    "ridge_fit": {
+      "lab": "0mis/stockfish-weight-space-lab",
+      "source_url": "https://github.com/0mis/Stockfish/tree/08abd7bd1c3fa9a504a0fa8556a6bef6633933cc/research/readout_ridge"
+    },
+    "source_license": "GPL-3.0-or-later",
+    "test1757_network": {
+      "author": "Shawn Xu (xu-shawn)",
+      "source_commit": "d5a2bda7f028430f79e1789d47ae3228defb843b",
+      "source_url": "https://github.com/xu-shawn/Stockfish/tree/d5a2bda7f028430f79e1789d47ae3228defb843b"
+    },
+    "upstream_network_license": "CC0"
+  },
+  "descriptive_paired_bootstrap": {
+    "additional_games": 0,
+    "coefficient_hash_encoding": "JSON compact array of 513 base-10 integer strings in index order",
+    "coefficient_vector_sha256": "575c96ac167f7c3a278112540a9754000689853766e554fa7e92b099e81976e3",
+    "empirical_pentanomial": [
+      2,
+      28,
+      63,
+      32,
+      3
+    ],
+    "iid_empirical_pair_draws": 128,
+    "method": "exact_integer_empirical_paired_bootstrap_percentile",
+    "nominal_central_percent": 95,
+    "normalizing_count": "528294531135665246352339784916516606518847326036121522127960709026673902556724859474417255887657187894674394993257128678882347559502685537250538978462939576908386683999005084168731517676426441053024232908211188404148028292751561738838396898767036476489538580897737998336",
+    "observed_score_fraction": {
+      "denominator": 512,
+      "numerator": 262
+    },
+    "opponent_scope": "Actual pinned official November 6 development source 7cdd5e89, executable b67c37d0, original D1 network d1ee674a.",
+    "outcome_units": "One pair has twice-candidate-points in {0,1,2,3,4}; bootstrap score fraction is the 128-draw sum divided by 512.",
+    "polynomial": "(c0 + c1*z + c2*z^2 + c3*z^3 + c4*z^4)^128; sum(c)=128",
+    "quantile_rule": "Smallest integer k with 40*CDF_count(k)>=q*128^128, for q=1 and 39; no interpolation.",
+    "quantiles": [
+      {
+        "cdf_count_at": "17008524515354730903502416906105351701197385678564906509884880378642133891260433029901885691615905672502157736190916704252051452499093838907745731636671283927735350950684170653970973117727102544656337986977457041473832306342764673175597454979509941350750661945959137280",
+        "cdf_count_before": "13154972689822340878733561396521042184613645995262638923266552801945474761168883256740278199137164467204566737339572427846496999311755947656081211691727695804428146849687277557316640535305372823814682441077814033192786923062789419465514924606404759361464362732792545280",
+        "logistic_elo": {
+          "boundary": null,
+          "elo": -14.938070800017098
+        },
+        "percentile": {
+          "denominator": 40,
+          "numerator": 1
+        },
+        "score_fraction": {
+          "denominator": 512,
+          "numerator": 245
+        },
+        "sum_twice_pair_points": 245
+      },
+      {
+        "cdf_count_at": "515107554002012968290985969330552974594945864172901284389255808280740008682393282238261351137320981128473421100576428927156640583055796322915587054914353071320593478621309750610537165844407842270504358798307171477146761387309428337398267050527871048859786213341068480401",
+        "cdf_count_before": "511252317352496375160162235712189366092218005276944613144637320096737029412794655032003151331149135478216126053115805254638306363760754106201902337050206896375136003420915065092526413189140744610053361016031292084271130298217266631143784898513892678956160269694994826641",
+        "logistic_elo": {
+          "boundary": null,
+          "elo": 31.299312899031435
+        },
+        "percentile": {
+          "denominator": 40,
+          "numerator": 39
+        },
+        "score_fraction": {
+          "denominator": 512,
+          "numerator": 279
+        },
+        "sum_twice_pair_points": 279
+      }
+    ],
+    "random_seed_used": null,
+    "relative_logistic_elo_descriptive": {
+      "boundary": null,
+      "elo": 8.144513059083145
+    },
+    "resampling_unit": "reversed_color_pair",
+    "scope": "Descriptive empirical uncertainty for this selected composite on these 128 development pairs. Component selection and prior exposure limit inference; formal confirmation remains separate."
+  },
+  "formal_alpha_reserved": false,
+  "game_result_policy": {
+    "id": "fastchess-182-clock-forfeit-v1",
+    "sha256": "049ab3dbb420b719f74a7621df817f925b7a388248fd6c8df05e064899f1c9ca"
+  },
+  "games_file": "test1757-selected-vs-official/games-utc.pgn",
+  "games_file_sha256": "a90252baa4b3c573e770fc7f17e62f191b52607c38f259bc7b8eb050263aa519",
+  "independent_mixed_ci": {
+    "artifact_id": 13664178998,
+    "artifact_zip_sha256": "95fdec23bb6013b7be4f25ace5a88b26bd7c1b50227073516f0cee31bcb7499d",
+    "driver_commit": "f0b5202f77574d9365c5bcb61bd4409009141800",
+    "independent_raw_review_sha256": "e5e5d251fc914b7839d03b82a5b856795e10b0edd022f08ffeb6fd4c6b2a5d83",
+    "native_search_signatures": [
+      "40a3d997d2cd31391c58ba8745bd578f8a08550d869d78e44b01059785da38fc",
+      "40a3d997d2cd31391c58ba8745bd578f8a08550d869d78e44b01059785da38fc"
+    ],
+    "perft4_nodes": 197281,
+    "repeated_bench_nodes": [
+      4125162,
+      4125162
+    ],
+    "run_id": 42599013415,
+    "run_url": "https://github.com/0mis/Stockfish/actions/runs/42599013415"
+  },
+  "independent_mixed_ci_review_sha256": "e5e5d251fc914b7839d03b82a5b856795e10b0edd022f08ffeb6fd4c6b2a5d83",
+  "nominated_locally": true,
+  "nomination_rule": "Strictly more than 128 points in all 256 complete audited games; ties do not nominate.",
+  "official_opponent": {
+    "engine_sha256": "b67c37d0d45e3540e311392aeeb699e3a745f16e172bc3fc6f85e0782093842b",
+    "name": "Official Stockfish November 6 development",
+    "network_sha256": "d1ee674a62ca754648fb8c2907ff4e92f0c3acff28f59afa0f5bd4e3949538f1",
+    "source_commit": "7cdd5e89a39fe3071b67d91c7bb07d712044bf76",
+    "source_url": "https://github.com/official-stockfish/Stockfish/tree/7cdd5e89a39fe3071b67d91c7bb07d712044bf76"
+  },
+  "official_points": 125.0,
+  "official_release": {
+    "asset_digest": "sha256:37c5fff649e820e3bcb5ac3450a1363cf0d75045da0dd15559873f76e53055d1",
+    "asset_id": 717703279,
+    "asset_url": "https://github.com/official-stockfish/Stockfish/releases/download/stockfish-dev-20261106-7cdd5e89/stockfish-windows-x86-64-universal.zip",
+    "tag": "stockfish-dev-20261106-7cdd5e89"
+  },
+  "pair_index_file": "test1757-selected-vs-official/pair-index.json",
+  "pair_index_file_sha256": "da3bbf4e22c6c64d0b96abb83cb5502d234c76ad506ef416676105cf67063439",
+  "pairs": 128,
+  "pentanomial": [
+    2,
+    28,
+    63,
+    32,
+    3
+  ],
+  "publication_transform": "Only Date/GameStartTime/GameEndTime metadata converted to UTC; every other byte, move, result, clock comment and forfeit is retained.",
+  "published_launch": {
+    "file": "test1757-selected-vs-official-launch.json",
+    "sha256": "2aeb34814d37183c884cfd5d96a7b3a1fee3ad2dca521e3dac1e79514056c97a"
+  },
+  "published_plan": {
+    "file": "test1757-selected-vs-official-plan.json",
+    "sha256": "9033ac013f7e4a25dcbe27ab0878cc9834e484a3ac3477257448eb5562d8ba42"
+  },
+  "referee": {
+    "name": "fastchess",
+    "sha256": "c6d7e4458a58025983c81bf38c524cb213e6f27559657dcfd72543392a431a71"
+  },
+  "retained_clock_forfeits": [
+    {
+      "candidate_color": "White",
+      "candidate_score": 0.0,
+      "game_result_policy_id": "fastchess-182-clock-forfeit-v1",
+      "included_without_replay": true,
+      "loser_color": "White",
+      "loser_name": "selected-test1757",
+      "overrun_ms": 30,
+      "pair_index": 23,
+      "result": "0-1",
+      "source_pair_result_sha256": "3e4dad06f9151cd65c77354470dda4b1ee8d656939ffa1f93fad4465da908eb7",
+      "termination": "time forfeit"
+    }
+  ],
+  "same_host_qualification": {
+    "arms": {
+      "baseline": {
+        "bench_nodes": 1556650,
+        "perft4_nodes": 197281,
+        "repeated_signatures": [
+          "5734e8bd58c5597965651f93f77233890fbd3a9102c1783f84735c06d80e9400",
+          "5734e8bd58c5597965651f93f77233890fbd3a9102c1783f84735c06d80e9400"
+        ]
+      },
+      "candidate": {
+        "bench_nodes": 4125162,
+        "perft4_nodes": 197281,
+        "repeated_signatures": [
+          "40a3d997d2cd31391c58ba8745bd578f8a08550d869d78e44b01059785da38fc",
+          "40a3d997d2cd31391c58ba8745bd578f8a08550d869d78e44b01059785da38fc"
+        ]
+      }
+    },
+    "canonical_bench": {
+      "depth": 13,
+      "hash_mb": 16,
+      "positions": 51,
+      "threads": 1
+    },
+    "source_input_conformance": {
+      "buckets_per_row": 92,
+      "identical": true,
+      "network_sha256": "d5c257728ba53cb9808543ce2800080c860f1c878896cd1b17f75ed4b20aafee",
+      "raw_vectors_sha256": "0848d042eea5c2cf4fbae787be81d2962019a5493e7f74900250ab5c632b3f93",
+      "reference_engine_sha256": "12a8e7bfdd9b1189b4350bd9ebef3501be1e89bd5fa41dcb56921f85ba23869a",
+      "rows": 16
+    },
+    "source_receipt_sha256": "008d08d91efb6d2f9eb31bc14b9b07b31494e17d64f30362e8ee8188ecebe106"
+  },
+  "sampling": {
+    "both_colors": true,
+    "games": 256,
+    "overlap_with_component_schedules": 0,
+    "overlap_with_prior_formal_pool_starts": 0,
+    "pairs": 128,
+    "pool_roots": 336,
+    "pool_sha256": "759bcc928b96a204ba187331021f912b927715aef5c3524066bdd2187d3fec86",
+    "sample_with_replacement": true,
+    "schedule_opening_id_list_sha256": "83fbd853bcf4297691a22158b6389616bcbedbb71616c11a5e6034632b9cc9bc",
+    "seed": 2026110911,
+    "unique_draws": 110
+  },
+  "schedule_opening_id_list_sha256": "83fbd853bcf4297691a22158b6389616bcbedbb71616c11a5e6034632b9cc9bc",
+  "schema": "public-selected-vs-official-complete-result-v1",
+  "scope": "One prospectively selected composite against the actual pinned November 6 official build, on retired development openings.",
+  "settings": {
+    "concurrency": 2,
+    "depth_limit": null,
+    "engine_move_overhead_ms": 10,
+    "evaluation_adjudication": false,
+    "fresh_engines_per_pair": true,
+    "hash_mb_per_engine": 64,
+    "nodes_per_move": null,
+    "ponder": false,
+    "referee_time_margin_ms": 0,
+    "strength_limit": false,
+    "tablebases": false,
+    "threads_per_engine": 1,
+    "time_control": "10+0.1"
+  },
+  "source_final_result_sha256": "095f7c9d251d6be547a19bee79c4104e79603ec09214cd0cf5148bf0ed114aa0",
+  "source_input_manifest_sha256": "01248d38e2c6613bcf78fda77633fff96326b3d5108ce2e7ce9d5abb969547f0",
+  "source_local_qualification_sha256": "008d08d91efb6d2f9eb31bc14b9b07b31494e17d64f30362e8ee8188ecebe106",
+  "source_manifest_sha256": "ae56aa115a25817cba21f73eedb53cd95262405f07682713455c0294bb8a3faf",
+  "source_plan_sha256": "2129e3ac5c92491c55b3d50e8b21fffe1b2c77ad4696a8ea01ba0551378cabc6",
+  "source_prelaunch_sha256": "d4b98442c0f34de8a2ea2ac4259d8103efd727a52b30ea728ac7fc71fdfc69a4",
+  "source_selection_sha256": "2c9843f543cc26014bc6c7e0f110fa76ecba9cc7f3680fd975aa267ad1fabaa3",
+  "status": "complete_independently_audited_development_comparison",
+  "totals": {
+    "clock_forfeits": 1,
+    "draws": 120,
+    "games": 256,
+    "losses": 65,
+    "wins": 71
+  },
+  "verified_gain": false
+}

@@ -1,0 +1,4610 @@
+[
+  {
+    "byte_end_exclusive": 19847,
+    "byte_start": 0,
+    "bytes": 19847,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 0.5,
+    "chunk_index": 0,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:25:10Z",
+        "plies": 157,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T10:24:34Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:25:20Z",
+        "plies": 258,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T10:24:34Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "d33a50004fff7e34f18b8c752e2ae3f98887f9ac6cb05313cdeddf939ffd02ec",
+    "pair_index": 0,
+    "published_pair_pgn_sha256": "9b7f786980e28511feef9336f4a8b65ced25373ca1eaeebcc8054fc087945281",
+    "source_pair_result_sha256": "9de45978e3481b70d213bf5939f16ab1f820e2275061305676f59f3ae2662a5a",
+    "source_pgn_bytes": 19847,
+    "source_pgn_sha256": "d55eec06f76e6efe82f6ff21598130a9706243b594c54f1d40f3e10fff1fc8be"
+  },
+  {
+    "byte_end_exclusive": 34062,
+    "byte_start": 19847,
+    "bytes": 14215,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 0.5,
+    "chunk_index": 0,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:25:49Z",
+        "plies": 83,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T10:25:23Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:26:03Z",
+        "plies": 203,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T10:25:23Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "f36c78f396255534758946a25b2f73e959fa3db61c2cc258d9d14363736a07ca",
+    "pair_index": 1,
+    "published_pair_pgn_sha256": "fee5da10f6c827a647e8ef9f4887f922e6d38d405b067668602f724d9b610b8d",
+    "source_pair_result_sha256": "d7e0e0bbdf289bdaaa1b775938b8193f498bd625acdd56098979baee6f584db3",
+    "source_pgn_bytes": 14215,
+    "source_pgn_sha256": "f75aa55132d1af3225c2eca74063ffbd46034e7b7da12e8d51236931e25dd954"
+  },
+  {
+    "byte_end_exclusive": 46659,
+    "byte_start": 34062,
+    "bytes": 12597,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 1.0,
+    "chunk_index": 0,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:26:35Z",
+        "plies": 120,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T10:26:06Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:26:39Z",
+        "plies": 131,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:26:06Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "a8f589d53b798847e44241d7bd6f44e850798233972b8f37273db3cb31bdd6b0",
+    "pair_index": 2,
+    "published_pair_pgn_sha256": "8167d7f5d1fbe55f77d987a56e81aa45dd240a7262fb5a86dd528cce875b3f4c",
+    "source_pair_result_sha256": "b69e6beea3989d7bdf8e3bde3b7609a8c3723b958a80f3f9c62b5e56aba81f13",
+    "source_pgn_bytes": 12597,
+    "source_pgn_sha256": "7c281e23a8d600fd8423f2533778f5cb769a4d2ab739ad4696ce6daffb3abfba"
+  },
+  {
+    "byte_end_exclusive": 64633,
+    "byte_start": 46659,
+    "bytes": 17974,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 0.5,
+    "chunk_index": 0,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:27:17Z",
+        "plies": 145,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T10:26:41Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:27:24Z",
+        "plies": 227,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T10:26:41Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "a5d049756bf8a0d99de5d0a2a1fc65b4e6b1197f55f25613161fba9241fb99f2",
+    "pair_index": 3,
+    "published_pair_pgn_sha256": "f2626b9d923188e4ae1e84bedbacf64f7e423108bc791ae66490dc8468a1d786",
+    "source_pair_result_sha256": "fe2cdefc37c0eb2a5479d528fa6d32040084fae1c2296e8918cedf68c98fee72",
+    "source_pgn_bytes": 17974,
+    "source_pgn_sha256": "29b5dab3dfa3302c58d54db4b36967d0441a1f58c80e1e6869b202cd23463bac"
+  },
+  {
+    "byte_end_exclusive": 80008,
+    "byte_start": 64633,
+    "bytes": 15375,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 1.0,
+    "chunk_index": 1,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:28:15Z",
+        "plies": 131,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:27:41Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:28:20Z",
+        "plies": 183,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T10:27:41Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "6721404105f829b30ec448fd25f5e5356ef97b809aa0550e490a2d76f09f51ab",
+    "pair_index": 4,
+    "published_pair_pgn_sha256": "08113ef23a777d0871521b33ee675a18bf5bb3dbe755e22d1bbf5c92206f67eb",
+    "source_pair_result_sha256": "598f35781f6f883a862f6e08664be93e7ad11522b8fdca0b06b776ee97a68caa",
+    "source_pgn_bytes": 15375,
+    "source_pgn_sha256": "7a3884871b7e275e7ad20ead9c5a2f26490593a6d760f80a3277307e7d61f287"
+  },
+  {
+    "byte_end_exclusive": 95802,
+    "byte_start": 80008,
+    "bytes": 15794,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 1.0,
+    "chunk_index": 1,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:28:57Z",
+        "plies": 145,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:28:23Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:29:01Z",
+        "plies": 179,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:28:23Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "5d6ef2536ff5a39b132fcb375048338e028fe073d8e1923393c3be739b705b69",
+    "pair_index": 5,
+    "published_pair_pgn_sha256": "82a227b91d503f298f5f33b58dcea575db0c3cf6545caa65e0d385359e07993f",
+    "source_pair_result_sha256": "67f9ab8ca16dbd2db7980b0e80a85a27f58a29ff9048aa9cc05a700a3a83ba0f",
+    "source_pgn_bytes": 15794,
+    "source_pgn_sha256": "4d396985558e1ba90e59cb25be74ed7f3f8f7f6b98c45482e55ac9f865aff1ba"
+  },
+  {
+    "byte_end_exclusive": 108848,
+    "byte_start": 95802,
+    "bytes": 13046,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 0.5,
+    "chunk_index": 1,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:29:29Z",
+        "plies": 89,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T10:29:03Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:29:41Z",
+        "plies": 171,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T10:29:03Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "de953e45e20d50dee6be7ccd490a6429da979f3640d9b2e603526e4fef019fd5",
+    "pair_index": 6,
+    "published_pair_pgn_sha256": "2c11669d29aaf96ae3a68771e2219481e73afc06c70ce481c2647fa9d053e594",
+    "source_pair_result_sha256": "c6b9b3040fb1e0fb75ca244ec50a85bdc3ccf88197064708e37eda021470d5ba",
+    "source_pgn_bytes": 13046,
+    "source_pgn_sha256": "44840191a8a69c9c543f9ef6b5e0e7d8b4ad5bbf117096edca1afaf40fadd077"
+  },
+  {
+    "byte_end_exclusive": 121962,
+    "byte_start": 108848,
+    "bytes": 13114,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 0.5,
+    "chunk_index": 1,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:30:15Z",
+        "plies": 122,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T10:29:44Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:30:18Z",
+        "plies": 141,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:29:44Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "592580532ef937cfb9ec3c0db5571aa84e2c34d1a37c598542621947278f88e6",
+    "pair_index": 7,
+    "published_pair_pgn_sha256": "2833f8d82c0ee1fecc0c18b19d93d9fff203d707a47a7663fe9c5fa9a2876d4a",
+    "source_pair_result_sha256": "4513448a4604cc65df67fe9ab33b54525925c3c4a136f7cd479b5e8d8eafb3cc",
+    "source_pgn_bytes": 13114,
+    "source_pgn_sha256": "6912391a1282e32f0dc6d8cf4bc40ae68de35f5c8c111e1164924c0fb1b982ec"
+  },
+  {
+    "byte_end_exclusive": 136941,
+    "byte_start": 121962,
+    "bytes": 14979,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 0.5,
+    "chunk_index": 2,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:31:14Z",
+        "plies": 132,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T10:30:40Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:31:18Z",
+        "plies": 173,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T10:30:40Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "bf749a24167bc9be321e6445b30206606ea4c7e48f44897eb456b3cfd1612650",
+    "pair_index": 8,
+    "published_pair_pgn_sha256": "f4a061099ec1a9e436bfd39439d278a6fe393edc31d6a32fa79472ca0c8aa296",
+    "source_pair_result_sha256": "ccfd17f1c16bb09b0c0a8c4b238e9a7c63ca48381dbe92ebf8dc985f616732b6",
+    "source_pgn_bytes": 14979,
+    "source_pgn_sha256": "4b21c33fd4405972c1a03a00e5e69863e2cd5d852356c264c35aa284dfded585"
+  },
+  {
+    "byte_end_exclusive": 149103,
+    "byte_start": 136941,
+    "bytes": 12162,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 1.0,
+    "chunk_index": 2,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:31:53Z",
+        "plies": 119,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:31:21Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:31:53Z",
+        "plies": 123,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:31:21Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "61daab0e87d86fb56e1fc4a5830e1b75ae28dc0335e42a08ce6505c24d8aa199",
+    "pair_index": 9,
+    "published_pair_pgn_sha256": "ba87ebca1dcdbf90b1894028331a61a874805fb9b5e925d5b0014e7c2c948bb8",
+    "source_pair_result_sha256": "03ab5133995f3941a03413f081143e1a3f209f6af9ef5477fcaeb84bc0798f4f",
+    "source_pgn_bytes": 12162,
+    "source_pgn_sha256": "521be37cc872a489dd690b07c8b4686d0bc4e776ca186fd2b7db72f91d519095"
+  },
+  {
+    "byte_end_exclusive": 162335,
+    "byte_start": 149103,
+    "bytes": 13232,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 1.0,
+    "chunk_index": 2,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:32:26Z",
+        "plies": 103,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T10:31:56Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:32:32Z",
+        "plies": 161,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:31:56Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "37db590ad1e42d0db26492cc49cab903dd96377bfd1957a49fe5bca4e9b538d4",
+    "pair_index": 10,
+    "published_pair_pgn_sha256": "7674ed834cdba62c6b69b8ea57ede796ce1b9405918be375591bf49688da2f68",
+    "source_pair_result_sha256": "efaa770ca43cc71e81657bc97ddbc5bd01f75b076889dcfbdffb040db5f75eb7",
+    "source_pgn_bytes": 13232,
+    "source_pgn_sha256": "47236d4ac547819bcad9ad972b49aa649f54e2df4a40e34e63a318c2acf75bfa"
+  },
+  {
+    "byte_end_exclusive": 178926,
+    "byte_start": 162335,
+    "bytes": 16591,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 0.5,
+    "chunk_index": 2,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:33:11Z",
+        "plies": 165,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T10:32:35Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:33:13Z",
+        "plies": 176,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T10:32:35Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "22fb4f6f0c7e3cadbaf658eed9300bf30a92588e02f036928358964dac92c870",
+    "pair_index": 11,
+    "published_pair_pgn_sha256": "3ed64242bf3214dfe43d0088930261fbf71b282fd4ec5a403531b11c43fa9bbc",
+    "source_pair_result_sha256": "52714a0b95ecc12d6a76923bcdec1d07adc951e4edf2a942316241b0b6c20ee5",
+    "source_pgn_bytes": 16591,
+    "source_pgn_sha256": "db2fbabb00448d10eacc952ee18575ba49fa031ccb62d97ad2fa1197b0554b46"
+  },
+  {
+    "byte_end_exclusive": 189634,
+    "byte_start": 178926,
+    "bytes": 10708,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 0.5,
+    "chunk_index": 3,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:33:59Z",
+        "plies": 101,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T10:33:33Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:34:02Z",
+        "plies": 107,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T10:33:33Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "70aadad96df7707d7891405d4dbb62fa86d1171abaab0181fb8fdcfd6dec08d9",
+    "pair_index": 12,
+    "published_pair_pgn_sha256": "d2c5f787a76bef6fa3def160161f7c98c44d9b8b44fba8f0677de736ea1e483a",
+    "source_pair_result_sha256": "902eb7e72ef1e823312b8ae36d63efc4612339db18d391d7d9a9051e810c55e7",
+    "source_pgn_bytes": 10708,
+    "source_pgn_sha256": "ca9055d880cfe42e3f36eccc1b0b78af0ee325f9afd213399da123e132405c43"
+  },
+  {
+    "byte_end_exclusive": 212398,
+    "byte_start": 189634,
+    "bytes": 22764,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 1.0,
+    "chunk_index": 3,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:34:45Z",
+        "plies": 213,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:34:04Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:34:51Z",
+        "plies": 267,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T10:34:04Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "00f2615df0c9470159436d38c985ecc25f06822d9e37fd1f24e0c89e873991a5",
+    "pair_index": 13,
+    "published_pair_pgn_sha256": "2e92189e1767d0c1a9003fcf67ad98ccb3ac9eb2c1498b9b878d597913c2d484",
+    "source_pair_result_sha256": "911281049a275c61e1e5e1bd6878d3a25e86a72aa6899becc02e03a13c0206c2",
+    "source_pgn_bytes": 22764,
+    "source_pgn_sha256": "cba28b199c791bfc08abb65035cf406a7771ed43dd2eb8b9c9e1d7314fcd1b35"
+  },
+  {
+    "byte_end_exclusive": 224014,
+    "byte_start": 212398,
+    "bytes": 11616,
+    "candidate_black_score": 1.0,
+    "candidate_white_score": 1.0,
+    "chunk_index": 3,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:35:26Z",
+        "plies": 112,
+        "result": "0-1",
+        "start_utc": "2026-11-09T10:34:54Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:35:26Z",
+        "plies": 117,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:34:54Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "0a0ae0534ae755587a58e88083db6f9f6f047aab72badb65732342947e552ba3",
+    "pair_index": 14,
+    "published_pair_pgn_sha256": "0d03e098ede806f27e8f50f0387a53db1ff9fffb256a2fa4ccee84465db51042",
+    "source_pair_result_sha256": "16ff56492d4266effa5ac32ca975527953d71d1d46aefad685adb98d0b3d50f2",
+    "source_pgn_bytes": 11616,
+    "source_pgn_sha256": "fcac8ceac52bc83e2f4cd2997fa4bf5cf88869ed6e980818e6f7b81888c424c4"
+  },
+  {
+    "byte_end_exclusive": 239610,
+    "byte_start": 224014,
+    "bytes": 15596,
+    "candidate_black_score": 1.0,
+    "candidate_white_score": 1.0,
+    "chunk_index": 3,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:36:04Z",
+        "plies": 156,
+        "result": "0-1",
+        "start_utc": "2026-11-09T10:35:28Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:36:05Z",
+        "plies": 163,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:35:28Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "821455be24188757359a70b4a30044c48ef21dd2872c7c3adbac5fe0dd7be69f",
+    "pair_index": 15,
+    "published_pair_pgn_sha256": "d2e1a3934ffbd1e9f65d7999c8e701205f48b4de1b3482e79a82717b9b08b7a5",
+    "source_pair_result_sha256": "0a3d2e4040aba59842cbe60c0c4c68314bd3975b1101226b78aa91d8904d45b2",
+    "source_pgn_bytes": 15596,
+    "source_pgn_sha256": "d62b902ee214eb8674bfe7d1cbf82f343c1fb9c1c492c64588cd1c9631e0dc7a"
+  },
+  {
+    "byte_end_exclusive": 257502,
+    "byte_start": 239610,
+    "bytes": 17892,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 1.0,
+    "chunk_index": 4,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:37:16Z",
+        "plies": 169,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:36:38Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:37:18Z",
+        "plies": 200,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T10:36:38Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "7340fa05fe2017714c8567ae5e1539e16c96bcdaa25f8448b265365c59bc8fee",
+    "pair_index": 16,
+    "published_pair_pgn_sha256": "9ead11e5ca8511158c3355a4adeb368677886bd2307cd6790c876e1837e82869",
+    "source_pair_result_sha256": "727fbc3d32b35049fe483a4994e9ed835e7121a09b4a31b21d0203bfca9637ad",
+    "source_pgn_bytes": 17892,
+    "source_pgn_sha256": "d3c273fbeaef66ec4167d5eec523126ed23ca7fe1759298a2a1057bee0641dc7"
+  },
+  {
+    "byte_end_exclusive": 268376,
+    "byte_start": 257502,
+    "bytes": 10874,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 0.5,
+    "chunk_index": 4,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:37:49Z",
+        "plies": 97,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T10:37:20Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:37:52Z",
+        "plies": 115,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:37:20Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "3920432ea6de2381b50f74efd9a743b3dbb80677b0b4c80d4516b1c98a85267e",
+    "pair_index": 17,
+    "published_pair_pgn_sha256": "d1b966fdb9102a2fd0b865638cc5d5f9b2e0272cd91ecfc0c95728c833407d60",
+    "source_pair_result_sha256": "3d982f4250c343734d94760488772bf4b70b79fcf8eeaa7a78b974340ac64602",
+    "source_pgn_bytes": 10874,
+    "source_pgn_sha256": "bf1dd90c6e16077a728ffc3db41bedfec2092ba6eb646ad1e3e0c10862fcadf3"
+  },
+  {
+    "byte_end_exclusive": 284009,
+    "byte_start": 268376,
+    "bytes": 15633,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 1.0,
+    "chunk_index": 4,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:38:30Z",
+        "plies": 155,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:37:55Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:38:31Z",
+        "plies": 165,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:37:55Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "f0c969d5cfe23e345e447ea5c60ec72153f4ec87c4a1d5afc5156dd289d8390c",
+    "pair_index": 18,
+    "published_pair_pgn_sha256": "f4b6b15b12abf504e9563d2edf6f867652cdab3f112e7c71b811b0a84c96aa6a",
+    "source_pair_result_sha256": "925c4d919f3ce4157d8ccaee8da223f80e22568d70ab56402d351215b3a71330",
+    "source_pgn_bytes": 15633,
+    "source_pgn_sha256": "2acfd4e5805e970166b972b35b985caea1de3a448b109dcbea82e6cb8b347be3"
+  },
+  {
+    "byte_end_exclusive": 297179,
+    "byte_start": 284009,
+    "bytes": 13170,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 1.0,
+    "chunk_index": 4,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:39:01Z",
+        "plies": 85,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:38:34Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:39:12Z",
+        "plies": 179,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T10:38:34Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "03a5a985454958f76d881a3401bc059fc3e752fa3cc8329e3fbc7a07d4232a15",
+    "pair_index": 19,
+    "published_pair_pgn_sha256": "6596da3f011a2c3bc26af4dd622cd4aea7bb2cfce3f0c620e757a03f577d7107",
+    "source_pair_result_sha256": "51ad20d910ad18254c68bd32dd7a5e6d5df15f609b1d4800ed6e06ddbe324f4d",
+    "source_pgn_bytes": 13170,
+    "source_pgn_sha256": "16ceb4d033c44ecd2908f32f685eea0bd1f2e407433c4afbc54c936e6160c837"
+  },
+  {
+    "byte_end_exclusive": 309927,
+    "byte_start": 297179,
+    "bytes": 12748,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 0.5,
+    "chunk_index": 5,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:40:18Z",
+        "plies": 121,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:39:46Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:40:19Z",
+        "plies": 133,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T10:39:46Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "dc3f432a383926e8e11e33ad13bb4d7871987d362968777c146723e8655bd0db",
+    "pair_index": 20,
+    "published_pair_pgn_sha256": "01eb34d124ed6e08145801dda728b8f856db78ce6b0c0704c6e2c6d5e6f045eb",
+    "source_pair_result_sha256": "0a0c402de9446db39773bbe1bdafe2e64bb7beb0be32beb2f239c208a28c37ad",
+    "source_pgn_bytes": 12748,
+    "source_pgn_sha256": "4cc96452eae93a31235b9df6b9ec2dcc3cb0aae23ef3395110766403bab4311d"
+  },
+  {
+    "byte_end_exclusive": 323691,
+    "byte_start": 309927,
+    "bytes": 13764,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 0.5,
+    "chunk_index": 5,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:40:55Z",
+        "plies": 129,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T10:40:22Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:40:55Z",
+        "plies": 149,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T10:40:22Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "13073bc7f46b292bbe77fdf1993bf55d9d5bbb071c1fc8a879f82d1eade4a281",
+    "pair_index": 21,
+    "published_pair_pgn_sha256": "b706727314667678ea4b4688871169227f9df890c870529d489bd78da231909a",
+    "source_pair_result_sha256": "c3b47a6f95c1dfd82dadb898b0f0c993cbdbb15fb06e9ae98a9068ec263d1a9e",
+    "source_pgn_bytes": 13764,
+    "source_pgn_sha256": "a25367a9239c4aec54d321301b2ad3892030a2bc743c7536eed8f1d66c78bf94"
+  },
+  {
+    "byte_end_exclusive": 337592,
+    "byte_start": 323691,
+    "bytes": 13901,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 1.0,
+    "chunk_index": 5,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:41:32Z",
+        "plies": 135,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:40:58Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:41:33Z",
+        "plies": 145,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:40:58Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "f10e2c22e0935bd85f31e28d9f8d38633e3836cd39be90ea2aa00462c72e93b4",
+    "pair_index": 22,
+    "published_pair_pgn_sha256": "c9050d94272f50061b09f1a9a8e34071d9ccf95c39e48c8aec219acfc3373e7b",
+    "source_pair_result_sha256": "73d54b0e6525c35ea1d34b9b05383abdee2a6566322639be05ac0709715d181b",
+    "source_pgn_bytes": 13901,
+    "source_pgn_sha256": "1d0ce7c2524615259321269b0ea0a8c40ec0c5a9b9e41f250cd4b27119e22904"
+  },
+  {
+    "byte_end_exclusive": 351795,
+    "byte_start": 337592,
+    "bytes": 14203,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 0.0,
+    "chunk_index": 5,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:42:09Z",
+        "plies": 137,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:41:36Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.0,
+        "clock_forfeit": true,
+        "end_utc": "2026-11-09T10:42:12Z",
+        "plies": 149,
+        "result": "0-1",
+        "start_utc": "2026-11-09T10:41:36Z",
+        "termination": "time forfeit"
+      }
+    ],
+    "opening_id": "6f3540c269b652ff4e8661cf34afee3f054cc6a027faeb3e724cf19ba48e190c",
+    "pair_index": 23,
+    "published_pair_pgn_sha256": "7a4ce0dfaac35da01f12261341d1fece398e3589b36a205f6c4015de2629077e",
+    "source_pair_result_sha256": "3e4dad06f9151cd65c77354470dda4b1ee8d656939ffa1f93fad4465da908eb7",
+    "source_pgn_bytes": 14203,
+    "source_pgn_sha256": "3f494390d9abc03bae9564418fbf59b146881f3d2c8692deb902d0017637fe6f"
+  },
+  {
+    "byte_end_exclusive": 366301,
+    "byte_start": 351795,
+    "bytes": 14506,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 1.0,
+    "chunk_index": 6,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:43:12Z",
+        "plies": 97,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:42:45Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:43:25Z",
+        "plies": 197,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:42:45Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "5abf3cd5041287537238650ad62483b78e251cbaac8961fa2b91a719efc5298e",
+    "pair_index": 24,
+    "published_pair_pgn_sha256": "9fd89f1893cb9906f1e4950537718c5f0e83a859912301d05efc1969e44ee935",
+    "source_pair_result_sha256": "09d6d079c94370fe05e0e68d6d582d0d806e190e3d4053eed41c302d203dc6c8",
+    "source_pgn_bytes": 14506,
+    "source_pgn_sha256": "577b59f7c9eca14e2430abd0dbe020e428717b839672bbc77adaa66bbbb4bf10"
+  },
+  {
+    "byte_end_exclusive": 383966,
+    "byte_start": 366301,
+    "bytes": 17665,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 1.0,
+    "chunk_index": 6,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:44:04Z",
+        "plies": 171,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:43:27Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:44:07Z",
+        "plies": 195,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:43:27Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "e8353c9bf081144bd09e444a4d3957335a9399cabb791bddeb494ec49e37b308",
+    "pair_index": 25,
+    "published_pair_pgn_sha256": "187258abbd6cacfbd194cc731a07cf3d03b7c38f9199d49553d8cbd07639e1f8",
+    "source_pair_result_sha256": "de74886e0adf01629f100675844b3a32f4ce0bb6fa2f8e7c2aca20056fba8c53",
+    "source_pgn_bytes": 17665,
+    "source_pgn_sha256": "781364745894e112ee76f9c48ae0f03d33042be88187d1b853da08bc98157a9a"
+  },
+  {
+    "byte_end_exclusive": 400032,
+    "byte_start": 383966,
+    "bytes": 16066,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 1.0,
+    "chunk_index": 6,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:44:45Z",
+        "plies": 149,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:44:10Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:44:49Z",
+        "plies": 180,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T10:44:10Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "01fd3487e1a383842c6ab5e3dca2d0907e0a0f81fc3c335dd70226f81bb542aa",
+    "pair_index": 26,
+    "published_pair_pgn_sha256": "65ea41e1b0d61a0d29327b316cfff5f23716fabf903f4aac417d2539988ec380",
+    "source_pair_result_sha256": "3379fae5b359400792bf8bd5b83238a793f6ab8df919c988606575d1d72b9953",
+    "source_pgn_bytes": 16066,
+    "source_pgn_sha256": "3d5e20fd69c60f8cd9a5405d2fa648a5c2aa3364f9d5cd2805d24ffa74e06f36"
+  },
+  {
+    "byte_end_exclusive": 414047,
+    "byte_start": 400032,
+    "bytes": 14015,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 1.0,
+    "chunk_index": 6,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:45:24Z",
+        "plies": 121,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:44:52Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:45:28Z",
+        "plies": 163,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:44:52Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "44a7671dfb6e35076293f57d89bd73f3689d639b7fcdde6b75c008bc0090d86e",
+    "pair_index": 27,
+    "published_pair_pgn_sha256": "768ebc5fe6a71cf9c69a02b63fed50d18827c7243eaaf3ce72936fd22790da29",
+    "source_pair_result_sha256": "4d503de2feb63023f4d4b62e2c0fcc7050b15de92598305cc7c957a1994362a5",
+    "source_pgn_bytes": 14015,
+    "source_pgn_sha256": "1d33aa21c384fef3b072b261091234c6ed18048adc91f79090d64f47cca5ed23"
+  },
+  {
+    "byte_end_exclusive": 428232,
+    "byte_start": 414047,
+    "bytes": 14185,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 0.5,
+    "chunk_index": 7,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:46:41Z",
+        "plies": 147,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:46:07Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:46:42Z",
+        "plies": 139,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T10:46:07Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "f2812c687809d9525a442d46c9f5400676fd36c1a31921ddd16a0a0edef37e91",
+    "pair_index": 28,
+    "published_pair_pgn_sha256": "140d101c82b0a8a40b6460df1c1929ffab463f04aec5a651dbf9fe0f2431dc40",
+    "source_pair_result_sha256": "2193ded1b582d52055a11c7a5d89481bae11ed1288bf4af0637fdf8bae3f875c",
+    "source_pgn_bytes": 14185,
+    "source_pgn_sha256": "69fdecfc0aee08a39f982f9d5f74924e1caa0dc342591082371a71a43b93f7f4"
+  },
+  {
+    "byte_end_exclusive": 443610,
+    "byte_start": 428232,
+    "bytes": 15378,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 1.0,
+    "chunk_index": 7,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:47:19Z",
+        "plies": 145,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:46:44Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:47:21Z",
+        "plies": 169,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T10:46:44Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "d9feeacefd703fe08bbbfc7b71a45e7f28514426d72a48498f754ad527766fc6",
+    "pair_index": 29,
+    "published_pair_pgn_sha256": "621dc710a6c9652cd30563ee24e5fb92e06cbcfcd372f080b74d1e00dea7d98d",
+    "source_pair_result_sha256": "809be831615dc7456f5d6b6cc0a56e9dd36dc41ba05077b1338bb325285fbe47",
+    "source_pgn_bytes": 15378,
+    "source_pgn_sha256": "eabef740797a5b4e0a988e525e87ecff664fc8e3150887b16fe054fe0a0f9961"
+  },
+  {
+    "byte_end_exclusive": 458197,
+    "byte_start": 443610,
+    "bytes": 14587,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 1.0,
+    "chunk_index": 7,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:47:56Z",
+        "plies": 117,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:47:24Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:48:02Z",
+        "plies": 179,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:47:24Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "ec05aac7f65bfbeff5493233b390410f98042648fd0e7e92c17cd5a317bf2544",
+    "pair_index": 30,
+    "published_pair_pgn_sha256": "776d2c186995f0571518da46ec156930fbf6fa0dffc834cb7eb5cf7947d7e806",
+    "source_pair_result_sha256": "f7c304fe0b1d9022edfbbd498195694aa5e18cce8c2a8238fd2a7694f0b7572f",
+    "source_pgn_bytes": 14587,
+    "source_pgn_sha256": "14ee74d58f9411933a2d208e056537f71f059a994d2016b6310f8a99de94bba3"
+  },
+  {
+    "byte_end_exclusive": 469156,
+    "byte_start": 458197,
+    "bytes": 10959,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 1.0,
+    "chunk_index": 7,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:48:34Z",
+        "plies": 105,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:48:05Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:48:36Z",
+        "plies": 109,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T10:48:05Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "5c2d724d2b80aa04177fa44f61a2102f0fcedc87c45794c2fa276426623b2673",
+    "pair_index": 31,
+    "published_pair_pgn_sha256": "dac896ee8af189a354370c8568d48a00536d31eb755f9552632358e03d4d8277",
+    "source_pair_result_sha256": "b506028b1811190feaa0ea2088090c950dec6a9ed340a7be3469bb906387ce41",
+    "source_pgn_bytes": 10959,
+    "source_pgn_sha256": "32fdf4ad9e70a455ae1d065ee304928f93f6bfcde9c6bc171a4feec77542e267"
+  },
+  {
+    "byte_end_exclusive": 486497,
+    "byte_start": 469156,
+    "bytes": 17341,
+    "candidate_black_score": 1.0,
+    "candidate_white_score": 1.0,
+    "chunk_index": 8,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:49:56Z",
+        "plies": 147,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:49:21Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:50:02Z",
+        "plies": 210,
+        "result": "0-1",
+        "start_utc": "2026-11-09T10:49:21Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "3a15e34e6a7b9e002f28a45965412d9daf1fbebdc634906247babe24c3c8b2ac",
+    "pair_index": 32,
+    "published_pair_pgn_sha256": "9ed7cc824d16dd62e3bad6b505c18021739d6c803408ed59f10db9a03bab3a48",
+    "source_pair_result_sha256": "2903b228ebca7fa7c5238e175a6e38fcc4eebe922b2ca5c3f078e9fa811ac30a",
+    "source_pgn_bytes": 17341,
+    "source_pgn_sha256": "6d5c1034bd0220ee7265a4e9efdbfea17abac5b0eceddc11f82c1d4549c6fa36"
+  },
+  {
+    "byte_end_exclusive": 502266,
+    "byte_start": 486497,
+    "bytes": 15769,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 1.0,
+    "chunk_index": 8,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:50:40Z",
+        "plies": 151,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:50:05Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:50:42Z",
+        "plies": 171,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:50:05Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "b290890d8d389b5fb20bd04c53872a52050b64c716cc7bc9e6292da987f78009",
+    "pair_index": 33,
+    "published_pair_pgn_sha256": "7972ddc56a1badad4705d5286fb5fb879092b30afcca3b87cf694d3a1bc80a7b",
+    "source_pair_result_sha256": "93d3ebb79313cc0327537e607f6ce53cb91422aadfa9fea17b4496a72eb61a52",
+    "source_pgn_bytes": 15769,
+    "source_pgn_sha256": "69a5186f3fe3e8ef2a78c98f934e7677fc103c54eb6a745d73fb5d180fdc60b8"
+  },
+  {
+    "byte_end_exclusive": 516440,
+    "byte_start": 502266,
+    "bytes": 14174,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 0.5,
+    "chunk_index": 8,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:51:15Z",
+        "plies": 101,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T10:50:45Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:51:24Z",
+        "plies": 185,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:50:45Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "bc572b6fb80fcfc58d96dc561dcf13260f328352fda089940b6ccf1bb82a16b0",
+    "pair_index": 34,
+    "published_pair_pgn_sha256": "6dfca6edc8af2ef7a051ff47790632ba659ce1c57765df8b2d25c810f61b58db",
+    "source_pair_result_sha256": "246256fe55e7d4bba4bdbb3475eb4e0e18db74ffe72aaa211345ab6545c3f592",
+    "source_pgn_bytes": 14174,
+    "source_pgn_sha256": "4f4cd7c1cedd5a23e2440a6f0979788e19c3ea4b06ac258d20ae0a90edc67616"
+  },
+  {
+    "byte_end_exclusive": 530767,
+    "byte_start": 516440,
+    "bytes": 14327,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 0.5,
+    "chunk_index": 8,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:51:55Z",
+        "plies": 106,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T10:51:27Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:52:06Z",
+        "plies": 183,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:51:27Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "801828c4c93037b5331fe42bc4561a5f0e8f9de1ddfe52be9ccbd9ca49142693",
+    "pair_index": 35,
+    "published_pair_pgn_sha256": "da92f8b2c70b329d58e2c19bff7cee992c6550d7ef8a11b57d9311b5f5ef970a",
+    "source_pair_result_sha256": "bf353443fb63598bd0afc85bd2867bb1494a6d7acdd4bc05ca323555f4cc2335",
+    "source_pgn_bytes": 14327,
+    "source_pgn_sha256": "15ef73dac6cb47d5e2f6359c85270222ae507c0b376b5f8d0a2042c74abd7747"
+  },
+  {
+    "byte_end_exclusive": 546777,
+    "byte_start": 530767,
+    "bytes": 16010,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 0.5,
+    "chunk_index": 9,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:53:19Z",
+        "plies": 114,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T10:52:51Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:53:33Z",
+        "plies": 213,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T10:52:51Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "4ee766f9891fb63c47d63d4828ef3db0b819f958d19deee46b14842812399216",
+    "pair_index": 36,
+    "published_pair_pgn_sha256": "77c57a2e6d0b5a72ca42d0de2113c9e1d93b0f40851ecfea8055f9638364379c",
+    "source_pair_result_sha256": "d48fff729a13773f86cfa3e85d75e5908177986fb6c75d1ec2acfe75298e3537",
+    "source_pgn_bytes": 16010,
+    "source_pgn_sha256": "df946179062053659417d120f392b315da858166ee3217457cd4aa15936bfa1f"
+  },
+  {
+    "byte_end_exclusive": 560038,
+    "byte_start": 546777,
+    "bytes": 13261,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 0.5,
+    "chunk_index": 9,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:54:00Z",
+        "plies": 67,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:53:36Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:54:16Z",
+        "plies": 199,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T10:53:36Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "63ca590c039353a570a00245d7f336e7bb4a561afe6f12adf7aa44d65c837c62",
+    "pair_index": 37,
+    "published_pair_pgn_sha256": "d25efa44d8837326b6bed1d76c522f0b8ddb6c453e6af405dac44a1adf3e8329",
+    "source_pair_result_sha256": "c7a92b9b5f7efe766798342acd5e81ea45fd549ac7c539304efc5c9e07686ec7",
+    "source_pgn_bytes": 13261,
+    "source_pgn_sha256": "e5e871a500771e6d492cb5629648afe30c6e02fdd51b23c1bbe371036594f290"
+  },
+  {
+    "byte_end_exclusive": 571265,
+    "byte_start": 560038,
+    "bytes": 11227,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 1.0,
+    "chunk_index": 9,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:54:49Z",
+        "plies": 97,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T10:54:19Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:54:51Z",
+        "plies": 123,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:54:19Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "f2812c687809d9525a442d46c9f5400676fd36c1a31921ddd16a0a0edef37e91",
+    "pair_index": 38,
+    "published_pair_pgn_sha256": "13c22ff934ca185c3122e553e8687cb41351d8f237df90063f6fe9ed1559a645",
+    "source_pair_result_sha256": "3dffc85ca60ec40590f44a1a1533913505a66db373570dc1f79ccf5ba108d087",
+    "source_pgn_bytes": 11227,
+    "source_pgn_sha256": "42b81841ad8f0dde82e9d61221c604cf10cca188beab25afae0f539c2c1a7ab3"
+  },
+  {
+    "byte_end_exclusive": 581808,
+    "byte_start": 571265,
+    "bytes": 10543,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 0.5,
+    "chunk_index": 9,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:55:23Z",
+        "plies": 97,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T10:54:54Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:55:25Z",
+        "plies": 107,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T10:54:54Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "952540dc6af126ea33205aff120b800d279a657ed94a6f369e769d75315b2104",
+    "pair_index": 39,
+    "published_pair_pgn_sha256": "6c6907683346153a4aa9ddbc9d3ed8e1563a4eb2983f1c00e87369c99929049c",
+    "source_pair_result_sha256": "a7edb0e920ea7811b413c8de1360d677acba7908c7365e3f6164b6dbac6956f8",
+    "source_pgn_bytes": 10543,
+    "source_pgn_sha256": "40cb8581a0e6f161de7bf5d0b33357da829237062ef782f5236e73febadc69de"
+  },
+  {
+    "byte_end_exclusive": 591787,
+    "byte_start": 581808,
+    "bytes": 9979,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 0.5,
+    "chunk_index": 10,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:56:47Z",
+        "plies": 85,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T10:56:20Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:56:50Z",
+        "plies": 107,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:56:20Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "db0116da99004508459439635c84fafac6449056b6490a4aa985d83e6e2a535b",
+    "pair_index": 40,
+    "published_pair_pgn_sha256": "1708e3ad175a83f6497362e7b85f8955e0a234fd0ed1474c00370d9a3a8e3baf",
+    "source_pair_result_sha256": "dcd0c0a3a13d40c9e90d5c0bf6957e242b87e2116d877431d7fb240e93b844d9",
+    "source_pgn_bytes": 9979,
+    "source_pgn_sha256": "83610e6e6300096e71bfb60fb26b656b3987331b775a0ea61fe9b2962e0de633"
+  },
+  {
+    "byte_end_exclusive": 605174,
+    "byte_start": 591787,
+    "bytes": 13387,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 1.0,
+    "chunk_index": 10,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:57:22Z",
+        "plies": 115,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T10:56:53Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:57:28Z",
+        "plies": 153,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:56:53Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "955568ae19557250ab88e21955adf7af0ef0746d5bb263a113a866fc6478c4d5",
+    "pair_index": 41,
+    "published_pair_pgn_sha256": "f153805c30c8ad149d886cb2024a931b00f3f7dfca76c2f00d74801c5e794444",
+    "source_pair_result_sha256": "e8a8c373d53d10eda08636c753981aa1ccb79a8f1de817348164f90857d5c46a",
+    "source_pgn_bytes": 13387,
+    "source_pgn_sha256": "7c02a58cd423a7e93f13f03440008e14c4ce4cb6beffd713e0bf7d2ee8f3c56b"
+  },
+  {
+    "byte_end_exclusive": 618278,
+    "byte_start": 605174,
+    "bytes": 13104,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 1.0,
+    "chunk_index": 10,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:58:00Z",
+        "plies": 91,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:57:31Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:58:08Z",
+        "plies": 171,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:57:31Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "d5416128716029fe58571725a04dc97b463e366a8d6471f5b2088ebe6576148b",
+    "pair_index": 42,
+    "published_pair_pgn_sha256": "f2d9e0e9a7ab7af05fba26dd5cd7c1f9f66963e5cc52528ec11897db8a1215e7",
+    "source_pair_result_sha256": "d8cfdc9f17988d7314a4fa946082902f1766bd4cfddcbb9b7d6a190b58d76983",
+    "source_pgn_bytes": 13104,
+    "source_pgn_sha256": "6c905051ba68bdcc3ec46f256cec44ce5c64c0960597a05f15e96dc8092700b2"
+  },
+  {
+    "byte_end_exclusive": 629815,
+    "byte_start": 618278,
+    "bytes": 11537,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 1.0,
+    "chunk_index": 10,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:58:40Z",
+        "plies": 99,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:58:11Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T10:58:44Z",
+        "plies": 129,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:58:11Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "5f3f35647557681cf7a65743356f0c2f13b17167706aa2ace51759e92dacd477",
+    "pair_index": 43,
+    "published_pair_pgn_sha256": "fc87a2d254c6d4c0b5f4bbbe3dfaf994eae435609864f414a13a2fc6bef4de0a",
+    "source_pair_result_sha256": "c2bada23b23a3229e1e809d4b1cb02ed829e90b906d87b3478386b5513a9872d",
+    "source_pgn_bytes": 11537,
+    "source_pgn_sha256": "62821523652e73d6f9d345eb0aafe066e54e2360c36998c2a87074ca1e48e942"
+  },
+  {
+    "byte_end_exclusive": 644058,
+    "byte_start": 629815,
+    "bytes": 14243,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 1.0,
+    "chunk_index": 11,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:00:07Z",
+        "plies": 81,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T10:59:41Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:00:22Z",
+        "plies": 207,
+        "result": "1-0",
+        "start_utc": "2026-11-09T10:59:41Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "9ccbcead690d5e5d84862906d2aa66c193d4d7a42ab25b5522276945bb34bdeb",
+    "pair_index": 44,
+    "published_pair_pgn_sha256": "c8f5b3d54adf2dbfd2b4c19c90030953fd4bf353c0c44f787b0be2352a52d953",
+    "source_pair_result_sha256": "ccb6ceeb6ec054b52c3a3dd14d59e95a5595d49b4df1b75c44fd9d4e665e32dc",
+    "source_pgn_bytes": 14243,
+    "source_pgn_sha256": "ea4cecaa2acb518b3eacac8039ba9cc457fc88701243428e06c0dc53d31e45ef"
+  },
+  {
+    "byte_end_exclusive": 657918,
+    "byte_start": 644058,
+    "bytes": 13860,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 0.5,
+    "chunk_index": 11,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:00:54Z",
+        "plies": 103,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:00:25Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:01:02Z",
+        "plies": 177,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:00:25Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "cae332186f4f20bff2a28cccede2bf11255995b4a910ef4aa2d125d32c03bcef",
+    "pair_index": 45,
+    "published_pair_pgn_sha256": "bca85d26b41eebf23b7d910e40f1ee9985dff51f5ad5b8e1ca3c5bc1ec3e89fa",
+    "source_pair_result_sha256": "e10605814e0a475bb04080a98aa5c4783de11fbf143b803c63729f2265f07bbb",
+    "source_pgn_bytes": 13860,
+    "source_pgn_sha256": "5bedb56f06a0ee0f87d4b1c0e553ab259d3a6aa5cba67618ecfb0b2d79963637"
+  },
+  {
+    "byte_end_exclusive": 670912,
+    "byte_start": 657918,
+    "bytes": 12994,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 0.5,
+    "chunk_index": 11,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:01:30Z",
+        "plies": 87,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:01:05Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:01:43Z",
+        "plies": 173,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:01:05Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "1488f2d6076d4b4401e4dc95da27eb1d44ce946ac931c7bdcc6c8d3c23f1c1da",
+    "pair_index": 46,
+    "published_pair_pgn_sha256": "3cddc37b079f3c0dc04365c2ffd229eb53e359827d406bef3e7d43799615b84b",
+    "source_pair_result_sha256": "39ab1a323189d18595c316802efee1495fdf33dba5d38bd0829c680da0aab5c0",
+    "source_pgn_bytes": 12994,
+    "source_pgn_sha256": "97ecedd382de2b6db052867f08174655ce1869d5e6a5ea46f9149b7a424bd26e"
+  },
+  {
+    "byte_end_exclusive": 685931,
+    "byte_start": 670912,
+    "bytes": 15019,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 1.0,
+    "chunk_index": 11,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:02:22Z",
+        "plies": 137,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:01:46Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:02:24Z",
+        "plies": 169,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:01:46Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "105c6720d1e3b5e1c88d2772d6a845c209204014bdcbf399cc4d646281e2648a",
+    "pair_index": 47,
+    "published_pair_pgn_sha256": "eb9e0f3f83c8be995efba2030379c584c4c8c9d0ab24f338a8d862e64d50bab4",
+    "source_pair_result_sha256": "11268f1adb6ae89ff03ad11ae935056aeb9740b2ac4f5d1628bb5883db185b56",
+    "source_pgn_bytes": 15019,
+    "source_pgn_sha256": "0c38fdbe444951e7384857de94ddd120877e66beb959ad04dd3d6de46a4393a0"
+  },
+  {
+    "byte_end_exclusive": 699370,
+    "byte_start": 685931,
+    "bytes": 13439,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 0.5,
+    "chunk_index": 12,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:03:58Z",
+        "plies": 125,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:03:26Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:04:00Z",
+        "plies": 145,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:03:26Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "5d3ecea11f0746e6aabc7800b77270c42714866d6512c4a413315e727c6feb80",
+    "pair_index": 48,
+    "published_pair_pgn_sha256": "f8f280c403bce30a84ca7c3489720004698343d5a85d6d09da5247fe9f01da58",
+    "source_pair_result_sha256": "a1f6bc69b87bc376c16290bbd1d34648e2388fa7c30657c33395e960c3b0baa6",
+    "source_pgn_bytes": 13439,
+    "source_pgn_sha256": "3d5cc70f4638fbffd9c518e7a2511073dc002636ba67b112daa294cc02522831"
+  },
+  {
+    "byte_end_exclusive": 723385,
+    "byte_start": 699370,
+    "bytes": 24015,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 0.5,
+    "chunk_index": 12,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:04:45Z",
+        "plies": 215,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:04:03Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:04:53Z",
+        "plies": 291,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:04:03Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "7f9feae61180db3140c86e9c27a9071b15e35666eb2c6d67a705295848be4274",
+    "pair_index": 49,
+    "published_pair_pgn_sha256": "acbb416374ee01fc5aac826b988f7c8d40c88e395b511976412ce8922a5f9d18",
+    "source_pair_result_sha256": "8c0fb50ec3c35a77f8fd78ab8a34b2cd9aab90a28c7c09b64a277566cb0a65e6",
+    "source_pgn_bytes": 24015,
+    "source_pgn_sha256": "b2d1fb293ab725603bde68ac9ef26f3318fb92c381f7398a7513f9d3b284c784"
+  },
+  {
+    "byte_end_exclusive": 736357,
+    "byte_start": 723385,
+    "bytes": 12972,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 0.5,
+    "chunk_index": 12,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:05:25Z",
+        "plies": 99,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:04:56Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:05:32Z",
+        "plies": 161,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:04:56Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "63ca590c039353a570a00245d7f336e7bb4a561afe6f12adf7aa44d65c837c62",
+    "pair_index": 50,
+    "published_pair_pgn_sha256": "0b5c76eabfb7e459ed114b7a9baebdfa21d9c3e1c87f9960054ba700240a0f34",
+    "source_pair_result_sha256": "6792bd1ff32a878c90284cb038cc069cafb14befb415ddd2440fc7dc394345bf",
+    "source_pgn_bytes": 12972,
+    "source_pgn_sha256": "f2520dc61d7c6041bee166aac5c92bcb2ee9d6090e569035c9c8dfd01b8e5287"
+  },
+  {
+    "byte_end_exclusive": 754116,
+    "byte_start": 736357,
+    "bytes": 17759,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 1.0,
+    "chunk_index": 12,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:06:10Z",
+        "plies": 150,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:05:34Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:06:16Z",
+        "plies": 217,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:05:34Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "25aa0a00550efe4f6899e59e2d1fc410e8bd4b5f4c6576c474616c638f11ec05",
+    "pair_index": 51,
+    "published_pair_pgn_sha256": "37ae08c5ad10bfa4ce89fd29fd1a2c33a3783dc7df11bfece00bc2c14ff73b87",
+    "source_pair_result_sha256": "7746c805b1f883ac5c0372df697d89f051f5c6a25a5f92789011f6968472b9a6",
+    "source_pgn_bytes": 17759,
+    "source_pgn_sha256": "35617e522f2775970948cf5ba54d8f23a9addb9889e6efd0505456ccd70574c0"
+  },
+  {
+    "byte_end_exclusive": 767701,
+    "byte_start": 754116,
+    "bytes": 13585,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 0.5,
+    "chunk_index": 13,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:07:51Z",
+        "plies": 125,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:07:22Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:07:57Z",
+        "plies": 148,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:07:22Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "26313b145a474a3bf89abf0499a3d22597a48e3844ff94301c20226d1c399270",
+    "pair_index": 52,
+    "published_pair_pgn_sha256": "1fd522e3dfa3ca95049a56a36b586c22ab134afd2994c052cc8d234aed34004b",
+    "source_pair_result_sha256": "eb5761d2dafd5415f12251e40d6cbb97a5b32d73d39811b2b30540a7351fa083",
+    "source_pgn_bytes": 13585,
+    "source_pgn_sha256": "b1c8acf22ad2da3bcaa20bf69bddd68879d4914b0b92db46277804b77328ba32"
+  },
+  {
+    "byte_end_exclusive": 783034,
+    "byte_start": 767701,
+    "bytes": 15333,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 1.0,
+    "chunk_index": 13,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:08:33Z",
+        "plies": 141,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:07:59Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:08:36Z",
+        "plies": 173,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:07:59Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "644b657a61442044aebf26f350c943c34d6f7a3454604967b786de776b396878",
+    "pair_index": 53,
+    "published_pair_pgn_sha256": "d4629861db87895f2a7993b32da1972ea15a0cb360c84984fc511b9355fffc55",
+    "source_pair_result_sha256": "824f6257ff0984638b9723a677a12f4da9e5fcb4244d0bb0fdcb05af5f93be94",
+    "source_pgn_bytes": 15333,
+    "source_pgn_sha256": "b4343b7634c1226301d3314b7b2a518ae1c4d7b7c22520d0d8ddc34695677e8b"
+  },
+  {
+    "byte_end_exclusive": 798735,
+    "byte_start": 783034,
+    "bytes": 15701,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 1.0,
+    "chunk_index": 13,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:09:08Z",
+        "plies": 85,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:08:39Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:09:23Z",
+        "plies": 235,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:08:39Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "9c6945fe0a52bcc0534813ba7f1888a0c25cd58b2d75e26675414c897233333b",
+    "pair_index": 54,
+    "published_pair_pgn_sha256": "64a5dd3cacf78cdf56a9c6b235381c2dd18c7009205c7d9fcd4366b1bd5ecf30",
+    "source_pair_result_sha256": "e12bc39e9efe7d7c907482e8b179e816c3dec73c38be573feaf250570e13f8d9",
+    "source_pgn_bytes": 15701,
+    "source_pgn_sha256": "18f98ca7ac9bd2f55d221118e2a47059fe128d498bfe8088f9388c33accede3e"
+  },
+  {
+    "byte_end_exclusive": 810382,
+    "byte_start": 798735,
+    "bytes": 11647,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 0.5,
+    "chunk_index": 13,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:09:53Z",
+        "plies": 97,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:09:25Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:09:58Z",
+        "plies": 133,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:09:25Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "dc7cdd697753bc554e19f60c09b79fe79dc50066c3a5a9c44dbad7735d96a6f3",
+    "pair_index": 55,
+    "published_pair_pgn_sha256": "0ed20905ca10b78b767e57f7a62187e2139de0bb81c92266f50a4586f4b40394",
+    "source_pair_result_sha256": "65c76fc9cd2f578938851dad32a9b833faf53c88ef2efad620b5b9e4a4c55f70",
+    "source_pgn_bytes": 11647,
+    "source_pgn_sha256": "4d178e430fef2cbac6193b4de82f2ccc25c5951de685e6a7aa22c92597d4f246"
+  },
+  {
+    "byte_end_exclusive": 832003,
+    "byte_start": 810382,
+    "bytes": 21621,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 1.0,
+    "chunk_index": 14,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:11:44Z",
+        "plies": 207,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:11:02Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:11:48Z",
+        "plies": 247,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:11:02Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "49fed3a5ac07cce0296d68a971aca1318082bbc1c80dfb43e27f491a7d982956",
+    "pair_index": 56,
+    "published_pair_pgn_sha256": "798becf5562b05d3c5a4fe2eed115a43ccbaad0426aaf3ba9134494cadbee6df",
+    "source_pair_result_sha256": "3ea7e91d3b50b05c74f50e04709991b3cdb4bdd48180655f1b480f097af156d0",
+    "source_pgn_bytes": 21621,
+    "source_pgn_sha256": "cc5a829400f8a1a8f82e211ea218fbb2faad7c19da0e23c3e1de66c89f3c232c"
+  },
+  {
+    "byte_end_exclusive": 852918,
+    "byte_start": 832003,
+    "bytes": 20915,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 0.5,
+    "chunk_index": 14,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:12:33Z",
+        "plies": 219,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:11:51Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:12:34Z",
+        "plies": 220,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:11:51Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "3b28f696c585612399203477b3ec8dad490a12d82b120d1fc96718318d874623",
+    "pair_index": 57,
+    "published_pair_pgn_sha256": "26f02e1dc2b4f55efd7e46a0270430e1a66a9b61a11017ff957a181d17a29532",
+    "source_pair_result_sha256": "d7c5a3b08676105d57ddefeef5f9c57c6129ac5990aeaedea0113147f361be5c",
+    "source_pgn_bytes": 20915,
+    "source_pgn_sha256": "5ef0fa920b771b6e0abd1cdf0ef2b46d93fea466e19ed8d1d0337c8121b6b68f"
+  },
+  {
+    "byte_end_exclusive": 867665,
+    "byte_start": 852918,
+    "bytes": 14747,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 0.5,
+    "chunk_index": 14,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:13:12Z",
+        "plies": 145,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:12:37Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:13:13Z",
+        "plies": 155,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:12:37Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "644b657a61442044aebf26f350c943c34d6f7a3454604967b786de776b396878",
+    "pair_index": 58,
+    "published_pair_pgn_sha256": "fdc5c33c4f210b0bd0b17b85a9e799636e3cfc046a64485417ded6b776b3f24a",
+    "source_pair_result_sha256": "664787bbffc9b4eca9a52d5130f2f6bfa572196f465cf1f1513581812beb7440",
+    "source_pgn_bytes": 14747,
+    "source_pgn_sha256": "e1b80cec23a8bd7b4bdf8165c8441df2bb0fb0a005fc02f073c777db56b53154"
+  },
+  {
+    "byte_end_exclusive": 879411,
+    "byte_start": 867665,
+    "bytes": 11746,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 0.5,
+    "chunk_index": 14,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:13:43Z",
+        "plies": 115,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:13:15Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:13:47Z",
+        "plies": 117,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:13:15Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "d6716fd106ce39da749471f645b60a11526ef447a2ecd0565c3577a7de8a69d1",
+    "pair_index": 59,
+    "published_pair_pgn_sha256": "1bb1fbea39121bfbd2322d16721f2caf20a265b66e65b836f65616e972795b0b",
+    "source_pair_result_sha256": "82eb939bc88e1646c24ca43214ca1afddd6aa41fe9fadd1e62c4962706eee48e",
+    "source_pgn_bytes": 11746,
+    "source_pgn_sha256": "5e43a02336ab75bcb662393f7652da5b08a8f87298f1574f5f27aec78adfce74"
+  },
+  {
+    "byte_end_exclusive": 895752,
+    "byte_start": 879411,
+    "bytes": 16341,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 1.0,
+    "chunk_index": 15,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:15:28Z",
+        "plies": 137,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:14:54Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:15:34Z",
+        "plies": 199,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:14:54Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "c9d15be55e98028ff91bb916f955b1447b53e01566eea4483adef1b4d8682926",
+    "pair_index": 60,
+    "published_pair_pgn_sha256": "99fe8539792526b7ec7cd3f92e3887ba910a3132ec224756755ed493d0f202b6",
+    "source_pair_result_sha256": "34d85de8ecbd80de14f7f96205bdda6b41750614b5e1cf76b0074f41f6f04739",
+    "source_pgn_bytes": 16341,
+    "source_pgn_sha256": "2918bc4eb79e51e800b919b7453f84763815d25c5046c6b0ccefe8ca9a0639a3"
+  },
+  {
+    "byte_end_exclusive": 906871,
+    "byte_start": 895752,
+    "bytes": 11119,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 1.0,
+    "chunk_index": 15,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:16:07Z",
+        "plies": 113,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:15:37Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:16:08Z",
+        "plies": 105,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:15:37Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "b63b13a17966e3489405f6afadb6a6d05e53b0b2f31ad00f884758cf2c424ae9",
+    "pair_index": 61,
+    "published_pair_pgn_sha256": "cce2129279b6982619c2d23584e28222e56b1b9f95668e75215dcae8d8569450",
+    "source_pair_result_sha256": "450938ae8e0bf90e6dd7563ec3748ecbb6a86064691e3d1a72a29e793275bc00",
+    "source_pgn_bytes": 11119,
+    "source_pgn_sha256": "5f60c0abc53fcdf53c6ac9bb4e3ae02d2ea669252c5315dd2c38e01b362bfebb"
+  },
+  {
+    "byte_end_exclusive": 923393,
+    "byte_start": 906871,
+    "bytes": 16522,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 1.0,
+    "chunk_index": 15,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:16:44Z",
+        "plies": 130,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:16:10Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:16:51Z",
+        "plies": 209,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:16:10Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "fed81942e56c825a8a18689738c583c70902c5789bb28d1a7e93d95bd34331d9",
+    "pair_index": 62,
+    "published_pair_pgn_sha256": "3fef1934e4ab116eec4271329ba5218fd7126fe74418fb5512145fa0615aba52",
+    "source_pair_result_sha256": "e3cc8cc13793044722eb4a189b07cb52c0c15b0c9531941f13c60820a1c03153",
+    "source_pgn_bytes": 16522,
+    "source_pgn_sha256": "b3fd35ba313ffd4b07751c751318c6b9eb39139f03156fdb6ce2893128a350d2"
+  },
+  {
+    "byte_end_exclusive": 936890,
+    "byte_start": 923393,
+    "bytes": 13497,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 1.0,
+    "chunk_index": 15,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:17:25Z",
+        "plies": 127,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:16:53Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:17:28Z",
+        "plies": 145,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:16:53Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "9b2acfed506d264b9b1eb9e1b4940f150fb523b2ebc9dd6d320d3da36d934828",
+    "pair_index": 63,
+    "published_pair_pgn_sha256": "ccb697bacb857c03526e90ef98192fe533c18907de2e111dbf0a588af5a8d4a7",
+    "source_pair_result_sha256": "b3075696779170b8e0a329b9072c222e0ebf5315ad526f679473884af9a75d4c",
+    "source_pgn_bytes": 13497,
+    "source_pgn_sha256": "6a7acf0f338089f80fa09429cb54755b9daa147c92b178b8a53abe0c38e3f723"
+  },
+  {
+    "byte_end_exclusive": 956121,
+    "byte_start": 936890,
+    "bytes": 19231,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 1.0,
+    "chunk_index": 16,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:19:18Z",
+        "plies": 187,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:18:38Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:19:19Z",
+        "plies": 213,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:18:38Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "df5c5e7f5f87b6fb124d2a59e3cbc2d8a7fc54d86c2157325c3bf10cf066defe",
+    "pair_index": 64,
+    "published_pair_pgn_sha256": "c85f191bfa416a272768bfdb685ca076febc37790874a59eba24c0ee021aac71",
+    "source_pair_result_sha256": "fd97f21963ee38d701b1df7fdea29e10d9807a00903a8c9473f06ec3b08d2b77",
+    "source_pgn_bytes": 19231,
+    "source_pgn_sha256": "1eb9b0e1fea1e0ef8224740cd43913214b7f704b527146097a9cd8611d740912"
+  },
+  {
+    "byte_end_exclusive": 971149,
+    "byte_start": 956121,
+    "bytes": 15028,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 1.0,
+    "chunk_index": 16,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:19:57Z",
+        "plies": 151,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:19:21Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:19:57Z",
+        "plies": 155,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:19:21Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "9c6945fe0a52bcc0534813ba7f1888a0c25cd58b2d75e26675414c897233333b",
+    "pair_index": 65,
+    "published_pair_pgn_sha256": "e097ba9e1ba5f613a4c56bf86e8c3724e4c109d1156595888c139a3b01cd7c6a",
+    "source_pair_result_sha256": "197476f932f969a0f3a93334f7a7f37899af8c43564dae6225bfecf8e23fe667",
+    "source_pgn_bytes": 15028,
+    "source_pgn_sha256": "693a9f9ac642afe70a7138d0859d9ee53d3183aae0d0349e22cdde80cb497dfc"
+  },
+  {
+    "byte_end_exclusive": 985158,
+    "byte_start": 971149,
+    "bytes": 14009,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 0.5,
+    "chunk_index": 16,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:20:25Z",
+        "plies": 97,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:20:00Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:20:39Z",
+        "plies": 187,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:20:00Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "bd9551c6a2af6858773a5b760b06ddad93987c7693cc16b44a4121fa29c5a527",
+    "pair_index": 66,
+    "published_pair_pgn_sha256": "a66ba09dd1e74a94139875bc57a5beabc2a6430d7761bbdf3841632c7e51fa03",
+    "source_pair_result_sha256": "8337cc73829562d88956d18660e866063cc556f1a80b5c220eb94199f132afbc",
+    "source_pgn_bytes": 14009,
+    "source_pgn_sha256": "64b7f32e9040d702214cd232680bcbd75fa0642b1b92c0bbea0fe786ecec7d44"
+  },
+  {
+    "byte_end_exclusive": 1006240,
+    "byte_start": 985158,
+    "bytes": 21082,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 0.5,
+    "chunk_index": 16,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:21:14Z",
+        "plies": 125,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:20:41Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:21:34Z",
+        "plies": 321,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:20:41Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "a00e719ef97ffe553629eba567a090e478c35bd8ab446508c6de67031a672e6c",
+    "pair_index": 67,
+    "published_pair_pgn_sha256": "6f4c722766bbe6af03e84d9326ce76f9c5bbd4feb354f09236925d93cf439577",
+    "source_pair_result_sha256": "47d7dc68bba95f959a08bedfdd239a90773b09929276d6850f9b895cb16535bb",
+    "source_pgn_bytes": 21082,
+    "source_pgn_sha256": "f98b85754e337463643cd71d85bcff33bab8194d8d95187d7f568c7c54c4f07d"
+  },
+  {
+    "byte_end_exclusive": 1037121,
+    "byte_start": 1006240,
+    "bytes": 30881,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 1.0,
+    "chunk_index": 17,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:23:32Z",
+        "plies": 163,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:22:55Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:24:06Z",
+        "plies": 503,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:22:55Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "47b173a51f55fc739da6727be74c2f9f138f0fbdc693b2bd4c21024c8d082526",
+    "pair_index": 68,
+    "published_pair_pgn_sha256": "1fac35fd91b1888f2003afb2f4f2859ed91f8a1998d6c62f1cf97066ace33502",
+    "source_pair_result_sha256": "ee4dcc115d03aef79e6b8be8faa6cfccf5c547d6a23e2b213351b8c91f6b5987",
+    "source_pgn_bytes": 30881,
+    "source_pgn_sha256": "d9bd6ab5af01cd9cab583dfb187ba5f13c9b14ca76ce711bb44bc3e17244b8eb"
+  },
+  {
+    "byte_end_exclusive": 1055285,
+    "byte_start": 1037121,
+    "bytes": 18164,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 1.0,
+    "chunk_index": 17,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:24:44Z",
+        "plies": 143,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:24:09Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:24:53Z",
+        "plies": 233,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:24:09Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "b5e185977c448a31dc02cabf7aa3beb657f4eb17657c647b5ff1ab6e42d048ff",
+    "pair_index": 69,
+    "published_pair_pgn_sha256": "8efa9ab103005a1900ce8c0ee304768c8f1a2ca9507b236e2a2732b620279515",
+    "source_pair_result_sha256": "f874fae46e1ed3edaa04f63e804037b3eb7eaa776e7f53605ec5b720a92548bd",
+    "source_pgn_bytes": 18164,
+    "source_pgn_sha256": "7ae6cd91aa4e9b64f32088e8ff516b9ae7f16a30e809249bba8b5e7b1da602e1"
+  },
+  {
+    "byte_end_exclusive": 1066396,
+    "byte_start": 1055285,
+    "bytes": 11111,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 0.5,
+    "chunk_index": 17,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:25:25Z",
+        "plies": 99,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:24:55Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:25:27Z",
+        "plies": 119,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:24:55Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "70aadad96df7707d7891405d4dbb62fa86d1171abaab0181fb8fdcfd6dec08d9",
+    "pair_index": 70,
+    "published_pair_pgn_sha256": "7982a0025590e9815957eb99645267941833f602725efbe63cc4d690f539f2bb",
+    "source_pair_result_sha256": "a65062b9aea77c3581451ef5d0b77c097237dda501d443eab2661c56a44a1a6e",
+    "source_pgn_bytes": 11111,
+    "source_pgn_sha256": "95ecfba0d17f4c449e2bdfc007ee16608d17eb0ca732f57692d51dd8226e8fe2"
+  },
+  {
+    "byte_end_exclusive": 1081837,
+    "byte_start": 1066396,
+    "bytes": 15441,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 1.0,
+    "chunk_index": 17,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:26:03Z",
+        "plies": 133,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:25:29Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:26:08Z",
+        "plies": 183,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:25:29Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "4534127a72dcf6be2168348011ffa906a83ab261fcb900a53b905ac5d8038f92",
+    "pair_index": 71,
+    "published_pair_pgn_sha256": "955e235ee05ea531d9373b696912d219665bffc3c7e03eb3dbc9781825b29494",
+    "source_pair_result_sha256": "55a6ecba301884b32c6f1bd5e1a1b4e5a113fc9a4c330961e73ede77b9933cc5",
+    "source_pgn_bytes": 15441,
+    "source_pgn_sha256": "ba8484dfbb99f5d167e45660d96b186938317794338391ec33779385036ebefe"
+  },
+  {
+    "byte_end_exclusive": 1097270,
+    "byte_start": 1081837,
+    "bytes": 15433,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 1.0,
+    "chunk_index": 18,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:28:04Z",
+        "plies": 153,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:27:28Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:28:05Z",
+        "plies": 163,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:27:28Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "9ccbcead690d5e5d84862906d2aa66c193d4d7a42ab25b5522276945bb34bdeb",
+    "pair_index": 72,
+    "published_pair_pgn_sha256": "52c9ee138a46f4c771da40c260920bd8f43f800d373e96d494f5bf7f1440e201",
+    "source_pair_result_sha256": "2923fe82534a12ccd379a4195df0be138106fdb148faea731c7ce6e70197a7a9",
+    "source_pgn_bytes": 15433,
+    "source_pgn_sha256": "ec564b77f8015c4e046305cf1cd5a65642079c2afb428ddb24de205ffb252740"
+  },
+  {
+    "byte_end_exclusive": 1111855,
+    "byte_start": 1097270,
+    "bytes": 14585,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 0.5,
+    "chunk_index": 18,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:28:39Z",
+        "plies": 131,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:28:08Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:28:44Z",
+        "plies": 165,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:28:08Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "aeb8ada939b5c7c7e373c6465ce754ded0202bcd814e93c6b93307c567c8d34a",
+    "pair_index": 73,
+    "published_pair_pgn_sha256": "0b2fa0f7d0935a4ceca87e2f788ac5ef51f292cb00fbf08ba68b4f48192dce34",
+    "source_pair_result_sha256": "9b2e193ca564974fd3db75cf5a8196cca2af30d95511e4f1b82793b3752c0e7c",
+    "source_pgn_bytes": 14585,
+    "source_pgn_sha256": "6cbc077b98aafaea05d5d7c59256cdf1501aff20238416757578104315d56f9c"
+  },
+  {
+    "byte_end_exclusive": 1123047,
+    "byte_start": 1111855,
+    "bytes": 11192,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 1.0,
+    "chunk_index": 18,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:29:16Z",
+        "plies": 98,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:28:47Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:29:20Z",
+        "plies": 121,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:28:47Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "5234e99bb32f4c3adde8b302355ad5dfc57db91bb736c78323e312de7ae46919",
+    "pair_index": 74,
+    "published_pair_pgn_sha256": "ccc3535f3105169ce6215ce54c813797e8e0c7db37795a287dc05eebe0503960",
+    "source_pair_result_sha256": "69359b2a2fb3d726a10004fb8e1cdb0b35942b9000678e2ca6a23e309a79ad57",
+    "source_pgn_bytes": 11192,
+    "source_pgn_sha256": "60b8b26d956cc6850b887f41bb4614ff4244ff123e7ceb498c632fa0c40337e0"
+  },
+  {
+    "byte_end_exclusive": 1136643,
+    "byte_start": 1123047,
+    "bytes": 13596,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 1.0,
+    "chunk_index": 18,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:29:56Z",
+        "plies": 133,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:29:23Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:29:57Z",
+        "plies": 141,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:29:23Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "407e41dceaf8f68dbd6a733f29b59b4e3ebb5e3fc9d26ef50fbf0d816576adbf",
+    "pair_index": 75,
+    "published_pair_pgn_sha256": "02edbd95f0dac1d14f7f8597250da3952c17944399c8a05bd886656fb56d3d1b",
+    "source_pair_result_sha256": "e460b8913e2d17d5efff0b675124f96269252af8dc3c83a71117f418f5935e16",
+    "source_pgn_bytes": 13596,
+    "source_pgn_sha256": "643d7ce5198ee52bc41e66d3742d3478e6aa1ab7f4651a1d562077eff46a27c8"
+  },
+  {
+    "byte_end_exclusive": 1148859,
+    "byte_start": 1136643,
+    "bytes": 12216,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 1.0,
+    "chunk_index": 19,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:31:50Z",
+        "plies": 88,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:31:23Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:31:59Z",
+        "plies": 155,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:31:23Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "b0287065ed5661afb67f3141e3cc37d5290707c99ef16381415c546e5794fd55",
+    "pair_index": 76,
+    "published_pair_pgn_sha256": "1bbd92e41da0fe1d294fee447ec8434d3e342339188dce59bc040b155e270bfe",
+    "source_pair_result_sha256": "b3fd0a0296bcfc455fc1105f471cfb54071aa4eb3afefbd1d74e1cfc6b0627d0",
+    "source_pgn_bytes": 12216,
+    "source_pgn_sha256": "5be42416a950a02925924a029b45d2b4a609bd08f2f238a35236e24845bdcefa"
+  },
+  {
+    "byte_end_exclusive": 1164560,
+    "byte_start": 1148859,
+    "bytes": 15701,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 0.5,
+    "chunk_index": 19,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:32:38Z",
+        "plies": 153,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:32:02Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:32:38Z",
+        "plies": 168,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:32:02Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "65f16333d2ad7856423c71637a3f2019f5601845e482f8e69a08ccd9f92880a7",
+    "pair_index": 77,
+    "published_pair_pgn_sha256": "636d4eb5e6e4265b738826c322ca100a46f4159caafa883f2a473448dbae81fd",
+    "source_pair_result_sha256": "97d29b8227c39e3c4dbd8e158d2146c5cb4b0b02a4431a373a2de120820ef6c9",
+    "source_pgn_bytes": 15701,
+    "source_pgn_sha256": "b014457516434f4b074586f075bce9ac1ae8d5d5239987238fe3afde3f870a49"
+  },
+  {
+    "byte_end_exclusive": 1182856,
+    "byte_start": 1164560,
+    "bytes": 18296,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 0.5,
+    "chunk_index": 19,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:33:15Z",
+        "plies": 130,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:32:41Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:33:26Z",
+        "plies": 249,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:32:41Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "22e6460d52c76787fa5641e9c6085d1cc4035c5bc6adcf802b210b5bc4b63d12",
+    "pair_index": 78,
+    "published_pair_pgn_sha256": "54efd1578fee42696d4cc8ae5fdb2ff5b05ce651e7c52e3a581e88bd092f5930",
+    "source_pair_result_sha256": "612116254e4a7ac94c2a58770133aab764de37174fff1545838d9a34f492c317",
+    "source_pgn_bytes": 18296,
+    "source_pgn_sha256": "93a8734ce0ff42c9b7fbc20d266b4b0da9b954fee228d37d3d0e7ba3d81b3620"
+  },
+  {
+    "byte_end_exclusive": 1194144,
+    "byte_start": 1182856,
+    "bytes": 11288,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 0.5,
+    "chunk_index": 19,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:33:44Z",
+        "plies": 41,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:33:29Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:34:07Z",
+        "plies": 181,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:33:29Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "fa9f6d42d31374bc234c2bb72f24bdb4c00708de8df050e7e60006450a0e6d34",
+    "pair_index": 79,
+    "published_pair_pgn_sha256": "401671ce5101679e24a74257f9a7a5d6e7425be96da674fe907e3593ca588812",
+    "source_pair_result_sha256": "2223fefb4f145c2d6be011d5a8d95864b59af770eea4463fff6172787d4519a6",
+    "source_pgn_bytes": 11288,
+    "source_pgn_sha256": "b5884c38f9a540529cd29052312850bdc9a0087653a464b8c8289c4c537f1194"
+  },
+  {
+    "byte_end_exclusive": 1202746,
+    "byte_start": 1194144,
+    "bytes": 8602,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 0.5,
+    "chunk_index": 20,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:35:58Z",
+        "plies": 76,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:35:35Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:36:01Z",
+        "plies": 85,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:35:35Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "79f4abbbe3aeff2b5fe64b466abac8012db82ef2e55648f2691a25289574857c",
+    "pair_index": 80,
+    "published_pair_pgn_sha256": "c75b6a9b81b08b836a7836ba9c9de87bb3776f53a13667d79fa4a7aa183b832f",
+    "source_pair_result_sha256": "1b4622d9d841e15d2b3f6c09cc4c1f2b1c35c4e97a70de87c8354ff02eea36fd",
+    "source_pgn_bytes": 8602,
+    "source_pgn_sha256": "4dff8968717a5e87d20b464bddc058a5b6b717e15b417c5059f6345f3be9ac86"
+  },
+  {
+    "byte_end_exclusive": 1213998,
+    "byte_start": 1202746,
+    "bytes": 11252,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 0.5,
+    "chunk_index": 20,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:36:32Z",
+        "plies": 93,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:36:03Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:36:35Z",
+        "plies": 127,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:36:03Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "21b7cf857a9adb99f00e78f26b106ca0fc7d7c617a98d60b0654e0dbb3057b81",
+    "pair_index": 81,
+    "published_pair_pgn_sha256": "d89720a832c599dfccc69986965df72a6e95176bad46a3f5d35da1b482d72755",
+    "source_pair_result_sha256": "352711136c344de84213a2c7eb2622a3ec7e61bacc24ff95c1b07ac91f74501d",
+    "source_pgn_bytes": 11252,
+    "source_pgn_sha256": "3a66256499fa723bdc0b8bc14a8f35ac4cccb9db9e30bf34bc906a917b19ac8d"
+  },
+  {
+    "byte_end_exclusive": 1226828,
+    "byte_start": 1213998,
+    "bytes": 12830,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 0.0,
+    "chunk_index": 20,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:37:08Z",
+        "plies": 115,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:36:37Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:37:12Z",
+        "plies": 142,
+        "result": "0-1",
+        "start_utc": "2026-11-09T11:36:37Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "43e99315b7e8020566805257993bd65f44dc1539e112c86418ea9bb3192ecad6",
+    "pair_index": 82,
+    "published_pair_pgn_sha256": "6dc88c3a329646379bec38c65cf5ff0c6976b450723feb6fbc0ae1fa87cdf1aa",
+    "source_pair_result_sha256": "72df7beed840632c59eeef19cb96b46b7ec5d98209e2b218c780736151f7808b",
+    "source_pgn_bytes": 12830,
+    "source_pgn_sha256": "40609e39bfc8cdf98dd6b46929378d5660a6a172e32984700779e277d6b8f9f9"
+  },
+  {
+    "byte_end_exclusive": 1239289,
+    "byte_start": 1226828,
+    "bytes": 12461,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 0.5,
+    "chunk_index": 20,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:37:40Z",
+        "plies": 75,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:37:15Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:37:53Z",
+        "plies": 173,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:37:15Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "13073bc7f46b292bbe77fdf1993bf55d9d5bbb071c1fc8a879f82d1eade4a281",
+    "pair_index": 83,
+    "published_pair_pgn_sha256": "06e315b277b17d9c55cb85c4dfbb9a8bdef27f9322681649cdbbc5e1f54fa5d2",
+    "source_pair_result_sha256": "9f350404f6cb78e642069b8de93ff4a873d3f19f29abc4700618abbd3d1aff0c",
+    "source_pgn_bytes": 12461,
+    "source_pgn_sha256": "0b2c11502169d5d77c73f8c1040ed5b8dffd93b32335407436a33ffb9480fb9d"
+  },
+  {
+    "byte_end_exclusive": 1254848,
+    "byte_start": 1239289,
+    "bytes": 15559,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 0.5,
+    "chunk_index": 21,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:39:52Z",
+        "plies": 120,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:39:20Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:40:00Z",
+        "plies": 197,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:39:20Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "a33eca248c3db082d496c5de4dbe3db16b9b47ca90cb20f2e0d4382f15344b7b",
+    "pair_index": 84,
+    "published_pair_pgn_sha256": "654a62e53034bf9d197196f27f472f8e0c0460b7e4fd0e482e20d8f040703504",
+    "source_pair_result_sha256": "38e0810c5681c27f6b1460a3809ed66adb3c5ca07ba7779030e9675667f1ad03",
+    "source_pgn_bytes": 15559,
+    "source_pgn_sha256": "f31d132579ffcae2a7e7187664676c6f238d08dbe1835ee14c23054a10e51a80"
+  },
+  {
+    "byte_end_exclusive": 1276706,
+    "byte_start": 1254848,
+    "bytes": 21858,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 1.0,
+    "chunk_index": 21,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:40:46Z",
+        "plies": 219,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:40:03Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:40:48Z",
+        "plies": 241,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:40:03Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "2f20e077fca2df4399c606f250790a07da509da5983f08075466b043429106ed",
+    "pair_index": 85,
+    "published_pair_pgn_sha256": "8b235bd44ca5a91e52aac961de72d9f7fb24ed409e87a7bc0d3ea6ae75642dcf",
+    "source_pair_result_sha256": "d8d614567d858a6c07304352094731590d171c2e8bfaa8e178a1ea3fe60e9b85",
+    "source_pgn_bytes": 21858,
+    "source_pgn_sha256": "b7228915888b59a6ce066aa5b21c603e2a3c83d67ddb6be216da2bab527f7ae6"
+  },
+  {
+    "byte_end_exclusive": 1289491,
+    "byte_start": 1276706,
+    "bytes": 12785,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 0.5,
+    "chunk_index": 21,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:41:22Z",
+        "plies": 116,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:40:51Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:41:25Z",
+        "plies": 139,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:40:51Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "0b8df2b8dc3299e49869dfd91c96a12a8d6216e03884d04b18354eef9f684893",
+    "pair_index": 86,
+    "published_pair_pgn_sha256": "b12acc42421be5eb72346dd3ba6a3a8efdbc0d92cce56996f281755532ce44bc",
+    "source_pair_result_sha256": "4cd47802d692995c04a6b5d58155a7cf5064491752d8d72cf9e27d4bac498b1c",
+    "source_pgn_bytes": 12785,
+    "source_pgn_sha256": "63aaa06424ae45eac2dce190d64771569f0f80450312861bb150b59b7514adfb"
+  },
+  {
+    "byte_end_exclusive": 1304088,
+    "byte_start": 1289491,
+    "bytes": 14597,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 1.0,
+    "chunk_index": 21,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:41:57Z",
+        "plies": 111,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:41:27Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:42:06Z",
+        "plies": 185,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:41:27Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "f272041bb698078c483c6d035e2a9c69ccd207e3e46b4f48db0097af599290ef",
+    "pair_index": 87,
+    "published_pair_pgn_sha256": "2dfa97f60cd4c217a6e8341a40006bc71cc65c3f48f61255ac121521f4db33ed",
+    "source_pair_result_sha256": "38dc93d1b093d69d745c5fae609caa3697498429708043a5e6e0906337f77b98",
+    "source_pgn_bytes": 14597,
+    "source_pgn_sha256": "4873708ccc533a95e2629f46857e66fb7dfd8b28eb025d69aaafb1b1f2f0d84d"
+  },
+  {
+    "byte_end_exclusive": 1321000,
+    "byte_start": 1304088,
+    "bytes": 16912,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 0.5,
+    "chunk_index": 22,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:44:19Z",
+        "plies": 161,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:43:42Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:44:23Z",
+        "plies": 186,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:43:42Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "3920432ea6de2381b50f74efd9a743b3dbb80677b0b4c80d4516b1c98a85267e",
+    "pair_index": 88,
+    "published_pair_pgn_sha256": "ef5349bc12003dfde2e7607b6b679e4ac803815f33dcf0bd5d83b891f9c380bb",
+    "source_pair_result_sha256": "ed7be1195e964d478dd037dcdff4aa52ab620f690b4f48b370a6d0bc9eb006bb",
+    "source_pgn_bytes": 16912,
+    "source_pgn_sha256": "f776975db0cc388caaa4b157be9087145949589651d27a19f5fcf44856ce7b58"
+  },
+  {
+    "byte_end_exclusive": 1337106,
+    "byte_start": 1321000,
+    "bytes": 16106,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 1.0,
+    "chunk_index": 22,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:44:59Z",
+        "plies": 130,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:44:25Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:45:05Z",
+        "plies": 199,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:44:25Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "79a6ab1e128585ed0897dfe0f2d69ab53e0e2b2d572ddf43330df857019450db",
+    "pair_index": 89,
+    "published_pair_pgn_sha256": "e64c530e733da8b268164f3e6f211a347f2b4d08c0718959503e122b911014e2",
+    "source_pair_result_sha256": "cf6da5c8cdf0cf6087c277719c14d66d631728c1da105fdac6d6a5e271dc0851",
+    "source_pgn_bytes": 16106,
+    "source_pgn_sha256": "630eaa702a65f670f8eb9a0521e4e28c977f1cd224be27b97c87e9340ebb9a6a"
+  },
+  {
+    "byte_end_exclusive": 1346696,
+    "byte_start": 1337106,
+    "bytes": 9590,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 0.5,
+    "chunk_index": 22,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:45:28Z",
+        "plies": 69,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:45:08Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:45:39Z",
+        "plies": 113,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:45:08Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "32a1ae7e06e58fbc9d91f07442e10e5ec821466c077ae78964ba7fa1131d5853",
+    "pair_index": 90,
+    "published_pair_pgn_sha256": "0172148958bff93915da47a50cafc17cff32b6d1e7b8e76e199ff59b36b62155",
+    "source_pair_result_sha256": "7464d65a48c0fcba18c936894e557b6924c88335eb8142b1fe50cabd37c838da",
+    "source_pgn_bytes": 9590,
+    "source_pgn_sha256": "1ec306655edac07485ab4f9b1e3c525a3565cca58386a539b72bb1f161ee18cf"
+  },
+  {
+    "byte_end_exclusive": 1370676,
+    "byte_start": 1346696,
+    "bytes": 23980,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 1.0,
+    "chunk_index": 22,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:46:23Z",
+        "plies": 213,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:45:41Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:46:31Z",
+        "plies": 296,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:45:41Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "6d4541c3672b307392a1bf5cd78c91dca270bd301ec5239aaa240e784a8f3a5c",
+    "pair_index": 91,
+    "published_pair_pgn_sha256": "ca70d178b30ece77d8096d03dc3f05a0142af8f06655e8a400a7096cfb907023",
+    "source_pair_result_sha256": "c7bf2d6d4befe4e752302a310cde9cb73e8d4f6502b51c88d2e009934a473384",
+    "source_pgn_bytes": 23980,
+    "source_pgn_sha256": "212706f6cd600f5344e8563cde9b7184325d261d3b0591feeb79c940018ab420"
+  },
+  {
+    "byte_end_exclusive": 1379965,
+    "byte_start": 1370676,
+    "bytes": 9289,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 1.0,
+    "chunk_index": 23,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:48:22Z",
+        "plies": 45,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:48:07Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:48:40Z",
+        "plies": 131,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:48:07Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "cd1eaa6a2622736a34815ce8636f9d362f81bdf9ae6bffd0af53aaf539c7f9e0",
+    "pair_index": 92,
+    "published_pair_pgn_sha256": "36d2d34de2c840fcb410958ee99740920b10e554097dc03c835a10825a8302d0",
+    "source_pair_result_sha256": "e0172d7340e637679cc20d4a6531ac879310e4b7067fb1ee4d39d227720a982c",
+    "source_pgn_bytes": 9289,
+    "source_pgn_sha256": "d6edd2993339164894f5888f182ea215c4695f6e1be8c30774cb9e98398ca6be"
+  },
+  {
+    "byte_end_exclusive": 1392981,
+    "byte_start": 1379965,
+    "bytes": 13016,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 1.0,
+    "chunk_index": 23,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:49:15Z",
+        "plies": 121,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:48:43Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:49:18Z",
+        "plies": 139,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:48:43Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "e02b221002633194a05a3dee353f423a0cb71fd99f6b4c75a1bf17037f3f810d",
+    "pair_index": 93,
+    "published_pair_pgn_sha256": "f3eb64e0276d7b94972a6855a1229fda255aaa3d0b67357fdc90498af59bac34",
+    "source_pair_result_sha256": "74fd79aed0446b1df512deea47aa54a0fd542c42c7792625487111191b61a28d",
+    "source_pgn_bytes": 13016,
+    "source_pgn_sha256": "d53d131f9ec2dffc1fd519a2529cc46986acce8ea38566d15ecec8c46e6f493c"
+  },
+  {
+    "byte_end_exclusive": 1408051,
+    "byte_start": 1392981,
+    "bytes": 15070,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 0.5,
+    "chunk_index": 23,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:49:56Z",
+        "plies": 149,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:49:21Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:49:57Z",
+        "plies": 157,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:49:21Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "553590b26f18b0d37b4d46b14d089099d2d4b3780f51b2f4c22382247118e610",
+    "pair_index": 94,
+    "published_pair_pgn_sha256": "40e58af30a0a466f7f0600c4ce649939c592c34c4edb4a6d46a80d2264091408",
+    "source_pair_result_sha256": "932c6ab3abed1a24239b8b04846adc54fcca0d02c05c3a0bb36b8bceca99193b",
+    "source_pgn_bytes": 15070,
+    "source_pgn_sha256": "3938ed11efa0677bd212c9c1f042862b8ec3cff2af3e25be9fa077c26c038e83"
+  },
+  {
+    "byte_end_exclusive": 1420622,
+    "byte_start": 1408051,
+    "bytes": 12571,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 0.5,
+    "chunk_index": 23,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:50:30Z",
+        "plies": 135,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:49:59Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:50:31Z",
+        "plies": 115,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:49:59Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "de953e45e20d50dee6be7ccd490a6429da979f3640d9b2e603526e4fef019fd5",
+    "pair_index": 95,
+    "published_pair_pgn_sha256": "8f469a9e09955398079d03452e21b87fc9c4c59a9e97b11462013f31db413f36",
+    "source_pair_result_sha256": "158fc2c32de7694872043c971036360c9eb1686f65ead04eeb15f3bb004e2ac8",
+    "source_pgn_bytes": 12571,
+    "source_pgn_sha256": "64db2d2f997429081e81b7730260ad32e99029a6321c1d6f7a84d53133f15bdc"
+  },
+  {
+    "byte_end_exclusive": 1438077,
+    "byte_start": 1420622,
+    "bytes": 17455,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 0.5,
+    "chunk_index": 24,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:52:44Z",
+        "plies": 95,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:52:14Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:53:01Z",
+        "plies": 265,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:52:14Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "7d79ad0b986e5b43936b082ed185b792f6463e44c759ca8cbf3821bab7bc7931",
+    "pair_index": 96,
+    "published_pair_pgn_sha256": "66d3d66c5b0b858eb82c6f872df7ad8f33ceee52ad5f587db4a029653df6cc58",
+    "source_pair_result_sha256": "9b3a97479a9dfc60504a35fdc46c43d7d84a342322b5bc48c445d4bacb82ba89",
+    "source_pgn_bytes": 17455,
+    "source_pgn_sha256": "7c0b87b43b012c3202a912e180028e2472adcdea7ee07c8177c90b4df162c4c7"
+  },
+  {
+    "byte_end_exclusive": 1450153,
+    "byte_start": 1438077,
+    "bytes": 12076,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 1.0,
+    "chunk_index": 24,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:53:32Z",
+        "plies": 98,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:53:04Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:53:38Z",
+        "plies": 141,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:53:04Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "6f3540c269b652ff4e8661cf34afee3f054cc6a027faeb3e724cf19ba48e190c",
+    "pair_index": 97,
+    "published_pair_pgn_sha256": "a76d5d3bdd1d2cf649cf9faaac730282a1e95bfd97eff0f116eb761777889711",
+    "source_pair_result_sha256": "61ddf29f6bce73caadd19c7a40916c36bbd8971eff9888ed1c03ac394b552cb7",
+    "source_pgn_bytes": 12076,
+    "source_pgn_sha256": "a167bc688d828e2e73ff4c207a8e0988f5d4804a6fdd19a349fd6e1190b16279"
+  },
+  {
+    "byte_end_exclusive": 1470599,
+    "byte_start": 1450153,
+    "bytes": 20446,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 0.5,
+    "chunk_index": 24,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:54:16Z",
+        "plies": 147,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:53:41Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:54:30Z",
+        "plies": 282,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:53:41Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "61f5380c240f4fabe6ab322f5d29418f86b2743f35ab5b8064ac0697f987667e",
+    "pair_index": 98,
+    "published_pair_pgn_sha256": "dc4d344fc7aee511854a2b1be53b3f3e01a8da8153d19df3dffa788b25fb3c0f",
+    "source_pair_result_sha256": "c1a9d22d2b90b4cafe2d68c81ff83b420704c02b6ee9694a133aad97e1d3bd35",
+    "source_pgn_bytes": 20446,
+    "source_pgn_sha256": "da0bcd703abe02c23dd1ef972a0a59a526e69ad618f2a3f49f721abdb7e992b3"
+  },
+  {
+    "byte_end_exclusive": 1483450,
+    "byte_start": 1470599,
+    "bytes": 12851,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 0.5,
+    "chunk_index": 24,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:54:58Z",
+        "plies": 83,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:54:32Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:55:09Z",
+        "plies": 173,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:54:32Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "a0dc8f896f382bfcad53bff554fe3d1a784ab16958686ed11fa95056f3699b6d",
+    "pair_index": 99,
+    "published_pair_pgn_sha256": "0e343cd2ef4a766155ef912addbfe843d5385f0f50181aa6447245eefa1d64c3",
+    "source_pair_result_sha256": "923cd9b229f7a8306d0217d4b5af6515b708bdbb9ef9b96d31d67294047a4a7c",
+    "source_pgn_bytes": 12851,
+    "source_pgn_sha256": "a6712a9bfc24e5f4583ea7a9f34a0fd0d58eaf1fea964de56c632e01c1802799"
+  },
+  {
+    "byte_end_exclusive": 1492690,
+    "byte_start": 1483450,
+    "bytes": 9240,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 1.0,
+    "chunk_index": 25,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:57:26Z",
+        "plies": 63,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:57:01Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:57:33Z",
+        "plies": 113,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:57:01Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "0a0ae0534ae755587a58e88083db6f9f6f047aab72badb65732342947e552ba3",
+    "pair_index": 100,
+    "published_pair_pgn_sha256": "b7c6c914909223f44585a6e3f8feb59f57803f85be9b5a61800255654db4e7f8",
+    "source_pair_result_sha256": "fb0caeefcdda5c5231d34997b4b62e198ea2bef6495462665662e5135a65c765",
+    "source_pgn_bytes": 9240,
+    "source_pgn_sha256": "9529426c494c5c2f6255937af22a48354f7d360bebe2d2c06b3d0d778428d6a4"
+  },
+  {
+    "byte_end_exclusive": 1515204,
+    "byte_start": 1492690,
+    "bytes": 22514,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 1.0,
+    "chunk_index": 25,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:58:17Z",
+        "plies": 206,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T11:57:36Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:58:22Z",
+        "plies": 269,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:57:36Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "d994adfa416de5d219965ab157d67c432638f56deae8a69d6247b461a6308e13",
+    "pair_index": 101,
+    "published_pair_pgn_sha256": "26d5fa1d31c59744a32cfa36c5be368167501092466733408473b71f4f1102b8",
+    "source_pair_result_sha256": "07e995bd403bb1053fd794905e2fc164393e477ebf86951ab4b179dc96e0a8ba",
+    "source_pgn_bytes": 22514,
+    "source_pgn_sha256": "1f9f779a89076f0a1b2212bade55d66b74db8576cdd5ea8f6dd95391c3200f30"
+  },
+  {
+    "byte_end_exclusive": 1526685,
+    "byte_start": 1515204,
+    "bytes": 11481,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 1.0,
+    "chunk_index": 25,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:58:55Z",
+        "plies": 101,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:58:25Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:58:58Z",
+        "plies": 125,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:58:25Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "adfee980c09ea3907510512553f6a158f0c9fbf0c4fe3d3e100d9d95ae50c085",
+    "pair_index": 102,
+    "published_pair_pgn_sha256": "9b1e80ab0b63b292f538f541d06b94b0b8e60333d5be62da66386a29e18e1fb6",
+    "source_pair_result_sha256": "8576789b1f05e32bcc9e3e1ac7f8ed61d56864124c88beef2cbaac0414f5d6f7",
+    "source_pgn_bytes": 11481,
+    "source_pgn_sha256": "51b66e8816bed7bf87c4ca779d57c0b26837666b51b98c4556ad5b2798d0754c"
+  },
+  {
+    "byte_end_exclusive": 1540446,
+    "byte_start": 1526685,
+    "bytes": 13761,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 1.0,
+    "chunk_index": 25,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:59:34Z",
+        "plies": 135,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:59:01Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T11:59:35Z",
+        "plies": 143,
+        "result": "1-0",
+        "start_utc": "2026-11-09T11:59:01Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "ae82f754aec1ef16f82c31e5b7c421946cfafd120de13008157f99bebe2055ff",
+    "pair_index": 103,
+    "published_pair_pgn_sha256": "81d3b8817c6431d3e0c48217e2fba69edc9a8ffdcd8c01497fb9a74048424149",
+    "source_pair_result_sha256": "19a185e6a0c27d368773c3aacd00b1306c47ea0f0b5ebd00995ee4d044012578",
+    "source_pgn_bytes": 13761,
+    "source_pgn_sha256": "fbb1c4f86bb4683eb5ba177694af552a22eeba5793792f0c6f3bc472cc963c77"
+  },
+  {
+    "byte_end_exclusive": 1553987,
+    "byte_start": 1540446,
+    "bytes": 13541,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 1.0,
+    "chunk_index": 26,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:01:59Z",
+        "plies": 119,
+        "result": "1-0",
+        "start_utc": "2026-11-09T12:01:26Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:02:02Z",
+        "plies": 153,
+        "result": "1-0",
+        "start_utc": "2026-11-09T12:01:26Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "9931ddcc7e46f2c1ea03b8aca4280ff1363c8156ac99d1e58c6e3497887477ef",
+    "pair_index": 104,
+    "published_pair_pgn_sha256": "76c7f41b2c4a3edcf55e92d802a5f0c5168ae23480758cb79064d5859fce3eea",
+    "source_pair_result_sha256": "8a6ce849af04314357f7293cc202a9712c7b08c9cba06c6439fea1cf878799eb",
+    "source_pgn_bytes": 13541,
+    "source_pgn_sha256": "a70dd51982ec5c64d710c0aaacc0e3c2abf649d5a64207420115c690fb07b683"
+  },
+  {
+    "byte_end_exclusive": 1570248,
+    "byte_start": 1553987,
+    "bytes": 16261,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 1.0,
+    "chunk_index": 26,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:02:40Z",
+        "plies": 151,
+        "result": "1-0",
+        "start_utc": "2026-11-09T12:02:04Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:02:43Z",
+        "plies": 185,
+        "result": "1-0",
+        "start_utc": "2026-11-09T12:02:04Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "d62a2e6c9ac0477b2fd1528f3442dccece3b7dbb0112cd3cf36568da90be4d8b",
+    "pair_index": 105,
+    "published_pair_pgn_sha256": "4bff6aed588b096c405d129bce7f212b1da8a75504655fa98858753f974cc883",
+    "source_pair_result_sha256": "5b34ebcdeb01da08ecc3574e47af796fbeb41c55023a2e6bcc8afc0aa911a557",
+    "source_pgn_bytes": 16261,
+    "source_pgn_sha256": "93d279944254166fdcb17edeab2a226b4bfb807ef2b4e2237e645a18d94ee315"
+  },
+  {
+    "byte_end_exclusive": 1586797,
+    "byte_start": 1570248,
+    "bytes": 16549,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 1.0,
+    "chunk_index": 26,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:03:20Z",
+        "plies": 139,
+        "result": "1-0",
+        "start_utc": "2026-11-09T12:02:46Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:03:26Z",
+        "plies": 201,
+        "result": "1-0",
+        "start_utc": "2026-11-09T12:02:46Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "e51530e2a2f18de4d9bd77e8d3147ce164cfb33b6f1f292ff7a6f16c0aae8b16",
+    "pair_index": 106,
+    "published_pair_pgn_sha256": "0336d71bbef6b3f570bb2d3eb14852678f4fd9ea820ba5d5a9cac5b0405a31fd",
+    "source_pair_result_sha256": "6bd0ac9ae89ae9c93dca340b00e494c29c152bdf9efcbb1d16b4c9c98814a072",
+    "source_pgn_bytes": 16549,
+    "source_pgn_sha256": "53b59a915fc41ca2350cceb83068c500bf2fdb938d174d3e1e18b1df6ad982f1"
+  },
+  {
+    "byte_end_exclusive": 1597872,
+    "byte_start": 1586797,
+    "bytes": 11075,
+    "candidate_black_score": 1.0,
+    "candidate_white_score": 0.5,
+    "chunk_index": 26,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:03:52Z",
+        "plies": 81,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T12:03:29Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:04:03Z",
+        "plies": 136,
+        "result": "0-1",
+        "start_utc": "2026-11-09T12:03:29Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "de953e45e20d50dee6be7ccd490a6429da979f3640d9b2e603526e4fef019fd5",
+    "pair_index": 107,
+    "published_pair_pgn_sha256": "d10b6f5f1316306eac6ceebaac516fbfcf728c908473b3efeb8fc8d23d771b1f",
+    "source_pair_result_sha256": "8897fe96c851ffc13654aba344afc7b92cd7db7964cb7080c98696d9011bcb86",
+    "source_pgn_bytes": 11075,
+    "source_pgn_sha256": "54e40cf63200147b099ea180fc92253d65be7f97558464c88b6ba31207cdeda8"
+  },
+  {
+    "byte_end_exclusive": 1608717,
+    "byte_start": 1597872,
+    "bytes": 10845,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 1.0,
+    "chunk_index": 27,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:06:15Z",
+        "plies": 78,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T12:05:53Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:06:27Z",
+        "plies": 133,
+        "result": "1-0",
+        "start_utc": "2026-11-09T12:05:53Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "a33eca248c3db082d496c5de4dbe3db16b9b47ca90cb20f2e0d4382f15344b7b",
+    "pair_index": 108,
+    "published_pair_pgn_sha256": "71be93dc36905887b63be5bb7ff6ed5acad935e3c5f197162255ee9c2230b9d3",
+    "source_pair_result_sha256": "5c15092a52b22b588209bc333e1ae0c9b93ac0bb9ea99346c661ddc3448916ab",
+    "source_pgn_bytes": 10845,
+    "source_pgn_sha256": "9acbdb7aa3764c615dbbee3d33d8f2d25c9d651b635a4ab80a0f3f0c9cb04377"
+  },
+  {
+    "byte_end_exclusive": 1619386,
+    "byte_start": 1608717,
+    "bytes": 10669,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 0.5,
+    "chunk_index": 27,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:06:42Z",
+        "plies": 33,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T12:06:30Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:07:07Z",
+        "plies": 175,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T12:06:30Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "d14a9d049ec12078a8f97f73943cb1caa7648eb9905b291a4897109ffe46da7d",
+    "pair_index": 109,
+    "published_pair_pgn_sha256": "e67b4f51eb051b58fea006908c26c0760fc2896182723f91a57b21fe2ea5d520",
+    "source_pair_result_sha256": "b25c4757412444e1ef25df1796ef810c0a571ae02e04a9c74373974624d9c4ae",
+    "source_pgn_bytes": 10669,
+    "source_pgn_sha256": "22263b832c3ae771079a674eea6edbb621a5fd095c085d41938f20a5ee61d94a"
+  },
+  {
+    "byte_end_exclusive": 1642205,
+    "byte_start": 1619386,
+    "bytes": 22819,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 0.5,
+    "chunk_index": 27,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:07:46Z",
+        "plies": 159,
+        "result": "1-0",
+        "start_utc": "2026-11-09T12:07:10Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:08:02Z",
+        "plies": 323,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T12:07:10Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "bf749a24167bc9be321e6445b30206606ea4c7e48f44897eb456b3cfd1612650",
+    "pair_index": 110,
+    "published_pair_pgn_sha256": "cefc930177e50932d4610af9750588ec9e0ac1a86928a70ac15926aedec758e3",
+    "source_pair_result_sha256": "2d5552d2b242419c424c97ac99823736af214c96dd88f244138cf1cf0d850138",
+    "source_pgn_bytes": 22819,
+    "source_pgn_sha256": "37d682b2d0642c55f23ca50bb7132b23e12d5d88a38928964dee01571a2e44b0"
+  },
+  {
+    "byte_end_exclusive": 1656900,
+    "byte_start": 1642205,
+    "bytes": 14695,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 1.0,
+    "chunk_index": 27,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:08:39Z",
+        "plies": 143,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T12:08:05Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:08:41Z",
+        "plies": 155,
+        "result": "1-0",
+        "start_utc": "2026-11-09T12:08:05Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "a33eca248c3db082d496c5de4dbe3db16b9b47ca90cb20f2e0d4382f15344b7b",
+    "pair_index": 111,
+    "published_pair_pgn_sha256": "c8cd1ead3c5ab6f149e4859c703fe037b3d9bfaaff3ce3c5a1ff5c23268925e0",
+    "source_pair_result_sha256": "59bff5db5e19f489cc673ec73f078ccfdf612ca11204243bd44f7ef2ba243957",
+    "source_pgn_bytes": 14695,
+    "source_pgn_sha256": "df97b3b94212ce9a8914bf29c5d29166a39b4c0bb9391c2872a59624ea17cb46"
+  },
+  {
+    "byte_end_exclusive": 1670921,
+    "byte_start": 1656900,
+    "bytes": 14021,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 1.0,
+    "chunk_index": 28,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:11:09Z",
+        "plies": 131,
+        "result": "1-0",
+        "start_utc": "2026-11-09T12:10:35Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:11:11Z",
+        "plies": 153,
+        "result": "1-0",
+        "start_utc": "2026-11-09T12:10:35Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "a97f0a3738fdd3c27e9b050445e7a136ec839b6cb7d6b8ab2ca90901d23f304b",
+    "pair_index": 112,
+    "published_pair_pgn_sha256": "38fc934620e06ae7e84c18bc1448ddd0652bba37529f347a15f59da23f5388bc",
+    "source_pair_result_sha256": "e9510413c6b832723224534fcb5be0bafeb3892c86a7c0b6a4d91554f29ec476",
+    "source_pgn_bytes": 14021,
+    "source_pgn_sha256": "53f8044336a234b9a2c0b3db9f3dbcadd9e2322570598b1c43a324d70a258b45"
+  },
+  {
+    "byte_end_exclusive": 1689979,
+    "byte_start": 1670921,
+    "bytes": 19058,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 0.5,
+    "chunk_index": 28,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:11:53Z",
+        "plies": 193,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T12:11:14Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:11:55Z",
+        "plies": 204,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T12:11:14Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "22665770afd94f7270e14abfba6e0dabd0e9c1902c04a34da97b70ff3e8ec110",
+    "pair_index": 113,
+    "published_pair_pgn_sha256": "c5daf91db21ada275f7323d4ae804ec8b1429aa5f4579bc99b3bae4f00fb8a0f",
+    "source_pair_result_sha256": "e0e36586af71f8ee8ae72e1758c53822dee9115f2bd9da86a2674c4d8aa2d406",
+    "source_pgn_bytes": 19058,
+    "source_pgn_sha256": "e5acc5632a3af3831e94bd71ca62fde5e23bb5e60982ddc37f39d4112dbf3784"
+  },
+  {
+    "byte_end_exclusive": 1703431,
+    "byte_start": 1689979,
+    "bytes": 13452,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 1.0,
+    "chunk_index": 28,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:12:27Z",
+        "plies": 103,
+        "result": "1-0",
+        "start_utc": "2026-11-09T12:11:57Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:12:35Z",
+        "plies": 167,
+        "result": "1-0",
+        "start_utc": "2026-11-09T12:11:57Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "0a0ae0534ae755587a58e88083db6f9f6f047aab72badb65732342947e552ba3",
+    "pair_index": 114,
+    "published_pair_pgn_sha256": "a10b13a8475a62fe78f2992830c5b5968120f55615010958716dbfb9e72be0f2",
+    "source_pair_result_sha256": "7637601b995657bfac479d22d0cac4abd37ed15890cf2e7d50d3eb1fae2a39a2",
+    "source_pgn_bytes": 13452,
+    "source_pgn_sha256": "f87ef948645febdabe3a6f77381dd0bf515fe10a8b8575f15dc63bd979e5603d"
+  },
+  {
+    "byte_end_exclusive": 1718303,
+    "byte_start": 1703431,
+    "bytes": 14872,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 0.5,
+    "chunk_index": 28,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:13:08Z",
+        "plies": 103,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T12:12:38Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:13:18Z",
+        "plies": 199,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T12:12:38Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "e89267ad73a95c28799fe06e3d1b2218ccf29ca8f5569c69c4ae4eae1ba200ea",
+    "pair_index": 115,
+    "published_pair_pgn_sha256": "ee142874c1c8fc19faffbeaa79dbd6be9168f0ec8ff3717adc7a51e15c2c3360",
+    "source_pair_result_sha256": "b4a3d65919c6e31255783c0bd46c2f40c5f6963410f4477a0af229d06ae2d97e",
+    "source_pgn_bytes": 14872,
+    "source_pgn_sha256": "686bab37968e2e38dc6cd82f5f26041485d65859351167f75045884bfac9ce7a"
+  },
+  {
+    "byte_end_exclusive": 1733258,
+    "byte_start": 1718303,
+    "bytes": 14955,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 0.5,
+    "chunk_index": 29,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:15:42Z",
+        "plies": 122,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T12:15:11Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:15:49Z",
+        "plies": 181,
+        "result": "1-0",
+        "start_utc": "2026-11-09T12:15:11Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "4d1bf7d65db16cb0b69f7e3004aef8018ca9e8dcfc4be11123055e524549ed84",
+    "pair_index": 116,
+    "published_pair_pgn_sha256": "b3b6cebc6a8213b410c845a4f54beff841b88d7c38df51a783064fa0c1f487e1",
+    "source_pair_result_sha256": "baca64f4356fc21aeb5f3d120b5f1c6743d517f857fd6bbaaba64612d1b88a2f",
+    "source_pgn_bytes": 14955,
+    "source_pgn_sha256": "35a6cfc56abdfc572fdd907739d0232062fa3316c34f660d74c8ba84823cceb1"
+  },
+  {
+    "byte_end_exclusive": 1747386,
+    "byte_start": 1733258,
+    "bytes": 14128,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 1.0,
+    "chunk_index": 29,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:16:25Z",
+        "plies": 117,
+        "result": "1-0",
+        "start_utc": "2026-11-09T12:15:52Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:16:30Z",
+        "plies": 169,
+        "result": "1-0",
+        "start_utc": "2026-11-09T12:15:52Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "d24dcf0dade2e68c9c4ac25f8401c65ed7fe4892de14108cbf5ee27e9eb86045",
+    "pair_index": 117,
+    "published_pair_pgn_sha256": "1259d9a19a7bf5b1f3ee68c808b885aacd8acf5e95409a893cb5dd803588b28b",
+    "source_pair_result_sha256": "b85c9aa875a4e8d911d1979afe113421f58521981bd68040510e5bbed41aa9e6",
+    "source_pgn_bytes": 14128,
+    "source_pgn_sha256": "95eb981cb9cb611b4fc2ff7313e37170119c83fbc964e7042a930c4518eea080"
+  },
+  {
+    "byte_end_exclusive": 1760627,
+    "byte_start": 1747386,
+    "bytes": 13241,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 1.0,
+    "chunk_index": 29,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:17:04Z",
+        "plies": 109,
+        "result": "1-0",
+        "start_utc": "2026-11-09T12:16:33Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:17:09Z",
+        "plies": 157,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T12:16:33Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "8c96edb2fa270b9457f99dc0998a2b57e9c4bbce165171a574b25c2b9d4931f8",
+    "pair_index": 118,
+    "published_pair_pgn_sha256": "60aa73e5078928c338ff2bba6505ce9403a7cec2febb440eb1f00d27e7c569aa",
+    "source_pair_result_sha256": "376d16b29c382f253c180f6b6c573bfd80c9f7d4cc207ebee0dd77f00a04ecce",
+    "source_pgn_bytes": 13241,
+    "source_pgn_sha256": "4568543821014173eb5056df5aed01f8a5da215cfc3da1e06a36e3df247d9358"
+  },
+  {
+    "byte_end_exclusive": 1772147,
+    "byte_start": 1760627,
+    "bytes": 11520,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 1.0,
+    "chunk_index": 29,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:17:42Z",
+        "plies": 102,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T12:17:11Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:17:44Z",
+        "plies": 125,
+        "result": "1-0",
+        "start_utc": "2026-11-09T12:17:11Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "c069611992409a7a5fa3e87d6558d0cfeffd0fc5438b2d606cc8d544ee4fdc7a",
+    "pair_index": 119,
+    "published_pair_pgn_sha256": "916569dbded2b69e56809809644943f7f3c96fbcef1cc5ea94ec0f7caff9b63f",
+    "source_pair_result_sha256": "9b418ac8036682d0e317dbce469bd83f132e61e7ee8654fff0b115d629bc5d65",
+    "source_pgn_bytes": 11520,
+    "source_pgn_sha256": "f375382926f48e58829c5591e9c04be43f041612df4b9954ee91b1e6b1293871"
+  },
+  {
+    "byte_end_exclusive": 1788665,
+    "byte_start": 1772147,
+    "bytes": 16518,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 1.0,
+    "chunk_index": 30,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:20:24Z",
+        "plies": 137,
+        "result": "1-0",
+        "start_utc": "2026-11-09T12:19:50Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:20:31Z",
+        "plies": 203,
+        "result": "1-0",
+        "start_utc": "2026-11-09T12:19:50Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "2afbd586c963f298a3afcb3b9135f5aaf33e14b3017bb14f0f7ed1676ad69cb9",
+    "pair_index": 120,
+    "published_pair_pgn_sha256": "22cd98d4667cb668dd4abb0fb6bbb0d937cddae623299cf7f8ea16f2abcd0d4d",
+    "source_pair_result_sha256": "bc90c2f54f47bc06f04972f6c106a3ca36a255777a87bd873b130db299daac28",
+    "source_pgn_bytes": 16518,
+    "source_pgn_sha256": "d61b4e6f893bf9e379e7a5e6df25ef18bbed386b0f6cea441b025dc4cec3429a"
+  },
+  {
+    "byte_end_exclusive": 1803378,
+    "byte_start": 1788665,
+    "bytes": 14713,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 0.5,
+    "chunk_index": 30,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:21:07Z",
+        "plies": 132,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T12:20:34Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:21:11Z",
+        "plies": 167,
+        "result": "1-0",
+        "start_utc": "2026-11-09T12:20:34Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "553590b26f18b0d37b4d46b14d089099d2d4b3780f51b2f4c22382247118e610",
+    "pair_index": 121,
+    "published_pair_pgn_sha256": "590fbcd6e4effa3898250bad56d939c09955c6bf6cdca867543b2a1ab336b3b2",
+    "source_pair_result_sha256": "286ef4f01e25b8fba7ffd22281ef2cbb79fdfc211f1f73d35f9ce60a3901b91b",
+    "source_pgn_bytes": 14713,
+    "source_pgn_sha256": "70a8935e7e0cccb0caee56263d824eb2c1682a18ecf7dae688861c431902a7c7"
+  },
+  {
+    "byte_end_exclusive": 1812338,
+    "byte_start": 1803378,
+    "bytes": 8960,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 0.5,
+    "chunk_index": 30,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:21:38Z",
+        "plies": 77,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T12:21:13Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:21:42Z",
+        "plies": 92,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T12:21:13Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "49424d9352aeac2c453d4e9fd13127859b55d673f6a208f26429712052796a74",
+    "pair_index": 122,
+    "published_pair_pgn_sha256": "2421e3e73da8c29e6acb690bf77cc75f85634c8b88b5edc3f0de87f49f7dce16",
+    "source_pair_result_sha256": "dbac27357d33d8cc4a41d04f668da8bb6c29826356e8cc065a3777abb8e0bc9d",
+    "source_pgn_bytes": 8960,
+    "source_pgn_sha256": "100eadc66421fa653645b0d9a8ee01d7d31dd11b05422eb5d31317e848a9f274"
+  },
+  {
+    "byte_end_exclusive": 1826933,
+    "byte_start": 1812338,
+    "bytes": 14595,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 0.5,
+    "chunk_index": 30,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:22:18Z",
+        "plies": 135,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T12:21:44Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:22:21Z",
+        "plies": 160,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T12:21:44Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "c069611992409a7a5fa3e87d6558d0cfeffd0fc5438b2d606cc8d544ee4fdc7a",
+    "pair_index": 123,
+    "published_pair_pgn_sha256": "6a176978c03d9bdcb4e7911ae31cc08a7b9ca4f0c930c220d7ce3065ca07a398",
+    "source_pair_result_sha256": "b86239df204b0662fd9d3128279c829aeb5ed449659ab033d78ac29c74e52a82",
+    "source_pgn_bytes": 14595,
+    "source_pgn_sha256": "43a24c15982123a3781e6a6b1e5974684de64350c3cce97a5867e0bf22374251"
+  },
+  {
+    "byte_end_exclusive": 1842418,
+    "byte_start": 1826933,
+    "bytes": 15485,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 0.5,
+    "chunk_index": 31,
+    "games": [
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:24:56Z",
+        "plies": 121,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T12:24:23Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:25:03Z",
+        "plies": 195,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T12:24:23Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "95858d761bce073b154d7c22f2593ac92c4cfead80c2800fc1b1c33b7fea5e5c",
+    "pair_index": 124,
+    "published_pair_pgn_sha256": "dbb12532ded6db5eacd026372ccefae9ea9b47858498474c0856aa6ea513f777",
+    "source_pair_result_sha256": "06c107ea8a599580588c4c5d05fea9fbfa626a7044976c0bda15b8094630004b",
+    "source_pgn_bytes": 15485,
+    "source_pgn_sha256": "760bd084fc22b6eaf2a001bccbe51269f20e4f2624c7391525c4a6d28cde3ddf"
+  },
+  {
+    "byte_end_exclusive": 1854451,
+    "byte_start": 1842418,
+    "bytes": 12033,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 0.5,
+    "chunk_index": 31,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:25:37Z",
+        "plies": 115,
+        "result": "1-0",
+        "start_utc": "2026-11-09T12:25:06Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:25:37Z",
+        "plies": 124,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T12:25:06Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "cd692d24cb43476064a062413158792d2d4a94e030840c0cb86cd269a3b6165c",
+    "pair_index": 125,
+    "published_pair_pgn_sha256": "308f16aad150eb23e71d7b801fac2cf3cd20bdf048367ae2203fa4f9365a7772",
+    "source_pair_result_sha256": "e7af7949aeb9a1187fa4dabd625f8758953e17b339ead0f0cec0285cf79a6ebe",
+    "source_pgn_bytes": 12033,
+    "source_pgn_sha256": "94daac7037c66fd5115e9ee0777bd0f37ae7ea9323f3ed4f952af2b891224452"
+  },
+  {
+    "byte_end_exclusive": 1863717,
+    "byte_start": 1854451,
+    "bytes": 9266,
+    "candidate_black_score": 0.5,
+    "candidate_white_score": 1.0,
+    "chunk_index": 31,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:26:07Z",
+        "plies": 79,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T12:25:40Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 1.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:26:10Z",
+        "plies": 97,
+        "result": "1-0",
+        "start_utc": "2026-11-09T12:25:40Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "e342d7024351357027e14bf00660471743831994a55b2186af8fa4ac7a5b7e57",
+    "pair_index": 126,
+    "published_pair_pgn_sha256": "6b812725234ad82cff612bbd26a7ad954bc24578d2fe088b4e7bb2ff8778db56",
+    "source_pair_result_sha256": "d138c721b61e960f50ca158c767749b0e61d16fcdecd1ed84c5f4d318cd3fd36",
+    "source_pgn_bytes": 9266,
+    "source_pgn_sha256": "06365f8e6307fc68d3fcda8a20b8f41c4e29eb904f399bca9dc09208a03c4c18"
+  },
+  {
+    "byte_end_exclusive": 1879333,
+    "byte_start": 1863717,
+    "bytes": 15616,
+    "candidate_black_score": 0.0,
+    "candidate_white_score": 0.5,
+    "chunk_index": 31,
+    "games": [
+      {
+        "candidate_color": "Black",
+        "candidate_score": 0.0,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:26:48Z",
+        "plies": 151,
+        "result": "1-0",
+        "start_utc": "2026-11-09T12:26:12Z",
+        "termination": "normal"
+      },
+      {
+        "candidate_color": "White",
+        "candidate_score": 0.5,
+        "clock_forfeit": false,
+        "end_utc": "2026-11-09T12:26:49Z",
+        "plies": 167,
+        "result": "1/2-1/2",
+        "start_utc": "2026-11-09T12:26:12Z",
+        "termination": "normal"
+      }
+    ],
+    "opening_id": "f8ffb38eae454888d320aec56ca7dc6761d15ef4ac376bd45476c33e30711844",
+    "pair_index": 127,
+    "published_pair_pgn_sha256": "b2830c32e6e0375c946b4117d78dee468a4247310675d470414e8e2dbef949f6",
+    "source_pair_result_sha256": "4c89b70d27592ae648fa433681e5d87a764370759b1a65057d9d821a54594d86",
+    "source_pgn_bytes": 15616,
+    "source_pgn_sha256": "5af022bf5f51c2efe67fd0a7c697fb747e7362d3aa97d8c1560b3f4debaebd87"
+  }
+]

@@ -10,3 +10,5 @@ results/test1757-history-floor-screen/** -text whitespace=cr-at-eol
 results/test1757-history-floor-screen/games-utc.pgn -text whitespace=cr-at-eol,-blank-at-eof
 results/test1757-readout-ridge-screen/** -text whitespace=cr-at-eol
 results/test1757-readout-ridge-screen/games-utc.pgn -text whitespace=cr-at-eol,-blank-at-eof
+results/test1757-selected-vs-official/** -text whitespace=cr-at-eol
+results/test1757-selected-vs-official/games-utc.pgn -text whitespace=cr-at-eol,-blank-at-eof
