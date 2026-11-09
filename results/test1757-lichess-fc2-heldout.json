@@ -1,0 +1,141 @@
+{
+  "candidate_bench_nodes": [
+    7597833,
+    7597833
+  ],
+  "candidate_minus_parent_loss_cp_squared": {
+    "denominator": 920,
+    "numerator": 11
+  },
+  "candidate_sha256": "622b9b7292b49ed0b0ab4cf944e8ba3031a12f5348dc997e72f3dd6c2b0484d5",
+  "eligible_children": 130,
+  "experiment": "Two signed FC2 coefficient changes in original test1757",
+  "frozen_weights_and_data": "test1757-lichess-fc2-freeze.json",
+  "functional_qualification_passed": true,
+  "game_plan_sha256": "9abba5e609e03b3e553c874f2245d11e9dc59af07f68eeef052b0241caa4dda5",
+  "heldout_component_equal_metrics": {
+    "baseline_deficit_cp": {
+      "denominator": 1380,
+      "numerator": 31733
+    },
+    "baseline_loss": {
+      "denominator": 920,
+      "numerator": 327847
+    },
+    "baseline_margin_cp": {
+      "denominator": 552,
+      "numerator": 32117
+    },
+    "candidate_deficit_cp": {
+      "denominator": 120,
+      "numerator": 2777
+    },
+    "candidate_loss": {
+      "denominator": 460,
+      "numerator": 163929
+    },
+    "candidate_margin_cp": {
+      "denominator": 2760,
+      "numerator": 159443
+    },
+    "matched_components": 46,
+    "matched_rows": 62
+  },
+  "in_check_children_without_an_ordinary_static_score": 6,
+  "local_acceptance_sha256": "19a7448430e3e78f9f3c7e533cd34076bad6984408615d8c6c5cd39b400d1c06",
+  "matched_components": 46,
+  "matched_move_pairs": 62,
+  "measured_effects": {
+    "active_changed_head_children": 107,
+    "by_head": {
+      "51": {
+        "children": 2,
+        "nonzero_cp": 0
+      },
+      "78": {
+        "children": 3,
+        "nonzero_cp": 0
+      },
+      "80": {
+        "children": 1,
+        "nonzero_cp": 0
+      },
+      "82": {
+        "children": 10,
+        "nonzero_cp": 0
+      },
+      "84": {
+        "children": 2,
+        "nonzero_cp": 0
+      },
+      "85": {
+        "children": 3,
+        "nonzero_cp": 0
+      },
+      "86": {
+        "children": 1,
+        "nonzero_cp": 0
+      },
+      "87": {
+        "children": 33,
+        "nonzero_cp": 24
+      },
+      "89": {
+        "children": 1,
+        "nonzero_cp": 0
+      },
+      "91": {
+        "children": 74,
+        "nonzero_cp": 71
+      }
+    },
+    "cp_delta_counts": {
+      "0": 35,
+      "1": 10,
+      "2": 8,
+      "3": 18,
+      "4": 44,
+      "5": 9,
+      "6": 1,
+      "7": 2,
+      "8": 3
+    },
+    "eligible_children": 130,
+    "max_abs_cp_delta": 8,
+    "max_abs_raw_delta": 19,
+    "nonzero_cp_children": 95,
+    "nonzero_raw_children": 102,
+    "paired_margin_changed_rows": 33,
+    "paired_margin_decreased_rows": 23,
+    "paired_margin_increased_rows": 10,
+    "raw_delta_counts": {
+      "0": 28,
+      "1": 8,
+      "10": 15,
+      "11": 1,
+      "15": 1,
+      "18": 1,
+      "19": 4,
+      "2": 7,
+      "3": 3,
+      "4": 2,
+      "5": 5,
+      "6": 4,
+      "7": 6,
+      "8": 9,
+      "9": 36
+    }
+  },
+  "parent_bench_nodes": [
+    3464885,
+    3464885
+  ],
+  "parent_sha256": "18cd32e11a9cac7c595bc6ebf1301088da8e1f2c7b31efda88dbc74c71f5d2cf",
+  "perft4_nodes_each": 197281,
+  "roots": 68,
+  "schema": "public-lichess-fc2-heldout-readout-v1",
+  "source_run": "https://github.com/0mis/Stockfish/actions/runs/42605656554",
+  "validation_driver": "875d0c22e3d51b199e6a38e530894445b4b1724b",
+  "verified_gain": false,
+  "weight_choices_modified_from_validation": false
+}
