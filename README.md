@@ -9,7 +9,7 @@ Trial `trial-0003` · **provisional, independently unverified** · `60+0.6 / T1 
 
 | Reference | W / D / L | Points | Games (pairs) | Logistic Elo estimate | Anytime lower Elo bound | Statistical decision | Minimum pairs |
 | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `spcc-261025` | 59 / 114 / 53 | 116–110 | 226 (113) | +9.23 | -37.89 | `continue` | 113/128 (pending) |
+| `spcc-261025` | 59 / 115 / 54 | 116.5–111.5 | 228 (114) | +7.62 | -39.39 | `continue` | 114/128 (pending) |
 | `dev-261106` | 0 / 0 / 0 | 0–0 | 0 (0) | pending | −∞ | `continue` | 0/128 (pending) |
 
 The paired, one-sided anytime lower bounds use **99.958333%** coverage per reference (trial allocation: **99.916667%**; whole research family: **99%**). These are fixed protocol coverage levels under its assumptions, not probabilities that the candidate is stronger.
@@ -18,7 +18,7 @@ Each reference needs at least **128 pairs** and log-evidence ≥ **7.78322**. Bo
 
 Trial ledger state: **open**. Both statistical gates passed: **no**. Verified gain: **not established by this progress feed**.
 
-Ledger checkpoint: event `286`, SHA-256 `728182e75d3c2b06a7cb20edfcc36075e940f73fd8b7c832f12c51b4aa2c1bba`. [Aggregate JSON](results/live-status.json).
+Ledger checkpoint: event `287`, SHA-256 `203908e0c2d6df6a682e5cd9ff26631366d9ca4c61ced80e08ec8b5e16dc6230`. [Aggregate JSON](results/live-status.json).
 <!-- live-status:end -->
 
 The current real-clock comparison uses one thread, 64 MiB hash and `60+0.6` for both engines. Its references are Stockfish 261025, the leader on the [SPCC VLTC list](https://www.sp-cc.de/), and the official November 6 development build `7cdd5e89`. The second comparison starts after a positive statistical decision against the first reference. An independent integrity audit is also required before claiming a verified gain.
