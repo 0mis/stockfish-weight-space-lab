@@ -1,0 +1,57 @@
+{
+  "baseline": {
+    "engine_sha256": "b67c37d0d45e3540e311392aeeb699e3a745f16e172bc3fc6f85e0782093842b",
+    "name": "dev-261106",
+    "network_sha256": "d1ee674a62ca754648fb8c2907ff4e92f0c3acff28f59afa0f5bd4e3949538f1",
+    "source_commit": "7cdd5e89a39fe3071b67d91c7bb07d712044bf76"
+  },
+  "candidate": {
+    "engine_bytes": 142322823,
+    "engine_sha256": "12a8e7bfdd9b1189b4350bd9ebef3501be1e89bd5fa41dcb56921f85ba23869a",
+    "network_bytes": 138360528,
+    "network_sha256": "034f47e652a6a0354f9099993535a0405f4933146fc6d0b913583696bfbdacbd",
+    "source_commit": "7a17b53bcaf93f54a23ad65f309c413585500c82",
+    "source_tree": "8e3164caf60d281cb4b1d00a699364e04b354451"
+  },
+  "complete_all_pairs_regardless_of_score": true,
+  "formal_alpha_reserved": false,
+  "formal_trial_0003_paused_at_pairs": 134,
+  "launch_started_utc": "2026-11-09T01:52:39.463117+00:00",
+  "local_acceptance_receipt_sha256": "d733b4f48a3c0e54fcf3003bf8fa7548e2bf9bf3fd43dae6f5a7f19d72ad517f",
+  "max_games": 128,
+  "max_pairs": 64,
+  "opening_input": {
+    "excluded_from_trial_0003_pools": true,
+    "kind": "retired_development_screen_pool",
+    "rows": 512,
+    "selection_exposed": true,
+    "sha256": "3c8f7bca49ff33fbc5219936efed9a0d5eccf12c7618722de05d178becf45666"
+  },
+  "private_plan_sha256": "45036f136dbc78a522cc4fbc432507e821f281e0642dfc440134d700438143bd",
+  "purpose": "Exploratory candidate selection only; no verified strength claim.",
+  "sampling": {
+    "method": "iid_with_replacement",
+    "occurrence_records_sha256": "af6d25befa8c0fe8c151d6a4fab9db9f2823149bd55304361e4d51fc86b545ea",
+    "opening_id_schedule_sha256": "44323a93ebc5a3dc7ffcad11556c7625aeb0930ce6910e999a0c0fa4cfa49ee4",
+    "seed": 2026110901,
+    "unique_scheduled_starters": 63
+  },
+  "schema": "test1757-development-screen-plan/v1",
+  "scope": "One development opponent and reused practice distribution. Final confirmation needs fresh clean pools, separately reserved alpha, both required references and independent integrity audit.",
+  "settings": {
+    "concurrency": 2,
+    "depth_limit": null,
+    "engine_move_overhead_ms": 10,
+    "evaluation_adjudication": false,
+    "fresh_engines_per_pair": true,
+    "hash_mb_per_engine": 64,
+    "nodes_per_move": null,
+    "ponder": false,
+    "referee_time_margin_ms": 0,
+    "strength_limit": false,
+    "tablebases": false,
+    "threads_per_engine": 1,
+    "time_control": "10+0.1"
+  },
+  "verified_elo_gain": false
+}
