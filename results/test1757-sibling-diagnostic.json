@@ -1,0 +1,914 @@
+{
+  "actual_play_summary": {
+    "alternate_teacher_depth": 13,
+    "alternate_teacher_rank1_move_san": "Qxc4",
+    "gross_cases_linked_to_actual_plays": 4,
+    "official_rank1_plays": 3,
+    "original_pgn_recorded_depth": 16,
+    "original_rank2_move_san": "Re1",
+    "original_rank2_plays": 1
+  },
+  "candidate_network_created": false,
+  "clear_cases": [
+    {
+      "actual_plays": [
+        {
+          "actual_pgn_move_comment": "0.00/19 0.161s, tl=5.520s, n=82758",
+          "actual_pgn_recorded_depth": 19,
+          "actual_pgn_score": "0.00",
+          "arm": "parent",
+          "game_index": 104,
+          "match": "rank1",
+          "move": "g3c7",
+          "move_san": "Qxc7",
+          "mover": "dev-261106",
+          "ply": 32,
+          "public_game_file": "test1757-parent-screen/games-utc.pgn"
+        }
+      ],
+      "children": [
+        {
+          "child_position_id": "2f895cf975ae31d75bc5ea3333489d74f93f19de9b4fdf1e349c3fc886bbd182",
+          "child_turn": "b",
+          "final_static_cp_child_stm": -260,
+          "final_static_cp_root_player": 260,
+          "final_static_cp_white": 260,
+          "move_san": "Qxc7",
+          "move_uci": "g3c7",
+          "nnue_raw_internal_child_stm": -670,
+          "physical_head": 74,
+          "rank": 1,
+          "raw_route": 115
+        },
+        {
+          "child_position_id": "7f8753e254ff8363913193ed1c4e22a0a6cb2e41f8f54d82fa55af163f0d0317",
+          "child_turn": "b",
+          "final_static_cp_child_stm": -327,
+          "final_static_cp_root_player": 327,
+          "final_static_cp_white": 327,
+          "move_san": "Qxf3",
+          "move_uci": "g3f3",
+          "nnue_raw_internal_child_stm": -843,
+          "physical_head": 74,
+          "rank": 2,
+          "raw_route": 115
+        }
+      ],
+      "family": "5fbe5cfe643bdca0763bf09157d23b9cbeaa8f0161c4bac1413b3eba2b6853d9",
+      "fen": "r3q1k1/p1b3pp/2p5/8/3pb3/1P3rQ1/P1PN2PP/4RRK1 w - - 0 17",
+      "gross_inversion": true,
+      "identical_physical_heads": true,
+      "position_id": "78e52a8d0e2a679ff14e005aabf6c5a141835c5c0ddd83a4a7dba04458402304",
+      "root_turn": "White",
+      "searches": [
+        {
+          "bestmove_uci": "g3c7",
+          "depth": 9,
+          "margin_cp": 36,
+          "ranks": [
+            {
+              "move_san": "Qxc7",
+              "move_uci": "g3c7",
+              "pv_uci": [
+                "g3c7",
+                "f3e3",
+                "d2e4",
+                "e8e4",
+                "c7f7",
+                "g8h8",
+                "e1e3",
+                "d4e3"
+              ],
+              "rank": 1,
+              "reported_nodes": 5754,
+              "score_cp_root": 14
+            },
+            {
+              "move_san": "Qxf3",
+              "move_uci": "g3f3",
+              "pv_uci": [
+                "g3f3",
+                "e4f3",
+                "e1e8",
+                "a8e8",
+                "d2f3",
+                "c7b6"
+              ],
+              "rank": 2,
+              "reported_nodes": 5754,
+              "score_cp_root": -22
+            }
+          ]
+        },
+        {
+          "bestmove_uci": "g3c7",
+          "depth": 13,
+          "margin_cp": 34,
+          "ranks": [
+            {
+              "move_san": "Qxc7",
+              "move_uci": "g3c7",
+              "pv_uci": [
+                "g3c7",
+                "f3f1",
+                "d2f1",
+                "e8g6",
+                "f1g3",
+                "e4d5",
+                "e1e2",
+                "a8e8",
+                "e2e8",
+                "g6e8"
+              ],
+              "rank": 1,
+              "reported_nodes": 25007,
+              "score_cp_root": -9
+            },
+            {
+              "move_san": "Qxf3",
+              "move_uci": "g3f3",
+              "pv_uci": [
+                "g3f3",
+                "e4f3",
+                "e1e8",
+                "a8e8",
+                "f1f3",
+                "e8e2",
+                "f3f2",
+                "c7h2",
+                "g1f1",
+                "e2f2",
+                "f1f2",
+                "h2f4",
+                "d2f3",
+                "c6c5",
+                "f2e2"
+              ],
+              "rank": 2,
+              "reported_nodes": 25007,
+              "score_cp_root": -43
+            }
+          ]
+        }
+      ],
+      "static_parent_margin_cp": -67
+    },
+    {
+      "actual_plays": [
+        {
+          "actual_pgn_move_comment": "+1.43/17 0.328s, tl=7.542s, n=128615",
+          "actual_pgn_recorded_depth": 17,
+          "actual_pgn_score": "+1.43",
+          "arm": "edited",
+          "game_index": 94,
+          "match": "rank1",
+          "move": "g2g4",
+          "move_san": "g4",
+          "mover": "dev-261106",
+          "ply": 24,
+          "public_game_file": "test1757-edited-screen/games-utc.pgn"
+        }
+      ],
+      "children": [
+        {
+          "child_position_id": "fd341331c8fe6a163bd96f5fd1aacaee0fc762d0a30135f77bc8a118dc2fb9b0",
+          "child_turn": "b",
+          "final_static_cp_child_stm": -119,
+          "final_static_cp_root_player": 119,
+          "final_static_cp_white": 119,
+          "move_san": "g4",
+          "move_uci": "g2g4",
+          "nnue_raw_internal_child_stm": -301,
+          "physical_head": 82,
+          "rank": 1,
+          "raw_route": 139
+        },
+        {
+          "child_position_id": "74513bdc4a945fe2c4163e5f491932d0fe36fa202c8b6617db6d4206b72523e5",
+          "child_turn": "b",
+          "final_static_cp_child_stm": -138,
+          "final_static_cp_root_player": 138,
+          "final_static_cp_white": 138,
+          "move_san": "Qc6",
+          "move_uci": "e4c6",
+          "nnue_raw_internal_child_stm": -350,
+          "physical_head": 82,
+          "rank": 2,
+          "raw_route": 139
+        }
+      ],
+      "family": "6f93a1c0d957cee185a69702a50c1fc30fb2220b2845c3d248e473325e2c340b",
+      "fen": "1r2r1k1/2p1qp1p/4b1p1/p3P3/1p2QP2/7P/PPP2BP1/3RR1K1 w - - 0 13",
+      "gross_inversion": true,
+      "identical_physical_heads": true,
+      "position_id": "3c56de2ad9f4973a24258f8d91aa465848cda6fd51d01576508a453ef0644257",
+      "root_turn": "White",
+      "searches": [
+        {
+          "bestmove_uci": "g2g4",
+          "depth": 9,
+          "margin_cp": 45,
+          "ranks": [
+            {
+              "move_san": "g4",
+              "move_uci": "g2g4",
+              "pv_uci": [
+                "g2g4",
+                "b8d8",
+                "d1d8",
+                "e7d8",
+                "f4f5",
+                "g6f5",
+                "g4f5",
+                "d8g5",
+                "e4g4",
+                "g5g4",
+                "h3g4",
+                "e6a2",
+                "b2b3",
+                "a5a4",
+                "b3a4"
+              ],
+              "rank": 1,
+              "reported_nodes": 11392,
+              "score_cp_root": 171
+            },
+            {
+              "move_san": "Qc6",
+              "move_uci": "e4c6",
+              "pv_uci": [
+                "e4c6",
+                "e8d8",
+                "g1h2",
+                "e7e8",
+                "c6c7"
+              ],
+              "rank": 2,
+              "reported_nodes": 11392,
+              "score_cp_root": 126
+            }
+          ]
+        },
+        {
+          "bestmove_uci": "g2g4",
+          "depth": 13,
+          "margin_cp": 50,
+          "ranks": [
+            {
+              "move_san": "g4",
+              "move_uci": "g2g4",
+              "pv_uci": [
+                "g2g4",
+                "a5a4",
+                "d1d3",
+                "e6a2",
+                "b2b3",
+                "b8d8",
+                "f4f5",
+                "d8d3",
+                "e4d3",
+                "e8d8"
+              ],
+              "rank": 1,
+              "reported_nodes": 83825,
+              "score_cp_root": 139
+            },
+            {
+              "move_san": "Qc6",
+              "move_uci": "e4c6",
+              "pv_uci": [
+                "e4c6",
+                "e8d8",
+                "g1h2",
+                "h7h5",
+                "h2g3",
+                "d8d1",
+                "e1d1",
+                "b8d8",
+                "f2c5",
+                "h5h4",
+                "g3f2",
+                "e7e8",
+                "c6e8",
+                "d8e8",
+                "b2b3",
+                "g8h7"
+              ],
+              "rank": 2,
+              "reported_nodes": 83825,
+              "score_cp_root": 89
+            }
+          ]
+        }
+      ],
+      "static_parent_margin_cp": -19
+    },
+    {
+      "actual_plays": [
+        {
+          "actual_pgn_move_comment": "+0.23/16 0.144s, tl=2.491s, n=56685",
+          "actual_pgn_recorded_depth": 16,
+          "actual_pgn_score": "+0.23",
+          "arm": "parent",
+          "game_index": 27,
+          "match": "rank1",
+          "move": "e1f1",
+          "move_san": "Rf1",
+          "mover": "dev-261106",
+          "ply": 48,
+          "public_game_file": "test1757-parent-screen/games-utc.pgn"
+        }
+      ],
+      "children": [
+        {
+          "child_position_id": "f1e5a05e8364987d820a44a4fad852878dc04223a0416a30b38f700e731d01b1",
+          "child_turn": "b",
+          "final_static_cp_child_stm": -60,
+          "final_static_cp_root_player": 60,
+          "final_static_cp_white": 60,
+          "move_san": "Rf1",
+          "move_uci": "e1f1",
+          "nnue_raw_internal_child_stm": -157,
+          "physical_head": 74,
+          "rank": 1,
+          "raw_route": 115
+        },
+        {
+          "child_position_id": "d7fd69e0f215ce92c931c491fab2e9b1902ef4c83657c04435e8a19bd9ca13d1",
+          "child_turn": "b",
+          "final_static_cp_child_stm": -251,
+          "final_static_cp_root_player": 251,
+          "final_static_cp_white": 251,
+          "move_san": "Nxd6",
+          "move_uci": "e4d6",
+          "nnue_raw_internal_child_stm": -655,
+          "physical_head": 74,
+          "rank": 2,
+          "raw_route": 115
+        }
+      ],
+      "family": "9395e1edc8134faa08a2d069fcb6feb36867c0ef1ca44bd755c2f2d74c50eaa2",
+      "fen": "3q1r2/2k2pQ1/1p1pr3/4n3/2P1N1P1/P3R2P/P7/1K2R3 w - - 1 25",
+      "gross_inversion": true,
+      "identical_physical_heads": true,
+      "position_id": "78c87cae012f4c1e848dc15627f6541f206e2d8cfeda55e040ac58ca302d6877",
+      "root_turn": "White",
+      "searches": [
+        {
+          "bestmove_uci": "e1f1",
+          "depth": 9,
+          "margin_cp": 40,
+          "ranks": [
+            {
+              "move_san": "Rf1",
+              "move_uci": "e1f1",
+              "pv_uci": [
+                "e1f1",
+                "e6g6",
+                "g7h7",
+                "c7b8",
+                "h7h5",
+                "e5c4"
+              ],
+              "rank": 1,
+              "reported_nodes": 11832,
+              "score_cp_root": 19
+            },
+            {
+              "move_san": "Nxd6",
+              "move_uci": "e4d6",
+              "pv_uci": [
+                "e4d6",
+                "d8d6",
+                "e3e5",
+                "d6d3",
+                "b1b2"
+              ],
+              "rank": 2,
+              "reported_nodes": 11832,
+              "score_cp_root": -21
+            }
+          ]
+        },
+        {
+          "bestmove_uci": "e1f1",
+          "depth": 13,
+          "margin_cp": 39,
+          "ranks": [
+            {
+              "move_san": "Rf1",
+              "move_uci": "e1f1",
+              "pv_uci": [
+                "e1f1",
+                "e6g6",
+                "g7h7",
+                "c7b8",
+                "h7h5",
+                "e5c4",
+                "e3d3",
+                "d8c7",
+                "f1c1",
+                "f8c8",
+                "d3c3",
+                "d6d5",
+                "h5d5",
+                "g6c6",
+                "d5f5"
+              ],
+              "rank": 1,
+              "reported_nodes": 38214,
+              "score_cp_root": 39
+            },
+            {
+              "move_san": "Nxd6",
+              "move_uci": "e4d6",
+              "pv_uci": [
+                "e4d6",
+                "d8d6",
+                "e3e5",
+                "d6d3",
+                "b1b2",
+                "d3d4",
+                "b2b3",
+                "d4d3",
+                "b3b2"
+              ],
+              "rank": 2,
+              "reported_nodes": 38214,
+              "score_cp_root": 0
+            }
+          ]
+        }
+      ],
+      "static_parent_margin_cp": -191
+    },
+    {
+      "actual_plays": [],
+      "children": [
+        {
+          "child_position_id": "f959941420ae20a24233af546064ab09f262da90928ee48e29b006e87027cb33",
+          "child_turn": "b",
+          "final_static_cp_child_stm": -74,
+          "final_static_cp_root_player": 74,
+          "final_static_cp_white": 74,
+          "move_san": "Ndb5",
+          "move_uci": "d4b5",
+          "nnue_raw_internal_child_stm": -193,
+          "physical_head": 82,
+          "rank": 1,
+          "raw_route": 139
+        },
+        {
+          "child_position_id": "9ec1574097829bbd39ba4a95ba75f8ddeb37b0794ab7257d57d58bab13284338",
+          "child_turn": "b",
+          "final_static_cp_child_stm": -80,
+          "final_static_cp_root_player": 80,
+          "final_static_cp_white": 80,
+          "move_san": "Ncb5",
+          "move_uci": "c3b5",
+          "nnue_raw_internal_child_stm": -208,
+          "physical_head": 82,
+          "rank": 2,
+          "raw_route": 139
+        }
+      ],
+      "family": "c5ef7b7d206420296f27156f87bb6c3df80c7149dcd3aa475e15be0af79996da",
+      "fen": "2q1kbr1/pp3p1p/1nn1p3/5p2/3N4/1QN1B2P/PP3PP1/3R2K1 w - - 4 13",
+      "gross_inversion": false,
+      "identical_physical_heads": true,
+      "position_id": "96dfb185fc8706b14b37feb960560244575890e7ca4871f3d2133728c87b2faa",
+      "root_turn": "White",
+      "searches": [
+        {
+          "bestmove_uci": "d4b5",
+          "depth": 9,
+          "margin_cp": 41,
+          "ranks": [
+            {
+              "move_san": "Ndb5",
+              "move_uci": "d4b5",
+              "pv_uci": [
+                "d4b5",
+                "c6a5",
+                "b3c2",
+                "a5c4"
+              ],
+              "rank": 1,
+              "reported_nodes": 8243,
+              "score_cp_root": 114
+            },
+            {
+              "move_san": "Ncb5",
+              "move_uci": "c3b5",
+              "pv_uci": [
+                "c3b5",
+                "c6d4",
+                "e3d4",
+                "b6d5",
+                "b5a7",
+                "c8d7"
+              ],
+              "rank": 2,
+              "reported_nodes": 8243,
+              "score_cp_root": 73
+            }
+          ]
+        },
+        {
+          "bestmove_uci": "d4b5",
+          "depth": 13,
+          "margin_cp": 56,
+          "ranks": [
+            {
+              "move_san": "Ndb5",
+              "move_uci": "d4b5",
+              "pv_uci": [
+                "d4b5",
+                "f8e7",
+                "b5a7",
+                "c6a7",
+                "b3b6",
+                "c8c6",
+                "c3d5",
+                "e6d5",
+                "b6a7",
+                "d5d4"
+              ],
+              "rank": 1,
+              "reported_nodes": 47970,
+              "score_cp_root": 123
+            },
+            {
+              "move_san": "Ncb5",
+              "move_uci": "c3b5",
+              "pv_uci": [
+                "c3b5",
+                "c6d4",
+                "e3d4",
+                "b6d5",
+                "b5a7",
+                "c8d7",
+                "a2a4",
+                "f8e7",
+                "d4e3",
+                "e7d6",
+                "a7b5",
+                "d6b8",
+                "g1h1",
+                "d7c6"
+              ],
+              "rank": 2,
+              "reported_nodes": 47970,
+              "score_cp_root": 67
+            }
+          ]
+        }
+      ],
+      "static_parent_margin_cp": -6
+    },
+    {
+      "actual_plays": [
+        {
+          "actual_pgn_move_comment": "+1.28/16 0.478s, tl=8.901s, n=188719",
+          "actual_pgn_recorded_depth": 16,
+          "actual_pgn_score": "+1.28",
+          "arm": "parent",
+          "game_index": 118,
+          "match": "rank2",
+          "move": "f1e1",
+          "move_san": "Re1",
+          "mover": "test1757-pf-parent18cd",
+          "ply": 8,
+          "public_game_file": "test1757-parent-screen/games-utc.pgn"
+        }
+      ],
+      "children": [
+        {
+          "child_position_id": "f383e0b576c32b73bd1425b612ed1af2cc5da0b104ea4f79ae022ca90f52e1ed",
+          "child_turn": "b",
+          "final_static_cp_child_stm": -93,
+          "final_static_cp_root_player": 93,
+          "final_static_cp_white": 93,
+          "move_san": "Qxc4",
+          "move_uci": "e2c4",
+          "nnue_raw_internal_child_stm": -224,
+          "physical_head": 87,
+          "rank": 1,
+          "raw_route": 163
+        },
+        {
+          "child_position_id": "d819e55a24eb309f54e3ee09caf599f2f83dc90fd3939d4452779e2d54408c5b",
+          "child_turn": "b",
+          "final_static_cp_child_stm": -120,
+          "final_static_cp_root_player": 120,
+          "final_static_cp_white": 120,
+          "move_san": "Re1",
+          "move_uci": "f1e1",
+          "nnue_raw_internal_child_stm": -294,
+          "physical_head": 87,
+          "rank": 2,
+          "raw_route": 163
+        }
+      ],
+      "family": "c5ef7b7d206420296f27156f87bb6c3df80c7149dcd3aa475e15be0af79996da",
+      "fen": "r3kb1r/pp1qpp1p/2n2n2/5p2/2pP4/2N2N1P/PP2QPP1/R1B2RK1 w kq - 4 5",
+      "gross_inversion": true,
+      "identical_physical_heads": true,
+      "position_id": "1a795d985b3a5d706fdfe73a09b431093b8a80b8ee14a9ab0a63a5987631194f",
+      "root_turn": "White",
+      "searches": [
+        {
+          "bestmove_uci": "e2c4",
+          "depth": 9,
+          "margin_cp": 23,
+          "ranks": [
+            {
+              "move_san": "Qxc4",
+              "move_uci": "e2c4",
+              "pv_uci": [
+                "e2c4",
+                "a8d8",
+                "f1e1",
+                "f8g7"
+              ],
+              "rank": 1,
+              "reported_nodes": 4041,
+              "score_cp_root": 168
+            },
+            {
+              "move_san": "Re1",
+              "move_uci": "f1e1",
+              "pv_uci": [
+                "f1e1",
+                "f8g7",
+                "e2c4",
+                "e8g8",
+                "d4d5"
+              ],
+              "rank": 2,
+              "reported_nodes": 4041,
+              "score_cp_root": 145
+            }
+          ]
+        },
+        {
+          "bestmove_uci": "e2c4",
+          "depth": 13,
+          "margin_cp": 24,
+          "ranks": [
+            {
+              "move_san": "Qxc4",
+              "move_uci": "e2c4",
+              "pv_uci": [
+                "e2c4",
+                "a8d8",
+                "d4d5",
+                "f6d5",
+                "f1d1",
+                "d5b6",
+                "c4b5",
+                "d7c8",
+                "d1d8",
+                "c8d8",
+                "b5f5",
+                "d8c8"
+              ],
+              "rank": 1,
+              "reported_nodes": 47105,
+              "score_cp_root": 135
+            },
+            {
+              "move_san": "Re1",
+              "move_uci": "f1e1",
+              "pv_uci": [
+                "f1e1",
+                "f6d5",
+                "c1g5",
+                "a8d8",
+                "a1d1",
+                "h8g8",
+                "e2c4",
+                "g8g6",
+                "c4b3",
+                "c6a5",
+                "b3c2",
+                "a5c6",
+                "f3e5",
+                "c6e5",
+                "d4e5"
+              ],
+              "rank": 2,
+              "reported_nodes": 47105,
+              "score_cp_root": 111
+            }
+          ]
+        }
+      ],
+      "static_parent_margin_cp": -27
+    },
+    {
+      "actual_plays": [],
+      "children": [
+        {
+          "child_position_id": "60a8b686fdfc85f52e4677952110aac17d6cb6c10191064113fa41b84e812464",
+          "child_turn": "b",
+          "final_static_cp_child_stm": -24,
+          "final_static_cp_root_player": 24,
+          "final_static_cp_white": 24,
+          "move_san": "Bb3",
+          "move_uci": "c2b3",
+          "nnue_raw_internal_child_stm": -72,
+          "physical_head": 51,
+          "rank": 1,
+          "raw_route": 73
+        },
+        {
+          "child_position_id": "0d963695eb80203cd473a1bdbcb55b92d360ab142306c86192aaeccd4f483a28",
+          "child_turn": "b",
+          "final_static_cp_child_stm": -34,
+          "final_static_cp_root_player": 34,
+          "final_static_cp_white": 34,
+          "move_san": "Bf5",
+          "move_uci": "c2f5",
+          "nnue_raw_internal_child_stm": -100,
+          "physical_head": 51,
+          "rank": 2,
+          "raw_route": 73
+        }
+      ],
+      "family": "e276b35aabb39c49772c3a75023c8a4a2b220492ff3d6d6dba02e37fc9f77cd8",
+      "fen": "8/5pk1/p7/1p1p4/1b1P1K2/5PP1/PPB1r1P1/7R w - - 1 17",
+      "gross_inversion": false,
+      "identical_physical_heads": true,
+      "position_id": "b976a5ed39ecb581bcf6b3ddcf1cf264fb6ae025bd496d33eaf24d974ebfbd6a",
+      "root_turn": "White",
+      "searches": [
+        {
+          "bestmove_uci": "c2b3",
+          "depth": 9,
+          "margin_cp": 31,
+          "ranks": [
+            {
+              "move_san": "Bb3",
+              "move_uci": "c2b3",
+              "pv_uci": [
+                "c2b3",
+                "e2b2",
+                "b3d5",
+                "b2g2",
+                "g3g4"
+              ],
+              "rank": 1,
+              "reported_nodes": 4580,
+              "score_cp_root": 35
+            },
+            {
+              "move_san": "Bf5",
+              "move_uci": "c2f5",
+              "pv_uci": [
+                "c2f5",
+                "b4d6",
+                "f4g5",
+                "d6e7",
+                "g5g4",
+                "e2b2"
+              ],
+              "rank": 2,
+              "reported_nodes": 4580,
+              "score_cp_root": 4
+            }
+          ]
+        },
+        {
+          "bestmove_uci": "c2b3",
+          "depth": 13,
+          "margin_cp": 43,
+          "ranks": [
+            {
+              "move_san": "Bb3",
+              "move_uci": "c2b3",
+              "pv_uci": [
+                "c2b3",
+                "b4d6",
+                "f4f5",
+                "e2g2",
+                "b3d5",
+                "g2g3",
+                "h1c1",
+                "g3g6",
+                "c1c6",
+                "g6f6",
+                "f5e4",
+                "a6a5"
+              ],
+              "rank": 1,
+              "reported_nodes": 15725,
+              "score_cp_root": 50
+            },
+            {
+              "move_san": "Bf5",
+              "move_uci": "c2f5",
+              "pv_uci": [
+                "c2f5",
+                "e2b2",
+                "f4e5",
+                "b2e2",
+                "e5d5",
+                "e2a2",
+                "h1b1"
+              ],
+              "rank": 2,
+              "reported_nodes": 15725,
+              "score_cp_root": 7
+            }
+          ]
+        }
+      ],
+      "static_parent_margin_cp": -10
+    }
+  ],
+  "clear_pair_rule": "Same legal ordered top two at both depths; exact unbounded CP; both margins>=20 CP; margins differ by<=20 CP; both depth13 scores within[-250,250].",
+  "counts": {
+    "both_child_statics_available": 159,
+    "child_exclusions": {
+      "in_check_static_unavailable": 38
+    },
+    "gross_inversions": 4,
+    "inversion_assessable": 6,
+    "ordered_top_two_stable": 58,
+    "roots": 192,
+    "teacher_clear": 6,
+    "teacher_exclusions": {
+      "depth13_margin_below_20_cp": 104,
+      "depth13_mate_final_score": 2,
+      "depth13_score_outside_250_cp": 29,
+      "depth9_margin_below_20_cp": 94,
+      "margin_difference_above_20_cp": 78,
+      "ordered_top_two_disagreement": 132
+    }
+  },
+  "coverage": {
+    "candidate_children": 384,
+    "child_eval_attempts": 346,
+    "completed_roots": 192,
+    "completed_searches": 384,
+    "measured_child_statics": 346,
+    "original_optimization_families": 48,
+    "original_optimization_positions": 1536,
+    "requested_searches": 384,
+    "roots_without_two_candidate_children": 0,
+    "selected_families": 48,
+    "selected_roots": 192
+  },
+  "credits": {
+    "base": "Stockfish developers and contributors",
+    "lab": "0mis/stockfish-weight-space-lab",
+    "source_license": "GPL-3.0-or-later",
+    "test1757_network": "Shawn Xu (xu-shawn)",
+    "upstream_network_license": "CC0"
+  },
+  "engine_sha256": "12a8e7bfdd9b1189b4350bd9ebef3501be1e89bd5fa41dcb56921f85ba23869a",
+  "exclusion_counts_are_overlapping": true,
+  "formal_alpha_reserved": false,
+  "gross_inversion_rule": "A clear pair with both child statics available and rank1-minus-rank2 root-perspective final static margin<=-12 CP.",
+  "limitations": [
+    "These are selected retired optimization positions, not an unbiased error-rate estimate or held-out strength test.",
+    "Search labels use the same original test1757 engine/network at MultiPV2, depths9 and13, T1/H16; they are fallible diagnostic rankings.",
+    "Three of the four gross-case played moves were made by the official opponent and agree with diagnostic rank1.",
+    "The original test1757 played Re1 with a PGN-recorded depth16, while this fresh MultiPV2 depth13 label ranks Qxc4 first. That disagreement alone does not prove a live playing error.",
+    "PGN depth and score are recorded move annotations; they are not evidence of an identical clock, hash, search state or MultiPV setting to this diagnostic.",
+    "Parent routing and the public corpus builder reuse previously hash-verified pure artifacts; raw search parsing, legal replay, signs, thresholds and aggregation are independently implemented here."
+  ],
+  "original_network_sha256": "18cd32e11a9cac7c595bc6ebf1301088da8e1f2c7b31efda88dbc74c71f5d2cf",
+  "schema": "test1757-public-sibling-diagnostic-v1",
+  "scope": "Experimental data-only sibling-ranking diagnostic; no edited network or verified Elo gain.",
+  "search_settings": {
+    "depths": [
+      9,
+      13
+    ],
+    "fresh_state_per_search": true,
+    "hash_mb": 16,
+    "multipv": 2,
+    "threads": 1
+  },
+  "sign_conversion": "Printed final static score is White-relative. Convert to the child side to move, then negate to the root player before subtracting rank2 from rank1.",
+  "sources": {
+    "archive_bytes": 2525921,
+    "archive_sha256": "618de8d35f66d5454a9713061bc49c5322ff4e72446e1ccff66a7ba7f9b4b8a5",
+    "artifact_id": 13660178922,
+    "driver_commit": "39fd08831c65a61df4da6a4102f071a4320e37bd",
+    "driver_url": "https://github.com/0mis/Stockfish/tree/39fd08831c65a61df4da6a4102f071a4320e37bd/research/sibling_diagnostic",
+    "plan_sha256": "554ea5a418980ea9b21dc72e2835e9e367534d321052b67c3d9686f825b566ac",
+    "public_edited_games_sha256": "8bd56ec5f58ef65881ed5ae2d7ef6683683893c34c10b94b3bb0f2d5fc83dde9",
+    "public_games_commit": "6831500a4c6b22d64109a38bb0dc5bbf5b6f8fe0",
+    "public_games_url": "https://github.com/0mis/stockfish-weight-space-lab/tree/6831500a4c6b22d64109a38bb0dc5bbf5b6f8fe0/results",
+    "public_parent_games_sha256": "1acfc5b48a1c20aa43947fbde0ec0ea6c413f8bf76a7265dbe3d8e47c711de5d",
+    "run_url": "https://github.com/0mis/Stockfish/actions/runs/42589576747",
+    "source_game_links_sha256": "d84b7a8d1a33a2102b194de37720846418c8332fcf56376fdd7f16d01d3bea8e",
+    "source_result_sha256": "9ee3710d3324a0f731c5d8851d53ced6f4332389b11239b68534e3b92d61c1b6",
+    "source_rows_sha256": "768854b21eb1fc7463b7c92317cab1a673f4fd078f02d36e12d5e0ae4cb097ff"
+  },
+  "status": "independently_recomputed_hosted_baseline_diagnostic",
+  "verified_gain": false
+}
