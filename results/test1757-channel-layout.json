@@ -1,0 +1,45 @@
+{
+  "schema": "test1757-public-channel-layout-v1",
+  "experiment": "Reorder 512 test1757 channels to reduce active groups of four on held-out opening families.",
+  "metric": "A four-channel group is active if any channel has a nonzero product activation. Counts include both perspectives.",
+  "corpus": {
+    "source_games": 256,
+    "source_game_files": 2,
+    "opening_families": 63
+  },
+  "optimization": {
+    "opening_families": 48,
+    "positions": 1536,
+    "four_channel_groups_evaluated": 393216,
+    "active_groups_original_order": 235587,
+    "active_groups_fitted_order": 234224,
+    "active_groups_saved": 1363
+  },
+  "holdout": {
+    "opening_families": 15,
+    "positions": 480,
+    "four_channel_groups_evaluated": 122880,
+    "active_groups_original_order": 74186,
+    "active_groups_fitted_order": 74153,
+    "active_groups_saved": 33,
+    "families_with_fewer_active_groups": 8,
+    "relative_active_groups_saved": 0.0004448278650958402,
+    "percent_active_groups_saved": 0.04448278650958402
+  },
+  "selection": {
+    "minimum_percent_active_groups_saved": 1.0,
+    "minimum_families_with_fewer_active_groups": 8,
+    "heldout_gate_passed": false,
+    "candidate_network_generated": false,
+    "timed_comparisons": 0,
+    "new_strength_games": 0
+  },
+  "evidence": {
+    "input_network_sha256": "18cd32e11a9cac7c595bc6ebf1301088da8e1f2c7b31efda88dbc74c71f5d2cf",
+    "permutation_json_sha256": "34f60cc6afae136be5cacf0e858ffce3ff117d6073554a9d0508ef6090322cd8",
+    "result_json_sha256": "34bca6df5a07f440fc70ea8febc47ef1239b37c3910676d7e5543695ae23d8cc",
+    "experiment_plan_url": "https://github.com/0mis/Stockfish/blob/7bef16fe1d9eb0ec8091f9c81b51afb410e62428/research/layout/plan.json",
+    "windows_run_url": "https://github.com/0mis/Stockfish/actions/runs/42569407166",
+    "public_game_results_url": "https://github.com/0mis/stockfish-weight-space-lab/tree/6831500a4c6b22d64109a38bb0dc5bbf5b6f8fe0/results"
+  }
+}
