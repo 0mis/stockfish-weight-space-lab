@@ -53,6 +53,24 @@ Official state: **stopped_without_sprt_decision**; approved: **no**; finished: *
 | 0 / 0 / 0 | 0–0 | 0 (0) | unavailable | unavailable | `no_games` | `undecided` | 0.000000 |
 
 Fishtest's normalized SPRT uses **[0, 2]**, **α = β = 0.05**, and LLR bounds **[−2.944439, +2.944439]**. Fishtest's nominal 95% CI is an SPRT/Brownian approximation, distinct from the local anytime lower bound. Official purges can lower the reported counts; this feed follows those counts. A finished run without an SPRT decision remains stopped/inconclusive. No farm decision automatically establishes an overall verified gain.
+
+### Public Fishtest NNUE edit vs donor parent
+
+[Fishtest run `6af19afb8e7fb2e78bc1cb30`](https://tests.stockfishchess.org/tests/view/6af19afb8e7fb2e78bc1cb30) · `10+0.1 / T1 / H16` · API **current**
+
+The nine-bias d5 NNUE edit faces its test1757 donor parent with the original 18cd network. Both sides use the same prefetch source except the default network filename. This estimates only the NNUE edit relative to its donor parent; it is not an official-Stockfish comparison. Its results remain separate from both earlier farm runs and local trial-0003.
+
+Candidate `d7155994d192b4e723866360ae9285b42e122790` uses `nn-d5c257728ba5.nnue` (bench `2376690`). Donor parent `de342a301195b34b7da76374fe3fadf29352de8d` uses `nn-18cd32e11a9c.nnue` (bench `3464885`).
+
+Zero games have been reported. Elo and its interval are pending.
+
+Official state: **pending_approval**; approved: **no**; finished: **no**. A stale API label means these are the last validated official aggregates.
+
+| W / D / L | Points | Games (pairs) | Fishtest logistic Elo | Fishtest nominal 95% CI | Elo availability | SPRT state | LLR |
+| ---: | ---: | ---: | ---: | --- | --- | --- | ---: |
+| 0 / 0 / 0 | 0–0 | 0 (0) | unavailable | unavailable | `no_games` | `undecided` | 0.000000 |
+
+Fishtest's normalized SPRT uses **[0, 2]**, **α = β = 0.05**, and LLR bounds **[−2.944439, +2.944439]**. Fishtest's nominal 95% CI is an SPRT/Brownian approximation, distinct from the local anytime lower bound. Official purges can lower the reported counts; this feed follows those counts. A finished run without an SPRT decision remains stopped/inconclusive. No farm decision automatically establishes an overall verified gain.
 <!-- live-status:end -->
 
 The current real-clock comparison uses one thread, 64 MiB hash and `60+0.6` for both engines. Its references are Stockfish 261025, the leader on the [SPCC VLTC list](https://www.sp-cc.de/), and the official November 6 development build `7cdd5e89`. The second comparison starts after a positive statistical decision against the first reference. An independent integrity audit is also required before claiming a verified gain.
