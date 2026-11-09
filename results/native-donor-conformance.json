@@ -27,12 +27,19 @@
   "engine_sha256_reported_by_ci": "12a8e7bfdd9b1189b4350bd9ebef3501be1e89bd5fa41dcb56921f85ba23869a",
   "exact_values_verified": 44,
   "github_actions_run": "https://github.com/0mis/Stockfish/actions/runs/42543250921",
-  "limitations": [
-    "Executable retained inside verified ZIP; not extracted or read by this audit.",
-    "Engine/network byte hashes and unchanged-before/after checks are authenticated remote-driver evidence, not local rehashes.",
-    "Five runtime driver files are archived; reviewed descriptive README is retained in draft-v3 but absent from archive."
-  ],
-  "local_execution_qualified": false,
+  "local_acceptance": {
+    "bench_signatures": [
+      2854625,
+      2854625
+    ],
+    "checked_utc": "2026-11-09T01:49:08.275901+00:00",
+    "engine_sha256": "12a8e7bfdd9b1189b4350bd9ebef3501be1e89bd5fa41dcb56921f85ba23869a",
+    "network_sha256": "034f47e652a6a0354f9099993535a0405f4933146fc6d0b913583696bfbdacbd",
+    "perft4_nodes": 197281,
+    "private_acceptance_receipt_sha256": "d733b4f48a3c0e54fcf3003bf8fa7548e2bf9bf3fd43dae6f5a7f19d72ad517f",
+    "scope": "Subsequent local executable and network rehashes, contained launch checks, repeated bench and perft. No playing-strength claim."
+  },
+  "local_execution_qualified": true,
   "mismatches": 0,
   "networks": {
     "donor": {
@@ -48,6 +55,11 @@
   },
   "original_probes_sha256": "78b9f002c61796cc4fcad7bab2026e581221fea568d625a3073caa618d97b3b1",
   "original_request_sha256": "4aa21bdcc8dddd3403c0363a0b4c5a44da6748ce3f754ff0918fc0eb40fea25b",
+  "passive_audit_limitations": [
+    "Executable retained inside verified ZIP; not extracted or read by this audit.",
+    "Engine/network byte hashes and unchanged-before/after checks are authenticated remote-driver evidence, not local rehashes.",
+    "Five runtime driver files are archived; reviewed descriptive README is retained in draft-v3 but absent from archive."
+  ],
   "passive_verifier_sha256": "86c5a42c9c13bcc5ca9f36c5f8d6b5ff9eedae7fe7fe068f8a036b35b3701cae",
   "private_passive_receipt_sha256": "c62eb0ac2be1be5b37a0a1d0fbac8c33d08dca2b360bfb1db4dec08f2f50136f",
   "raw_synthetic_evidence": {
