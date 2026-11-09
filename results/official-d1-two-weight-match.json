@@ -1,0 +1,119 @@
+{
+  "candidate_nnue_sha256": "80124404107a47a02f0c22903b21d60ec2718a868677e1fb526e5f55bf425292",
+  "candidate_points": 60.0,
+  "changed_weights": 2,
+  "chunk_audit_sha256": [
+    "9e72309297d2e39c3e6a5d8b8b06c2b08c60a4e68e6d67636ca909b572424226",
+    "d11cf6216035f8e16f9e6018e346807f77db94ae7815a217ff44b6a5cd4a33d0",
+    "eee096e5e76d80d0edfb9330dcfb9e3b27b3a5ffed7252f15564c1d673551a1b",
+    "c65f48bdfa00e26b3a09ca6c6cc8a113b62ec8d92a8196567d360f5f63740ed8",
+    "facf8a091ea333318fae0a8949af609991e05f377711db5d7a7fe7d8fc6c7f3f",
+    "ac302b39569d0b9097b0198304fa2276e086b0941dfcf7e43170461eab5eab06",
+    "e87feb984d2c2435971adaa5b0ce23b297d63fc4cac250932c6a6748b809f3c1",
+    "d2c84aefa89856d7c6752fbd093e549bacf92c459242e5db8b41b69765c81893",
+    "6d84575d83f3b283d6dab7631cb48725f4d7f5020b87f0f443de9c4175c34599",
+    "d2ccb5e20bbd569e3529ce742d352da5faa0e4aaad353b4ae6c54be869573a36",
+    "b0d6a3eda0962798b4972eba0b6f0b9fed03e65c7834ee39287e81b580de622b",
+    "8868611bc0e40464a91c370f71a8ba749d6fd9e0eff679e4dbd633914f7fef4d",
+    "42e3c05c0a2ac5a48a51e7d70f15b23f8e90052df0f5a8e3c8c5e28584780379",
+    "2f3985191608c0f6dac25d868629aef9f976682fb4c163578dabc05677c2814d",
+    "ca8eb208debbef1f4beb88452f62437688b0c67d3f65c0e40769ef822f5a0479",
+    "c2e7c59f66a1f64e6c14f99ae0d07eafc567269a00fe165f5e1012351b1716df"
+  ],
+  "classification": "development screen",
+  "final_audit_sha256": "acf62c8d5acd23b51519b15ac8f1d236a71dca853654115d7fc19f69dc70531b",
+  "games_file": "official-d1-two-weight-match/games-utc.pgn",
+  "games_sha256": "81b9df1a960b0da84da25f5e53d7de4c64ab9ec9811ad27b331c314775cce889",
+  "hash_mb_per_side": 64,
+  "nominal_paired_uncertainty": {
+    "additional_games": 0,
+    "coefficient_hash_encoding": "JSON compact array of 257 base-10 integer strings in index order",
+    "coefficient_vector_sha256": "7e2483b05d9fc8c000fbb5a7dfb53f12ff6d435f07c3b0f60a893ee9c57dedba",
+    "empirical_pentanomial": [
+      0,
+      19,
+      34,
+      11,
+      0
+    ],
+    "iid_empirical_pair_draws": 64,
+    "method": "exact_integer_empirical_paired_bootstrap_percentile",
+    "nominal_central_percent": 95,
+    "normalizing_count": "39402006196394479212279040100143613805079739270465446667948293404245721771497210611414266254884915640806627990306816",
+    "observed_score_fraction": {
+      "denominator": 256,
+      "numerator": 120
+    },
+    "outcome_units": "One pair has twice-candidate-points in {0,1,2,3,4}; bootstrap score fraction is their 64-draw sum divided by 256.",
+    "polynomial": "(c0 + c1*z + c2*z^2 + c3*z^3 + c4*z^4)^64; sum(c)=64",
+    "quantile_rule": "Smallest integer k with 40*CDF_count(k) >= q*64^64, for q=1 and 39; no interpolation.",
+    "quantiles": [
+      {
+        "cdf_count_at": "1499493867733363084847308644907364575042675139674550897405826980911641755523897018861527593584728676030695366521669",
+        "cdf_count_before": "978702733398760860342057795491872423332714831173360636930183268547784586505698963371536338024254442048040785124869",
+        "logistic_elo": {
+          "boundary": null,
+          "elo": -49.18406825048482
+        },
+        "percentile": {
+          "denominator": 40,
+          "numerator": 1
+        },
+        "score_fraction": {
+          "denominator": 256,
+          "numerator": 110
+        },
+        "sum_twice_pair_points": 110
+      },
+      {
+        "cdf_count_at": "38746877750323848887466597497468150598837929596046037582118088421047562480890025276506375468376155529288509984270179",
+        "cdf_count_before": "38380828235001637248314236677966036690066627209666101218339209797620696546508593239956862443786122601487371255838179",
+        "logistic_elo": {
+          "boundary": null,
+          "elo": 8.144513059083145
+        },
+        "percentile": {
+          "denominator": 40,
+          "numerator": 39
+        },
+        "score_fraction": {
+          "denominator": 256,
+          "numerator": 131
+        },
+        "sum_twice_pair_points": 131
+      }
+    ],
+    "random_seed_used": null,
+    "relative_logistic_elo_descriptive": {
+      "boundary": null,
+      "elo": -21.74306492903708
+    },
+    "resampling_unit": "reversed_color_pair",
+    "scope": "Descriptive empirical uncertainty for these development pairs. Fitting, selection and prior exposure limit inference; formal strength confirmation remains separate."
+  },
+  "official_stockfish_commit": "7cdd5e89a39fe3071b67d91c7bb07d712044bf76",
+  "opening_sample": "Registered draws with replacement from retired development openings. Colors reversed on each draw.",
+  "original_nnue_sha256": "d1ee674a62ca754648fb8c2907ff4e92f0c3acff28f59afa0f5bd4e3949538f1",
+  "pairs": 64,
+  "pentanomial": [
+    0,
+    19,
+    34,
+    11,
+    0
+  ],
+  "same_executable_both_sides_sha256": "b67c37d0d45e3540e311392aeeb699e3a745f16e172bc3fc6f85e0782093842b",
+  "schema": "official-d1-two-weight-public-match/1",
+  "selected_for_further_testing": false,
+  "stockfish_points": 68.0,
+  "threads_per_side": 1,
+  "time_control": "10+0.1",
+  "totals": {
+    "clock_forfeits": 0,
+    "draws": 70,
+    "games": 128,
+    "losses": 33,
+    "wins": 25
+  },
+  "verified_elo_gain": false
+}
