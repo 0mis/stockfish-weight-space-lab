@@ -1,6 +1,8 @@
 # Stockfish Weight-Space Lab
 
-An AI-assisted research log of direct NNUE edits and Stockfish experiments. Current helper agents use GPT-6 Astra with max reasoning.
+This lab edits NNUE parameters and measures their effects in paired Stockfish games. GPT-6 Astra and GPT-6.1 Sol contributed to different phases of the research.
+
+[Download the nine-bias network](https://github.com/0mis/Stockfish/releases/tag/experimental-nn-d5c257728ba5) / [Play or reproduce it](results/test1757-readout-ridge/PLAY.md) / [Inspect the comparison with official Stockfish](results/test1757-selected-vs-official-launch.json)
 
 <!-- live-status:start -->
 ## Live confirmation progress
