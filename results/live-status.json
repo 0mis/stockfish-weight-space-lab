@@ -83,33 +83,33 @@
       "reported_elo": {
         "availability": "current",
         "confidence_interval": [
-          -4.272328258085563,
-          1.223614607997672
+          -4.383551225953389,
+          1.1073942434924722
         ],
         "confidence_percent": 95,
-        "estimate": -1.524261470577407,
+        "estimate": -1.637976237241074,
         "estimate_scale": "logistic",
         "label": "Fishtest logistic Elo and nominal 95% CI",
         "model": "normalized",
         "model_scope": "SPRT"
       },
       "results": {
-        "candidate_points": 7375.5,
+        "candidate_points": 7389.0,
         "crashes": 0,
-        "draws": 7325,
-        "games": 14816,
-        "losses": 3778,
-        "pairs": 7408,
+        "draws": 7342,
+        "games": 14848,
+        "losses": 3788,
+        "pairs": 7424,
         "pentanomial": [
           23,
-          1734,
-          3953,
-          1681,
+          1741,
+          3960,
+          1683,
           17
         ],
-        "reference_points": 7440.5,
+        "reference_points": 7459.0,
         "time_losses": 0,
-        "wins": 3713
+        "wins": 3718
       },
       "sprt": {
         "alpha": 0.05,
@@ -117,7 +117,7 @@
         "elo0": 0.0,
         "elo1": 2.0,
         "elo_model": "normalized",
-        "llr": -1.0072268995786584,
+        "llr": -1.0662093415019291,
         "lower_bound": -2.9444389791664403,
         "state": "",
         "upper_bound": 2.9444389791664403
@@ -146,6 +146,84 @@
   "sampler_state": "not_inferred_from_ledger",
   "schema_version": 1,
   "scope": "This frozen candidate and references at the declared time control and test hardware only.",
+  "source_fishtest": {
+    "availability": "current",
+    "configuration": {
+      "adjudication": true,
+      "auto_purge": false,
+      "base_nets": [
+        "nn-d1ee674a62ca.nnue"
+      ],
+      "base_options": "Hash=16",
+      "base_signature": "1556650",
+      "book": "UHO_Lichess_4852_v1.epd",
+      "book_depth": "8",
+      "new_nets": [
+        "nn-18cd32e11a9c.nnue"
+      ],
+      "new_options": "Hash=16",
+      "new_signature": "3464885",
+      "new_tc": "10+0.1",
+      "num_games": 800000,
+      "resolved_base": "7cdd5e89a39fe3071b67d91c7bb07d712044bf76",
+      "resolved_new": "de342a301195b34b7da76374fe3fadf29352de8d",
+      "tc": "10+0.1",
+      "tests_repo": "https://github.com/0mis/Stockfish",
+      "threads": 1
+    },
+    "experiment": "Public test1757 prefetch source with the original 18cd network.",
+    "observation": {
+      "approved": false,
+      "deleted": false,
+      "failed": false,
+      "finished": true,
+      "maximum_games": 800000,
+      "reported_elo": {
+        "availability": "no_games",
+        "confidence_interval": null,
+        "confidence_percent": 95,
+        "estimate": null,
+        "estimate_scale": "logistic",
+        "label": "Fishtest logistic Elo and nominal 95% CI",
+        "model": "normalized",
+        "model_scope": "SPRT"
+      },
+      "results": {
+        "candidate_points": 0.0,
+        "crashes": 0,
+        "draws": 0,
+        "games": 0,
+        "losses": 0,
+        "pairs": 0,
+        "pentanomial": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "reference_points": 0.0,
+        "time_losses": 0,
+        "wins": 0
+      },
+      "sprt": {
+        "alpha": 0.05,
+        "beta": 0.05,
+        "elo0": 0.0,
+        "elo1": 2.0,
+        "elo_model": "normalized",
+        "llr": 0.0,
+        "lower_bound": -2.9444389791664403,
+        "state": "",
+        "upper_bound": 2.9444389791664403
+      },
+      "status": "stopped_without_sprt_decision"
+    },
+    "run_id": "6af16e648e7fb2e78bc1cb09",
+    "same_tree_tested_commit": "7a17b53bcaf93f54a23ad65f309c413585500c82",
+    "source_tree": "8e3164caf60d281cb4b1d00a699364e04b354451",
+    "url": "https://tests.stockfishchess.org/tests/view/6af16e648e7fb2e78bc1cb09"
+  },
   "statistical_pass": false,
   "trial_closed": false,
   "trial_id": "trial-0003"
