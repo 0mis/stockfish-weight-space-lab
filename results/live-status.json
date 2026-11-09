@@ -6,27 +6,27 @@
   },
   "comparisons": [
     {
-      "anytime_lower_logistic_elo": -37.92856062794321,
-      "candidate_points": 118.0,
+      "anytime_lower_logistic_elo": -37.617426864853186,
+      "candidate_points": 119.0,
       "draws": 116,
       "estimate_boundary": null,
-      "games": 230,
+      "games": 232,
       "log_e_value": 0.002047581921858388,
       "log_gain_threshold": 7.783224016336037,
-      "logistic_elo_estimate": 9.065593854377552,
-      "losses": 54,
+      "logistic_elo_estimate": 8.987407163644464,
+      "losses": 55,
       "lower_bound_boundary": null,
       "maximum_pairs": 8192,
       "minimum_pairs": 128,
       "minimum_pairs_reached": false,
       "one_sided_confidence_percent": 99.95833333333334,
-      "pairs": 115,
+      "pairs": 116,
       "reference": "spcc-261025",
-      "reference_points": 112.0,
+      "reference_points": 113.0,
       "role": "strongest_rated",
-      "score_fraction": 0.5130434782608696,
+      "score_fraction": 0.5129310344827587,
       "statistical_decision": "continue",
-      "wins": 60
+      "wins": 61
     },
     {
       "anytime_lower_logistic_elo": null,
@@ -83,8 +83,10 @@
       "reported_elo": {
         "availability": "no_games",
         "confidence_interval": null,
+        "confidence_percent": 95,
         "estimate": null,
-        "label": "Fishtest-reported Elo and CI",
+        "estimate_scale": "logistic",
+        "label": "Fishtest logistic Elo and nominal 95% CI",
         "model": "normalized",
         "model_scope": "SPRT"
       },
@@ -125,8 +127,8 @@
   "integrity_audit": "independent_terminal_audit_pending",
   "interpretation": "Provisional estimates. Statistical gain requires both reference gates and an independent terminal integrity audit before verified-gain wording. A statistical continue decision does not report sampler liveness.",
   "ledger_prefix": {
-    "event_index": 288,
-    "head_sha256": "118e6748faad7a92d492397eb2d32cb5ef8769f100c194a42ced1d3ab63f4441"
+    "event_index": 289,
+    "head_sha256": "079b5100d6cda6989c8c9c8003e104403d4bf7413517b43ccea599eaf45c9780"
   },
   "protocol": {
     "confidence_interpretation": "Fixed protocol coverage under its assumptions, not a probability of superiority.",
