@@ -26,7 +26,7 @@ Ledger checkpoint: event `508`, SHA-256 `b18de8765f4e0d347e34d8cf821e675d035239e
 
 ### Public Fishtest NNUE-only test
 
-[Official run `6af10a258e7fb2e78bc1ca5c`](https://tests.stockfishchess.org/tests/view/6af10a258e7fb2e78bc1ca5c) · `10+0.1 / T1 / H16` · API **current**
+[Official run `6af10a258e7fb2e78bc1ca5c`](https://tests.stockfishchess.org/tests/view/6af10a258e7fb2e78bc1ca5c) · `10+0.1 / T1 / H16` · API **stale**
 
 This is a separate NNUE-only experiment. Its executable, clocks, normalized SPRT and results remain separate from local trial-0003's paired e-process.
 
@@ -34,7 +34,7 @@ Official state: **approved_open**; approved: **yes**; finished: **no**. A stale 
 
 | W / D / L | Points | Games (pairs) | Fishtest logistic Elo | Fishtest nominal 95% CI | Elo availability | SPRT state | LLR |
 | ---: | ---: | ---: | ---: | --- | --- | --- | ---: |
-| 15181 / 29466 / 15225 | 29914–29958 | 59872 (29936) | -0.25 | [-1.63, +1.12] | `current` | `undecided` | -1.504912 |
+| 15181 / 29466 / 15225 | 29914–29958 | 59872 (29936) | -0.25 | [-1.63, +1.12] | `stale` | `undecided` | -1.504912 |
 
 Fishtest's normalized SPRT uses **[0, 2]**, **α = β = 0.05**, and LLR bounds **[−2.944439, +2.944439]**. Fishtest's nominal 95% CI is an SPRT/Brownian approximation, distinct from the local anytime lower bound. Official purges can lower the reported counts; this feed follows those counts. A finished run without an SPRT decision remains stopped/inconclusive. No farm decision automatically establishes an overall verified gain.
 
@@ -42,7 +42,7 @@ Candidate network: `nn-fcbaf7d2197c.nnue`; reference: `nn-d1ee674a62ca.nnue`. So
 
 ### Public Fishtest test1757 source and network test
 
-[Official run `6af16e648e7fb2e78bc1cb09`](https://tests.stockfishchess.org/tests/view/6af16e648e7fb2e78bc1cb09) · `10+0.1 / T1 / H16` · API **current**
+[Official run `6af16e648e7fb2e78bc1cb09`](https://tests.stockfishchess.org/tests/view/6af16e648e7fb2e78bc1cb09) · `10+0.1 / T1 / H16` · API **stale**
 
 The test1757 prefetch source and original 18cd network face official Stockfish with the D1 network. The Elo estimate below applies only to this run.
 
@@ -86,7 +86,7 @@ Official state: **approved_open**; approved: **yes**; finished: **no**. A stale 
 
 | W / D / L | Points | Games (pairs) | Fishtest logistic Elo | Fishtest nominal 95% CI | Elo availability | SPRT state | LLR |
 | ---: | ---: | ---: | ---: | --- | --- | --- | ---: |
-| 2207 / 4297 / 2232 | 4355.5–4380.5 | 8736 (4368) | -0.99 | [-4.53, +2.54] | `current` | `undecided` | -0.441014 |
+| 2230 / 4348 / 2254 | 4404–4428 | 8832 (4416) | -0.94 | [-4.46, +2.57] | `current` | `undecided` | -0.431141 |
 
 Fishtest's normalized SPRT uses **[0, 2]**, **α = β = 0.05**, and LLR bounds **[−2.944439, +2.944439]**. Fishtest's nominal 95% CI is an SPRT/Brownian approximation, distinct from the local anytime lower bound. Official purges can lower the reported counts; this feed follows those counts. A finished run without an SPRT decision remains stopped/inconclusive. No farm decision automatically establishes an overall verified gain.
 

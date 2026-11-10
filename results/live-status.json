@@ -90,33 +90,33 @@
       "reported_elo": {
         "availability": "current",
         "confidence_interval": [
-          -4.533139151273963,
-          2.5443995737789216
+          -4.458935433261971,
+          2.5705006647272857
         ],
         "confidence_percent": 95,
-        "estimate": -0.9942666379429554,
+        "estimate": -0.9441207627884832,
         "estimate_scale": "logistic",
         "label": "Fishtest logistic Elo and nominal 95% CI",
         "model": "normalized",
         "model_scope": "SPRT"
       },
       "results": {
-        "candidate_points": 4355.5,
+        "candidate_points": 4404.0,
         "crashes": 0,
-        "draws": 4297,
-        "games": 8736,
-        "losses": 2232,
-        "pairs": 4368,
+        "draws": 4348,
+        "games": 8832,
+        "losses": 2254,
+        "pairs": 4416,
         "pentanomial": [
           8,
-          1009,
-          2361,
-          980,
+          1017,
+          2392,
+          989,
           10
         ],
-        "reference_points": 4380.5,
+        "reference_points": 4428.0,
         "time_losses": 0,
-        "wins": 2207
+        "wins": 2230
       },
       "sprt": {
         "alpha": 0.05,
@@ -124,7 +124,7 @@
         "elo0": 0.0,
         "elo1": 2.0,
         "elo_model": "normalized",
-        "llr": -0.4410143882008865,
+        "llr": -0.4311413543788456,
         "lower_bound": -2.9444389791664403,
         "state": "",
         "upper_bound": 2.9444389791664403
@@ -216,7 +216,7 @@
     "url": "https://tests.stockfishchess.org/tests/view/6af19afb8e7fb2e78bc1cb30"
   },
   "fishtest": {
-    "availability": "current",
+    "availability": "stale",
     "configuration": {
       "base_nets": [
         "nn-d1ee674a62ca.nnue"
@@ -243,7 +243,7 @@
       "finished": false,
       "maximum_games": 800000,
       "reported_elo": {
-        "availability": "current",
+        "availability": "stale",
         "confidence_interval": [
           -1.6279688741403864,
           1.1226456317144997
@@ -309,7 +309,7 @@
   "schema_version": 1,
   "scope": "This frozen candidate and references at the declared time control and test hardware only.",
   "source_fishtest": {
-    "availability": "current",
+    "availability": "stale",
     "configuration": {
       "adjudication": true,
       "auto_purge": false,
