@@ -1,0 +1,54 @@
+{
+  "study": "Unedited test1758 with history-floor engine versus official November 6 Stockfish",
+  "run": "https://github.com/0mis/Stockfish/actions/runs/42702655777",
+  "implementation_source_commit": "d19047cc44fae773a590be3b0b9f08fdd75acdc7",
+  "engine_sha256": "ae1d4772a71529085b26d7460e76fcf65dbe09782e55ea67ecef2e4f033c5ba5",
+  "network_sha256": "68752b755c93e419e714829c4aac1bbd66e9509a96cf175be28a00164b6d7f21",
+  "network_source": "https://github.com/xu-shawn/Stockfish/commit/73fe1eaca99ac4a09252c876aa6b1cceeaf7c4c7",
+  "baseline_source_commit": "7cdd5e89a39fe3071b67d91c7bb07d712044bf76",
+  "baseline_engine_sha256": "b67c37d0d45e3540e311392aeeb699e3a745f16e172bc3fc6f85e0782093842b",
+  "baseline_network_sha256": "d1ee674a62ca754648fb8c2907ff4e92f0c3acff28f59afa0f5bd4e3949538f1",
+  "time_control": "10+0.1",
+  "threads": 1,
+  "hash_mib": 64,
+  "opening_pairs": 128,
+  "games": 256,
+  "wins": 51,
+  "draws": 167,
+  "losses": 38,
+  "candidate_points": 134.5,
+  "reference_points": 121.5,
+  "pentanomial": [
+    0,
+    14,
+    87,
+    27,
+    0
+  ],
+  "logistic_elo_point_estimate": 17.65840256163831,
+  "nominal_95_paired_bootstrap_elo": [
+    1.3571771589357418,
+    34.03773600517424
+  ],
+  "clock_loss_by_color": {
+    "candidate_black": {
+      "candidate_reported_clock_losses": 0,
+      "draws": 89,
+      "games": 128,
+      "losses": 36,
+      "official_reported_clock_losses": 0,
+      "wins": 3
+    },
+    "candidate_white": {
+      "candidate_reported_clock_losses": 0,
+      "draws": 78,
+      "games": 128,
+      "losses": 2,
+      "official_reported_clock_losses": 0,
+      "wins": 48
+    }
+  },
+  "pgn_sha256": "51bb0a27f812ec32bf73fec4d8606f22d5abf78fb1981f5c38916695847a7b01",
+  "scope": "Selected configuration on retired development openings against the pinned November 6 reference.",
+  "confirmed_strength_gain": false
+}
