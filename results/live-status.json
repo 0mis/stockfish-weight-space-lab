@@ -88,7 +88,7 @@
       "finished": false,
       "maximum_games": 800000,
       "reported_elo": {
-        "availability": "current",
+        "availability": "stale",
         "confidence_interval": [
           -1.2530204152924576,
           3.0675325479846802
