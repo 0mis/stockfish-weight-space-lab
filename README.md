@@ -86,11 +86,29 @@ Official state: **approved_open**; approved: **yes**; finished: **no**. A stale 
 
 | W / D / L | Points | Games (pairs) | Fishtest logistic Elo | Fishtest nominal 95% CI | Elo availability | SPRT state | LLR |
 | ---: | ---: | ---: | ---: | --- | --- | --- | ---: |
-| 7868 / 15313 / 7795 | 15524.5–15451.5 | 30976 (15488) | +0.82 | [-1.07, +2.71] | `current` | `undecided` | 0.346031 |
+| 7876 / 15328 / 7804 | 15540–15468 | 31008 (15504) | +0.81 | [-1.08, +2.70] | `current` | `undecided` | 0.333882 |
 
 Fishtest's normalized SPRT uses **[0, 2]**, **α = β = 0.05**, and LLR bounds **[−2.944439, +2.944439]**. Fishtest's nominal 95% CI is an SPRT/Brownian approximation, distinct from the local anytime lower bound. Official purges can lower the reported counts; this feed follows those counts. A finished run without an SPRT decision remains stopped/inconclusive. No farm decision automatically establishes an overall verified gain.
 
 Candidate network: `nn-d5c257728ba5.nnue`; reference: `nn-18cd32e11a9c.nnue`. Source revisions: `64b0b7a2a78e44f1eade4bb441f8819abbfac6d2` / `43e01e07210948e1130dc687c065d7a3742b2793`.
+
+### Public Fishtest test1758 bias refit
+
+[Official run `6af3a3458e7fb2e78bc1ce2d`](https://tests.stockfishchess.org/tests/view/6af3a3458e7fb2e78bc1ce2d) · `10+0.1 / T1 / H16` · API **current**
+
+This run tests nine refitted FC2 output biases against the original 687 network on the same Stockfish source snapshot. The candidate bench is `2042598` and the reference bench is `1643008`. [Download NNUE](https://github.com/0mis/stockfish-weight-space-lab/releases/download/experimental-687-bias-refit-00e2e7316a86/nn-00e2e7316a86.nnue) · [Release](https://github.com/0mis/stockfish-weight-space-lab/releases/tag/experimental-687-bias-refit-00e2e7316a86).
+
+Zero games have been reported. Elo and its interval are pending.
+
+Official state: **pending_approval**; approved: **no**; finished: **no**. A stale API label means these are the last validated official aggregates.
+
+| W / D / L | Points | Games (pairs) | Fishtest logistic Elo | Fishtest nominal 95% CI | Elo availability | SPRT state | LLR |
+| ---: | ---: | ---: | ---: | --- | --- | --- | ---: |
+| 0 / 0 / 0 | 0–0 | 0 (0) | unavailable | unavailable | `no_games` | `undecided` | 0.000000 |
+
+Fishtest's normalized SPRT uses **[0, 2]**, **α = β = 0.05**, and LLR bounds **[−2.944439, +2.944439]**. Fishtest's nominal 95% CI is an SPRT/Brownian approximation, distinct from the local anytime lower bound. Official purges can lower the reported counts; this feed follows those counts. A finished run without an SPRT decision remains stopped/inconclusive. No farm decision automatically establishes an overall verified gain.
+
+Candidate network: `nn-00e2e7316a86.nnue`; reference: `nn-68752b755c93.nnue`. Source revisions: `e57ccb75e753541cdffb0607bf907701cad3ae73` / `def601cc156f7d41f9ddea76d74515eddf232aaf`.
 <!-- live-status:end -->
 
 Local trial 4 tests the experimental test1757 build, which combines nine output-bias edits to Shawn Xu’s test1757 network with accumulator prefetch and a search-history change. Both engines use one thread, 64 MiB of hash and 60 seconds per side plus 0.6 seconds per move. The first opponent is Stockfish 261025, the SPCC VLTC leader. If that comparison crosses its positive boundary, the second opponent is the official November 6 development revision `7cdd5e89` fixed before play. A verified gain requires both comparisons and an independent game and provenance audit. [Tested source and author credits](https://github.com/0mis/Stockfish/tree/cecfcfd5480afd16b31740b24387f5779d24c0db) · [SPCC ratings](https://www.sp-cc.de/) · [Official reference](https://github.com/official-stockfish/Stockfish/commit/7cdd5e89a39fe3071b67d91c7bb07d712044bf76)

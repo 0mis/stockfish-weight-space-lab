@@ -90,33 +90,33 @@
       "reported_elo": {
         "availability": "current",
         "confidence_interval": [
-          -1.0734136466858757,
-          2.711042464984274
+          -1.0841496844099463,
+          2.697678213864506
         ],
         "confidence_percent": 95,
-        "estimate": 0.8187901294361671,
+        "estimate": 0.8067403753219611,
         "estimate_scale": "logistic",
         "label": "Fishtest logistic Elo and nominal 95% CI",
         "model": "normalized",
         "model_scope": "SPRT"
       },
       "results": {
-        "candidate_points": 15524.5,
+        "candidate_points": 15540.0,
         "crashes": 0,
-        "draws": 15313,
-        "games": 30976,
-        "losses": 7795,
-        "pairs": 15488,
+        "draws": 15328,
+        "games": 31008,
+        "losses": 7804,
+        "pairs": 15504,
         "pentanomial": [
           24,
-          3565,
-          8244,
-          3624,
+          3568,
+          8255,
+          3626,
           31
         ],
-        "reference_points": 15451.5,
+        "reference_points": 15468.0,
         "time_losses": 2,
-        "wins": 7868
+        "wins": 7876
       },
       "sprt": {
         "alpha": 0.05,
@@ -124,7 +124,7 @@
         "elo0": 0.0,
         "elo1": 2.0,
         "elo_model": "normalized",
-        "llr": 0.3460311743356374,
+        "llr": 0.3338816107546313,
         "lower_bound": -2.9444389791664403,
         "state": "",
         "upper_bound": 2.9444389791664403
@@ -387,6 +387,92 @@
     "url": "https://tests.stockfishchess.org/tests/view/6af16e648e7fb2e78bc1cb09"
   },
   "statistical_pass": false,
+  "test1758_refit_fishtest": {
+    "availability": "current",
+    "candidate_network_sha256": "00e2e7316a86beb0ecb81b5a16f1ec78d42704a2219bee28a3067f8956fbaa43",
+    "comparison_scope": "official_test1758_parent_bias_refit",
+    "configuration": {
+      "adjudication": true,
+      "auto_purge": false,
+      "base_nets": [
+        "nn-68752b755c93.nnue"
+      ],
+      "base_options": "Hash=16",
+      "base_signature": "1643008",
+      "base_tag": "def601cc156f7d41f9ddea76d74515eddf232aaf",
+      "book": "UHO_Lichess_4852_v1.epd",
+      "book_depth": "8",
+      "new_nets": [
+        "nn-00e2e7316a86.nnue"
+      ],
+      "new_options": "Hash=16",
+      "new_signature": "2042598",
+      "new_tag": "test1758-bias-refit-00e2e7",
+      "new_tc": "10+0.1",
+      "num_games": 800000,
+      "resolved_base": "def601cc156f7d41f9ddea76d74515eddf232aaf",
+      "resolved_new": "e57ccb75e753541cdffb0607bf907701cad3ae73",
+      "tc": "10+0.1",
+      "tests_repo": "https://github.com/0mis/Stockfish",
+      "threads": 1,
+      "username": "0mis"
+    },
+    "download_url": "https://github.com/0mis/stockfish-weight-space-lab/releases/download/experimental-687-bias-refit-00e2e7316a86/nn-00e2e7316a86.nnue",
+    "experiment": "Nine refitted FC2 output biases in the official test1758 network.",
+    "observation": {
+      "approved": false,
+      "deleted": false,
+      "failed": false,
+      "finished": false,
+      "maximum_games": 800000,
+      "reported_elo": {
+        "availability": "no_games",
+        "confidence_interval": null,
+        "confidence_percent": 95,
+        "estimate": null,
+        "estimate_scale": "logistic",
+        "label": "Fishtest logistic Elo and nominal 95% CI",
+        "model": "normalized",
+        "model_scope": "SPRT"
+      },
+      "results": {
+        "candidate_points": 0.0,
+        "crashes": 0,
+        "draws": 0,
+        "games": 0,
+        "losses": 0,
+        "pairs": 0,
+        "pentanomial": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "reference_points": 0.0,
+        "time_losses": 0,
+        "wins": 0
+      },
+      "sprt": {
+        "alpha": 0.05,
+        "beta": 0.05,
+        "elo0": 0.0,
+        "elo1": 2.0,
+        "elo_model": "normalized",
+        "llr": 0.0,
+        "lower_bound": -2.9444389791664403,
+        "state": "",
+        "upper_bound": 2.9444389791664403
+      },
+      "status": "pending_approval"
+    },
+    "reference_label": "Official Stockfish snapshot with its original 687 network",
+    "release_asset_id": 733321987,
+    "release_asset_url": "https://api.github.com/repos/0mis/stockfish-weight-space-lab/releases/assets/733321987",
+    "release_url": "https://github.com/0mis/stockfish-weight-space-lab/releases/tag/experimental-687-bias-refit-00e2e7316a86",
+    "run_id": "6af3a3458e7fb2e78bc1ce2d",
+    "url": "https://tests.stockfishchess.org/tests/view/6af3a3458e7fb2e78bc1ce2d"
+  },
   "trial_closed": false,
   "trial_id": "trial-0004"
 }
