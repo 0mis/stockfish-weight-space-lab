@@ -30,11 +30,11 @@ Ledger checkpoint: event `554`, SHA-256 `945dc009c0454cc24610ab09dbfaea7f597068e
 
 This is a separate NNUE-only experiment. Its executable, clocks, normalized SPRT and results remain separate from local trial-0003's paired e-process.
 
-Official state: **approved_open**; approved: **yes**; finished: **no**. A stale API label means these are the last validated official aggregates.
+Official state: **sprt_rejected**; approved: **yes**; finished: **yes**. A stale API label means these are the last validated official aggregates.
 
 | W / D / L | Points | Games (pairs) | Fishtest logistic Elo | Fishtest nominal 95% CI | Elo availability | SPRT state | LLR |
 | ---: | ---: | ---: | ---: | --- | --- | --- | ---: |
-| 18078 / 35087 / 18227 | 35621.5–35770.5 | 71392 (35696) | -0.57 | [-1.86, +0.74] | `current` | `undecided` | -2.923237 |
+| 18085 / 35101 / 18238 | 35635.5–35788.5 | 71424 (35712) | -0.58 | [-1.87, +0.74] | `current` | `rejected` | -2.970476 |
 
 Fishtest's normalized SPRT uses **[0, 2]**, **α = β = 0.05**, and LLR bounds **[−2.944439, +2.944439]**. Fishtest's nominal 95% CI is an SPRT/Brownian approximation, distinct from the local anytime lower bound. Official purges can lower the reported counts; this feed follows those counts. A finished run without an SPRT decision remains stopped/inconclusive. No farm decision automatically establishes an overall verified gain.
 
