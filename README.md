@@ -26,7 +26,7 @@ Ledger checkpoint: event `508`, SHA-256 `b18de8765f4e0d347e34d8cf821e675d035239e
 
 ### Public Fishtest NNUE-only test
 
-[Official run `6af10a258e7fb2e78bc1ca5c`](https://tests.stockfishchess.org/tests/view/6af10a258e7fb2e78bc1ca5c) · `10+0.1 / T1 / H16` · API **stale**
+[Official run `6af10a258e7fb2e78bc1ca5c`](https://tests.stockfishchess.org/tests/view/6af10a258e7fb2e78bc1ca5c) · `10+0.1 / T1 / H16` · API **current**
 
 This is a separate NNUE-only experiment. Its executable, clocks, normalized SPRT and results remain separate from local trial-0003's paired e-process.
 
@@ -34,7 +34,7 @@ Official state: **approved_open**; approved: **yes**; finished: **no**. A stale 
 
 | W / D / L | Points | Games (pairs) | Fishtest logistic Elo | Fishtest nominal 95% CI | Elo availability | SPRT state | LLR |
 | ---: | ---: | ---: | ---: | --- | --- | --- | ---: |
-| 15181 / 29466 / 15225 | 29914–29958 | 59872 (29936) | -0.25 | [-1.63, +1.12] | `stale` | `undecided` | -1.504912 |
+| 15201 / 29517 / 15250 | 29959.5–30008.5 | 59968 (29984) | -0.28 | [-1.65, +1.09] | `current` | `undecided` | -1.564996 |
 
 Fishtest's normalized SPRT uses **[0, 2]**, **α = β = 0.05**, and LLR bounds **[−2.944439, +2.944439]**. Fishtest's nominal 95% CI is an SPRT/Brownian approximation, distinct from the local anytime lower bound. Official purges can lower the reported counts; this feed follows those counts. A finished run without an SPRT decision remains stopped/inconclusive. No farm decision automatically establishes an overall verified gain.
 
