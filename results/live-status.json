@@ -90,33 +90,33 @@
       "reported_elo": {
         "availability": "current",
         "confidence_interval": [
-          -1.0692912398418448,
-          2.8065267603067383
+          -1.080817647719587,
+          2.7927261314118135
         ],
         "confidence_percent": 95,
-        "estimate": 0.8685907404751761,
+        "estimate": 0.8559276503007169,
         "estimate_scale": "logistic",
         "label": "Fishtest logistic Elo and nominal 95% CI",
         "model": "normalized",
         "model_scope": "SPRT"
       },
       "results": {
-        "candidate_points": 14837.0,
+        "candidate_points": 14852.5,
         "crashes": 0,
-        "draws": 14608,
-        "games": 29600,
-        "losses": 7459,
-        "pairs": 14800,
+        "draws": 14631,
+        "games": 29632,
+        "losses": 7464,
+        "pairs": 14816,
         "pentanomial": [
           24,
-          3409,
-          7866,
-          3471,
+          3413,
+          7875,
+          3474,
           30
         ],
-        "reference_points": 14763.0,
+        "reference_points": 14779.5,
         "time_losses": 2,
-        "wins": 7533
+        "wins": 7537
       },
       "sprt": {
         "alpha": 0.05,
@@ -124,7 +124,7 @@
         "elo0": 0.0,
         "elo1": 2.0,
         "elo_model": "normalized",
-        "llr": 0.3796102222038077,
+        "llr": 0.3673629615668264,
         "lower_bound": -2.9444389791664403,
         "state": "",
         "upper_bound": 2.9444389791664403
