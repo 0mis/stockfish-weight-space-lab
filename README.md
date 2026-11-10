@@ -86,7 +86,7 @@ Official state: **approved_open**; approved: **yes**; finished: **no**. A stale 
 
 | W / D / L | Points | Games (pairs) | Fishtest logistic Elo | Fishtest nominal 95% CI | Elo availability | SPRT state | LLR |
 | ---: | ---: | ---: | ---: | --- | --- | --- | ---: |
-| 5828 / 11357 / 5759 | 11506.5–11437.5 | 22944 (11472) | +1.04 | [-1.15, +3.24] | `current` | `undecided` | 0.432545 |
+| 5837 / 11371 / 5768 | 11522.5–11453.5 | 22976 (11488) | +1.04 | [-1.15, +3.24] | `current` | `undecided` | 0.431988 |
 
 Fishtest's normalized SPRT uses **[0, 2]**, **α = β = 0.05**, and LLR bounds **[−2.944439, +2.944439]**. Fishtest's nominal 95% CI is an SPRT/Brownian approximation, distinct from the local anytime lower bound. Official purges can lower the reported counts; this feed follows those counts. A finished run without an SPRT decision remains stopped/inconclusive. No farm decision automatically establishes an overall verified gain.
 
