@@ -309,7 +309,7 @@
   "schema_version": 1,
   "scope": "This frozen candidate and references at the declared time control and test hardware only.",
   "source_fishtest": {
-    "availability": "stale",
+    "availability": "current",
     "configuration": {
       "adjudication": true,
       "auto_purge": false,

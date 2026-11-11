@@ -42,7 +42,7 @@ Candidate network: `nn-fcbaf7d2197c.nnue`; reference: `nn-d1ee674a62ca.nnue`. So
 
 ### Public Fishtest test1757 source and network test
 
-[Official run `6af16e648e7fb2e78bc1cb09`](https://tests.stockfishchess.org/tests/view/6af16e648e7fb2e78bc1cb09) · `10+0.1 / T1 / H16` · API **stale**
+[Official run `6af16e648e7fb2e78bc1cb09`](https://tests.stockfishchess.org/tests/view/6af16e648e7fb2e78bc1cb09) · `10+0.1 / T1 / H16` · API **current**
 
 The test1757 prefetch source and original 18cd network face official Stockfish with the D1 network. The Elo estimate below applies only to this run.
 
