@@ -6,6 +6,8 @@ This lab edits NNUE parameters and measures their effects in paired Stockfish ga
 
 Extract the ZIP and set your GUI’s `EvalFile` to the full path of its included network. Choose `nn-d5c257728ba5.nnue` for the test1757 build in local confirmation, or `nn-68752b755c93.nnue` for the test1758 development build.
 
+**November 11, 2026.** A Fishtest maintainer paused the nine-bias test on commit `64b0b7a` and explained that Fishtest generally declines tests that change individual bytes in an NNUE network. At the pause, the estimate was +0.75 Elo after 43,168 games (95% interval −0.85 to +2.35). The SPRT was undecided. [Maintainer’s comment](https://github.com/0mis/Stockfish/commit/64b0b7a2a78e44f1eade4bb441f8819abbfac6d2#commitcomment-209355597) · [Fishtest run](https://tests.stockfishchess.org/tests/view/6af2455c8e7fb2e78bc1cc30).
+
 <!-- live-status:start -->
 ## Live confirmation progress
 
