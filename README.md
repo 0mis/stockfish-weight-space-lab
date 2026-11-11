@@ -82,7 +82,7 @@ Fishtest's normalized SPRT uses **[0, 2]**, **α = β = 0.05**, and LLR bounds *
 
 The d5 NNUE edit faces the original 18cd network on the SFNNv20 official-master snapshot at submission. This comparison is separate from local trial-0004, the historical D1 run, the earlier source/network run, and the donor-parent run. Its Elo and SPRT apply only to this comparison. Candidate bench: `2376690`; reference bench: `3464885`. Candidate `64b0b7a2a78e44f1eade4bb441f8819abbfac6d2` uses `nn-d5c257728ba5.nnue`; reference `43e01e07210948e1130dc687c065d7a3742b2793` uses `nn-18cd32e11a9c.nnue`.
 
-Official state: **stopped_without_sprt_decision**; approved: **yes**; finished: **yes**. A stale API label means these are the last validated official aggregates.
+Official state: **approved_open**; approved: **yes**; finished: **no**. A stale API label means these are the last validated official aggregates.
 
 | W / D / L | Points | Games (pairs) | Fishtest logistic Elo | Fishtest nominal 95% CI | Elo availability | SPRT state | LLR |
 | ---: | ---: | ---: | ---: | --- | --- | --- | ---: |
@@ -102,7 +102,7 @@ Official state: **approved_open**; approved: **yes**; finished: **no**. A stale 
 
 | W / D / L | Points | Games (pairs) | Fishtest logistic Elo | Fishtest nominal 95% CI | Elo availability | SPRT state | LLR |
 | ---: | ---: | ---: | ---: | --- | --- | --- | ---: |
-| 1331 / 2526 / 1327 | 2594–2590 | 5184 (2592) | +0.27 | [-4.40, +4.93] | `current` | `undecided` | -0.039219 |
+| 1339 / 2539 / 1338 | 2608.5–2607.5 | 5216 (2608) | +0.07 | [-4.58, +4.72] | `current` | `undecided` | -0.074746 |
 
 Fishtest's normalized SPRT uses **[0, 2]**, **α = β = 0.05**, and LLR bounds **[−2.944439, +2.944439]**. Fishtest's nominal 95% CI is an SPRT/Brownian approximation, distinct from the local anytime lower bound. Official purges can lower the reported counts; this feed follows those counts. A finished run without an SPRT decision remains stopped/inconclusive. No farm decision automatically establishes an overall verified gain.
 
