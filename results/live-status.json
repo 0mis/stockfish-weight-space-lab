@@ -90,33 +90,33 @@
       "reported_elo": {
         "availability": "current",
         "confidence_interval": [
-          -0.804138329031743,
-          2.546281221694812
+          -0.8304842659999071,
+          2.51846752409127
         ],
         "confidence_percent": 95,
-        "estimate": 0.871051582051135,
+        "estimate": 0.8439723559082506,
         "estimate_scale": "logistic",
         "label": "Fishtest logistic Elo and nominal 95% CI",
         "model": "normalized",
         "model_scope": "SPRT"
       },
       "results": {
-        "candidate_points": 19793.5,
+        "candidate_points": 19808.0,
         "crashes": 0,
-        "draws": 19495,
-        "games": 39488,
-        "losses": 9947,
-        "pairs": 19744,
+        "draws": 19508,
+        "games": 39520,
+        "losses": 9958,
+        "pairs": 19760,
         "pentanomial": [
           32,
-          4536,
-          10514,
-          4625,
+          4541,
+          10523,
+          4627,
           37
         ],
-        "reference_points": 19694.5,
+        "reference_points": 19712.0,
         "time_losses": 2,
-        "wins": 10046
+        "wins": 10054
       },
       "sprt": {
         "alpha": 0.05,
@@ -124,7 +124,7 @@
         "elo0": 0.0,
         "elo1": 2.0,
         "elo_model": "normalized",
-        "llr": 0.5115207945018744,
+        "llr": 0.47570224297968167,
         "lower_bound": -2.9444389791664403,
         "state": "",
         "upper_bound": 2.9444389791664403
@@ -428,33 +428,33 @@
       "reported_elo": {
         "availability": "current",
         "confidence_interval": [
-          -9.497235704399944,
-          10.06798436953687
+          -11.271415709368233,
+          7.560210615055754
         ],
         "confidence_percent": 95,
-        "estimate": 0.285148208806259,
+        "estimate": -1.8542403646847363,
         "estimate_scale": "logistic",
         "label": "Fishtest logistic Elo and nominal 95% CI",
         "model": "normalized",
         "model_scope": "SPRT"
       },
       "results": {
-        "candidate_points": 608.5,
+        "candidate_points": 652.5,
         "crashes": 0,
-        "draws": 583,
-        "games": 1216,
-        "losses": 316,
-        "pairs": 608,
+        "draws": 625,
+        "games": 1312,
+        "losses": 347,
+        "pairs": 656,
         "pentanomial": [
           0,
-          151,
-          306,
-          150,
+          167,
+          330,
+          158,
           1
         ],
-        "reference_points": 607.5,
+        "reference_points": 659.5,
         "time_losses": 0,
-        "wins": 317
+        "wins": 340
       },
       "sprt": {
         "alpha": 0.05,
@@ -462,7 +462,7 @@
         "elo0": 0.0,
         "elo1": 2.0,
         "elo_model": "normalized",
-        "llr": -0.008677124003474014,
+        "llr": -0.1022115114040073,
         "lower_bound": -2.9444389791664403,
         "state": "",
         "upper_bound": 2.9444389791664403
