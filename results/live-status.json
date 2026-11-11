@@ -54,7 +54,7 @@
   ],
   "completion_verified": false,
   "current_master_fishtest": {
-    "availability": "current",
+    "availability": "stale",
     "comparison_scope": "current_master_snapshot_nnue_only",
     "configuration": {
       "adjudication": true,
@@ -88,7 +88,7 @@
       "finished": false,
       "maximum_games": 800000,
       "reported_elo": {
-        "availability": "current",
+        "availability": "stale",
         "confidence_interval": [
           -0.9445735810372592,
           2.3007374509649834
@@ -136,7 +136,7 @@
     "url": "https://tests.stockfishchess.org/tests/view/6af2455c8e7fb2e78bc1cc30"
   },
   "donor_fishtest": {
-    "availability": "current",
+    "availability": "stale",
     "comparison_scope": "donor_parent_only",
     "configuration": {
       "adjudication": true,
@@ -216,7 +216,7 @@
     "url": "https://tests.stockfishchess.org/tests/view/6af19afb8e7fb2e78bc1cb30"
   },
   "fishtest": {
-    "availability": "current",
+    "availability": "stale",
     "configuration": {
       "base_nets": [
         "nn-d1ee674a62ca.nnue"
@@ -243,7 +243,7 @@
       "finished": true,
       "maximum_games": 800000,
       "reported_elo": {
-        "availability": "current",
+        "availability": "stale",
         "confidence_interval": [
           -1.8714106319062496,
           0.7364315474093709
@@ -309,7 +309,7 @@
   "schema_version": 1,
   "scope": "This frozen candidate and references at the declared time control and test hardware only.",
   "source_fishtest": {
-    "availability": "current",
+    "availability": "stale",
     "configuration": {
       "adjudication": true,
       "auto_purge": false,
@@ -388,7 +388,7 @@
   },
   "statistical_pass": false,
   "test1758_refit_fishtest": {
-    "availability": "current",
+    "availability": "stale",
     "candidate_network_sha256": "00e2e7316a86beb0ecb81b5a16f1ec78d42704a2219bee28a3067f8956fbaa43",
     "comparison_scope": "official_test1758_parent_bias_refit",
     "configuration": {
@@ -426,7 +426,7 @@
       "finished": false,
       "maximum_games": 800000,
       "reported_elo": {
-        "availability": "current",
+        "availability": "stale",
         "confidence_interval": [
           -4.218667162953146,
           5.949925238547111
