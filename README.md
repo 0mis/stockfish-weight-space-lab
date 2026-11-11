@@ -86,7 +86,7 @@ Official state: **approved_open**; approved: **yes**; finished: **no**. A stale 
 
 | W / D / L | Points | Games (pairs) | Fishtest logistic Elo | Fishtest nominal 95% CI | Elo availability | SPRT state | LLR |
 | ---: | ---: | ---: | ---: | --- | --- | --- | ---: |
-| 10530 / 20461 / 10449 | 20760.5–20679.5 | 41440 (20720) | +0.68 | [-0.96, +2.31] | `current` | `undecided` | 0.267721 |
+| 10551 / 20491 / 10462 | 20796.5–20707.5 | 41504 (20752) | +0.75 | [-0.89, +2.38] | `current` | `undecided` | 0.360876 |
 
 Fishtest's normalized SPRT uses **[0, 2]**, **α = β = 0.05**, and LLR bounds **[−2.944439, +2.944439]**. Fishtest's nominal 95% CI is an SPRT/Brownian approximation, distinct from the local anytime lower bound. Official purges can lower the reported counts; this feed follows those counts. A finished run without an SPRT decision remains stopped/inconclusive. No farm decision automatically establishes an overall verified gain.
 
@@ -102,7 +102,7 @@ Official state: **approved_open**; approved: **yes**; finished: **no**. A stale 
 
 | W / D / L | Points | Games (pairs) | Fishtest logistic Elo | Fishtest nominal 95% CI | Elo availability | SPRT state | LLR |
 | ---: | ---: | ---: | ---: | --- | --- | --- | ---: |
-| 831 / 1585 / 848 | 1623.5–1640.5 | 3264 (1632) | -1.81 | [-7.71, +4.09] | `current` | `undecided` | -0.251641 |
+| 842 / 1597 / 857 | 1640.5–1655.5 | 3296 (1648) | -1.58 | [-7.44, +4.28] | `current` | `undecided` | -0.229343 |
 
 Fishtest's normalized SPRT uses **[0, 2]**, **α = β = 0.05**, and LLR bounds **[−2.944439, +2.944439]**. Fishtest's nominal 95% CI is an SPRT/Brownian approximation, distinct from the local anytime lower bound. Official purges can lower the reported counts; this feed follows those counts. A finished run without an SPRT decision remains stopped/inconclusive. No farm decision automatically establishes an overall verified gain.
 
