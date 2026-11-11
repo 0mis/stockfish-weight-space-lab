@@ -1,0 +1,36 @@
+{
+  "action": "The direct match is held. The original games and statistical allocation are retained. A replacement confirmation needs a fresh reservation and independent openings.",
+  "as_of_date_utc": "2026-11-11",
+  "earlier_public_test": {
+    "before_component_selection_rule": {
+      "distinct_starts": 3,
+      "scored_games": 6
+    },
+    "before_nomination_materials_sealed": {
+      "distinct_starts": 4,
+      "scored_games": 8
+    },
+    "book": "UHO_Lichess_4852_v1.epd",
+    "evidence": "Public PGN opening headers matched canonical reserved start identities. Every cited game belonged to a completed Fishtest task whose scheduled, archived and scored counts matched. The task updates and worker archive timestamps preceded the applicable cutoff.",
+    "network": "nn-fcbaf7d2197c.nnue",
+    "url": "https://tests.stockfishchess.org/tests/view/6af10a258e7fb2e78bc1ca5c"
+  },
+  "finding": "A project-run D1 strength test played openings that were later included in the private trial's reserved pools.",
+  "formal_confirmation_eligible": false,
+  "interpretation": "Project records show that aggregate D1 results were visible before nomination. Individual opening-level inspection or influence on the selected build has not been established. This finding concerns pool eligibility.",
+  "private_trial": {
+    "book": "UHO_4060_v4.epd",
+    "candidate_network": "nn-d5c257728ba5.nnue",
+    "descriptive_logistic_elo": 6.91,
+    "draws": 179,
+    "games": 352,
+    "losses": 83,
+    "rated_reference": "Stockfish 261025",
+    "second_reference_games": 0,
+    "wins": 90
+  },
+  "public_run_headers": "https://tests.stockfishchess.org/api/run_pgns/6af10a258e7fb2e78bc1ca5c.pgn.gz",
+  "registered_condition": "The confirmation pools must be disjoint from all screening and tuning positions.",
+  "schema": "stockfish-public-opening-integrity/1",
+  "trial": "trial-0004"
+}

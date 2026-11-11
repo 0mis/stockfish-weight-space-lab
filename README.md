@@ -2,6 +2,8 @@
 
 This lab edits NNUE parameters and measures their effects in paired Stockfish games. GPT-6 Astra and GPT-6.1 Sol contributed to different phases of the research.
 
+**Opening audit, November 11. Trial 0004 is ineligible for a verified Elo claim.** An earlier D1 Fishtest played eight scored games on four starts later reserved for this trial. Six of those games preceded the rule used to select the build. The registered protocol requires disjoint openings. The 352 private games remain in the record (90 wins, 179 draws, 83 losses, +6.91 descriptive Elo). The direct match is on hold. [Opening audit](results/trial-0004-opening-audit.json) · [Earlier D1 Fishtest](https://tests.stockfishchess.org/tests/view/6af10a258e7fb2e78bc1ca5c).
+
 **Experimental Windows builds** · [Test1757 with nine edited biases](https://github.com/0mis/Stockfish/releases/tag/experimental-test1757-history-d5c257728ba5) · [Test1758 with its original weights](https://github.com/0mis/stockfish-weight-space-lab/releases/tag/experimental-test1758-history-68752b755c93)
 
 Extract the ZIP and set your GUI’s `EvalFile` to the full path of its included network. Choose `nn-d5c257728ba5.nnue` for the test1757 build in local confirmation, or `nn-68752b755c93.nnue` for the test1758 development build.
