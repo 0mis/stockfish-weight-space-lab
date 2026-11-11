@@ -26,7 +26,7 @@ Ledger checkpoint: event `554`, SHA-256 `945dc009c0454cc24610ab09dbfaea7f597068e
 
 ### Public Fishtest NNUE-only test
 
-[Official run `6af10a258e7fb2e78bc1ca5c`](https://tests.stockfishchess.org/tests/view/6af10a258e7fb2e78bc1ca5c) · `10+0.1 / T1 / H16` · API **stale**
+[Official run `6af10a258e7fb2e78bc1ca5c`](https://tests.stockfishchess.org/tests/view/6af10a258e7fb2e78bc1ca5c) · `10+0.1 / T1 / H16` · API **current**
 
 This is a separate NNUE-only experiment. Its executable, clocks, normalized SPRT and results remain separate from local trial-0003's paired e-process.
 
@@ -34,7 +34,7 @@ Official state: **sprt_rejected**; approved: **yes**; finished: **yes**. A stale
 
 | W / D / L | Points | Games (pairs) | Fishtest logistic Elo | Fishtest nominal 95% CI | Elo availability | SPRT state | LLR |
 | ---: | ---: | ---: | ---: | --- | --- | --- | ---: |
-| 18085 / 35101 / 18238 | 35635.5–35788.5 | 71424 (35712) | -0.58 | [-1.87, +0.74] | `stale` | `rejected` | -2.970476 |
+| 18085 / 35101 / 18238 | 35635.5–35788.5 | 71424 (35712) | -0.58 | [-1.87, +0.74] | `current` | `rejected` | -2.970476 |
 
 Fishtest's normalized SPRT uses **[0, 2]**, **α = β = 0.05**, and LLR bounds **[−2.944439, +2.944439]**. Fishtest's nominal 95% CI is an SPRT/Brownian approximation, distinct from the local anytime lower bound. Official purges can lower the reported counts; this feed follows those counts. A finished run without an SPRT decision remains stopped/inconclusive. No farm decision automatically establishes an overall verified gain.
 
@@ -60,7 +60,7 @@ Fishtest's normalized SPRT uses **[0, 2]**, **α = β = 0.05**, and LLR bounds *
 
 ### Public Fishtest NNUE edit vs donor parent
 
-[Fishtest run `6af19afb8e7fb2e78bc1cb30`](https://tests.stockfishchess.org/tests/view/6af19afb8e7fb2e78bc1cb30) · `10+0.1 / T1 / H16` · API **stale**
+[Fishtest run `6af19afb8e7fb2e78bc1cb30`](https://tests.stockfishchess.org/tests/view/6af19afb8e7fb2e78bc1cb30) · `10+0.1 / T1 / H16` · API **current**
 
 The nine-bias d5 NNUE edit faces its test1757 donor parent with the original 18cd network. Both sides use the same prefetch source except the default network filename. This estimates only the NNUE edit relative to its donor parent; it is not an official-Stockfish comparison. Its results remain separate from both earlier farm runs and local trial-0003.
 
@@ -78,7 +78,7 @@ Fishtest's normalized SPRT uses **[0, 2]**, **α = β = 0.05**, and LLR bounds *
 
 ### Public Fishtest current-master NNUE-only test
 
-[Official run `6af2455c8e7fb2e78bc1cc30`](https://tests.stockfishchess.org/tests/view/6af2455c8e7fb2e78bc1cc30) · `10+0.1 / T1 / H16` · API **stale**
+[Official run `6af2455c8e7fb2e78bc1cc30`](https://tests.stockfishchess.org/tests/view/6af2455c8e7fb2e78bc1cc30) · `10+0.1 / T1 / H16` · API **current**
 
 The d5 NNUE edit faces the original 18cd network on the SFNNv20 official-master snapshot at submission. This comparison is separate from local trial-0004, the historical D1 run, the earlier source/network run, and the donor-parent run. Its Elo and SPRT apply only to this comparison. Candidate bench: `2376690`; reference bench: `3464885`. Candidate `64b0b7a2a78e44f1eade4bb441f8819abbfac6d2` uses `nn-d5c257728ba5.nnue`; reference `43e01e07210948e1130dc687c065d7a3742b2793` uses `nn-18cd32e11a9c.nnue`.
 
@@ -86,7 +86,7 @@ Official state: **approved_open**; approved: **yes**; finished: **no**. A stale 
 
 | W / D / L | Points | Games (pairs) | Fishtest logistic Elo | Fishtest nominal 95% CI | Elo availability | SPRT state | LLR |
 | ---: | ---: | ---: | ---: | --- | --- | --- | ---: |
-| 10673 / 20752 / 10591 | 21049–20967 | 42016 (21008) | +0.68 | [-0.94, +2.30] | `stale` | `undecided` | 0.270272 |
+| 10706 / 20839 / 10631 | 21125.5–21050.5 | 42176 (21088) | +0.62 | [-1.00, +2.24] | `current` | `undecided` | 0.185437 |
 
 Fishtest's normalized SPRT uses **[0, 2]**, **α = β = 0.05**, and LLR bounds **[−2.944439, +2.944439]**. Fishtest's nominal 95% CI is an SPRT/Brownian approximation, distinct from the local anytime lower bound. Official purges can lower the reported counts; this feed follows those counts. A finished run without an SPRT decision remains stopped/inconclusive. No farm decision automatically establishes an overall verified gain.
 
@@ -94,7 +94,7 @@ Candidate network: `nn-d5c257728ba5.nnue`; reference: `nn-18cd32e11a9c.nnue`. So
 
 ### Public Fishtest test1758 bias refit
 
-[Official run `6af3a3458e7fb2e78bc1ce2d`](https://tests.stockfishchess.org/tests/view/6af3a3458e7fb2e78bc1ce2d) · `10+0.1 / T1 / H16` · API **stale**
+[Official run `6af3a3458e7fb2e78bc1ce2d`](https://tests.stockfishchess.org/tests/view/6af3a3458e7fb2e78bc1ce2d) · `10+0.1 / T1 / H16` · API **current**
 
 This run tests nine refitted FC2 output biases against the original 687 network on the same Stockfish source snapshot. The candidate bench is `2042598` and the reference bench is `1643008`. [Download NNUE](https://github.com/0mis/stockfish-weight-space-lab/releases/download/experimental-687-bias-refit-00e2e7316a86/nn-00e2e7316a86.nnue) · [Release](https://github.com/0mis/stockfish-weight-space-lab/releases/tag/experimental-687-bias-refit-00e2e7316a86).
 
@@ -102,7 +102,7 @@ Official state: **approved_open**; approved: **yes**; finished: **no**. A stale 
 
 | W / D / L | Points | Games (pairs) | Fishtest logistic Elo | Fishtest nominal 95% CI | Elo availability | SPRT state | LLR |
 | ---: | ---: | ---: | ---: | --- | --- | --- | ---: |
-| 1129 / 2169 / 1118 | 2213.5–2202.5 | 4416 (2208) | +0.87 | [-4.22, +5.95] | `stale` | `undecided` | 0.054460 |
+| 1134 / 2188 / 1126 | 2228–2220 | 4448 (2224) | +0.62 | [-4.44, +5.69] | `current` | `undecided` | 0.019162 |
 
 Fishtest's normalized SPRT uses **[0, 2]**, **α = β = 0.05**, and LLR bounds **[−2.944439, +2.944439]**. Fishtest's nominal 95% CI is an SPRT/Brownian approximation, distinct from the local anytime lower bound. Official purges can lower the reported counts; this feed follows those counts. A finished run without an SPRT decision remains stopped/inconclusive. No farm decision automatically establishes an overall verified gain.
 
