@@ -8,6 +8,8 @@ Extract the ZIP and set your GUI’s `EvalFile` to the full path of its included
 
 **November 11, 2026.** A Fishtest maintainer paused the nine-bias test on commit `64b0b7a` and explained that Fishtest generally declines tests that change individual bytes in an NNUE network. At the pause, the estimate was +0.75 Elo after 43,168 games (95% interval −0.85 to +2.35). The SPRT was undecided. [Maintainer’s comment](https://github.com/0mis/Stockfish/commit/64b0b7a2a78e44f1eade4bb441f8819abbfac6d2#commitcomment-209355597) · [Fishtest run](https://tests.stockfishchess.org/tests/view/6af2455c8e7fb2e78bc1cc30).
 
+Fishtest also recorded a stop for the separate test1758 refit on November 11, followed by a priority change to −5 at 08:20 UTC. The refit had played 6,816 games with an estimate of −0.25 Elo (95% interval −4.30 to +3.79). Its SPRT was undecided. The `approved_open` labels below reflect the API’s approval and completion flags. [Refit action log](https://tests.stockfishchess.org/actions?run_id=6af3a3458e7fb2e78bc1ce2d) · [Refit run](https://tests.stockfishchess.org/tests/view/6af3a3458e7fb2e78bc1ce2d).
+
 <!-- live-status:start -->
 ## Live confirmation progress
 
