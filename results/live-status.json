@@ -289,11 +289,26 @@
     "run_id": "6af10a258e7fb2e78bc1ca5c",
     "url": "https://tests.stockfishchess.org/tests/view/6af10a258e7fb2e78bc1ca5c"
   },
-  "integrity_audit": "independent_terminal_audit_pending",
-  "interpretation": "Provisional estimates. Statistical gain requires both reference gates and an independent terminal integrity audit before verified-gain wording. A statistical continue decision does not report sampler liveness.",
+  "integrity_audit": "clean_opening_pool_signoff_unavailable",
+  "interpretation": "The 352 local games are descriptive only. The opening-pool overlap prevents formal confirmation under the registered protocol. The ledger preserves the original scores, statistical decisions and alpha allocation. Whether individual boards influenced candidate selection remains unknown.",
   "ledger_prefix": {
     "event_index": 554,
     "head_sha256": "945dc009c0454cc24610ab09dbfaea7f597068e55b67351612b82ab7766dac82"
+  },
+  "opening_pool_integrity": {
+    "administrative_stop_requested": true,
+    "audit_url": "https://github.com/0mis/stockfish-weight-space-lab/blob/e994b46be2ec89d11e9038e08b651c417feea4f5/results/trial-0004-opening-audit.json",
+    "before_component_selection_rule": {
+      "distinct_starts": 3,
+      "scored_games": 6
+    },
+    "before_nomination": {
+      "distinct_starts": 4,
+      "scored_games": 8
+    },
+    "formal_confirmation_eligible": false,
+    "local_score_use": "descriptive_only",
+    "status": "failed_disjointness_check"
   },
   "protocol": {
     "confidence_interpretation": "Fixed protocol coverage under its assumptions, not a probability of superiority.",

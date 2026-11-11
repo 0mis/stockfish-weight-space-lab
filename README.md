@@ -15,18 +15,20 @@ Fishtest also recorded a stop for the separate test1758 refit on November 11, fo
 <!-- live-status:start -->
 ## Live confirmation progress
 
-Trial `trial-0004` · **provisional, independently unverified** · `60+0.6 / T1 / H64`
+Trial `trial-0004` · **opening pool ineligible for formal confirmation** · `60+0.6 / T1 / H64`
+
+Before candidate nomination, the project's D1 Fishtest played 8 scored games on 4 starts later reserved for this trial. 6 games on 3 of those starts preceded the component-selection rule. The direct match is on hold. Its local scores and bounds are descriptive only. Whether individual boards influenced candidate selection remains unknown. [Opening audit](results/trial-0004-opening-audit.json).
 
 | Reference | W / D / L | Points | Games (pairs) | Logistic Elo estimate | Anytime lower Elo bound | Statistical decision | Minimum pairs |
 | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
 | `dev-261106` | 0 / 0 / 0 | 0–0 | 0 (0) | pending | −∞ | `continue` | 0/128 (pending) |
 | `spcc-261025` | 90 / 179 / 83 | 179.5–172.5 | 352 (176) | +6.91 | -32.46 | `continue` | 176/128 (reached) |
 
-The paired, one-sided anytime lower bounds use **99.975000%** coverage per reference (trial allocation: **99.950000%**; whole research family: **99%**). These are fixed protocol coverage levels under its assumptions, not probabilities that the candidate is stronger.
+The registered one-sided coverage levels were **99.975000%** per reference, **99.950000%** for the trial and **99%** for the research family. They assumed disjoint openings.
 
-Each reference needs at least **128 pairs** and log-evidence ≥ **8.29405**. Both gates must pass; an independent terminal integrity audit is still required. Point estimates can rise or fall. Every completed pair in this trial's ledger prefix is retained; interrupted earlier trials are excluded. `continue` is a statistical decision and does not indicate whether the sampler is running.
+The original thresholds were **128 pairs** and log-evidence ≥ **8.29405** per reference. The trial did not meet the two-gate statistical requirement.
 
-Trial ledger state: **open**. Both statistical gates passed: **no**. Verified gain: **not established by this progress feed**.
+The ledger records the trial as **open** and preserves its scores and original alpha allocation. A replacement formal test requires a fresh reservation and independent openings.
 
 Ledger checkpoint: event `554`, SHA-256 `945dc009c0454cc24610ab09dbfaea7f597068e55b67351612b82ab7766dac82`. [Aggregate JSON](results/live-status.json).
 
