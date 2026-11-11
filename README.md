@@ -100,7 +100,7 @@ Candidate network: `nn-d5c257728ba5.nnue`; reference: `nn-18cd32e11a9c.nnue`. So
 
 This run tests nine refitted FC2 output biases against the original 687 network on the same Stockfish source snapshot. The candidate bench is `2042598` and the reference bench is `1643008`. [Download NNUE](https://github.com/0mis/stockfish-weight-space-lab/releases/download/experimental-687-bias-refit-00e2e7316a86/nn-00e2e7316a86.nnue) · [Release](https://github.com/0mis/stockfish-weight-space-lab/releases/tag/experimental-687-bias-refit-00e2e7316a86).
 
-Official state: **approved_open**; approved: **yes**; finished: **no**. A stale API label means these are the last validated official aggregates.
+Official state: **stopped_without_sprt_decision**; approved: **yes**; finished: **yes**. A stale API label means these are the last validated official aggregates.
 
 | W / D / L | Points | Games (pairs) | Fishtest logistic Elo | Fishtest nominal 95% CI | Elo availability | SPRT state | LLR |
 | ---: | ---: | ---: | ---: | --- | --- | --- | ---: |
