@@ -90,33 +90,33 @@
       "reported_elo": {
         "availability": "current",
         "confidence_interval": [
-          -0.6682988417806236,
-          2.7751375962884226
+          -0.6317491419491947,
+          2.8106559550419035
         ],
         "confidence_percent": 95,
-        "estimate": 1.0533940743139576,
+        "estimate": 1.0894273801657985,
         "estimate_scale": "logistic",
         "label": "Fishtest logistic Elo and nominal 95% CI",
         "model": "normalized",
         "model_scope": "SPRT"
       },
       "results": {
-        "candidate_points": 18857.0,
+        "candidate_points": 18875.0,
         "crashes": 0,
-        "draws": 18532,
-        "games": 37600,
-        "losses": 9477,
-        "pairs": 18800,
+        "draws": 18548,
+        "games": 37632,
+        "losses": 9483,
+        "pairs": 18816,
         "pentanomial": [
           32,
-          4330,
-          9966,
-          4436,
-          36
+          4332,
+          9975,
+          4440,
+          37
         ],
-        "reference_points": 18743.0,
+        "reference_points": 18757.0,
         "time_losses": 2,
-        "wins": 9591
+        "wins": 9601
       },
       "sprt": {
         "alpha": 0.05,
@@ -124,7 +124,7 @@
         "elo0": 0.0,
         "elo1": 2.0,
         "elo_model": "normalized",
-        "llr": 0.7155531058849813,
+        "llr": 0.7618168858558589,
         "lower_bound": -2.9444389791664403,
         "state": "",
         "upper_bound": 2.9444389791664403
@@ -420,7 +420,7 @@
     "download_url": "https://github.com/0mis/stockfish-weight-space-lab/releases/download/experimental-687-bias-refit-00e2e7316a86/nn-00e2e7316a86.nnue",
     "experiment": "Nine refitted FC2 output biases in the official test1758 network.",
     "observation": {
-      "approved": false,
+      "approved": true,
       "deleted": false,
       "failed": false,
       "finished": false,
@@ -464,7 +464,7 @@
         "state": "",
         "upper_bound": 2.9444389791664403
       },
-      "status": "pending_approval"
+      "status": "approved_open"
     },
     "reference_label": "Official Stockfish snapshot with its original 687 network",
     "release_asset_id": 733321987,
