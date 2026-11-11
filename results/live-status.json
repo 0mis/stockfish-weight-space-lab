@@ -423,7 +423,7 @@
       "approved": true,
       "deleted": false,
       "failed": false,
-      "finished": true,
+      "finished": false,
       "maximum_games": 800000,
       "reported_elo": {
         "availability": "current",
@@ -467,7 +467,7 @@
         "state": "",
         "upper_bound": 2.9444389791664403
       },
-      "status": "stopped_without_sprt_decision"
+      "status": "approved_open"
     },
     "reference_label": "Official Stockfish snapshot with its original 687 network",
     "release_asset_id": 733321987,
