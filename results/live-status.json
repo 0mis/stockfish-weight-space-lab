@@ -85,38 +85,38 @@
       "approved": true,
       "deleted": false,
       "failed": false,
-      "finished": false,
+      "finished": true,
       "maximum_games": 800000,
       "reported_elo": {
         "availability": "current",
         "confidence_interval": [
-          -0.8592451817824389,
-          2.3412840009138063
+          -0.8512595672966162,
+          2.3482965356403454
         ],
         "confidence_percent": 95,
-        "estimate": 0.7410042573111494,
+        "estimate": 0.748503216960093,
         "estimate_scale": "logistic",
         "label": "Fishtest logistic Elo and nominal 95% CI",
         "model": "normalized",
         "model_scope": "SPRT"
       },
       "results": {
-        "candidate_points": 21614.0,
+        "candidate_points": 21630.5,
         "crashes": 0,
-        "draws": 21330,
-        "games": 43136,
-        "losses": 10857,
-        "pairs": 21568,
+        "draws": 21345,
+        "games": 43168,
+        "losses": 10865,
+        "pairs": 21584,
         "pentanomial": [
           35,
-          4949,
-          11511,
-          5035,
-          38
+          4952,
+          11521,
+          5037,
+          39
         ],
-        "reference_points": 21522.0,
+        "reference_points": 21537.5,
         "time_losses": 2,
-        "wins": 10949
+        "wins": 10958
       },
       "sprt": {
         "alpha": 0.05,
@@ -124,12 +124,12 @@
         "elo0": 0.0,
         "elo1": 2.0,
         "elo_model": "normalized",
-        "llr": 0.3703732516740865,
+        "llr": 0.38156516392903134,
         "lower_bound": -2.9444389791664403,
         "state": "",
         "upper_bound": 2.9444389791664403
       },
-      "status": "approved_open"
+      "status": "stopped_without_sprt_decision"
     },
     "reference_label": "Official SFNNv20 master snapshot with original 18cd NNUE",
     "run_id": "6af2455c8e7fb2e78bc1cc30",
