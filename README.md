@@ -34,7 +34,7 @@ Ledger checkpoint: event `554`, SHA-256 `945dc009c0454cc24610ab09dbfaea7f597068e
 
 ### Public Fishtest NNUE-only test
 
-[Official run `6af10a258e7fb2e78bc1ca5c`](https://tests.stockfishchess.org/tests/view/6af10a258e7fb2e78bc1ca5c) · `10+0.1 / T1 / H16` · API **stale**
+[Official run `6af10a258e7fb2e78bc1ca5c`](https://tests.stockfishchess.org/tests/view/6af10a258e7fb2e78bc1ca5c) · `10+0.1 / T1 / H16` · API **current**
 
 This is a separate NNUE-only experiment. Its executable, clocks, normalized SPRT and results remain separate from local trial-0003's paired e-process.
 
@@ -68,7 +68,7 @@ Fishtest's normalized SPRT uses **[0, 2]**, **α = β = 0.05**, and LLR bounds *
 
 ### Public Fishtest NNUE edit vs donor parent
 
-[Fishtest run `6af19afb8e7fb2e78bc1cb30`](https://tests.stockfishchess.org/tests/view/6af19afb8e7fb2e78bc1cb30) · `10+0.1 / T1 / H16` · API **stale**
+[Fishtest run `6af19afb8e7fb2e78bc1cb30`](https://tests.stockfishchess.org/tests/view/6af19afb8e7fb2e78bc1cb30) · `10+0.1 / T1 / H16` · API **current**
 
 The nine-bias d5 NNUE edit faces its test1757 donor parent with the original 18cd network. Both sides use the same prefetch source except the default network filename. This estimates only the NNUE edit relative to its donor parent; it is not an official-Stockfish comparison. Its results remain separate from both earlier farm runs and local trial-0003.
 
