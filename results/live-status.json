@@ -136,7 +136,7 @@
     "url": "https://tests.stockfishchess.org/tests/view/6af2455c8e7fb2e78bc1cc30"
   },
   "donor_fishtest": {
-    "availability": "current",
+    "availability": "stale",
     "comparison_scope": "donor_parent_only",
     "configuration": {
       "adjudication": true,
@@ -243,7 +243,7 @@
       "finished": true,
       "maximum_games": 800000,
       "reported_elo": {
-        "availability": "stale",
+        "availability": "current",
         "confidence_interval": [
           -1.8714106319062496,
           0.7364315474093709
@@ -403,7 +403,7 @@
   },
   "statistical_pass": false,
   "test1758_refit_fishtest": {
-    "availability": "current",
+    "availability": "stale",
     "candidate_network_sha256": "00e2e7316a86beb0ecb81b5a16f1ec78d42704a2219bee28a3067f8956fbaa43",
     "comparison_scope": "official_test1758_parent_bias_refit",
     "configuration": {
@@ -441,7 +441,7 @@
       "finished": false,
       "maximum_games": 800000,
       "reported_elo": {
-        "availability": "current",
+        "availability": "stale",
         "confidence_interval": [
           -4.302207955059565,
           3.792403381449886

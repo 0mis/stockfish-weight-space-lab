@@ -42,7 +42,7 @@ Official state: **sprt_rejected**; approved: **yes**; finished: **yes**. A stale
 
 | W / D / L | Points | Games (pairs) | Fishtest logistic Elo | Fishtest nominal 95% CI | Elo availability | SPRT state | LLR |
 | ---: | ---: | ---: | ---: | --- | --- | --- | ---: |
-| 18085 / 35101 / 18238 | 35635.5–35788.5 | 71424 (35712) | -0.58 | [-1.87, +0.74] | `stale` | `rejected` | -2.970476 |
+| 18085 / 35101 / 18238 | 35635.5–35788.5 | 71424 (35712) | -0.58 | [-1.87, +0.74] | `current` | `rejected` | -2.970476 |
 
 Fishtest's normalized SPRT uses **[0, 2]**, **α = β = 0.05**, and LLR bounds **[−2.944439, +2.944439]**. Fishtest's nominal 95% CI is an SPRT/Brownian approximation, distinct from the local anytime lower bound. Official purges can lower the reported counts; this feed follows those counts. A finished run without an SPRT decision remains stopped/inconclusive. No farm decision automatically establishes an overall verified gain.
 
@@ -68,7 +68,7 @@ Fishtest's normalized SPRT uses **[0, 2]**, **α = β = 0.05**, and LLR bounds *
 
 ### Public Fishtest NNUE edit vs donor parent
 
-[Fishtest run `6af19afb8e7fb2e78bc1cb30`](https://tests.stockfishchess.org/tests/view/6af19afb8e7fb2e78bc1cb30) · `10+0.1 / T1 / H16` · API **current**
+[Fishtest run `6af19afb8e7fb2e78bc1cb30`](https://tests.stockfishchess.org/tests/view/6af19afb8e7fb2e78bc1cb30) · `10+0.1 / T1 / H16` · API **stale**
 
 The nine-bias d5 NNUE edit faces its test1757 donor parent with the original 18cd network. Both sides use the same prefetch source except the default network filename. This estimates only the NNUE edit relative to its donor parent; it is not an official-Stockfish comparison. Its results remain separate from both earlier farm runs and local trial-0003.
 
@@ -102,7 +102,7 @@ Candidate network: `nn-d5c257728ba5.nnue`; reference: `nn-18cd32e11a9c.nnue`. So
 
 ### Public Fishtest test1758 bias refit
 
-[Official run `6af3a3458e7fb2e78bc1ce2d`](https://tests.stockfishchess.org/tests/view/6af3a3458e7fb2e78bc1ce2d) · `10+0.1 / T1 / H16` · API **current**
+[Official run `6af3a3458e7fb2e78bc1ce2d`](https://tests.stockfishchess.org/tests/view/6af3a3458e7fb2e78bc1ce2d) · `10+0.1 / T1 / H16` · API **stale**
 
 This run tests nine refitted FC2 output biases against the original 687 network on the same Stockfish source snapshot. The candidate bench is `2042598` and the reference bench is `1643008`. [Download NNUE](https://github.com/0mis/stockfish-weight-space-lab/releases/download/experimental-687-bias-refit-00e2e7316a86/nn-00e2e7316a86.nnue) · [Release](https://github.com/0mis/stockfish-weight-space-lab/releases/tag/experimental-687-bias-refit-00e2e7316a86).
 
@@ -110,7 +110,7 @@ Official state: **approved_open**; approved: **yes**; finished: **no**. A stale 
 
 | W / D / L | Points | Games (pairs) | Fishtest logistic Elo | Fishtest nominal 95% CI | Elo availability | SPRT state | LLR |
 | ---: | ---: | ---: | ---: | --- | --- | --- | ---: |
-| 1740 / 3331 / 1745 | 3405.5–3410.5 | 6816 (3408) | -0.25 | [-4.30, +3.79] | `current` | `undecided` | -0.171583 |
+| 1740 / 3331 / 1745 | 3405.5–3410.5 | 6816 (3408) | -0.25 | [-4.30, +3.79] | `stale` | `undecided` | -0.171583 |
 
 Fishtest's normalized SPRT uses **[0, 2]**, **α = β = 0.05**, and LLR bounds **[−2.944439, +2.944439]**. Fishtest's nominal 95% CI is an SPRT/Brownian approximation, distinct from the local anytime lower bound. Official purges can lower the reported counts; this feed follows those counts. A finished run without an SPRT decision remains stopped/inconclusive. No farm decision automatically establishes an overall verified gain.
 
