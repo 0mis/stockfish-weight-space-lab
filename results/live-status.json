@@ -136,7 +136,7 @@
     "url": "https://tests.stockfishchess.org/tests/view/6af2455c8e7fb2e78bc1cc30"
   },
   "donor_fishtest": {
-    "availability": "stale",
+    "availability": "current",
     "comparison_scope": "donor_parent_only",
     "configuration": {
       "adjudication": true,
