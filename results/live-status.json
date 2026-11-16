@@ -136,7 +136,7 @@
     "url": "https://tests.stockfishchess.org/tests/view/6af2455c8e7fb2e78bc1cc30"
   },
   "donor_fishtest": {
-    "availability": "current",
+    "availability": "stale",
     "comparison_scope": "donor_parent_only",
     "configuration": {
       "adjudication": true,
@@ -324,7 +324,7 @@
   "schema_version": 1,
   "scope": "This frozen candidate and references at the declared time control and test hardware only.",
   "source_fishtest": {
-    "availability": "current",
+    "availability": "stale",
     "configuration": {
       "adjudication": true,
       "auto_purge": false,
