@@ -34,7 +34,7 @@ Ledger checkpoint: event `554`, SHA-256 `945dc009c0454cc24610ab09dbfaea7f597068e
 
 ### Public Fishtest NNUE-only test
 
-[Official run `6af10a258e7fb2e78bc1ca5c`](https://tests.stockfishchess.org/tests/view/6af10a258e7fb2e78bc1ca5c) · `10+0.1 / T1 / H16` · API **current**
+[Official run `6af10a258e7fb2e78bc1ca5c`](https://tests.stockfishchess.org/tests/view/6af10a258e7fb2e78bc1ca5c) · `10+0.1 / T1 / H16` · API **stale**
 
 This is a separate NNUE-only experiment. Its executable, clocks, normalized SPRT and results remain separate from local trial-0003's paired e-process.
 
@@ -42,7 +42,7 @@ Official state: **sprt_rejected**; approved: **yes**; finished: **yes**. A stale
 
 | W / D / L | Points | Games (pairs) | Fishtest logistic Elo | Fishtest nominal 95% CI | Elo availability | SPRT state | LLR |
 | ---: | ---: | ---: | ---: | --- | --- | --- | ---: |
-| 18085 / 35101 / 18238 | 35635.5–35788.5 | 71424 (35712) | -0.58 | [-1.87, +0.74] | `current` | `rejected` | -2.970476 |
+| 18085 / 35101 / 18238 | 35635.5–35788.5 | 71424 (35712) | -0.58 | [-1.87, +0.74] | `stale` | `rejected` | -2.970476 |
 
 Fishtest's normalized SPRT uses **[0, 2]**, **α = β = 0.05**, and LLR bounds **[−2.944439, +2.944439]**. Fishtest's nominal 95% CI is an SPRT/Brownian approximation, distinct from the local anytime lower bound. Official purges can lower the reported counts; this feed follows those counts. A finished run without an SPRT decision remains stopped/inconclusive. No farm decision automatically establishes an overall verified gain.
 
@@ -50,7 +50,7 @@ Candidate network: `nn-fcbaf7d2197c.nnue`; reference: `nn-d1ee674a62ca.nnue`. So
 
 ### Public Fishtest test1757 source and network test
 
-[Official run `6af16e648e7fb2e78bc1cb09`](https://tests.stockfishchess.org/tests/view/6af16e648e7fb2e78bc1cb09) · `10+0.1 / T1 / H16` · API **stale**
+[Official run `6af16e648e7fb2e78bc1cb09`](https://tests.stockfishchess.org/tests/view/6af16e648e7fb2e78bc1cb09) · `10+0.1 / T1 / H16` · API **current**
 
 The test1757 prefetch source and original 18cd network face official Stockfish with the D1 network. The Elo estimate below applies only to this run.
 

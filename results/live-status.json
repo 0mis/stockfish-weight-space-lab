@@ -216,7 +216,7 @@
     "url": "https://tests.stockfishchess.org/tests/view/6af19afb8e7fb2e78bc1cb30"
   },
   "fishtest": {
-    "availability": "current",
+    "availability": "stale",
     "configuration": {
       "base_nets": [
         "nn-d1ee674a62ca.nnue"
@@ -243,7 +243,7 @@
       "finished": true,
       "maximum_games": 800000,
       "reported_elo": {
-        "availability": "current",
+        "availability": "stale",
         "confidence_interval": [
           -1.8714106319062496,
           0.7364315474093709
@@ -324,7 +324,7 @@
   "schema_version": 1,
   "scope": "This frozen candidate and references at the declared time control and test hardware only.",
   "source_fishtest": {
-    "availability": "stale",
+    "availability": "current",
     "configuration": {
       "adjudication": true,
       "auto_purge": false,
